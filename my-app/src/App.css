@@ -23,3 +23,10 @@ body {
   border: none;
   margin-bottom: 10px;
 }
+
+.square {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid;
+}
