@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import "./App.css";
-import { Profile } from "./start/display-data";
-import { MyButton } from "./start/my-button";
-import { ShoppingList } from "./start/render-list";
+import { Profile } from "./components/Start/display-data";
+import { MyButton } from "./components/Start/MyButton";
+import { ShoppingList } from "./components/Start/RenderList";
 import Game from "./tic-tac-toe";
-import ProductInfo from "./product-info";
-import { Counter } from './hooks/use-state';
-import { Clock } from './hooks/use-effect';
+import ProductInfo from "./components/ProductInfo";
+import { Counter } from './hooks/useState';
+import { Clock } from './hooks/useEffect';
 
 function App() {
   return (
