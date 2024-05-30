@@ -7,7 +7,8 @@ import Game from "./components/Tutorial/TicTacToe";
 import ProductInfo from "./components/ProductInfo";
 import { Counter } from './hooks/useState';
 import { Clock } from './hooks/useEffect';
-import TodoList from './Describing/markup';
+import TodoList from './components/Describing/markup';
+import CurlyBraces from './components/Describing/CurlyBraces';
 
 function App() {
   return (
@@ -38,6 +39,9 @@ function App() {
           <li>
             <Link to="/markup">Markup</Link>
           </li>
+          <li>
+            <Link to="/curly-braces">CurlyBraces</Link>
+          </li>
         </ul>
       </nav>
       <Routes>
@@ -49,6 +53,7 @@ function App() {
         <Route path="/use-state" element={<Counter />} />
         <Route path="/use-effect" element={<Clock />} />
         <Route path="/markup" element={<TodoList />} />
+        <Route path="/curly-braces" element={<CurlyBraces />} />
       </Routes>
     </Router>
   );
