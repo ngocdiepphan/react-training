@@ -10,7 +10,8 @@ import { Clock } from './hooks/useEffect';
 import TodoList from './components/Describing/markup';
 import CurlyBraces from './components/Describing/CurlyBraces';
 import Props from './components/Describing/Props/Props';
-import SpreadSyntax from './components/Describing/Props/SpreadSyntax'
+import SpreadSyntax from './components/Describing/Props/SpreadSyntax';
+import PackingList from './components/Rendering/ConditionalReturn';
 
 function App() {
   return (
@@ -50,6 +51,9 @@ function App() {
           <li>
             <Link to="/spread-syntax">Props with jsx spread syntax</Link>
           </li>
+          <li>
+            <Link to="/packing-list">Conditional return PackingList</Link>
+          </li>
         </ul>
       </nav>
       <Routes>
@@ -64,6 +68,7 @@ function App() {
         <Route path="/curly-braces" element={<CurlyBraces />} />
         <Route path="/props" element={<Props />} />
         <Route path="/spread-syntax" element={<SpreadSyntax />} />
+        <Route path="/packing-list" element={<PackingList />} />
       </Routes>
     </Router>
   );
