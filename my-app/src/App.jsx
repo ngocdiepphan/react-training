@@ -12,6 +12,8 @@ import CurlyBraces from './components/Describing/CurlyBraces';
 import Props from './components/Describing/Props/Props';
 import SpreadSyntax from './components/Describing/Props/SpreadSyntax';
 import PackingList from './components/Rendering/ConditionalReturn';
+import List from './components/Rendering/RenderList';
+import { Key } from './components/Rendering/RenderList/RenderKey';
 
 function App() {
   return (
@@ -54,6 +56,12 @@ function App() {
           <li>
             <Link to="/packing-list">Conditional return PackingList</Link>
           </li>
+          <li>
+            <Link to="/render-list">Render List</Link>
+          </li>
+          <li>
+            <Link to="/render-key">Keeping list items in oder with key</Link>
+          </li>
         </ul>
       </nav>
       <Routes>
@@ -69,6 +77,8 @@ function App() {
         <Route path="/props" element={<Props />} />
         <Route path="/spread-syntax" element={<SpreadSyntax />} />
         <Route path="/packing-list" element={<PackingList />} />
+        <Route path="/render-list" element={<List />} />
+        <Route path="/render-key" element={<Key />} />
       </Routes>
     </Router>
   );
