@@ -9,6 +9,8 @@ import { Counter } from './hooks/useState';
 import { Clock } from './hooks/useEffect';
 import TodoList from './components/Describing/markup';
 import CurlyBraces from './components/Describing/CurlyBraces';
+import Props from './components/Describing/Props/Props';
+import SpreadSyntax from './components/Describing/Props/SpreadSyntax'
 
 function App() {
   return (
@@ -40,7 +42,13 @@ function App() {
             <Link to="/markup">Markup</Link>
           </li>
           <li>
-            <Link to="/curly-braces">CurlyBraces</Link>
+            <Link to="/curly-braces">Curly Braces</Link>
+          </li>
+          <li>
+            <Link to="/props">Props</Link>
+          </li>
+          <li>
+            <Link to="/spread-syntax">Props with jsx spread syntax</Link>
           </li>
         </ul>
       </nav>
@@ -54,6 +62,8 @@ function App() {
         <Route path="/use-effect" element={<Clock />} />
         <Route path="/markup" element={<TodoList />} />
         <Route path="/curly-braces" element={<CurlyBraces />} />
+        <Route path="/props" element={<Props />} />
+        <Route path="/spread-syntax" element={<SpreadSyntax />} />
       </Routes>
     </Router>
   );
