@@ -4,6 +4,7 @@ import Form from "./SnapShot";
 import Counter from './StateUpdate';
 import StateObject from './StateObject';
 import StateArray from "./StateArray";
+import './Interact.css';
 
 export default function RespondEvent() {
   return (
