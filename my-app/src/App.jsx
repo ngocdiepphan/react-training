@@ -14,6 +14,7 @@ import SpreadSyntax from './components/Describing/Props/SpreadSyntax';
 import PackingList from './components/Rendering/ConditionalReturn';
 import List from './components/Rendering/RenderList';
 import { Key } from './components/Rendering/RenderList/RenderKey';
+import Purity from "./components/Describing/KeepComponents/Purity";
 
 function App() {
   return (
@@ -62,6 +63,9 @@ function App() {
           <li>
             <Link to="/render-key">Keeping list items in oder with key</Link>
           </li>
+          <li>
+            <Link to="/keeping-component">Keeping components Pure</Link>
+          </li>
         </ul>
       </nav>
       <Routes>
@@ -79,6 +83,7 @@ function App() {
         <Route path="/packing-list" element={<PackingList />} />
         <Route path="/render-list" element={<List />} />
         <Route path="/render-key" element={<Key />} />
+        <Route path="/keeping-component" element={<Purity />} />
       </Routes>
     </Router>
   );
