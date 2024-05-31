@@ -15,6 +15,7 @@ import PackingList from './components/Rendering/ConditionalReturn';
 import List from './components/Rendering/RenderList';
 import { Key } from './components/Rendering/RenderList/RenderKey';
 import Purity from "./components/Describing/KeepComponents/Purity";
+import Tree from "./components/Describing/RenderingTree/index";
 
 function App() {
   return (
@@ -66,6 +67,9 @@ function App() {
           <li>
             <Link to="/keeping-component">Keeping components Pure</Link>
           </li>
+          <li>
+            <Link to="/rendering-tree">Ui as a Tree</Link>
+          </li>
         </ul>
       </nav>
       <Routes>
@@ -84,6 +88,7 @@ function App() {
         <Route path="/render-list" element={<List />} />
         <Route path="/render-key" element={<Key />} />
         <Route path="/keeping-component" element={<Purity />} />
+        <Route path="/rendering-tree" element={<Tree />} />
       </Routes>
     </Router>
   );
