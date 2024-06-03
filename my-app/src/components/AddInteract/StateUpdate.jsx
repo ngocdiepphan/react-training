@@ -18,7 +18,7 @@ export default function Counter() {
       increment();
       increment();
     }}>+5</button>
-    <h1>Score: {score}</h1>
+    <p style={{color:'blue'}}>Score: {score}</p>
     </>
   )
 }
