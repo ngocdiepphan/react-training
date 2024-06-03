@@ -6,6 +6,7 @@ import StateObject from "./StateObject";
 import StateArray from "./StateArray";
 import "./Interact.css";
 import RenderCommit from "./Gallery";
+import Like from "./StateQueue";
 
 export default function RespondEvent() {
   return (
@@ -41,6 +42,11 @@ export default function RespondEvent() {
       <section>
         <h1>Render and commit</h1>
         <RenderCommit />
+      </section>
+
+      <section>
+        <h1>Queueing a series of state updates</h1>
+        <Like />
       </section>
     </>
   );

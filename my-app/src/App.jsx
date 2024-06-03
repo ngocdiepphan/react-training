@@ -72,7 +72,7 @@ function App() {
             <Link to="/rendering-tree">Ui as a Tree</Link>
           </li>
           <li>
-            <Link to="/responding-event">Responding to Event</Link>
+            <Link to="/responding-event">Adding interactivity</Link>
           </li>
         </ul>
       </nav>
