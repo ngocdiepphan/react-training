@@ -1,10 +1,11 @@
 import { Toolbar } from "./RespondEvent";
-import Gallery from "./State";
+import Sculpture from "./StateComponent";
 import Form from "./SnapShot";
-import Counter from './StateUpdate';
-import StateObject from './StateObject';
+import Counter from "./StateUpdate";
+import StateObject from "./StateObject";
 import StateArray from "./StateArray";
-import './Interact.css';
+import "./Interact.css";
+import RenderCommit from "./Gallery";
 
 export default function RespondEvent() {
   return (
@@ -15,7 +16,7 @@ export default function RespondEvent() {
       />
       <section>
         <h1>State: a component's memory</h1>
-        <Gallery />
+        <Sculpture />
       </section>
 
       <section>
@@ -35,6 +36,11 @@ export default function RespondEvent() {
       <section>
         <h1>Update array in state</h1>
         <StateArray />
+      </section>
+
+      <section>
+        <h1>Render and commit</h1>
+        <RenderCommit />
       </section>
     </>
   );
