@@ -12,3 +12,6 @@
   background-color:rgb(205, 248, 159);
   border: none;
 }
+.state__memory {
+  margin: 50px;
+}

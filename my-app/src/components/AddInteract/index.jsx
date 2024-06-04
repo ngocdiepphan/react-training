@@ -18,6 +18,9 @@ export default function RespondEvent() {
       <section>
         <h1>State: a component's memory</h1>
         <Sculpture />
+        <div className="state__memory">
+        <Sculpture />
+        </div>
       </section>
 
       <section>
