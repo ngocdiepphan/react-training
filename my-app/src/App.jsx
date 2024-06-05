@@ -4,18 +4,19 @@ import { Profile } from "./components/Start/DisplayData";
 import { MyButton } from "./components/Start/MyButton";
 import { ShoppingList } from "./components/Start/RenderList";
 import Game from "./components/Tutorial/TicTacToe";
-import ProductInfo from "./components/ProductInfo";
+import ProductInfo from "./components/Describing/ProductInfo";
 import { Counter } from './hooks/useState';
 import { Clock } from './hooks/useEffect';
 import TodoList from './components/Describing/markup';
 import CurlyBraces from './components/Describing/CurlyBraces';
 import Props from './components/Describing/Props/Props';
 import SpreadSyntax from './components/Describing/Props/SpreadSyntax';
-import PackingList from './components/Rendering/ConditionalReturn';
-import List from './components/Rendering/RenderList';
-import { Key } from './components/Rendering/RenderList/RenderKey';
+import PackingList from './components/Describing/Rendering/ConditionalReturn';
+import List from './components/Describing/Rendering/RenderList';
+import { Key } from './components/Describing/Rendering/RenderList/RenderKey';
 import Purity from "./components/Describing/KeepComponents/Purity";
 import Tree from "./components/Describing/RenderingTree/index";
+import RespondEvent from "./components/AddInteract/index";
 
 function App() {
   return (
@@ -70,6 +71,9 @@ function App() {
           <li>
             <Link to="/rendering-tree">Ui as a Tree</Link>
           </li>
+          <li>
+            <Link to="/responding-event">Adding interactivity</Link>
+          </li>
         </ul>
       </nav>
       <Routes>
@@ -89,6 +93,7 @@ function App() {
         <Route path="/render-key" element={<Key />} />
         <Route path="/keeping-component" element={<Purity />} />
         <Route path="/rendering-tree" element={<Tree />} />
+        <Route path="/responding-event" element={<RespondEvent />} />
       </Routes>
     </Router>
   );

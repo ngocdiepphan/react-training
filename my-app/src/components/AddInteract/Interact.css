@@ -1,0 +1,17 @@
+.btn__event {
+  width: 200px;
+  height: 40px;
+  background-color: aquamarine;
+  margin: 20px;
+}
+
+.btn__queue {
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  background-color:rgb(205, 248, 159);
+  border: none;
+}
+.state__memory {
+  margin: 50px;
+}
