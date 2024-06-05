@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
+import Content from "./Content";
 
 function Clock() {
   const [time, setTime] = useState(new Date());
@@ -16,6 +17,16 @@ function Clock() {
       <h1>Current Time</h1>
       <p>useEffect</p>
       <p>{time.toLocaleTimeString()}</p>
+
+      <section>
+        <h2>Learn useEffect</h2>
+        <ol>
+          <li>
+            <h3 className="item">useEffect(callback, [])</h3>
+            <Content />
+          </li>
+        </ol>
+      </section>
     </div>
   );
 }

@@ -6,7 +6,7 @@ import { ShoppingList } from "./components/Start/RenderList";
 import Game from "./components/Tutorial/TicTacToe";
 import ProductInfo from "./components/Describing/ProductInfo";
 import UseStates from './hooks/useState/index';
-import { Clock } from './hooks/useEffect';
+import { Clock } from './hooks/useEffect/useEffect';
 import TodoList from './components/Describing/markup';
 import CurlyBraces from './components/Describing/CurlyBraces';
 import Props from './components/Describing/Props/Props';
