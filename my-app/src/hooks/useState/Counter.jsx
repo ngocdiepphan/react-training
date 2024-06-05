@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Counter() {
+function Count() {
   const [count, setCount] = useState(0);
 
   return (
@@ -13,4 +13,4 @@ function Counter() {
   );
 }
 
-export { Counter }
+export { Count }

@@ -5,7 +5,7 @@ import { MyButton } from "./components/Start/MyButton";
 import { ShoppingList } from "./components/Start/RenderList";
 import Game from "./components/Tutorial/TicTacToe";
 import ProductInfo from "./components/Describing/ProductInfo";
-import { Counter } from './hooks/useState';
+import UseStates from './hooks/useState/index';
 import { Clock } from './hooks/useEffect';
 import TodoList from './components/Describing/markup';
 import CurlyBraces from './components/Describing/CurlyBraces';
@@ -82,7 +82,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/shopping-list" element={<ShoppingList />} />
         <Route path="/product-info" element={<ProductInfo />} />
-        <Route path="/use-state" element={<Counter />} />
+        <Route path="/use-state" element={<UseStates />} />
         <Route path="/use-effect" element={<Clock />} />
         <Route path="/markup" element={<TodoList />} />
         <Route path="/curly-braces" element={<CurlyBraces />} />
