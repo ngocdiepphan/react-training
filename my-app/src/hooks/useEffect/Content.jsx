@@ -37,6 +37,12 @@ export default function Content() {
         <h3 className="title">Implementation of screen size example</h3>
         <Size />
       </section>
+
+      <section>
+        <h3 className="title">Implementation of Timer example</h3>
+        <CountDown />
+      </section>
+
       {tabs.map((tab) => (
         <button
           key={tab}
@@ -86,6 +92,24 @@ function Size() {
   return (
     <>
       <h2>Width: {width}</h2>
+    </>
+  );
+}
+
+function CountDown() {
+  const [countdown, setCountdown] = useState(180);
+
+  useEffect(() => {
+    const timerId = setInterval(() => {
+      setCountdown((c) => c - 1);
+    }, 1000);
+
+    return () => clearInterval(timerId);
+  });
+
+  return (
+    <>
+      <h3>Countdown: {countdown}</h3>
     </>
   );
 }

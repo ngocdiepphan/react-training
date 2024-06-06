@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Content from "./Content";
+import Cleanup from "./Cleanup";
 
 function Clock() {
   const [time, setTime] = useState(new Date());
@@ -24,6 +25,10 @@ function Clock() {
           <li>
             <h3 className="item">useEffect(callback, [])</h3>
             <Content />
+          </li>
+          <li>
+            <h3 className="item">useEffect(callback, [deps])</h3>
+            <Cleanup />
           </li>
         </ol>
       </section>
