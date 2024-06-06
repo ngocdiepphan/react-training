@@ -6,9 +6,10 @@ export default function Content() {
   const [title, setTitle] = useState("");
   const [posts, setPosts] = useState([]);
   const [type, setType] = useState("posts");
+  const [showGoToTop, setShowGoToTop] = useState(false);
 
   useEffect(() => {
-    console.log(type); // Sử dụng trực tiếp console.log
+    console.log(type);
     fetch(`https://jsonplaceholder.typicode.com/${type}`)
       .then((res) => res.json())
       .then((posts) => {
@@ -16,15 +17,31 @@ export default function Content() {
       });
   }, [type]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 200) {
+        setShowGoToTop(true);
+      } else {
+        setShowGoToTop(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
+      <section>
+        <h3 className="title">Implementation of screen size example</h3>
+        <Size />
+      </section>
       {tabs.map((tab) => (
         <button
           key={tab}
           style={
-            type === tab ? {
-              color: "green",
-              backgroundColor: "violet" } : {}
+            type === tab ? { color: "green", backgroundColor: "violet" } : {}
           }
           onClick={() => setType(tab)}
         >
@@ -37,6 +54,38 @@ export default function Content() {
           <li key={post.id}>{post.title || post.name}</li>
         ))}
       </ul>
+      {showGoToTop && (
+        <button
+          style={{
+            position: "fixed",
+            right: 20,
+            bottom: 20,
+          }}
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          Go to top
+        </button>
+      )}
+    </>
+  );
+}
+
+function Size() {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  return (
+    <>
+      <h2>Width: {width}</h2>
     </>
   );
 }
