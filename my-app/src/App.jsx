@@ -17,6 +17,7 @@ import { Key } from './components/Describing/Rendering/RenderList/RenderKey';
 import Purity from "./components/Describing/KeepComponents/Purity";
 import Tree from "./components/Describing/RenderingTree/index";
 import RespondEvent from "./components/AddInteract/index";
+import UseRef from "./hooks/useRef";
 
 function App() {
   return (
@@ -74,6 +75,9 @@ function App() {
           <li>
             <Link to="/responding-event">Adding interactivity</Link>
           </li>
+          <li>
+            <Link to="/useRef">useRef</Link>
+          </li>
         </ul>
       </nav>
       <Routes>
@@ -94,6 +98,7 @@ function App() {
         <Route path="/keeping-component" element={<Purity />} />
         <Route path="/rendering-tree" element={<Tree />} />
         <Route path="/responding-event" element={<RespondEvent />} />
+        <Route path="/useRef" element={<UseRef />} />
       </Routes>
     </Router>
   );
