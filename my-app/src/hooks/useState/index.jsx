@@ -1,5 +1,4 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
 import { Count } from "./Counter";
 import CounterNumber from "./CounterNumber";
 import './useState.css';
