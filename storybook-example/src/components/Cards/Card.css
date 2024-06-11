@@ -1,0 +1,38 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #060606;
+}
+
+.card {
+  border: 1px solid #060606;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(224, 17, 17, 0.1);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-header {
+  margin: 0 0 8px;
+  font-size: 2em;
+}
+
+.card-title {
+  margin: 0 0 8px;
+  font-size: 1.5em;
+}
+
+.card-description {
+  margin: 0;
+  color: #555;
+}

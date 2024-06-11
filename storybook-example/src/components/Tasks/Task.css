@@ -1,0 +1,43 @@
+.list-item {
+  background-color: rgb(55, 197, 225);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 30px;
+}
+
+.pin-button .icon-star {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.text {
+  width: 200px;
+  height: 30px;
+}
+
+.pin-button .icon-star {
+  background-image: url('../../assets/icon/star-sharp-svgrepo-com.svg');
+}
+
+.pin-button:hover .icon-star {
+  background-image: url('../../assets/icon/star-svgrepo-com.svg');
+}
+
+.TASK_PINNED .title input[type="text"] {
+  color: #ff8b00;
+}
+
+.TASK_ARCHIVED {
+  background-color: #f3f3f3;
+}
+
+.TASK_ARCHIVED .title input[type="text"] {
+  text-decoration: line-through;
+  color: #aaa;
+}
