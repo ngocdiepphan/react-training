@@ -7,7 +7,7 @@ export default function Task({
   onPinTask,
 }) {
   return (
-    <div className={`list-item ${state}`}>
+    <div className={`list-items ${state}`}>
       <label
         htmlFor={`archiveTask-${id}`}
         aria-label={`archiveTask-${id}`}

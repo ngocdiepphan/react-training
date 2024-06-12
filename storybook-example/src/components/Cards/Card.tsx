@@ -1,6 +1,7 @@
 import React from "react";
 import "./Card.css";
 import CardProps from "./type";
+import '../../../build/input.css';
 
 const Card: React.FC<CardProps> = ({
   width,
@@ -10,7 +11,7 @@ const Card: React.FC<CardProps> = ({
   description,
 }) => {
   return (
-    <div style={{ width: `${width}px` }} className="item">
+    <div style={{ width: `${width}px` }} className="text-center font-bold">
       <img src={image} alt={title} />
       <div>
         <h2>{header}</h2>
