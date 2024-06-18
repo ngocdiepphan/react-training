@@ -4,7 +4,7 @@
 - Getting started with React Basic and using Storybook
 
 ## Design
-- [Recipes-Food] (https://www.figma.com/design/DWYotBgel4W4TWCjTHkzrX/Recipe-Design?node-id=4-2987)
+- [Recipes-Food](https://www.figma.com/design/DWYotBgel4W4TWCjTHkzrX/Recipe-Design?node-id=4-2987)
 
 ## Team size
 - 1 developer (Diep Phan)
@@ -13,7 +13,7 @@
 - 23 day (17 June 2024 - 17 July 2024)
 
 ## Task management
-- [Project-GitHub] (https://github.com/users/ngocdiepphan/projects/10/views/1)
+- [Project-GitHub](https://github.com/users/ngocdiepphan/projects/10/views/1)
 
 ## Technical and tools
 - HTML and Tailwind CSS
@@ -37,7 +37,7 @@
 - tailwindcss: ^3.4.4
 
 ## Install repository
-Open Windows PowerShell or cmd or [Windows-Terminal] (https://apps.microsoft.com/detail/9n0dx20hk701?rtc=1&activetab=pivot%3Aoverviewtab&hl=en-gb&gl=GB)
+Open Windows PowerShell or cmd or [Windows-Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?rtc=1&activetab=pivot%3Aoverviewtab&hl=en-gb&gl=GB)
 
 - Step 01: Clone repository with HTTPS:
 ```
