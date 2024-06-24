@@ -1,9 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import InputField from "../../../Inputs/TextField";
 import Button from "../../../Inputs/Buttons/Submit";
 
 const SignInForm: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleSignIn = () => {
+    navigate("/homepage");
+  };
+  
   return (
     <div className="bg-gray-100 min-h-screen flex justify-center">
       <form className="bg-white p-8 rounded-lg shadow-md mt-8 mb-64 w-80 md:w-96 lg:w-120 mx-4">
@@ -18,7 +24,7 @@ const SignInForm: React.FC = () => {
             name="password"
           />
         </div>
-        <Button type="submit">Sign In</Button>
+        <Button type="submit"  onClick={handleSignIn}>Sign In</Button>
         <div id="display-data"></div>
         <Link
           to="/sign-up"
