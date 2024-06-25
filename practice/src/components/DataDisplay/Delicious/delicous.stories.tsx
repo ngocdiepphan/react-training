@@ -1,14 +1,13 @@
 import React from 'react';
 import { StoryFn, Meta } from '@storybook/react';
-import Banner from './index';
+import Delicious from './index'; 
 
 export default {
-  title: 'Components/Banner',
-  component: Banner,
-  id: 'banner'
+  title: 'Components/Delicious',
+  component: Delicious,
 } as Meta;
 
-const Template: StoryFn = (args) => <Banner {...args} />;
+const Template: StoryFn = (args) => <Delicious {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {};
