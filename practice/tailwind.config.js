@@ -53,6 +53,12 @@ module.exports = {
         '7xl': '45px',
         '8xl': '50px',
         '9xl': '76px',
+      },
+      lineHeight: {
+        'xs': '1.2rem',
+        'sm': '1.5rem',
+        'lg': '1.56rem',
+        'xl': '1.58rem',
       }
     },
   },
