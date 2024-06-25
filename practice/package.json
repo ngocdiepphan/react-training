@@ -13,7 +13,6 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@storybook/react": "^8.1.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1"
@@ -26,6 +25,7 @@
     "@storybook/addon-mdx-gfm": "8.1.10",
     "@storybook/addon-onboarding": "^8.1.10",
     "@storybook/blocks": "^8.1.10",
+    "@storybook/react": "^8.1.10",
     "@storybook/react-vite": "^8.1.10",
     "@storybook/test": "^8.1.10",
     "@types/react": "^18.2.66",
