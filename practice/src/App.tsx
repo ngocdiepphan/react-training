@@ -5,8 +5,8 @@ import {
   Routes,
   Navigate,
 } from 'react-router-dom';
-import SignInForm from './components/DataDisplay/Authen/SignIn/SignIn';
-import SignUpForm from './components/DataDisplay/Authen/SignUp/SignUp';
+import SignInForm from './components/DataDisplay/Auth/SignIn/index';
+import SignUpForm from './components/DataDisplay/Auth/SignUp/index';
 import HomePage from './pages/homepage/homepage';
 
 function App() {

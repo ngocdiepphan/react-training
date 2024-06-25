@@ -1,6 +1,6 @@
 import React from 'react';
 import { StoryFn, Meta } from '@storybook/react';
-import SignUpForm from './SignUp';
+import SignUpForm from './index';
 
 export default {
   title: 'Components/SignUpForm',

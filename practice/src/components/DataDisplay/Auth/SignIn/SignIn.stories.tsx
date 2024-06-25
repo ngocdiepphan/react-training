@@ -1,12 +1,12 @@
 import React from 'react';
 import { StoryFn, Meta } from '@storybook/react';
 import { MemoryRouter } from 'react-router-dom';
-import SignInForm from './SignIn';
+import SignInForm from './index';
 
 export default {
   title: 'Components/SignInForm',
   component: SignInForm,
-  decorators: [(Story) => <MemoryRouter><Story /></MemoryRouter>], 
+  decorators: [(Story) => <MemoryRouter><Story /></MemoryRouter>],
   argTypes: {},
 } as Meta;
 

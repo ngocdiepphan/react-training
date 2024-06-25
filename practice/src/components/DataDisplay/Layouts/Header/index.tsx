@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../../Authen/Navbar/Navbar";
+import Navbar from "../../Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import SignInForm from "@/components/DataDisplay/Authen/SignIn/SignIn";
+import SignInForm from "@/components/DataDisplay/Auth/SignIn";
 
 const Header: React.FC = () => {
   return (

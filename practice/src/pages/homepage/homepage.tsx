@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../../components/DataDisplay/Layouts/Header/Header";
+import Header from "../../components/DataDisplay/Layouts/Header";
 
 const HomePage: React.FC = () => {
   return (

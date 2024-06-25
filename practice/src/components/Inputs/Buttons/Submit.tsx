@@ -1,16 +1,16 @@
 import React from "react";
 
-interface ButtonProps {
+export interface BtnSubmitProps {
   type: "submit" | "button" | "reset";
-  children: String;
+  children: string;
   onClick?: () => void;
 }
 
-const Button: React.FC<ButtonProps> = ({ type, onClick, children }) => {
+const BtnSubmit: React.FC<BtnSubmitProps> = ({ type, onClick, children }) => {
   return (
     <button
       type={type}
-      className={`mt-5 font-serif bg-teal-500 text-white font-semibold py-3 px-4 w-full rounded-md hover:bg-teal-600`}
+      className="mt-5 font-serif bg-teal-500 text-white font-semibold py-3 px-4 w-full rounded-md hover:bg-teal-600"
       onClick={onClick}
     >
       {children}
@@ -18,4 +18,4 @@ const Button: React.FC<ButtonProps> = ({ type, onClick, children }) => {
   );
 };
 
-export default Button;
+export default BtnSubmit;
