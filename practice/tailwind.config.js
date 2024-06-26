@@ -62,6 +62,7 @@ module.exports = {
       backgroundColor: {
         primary: '#fff',
         secondary: '#ff642b',
+        tertiary: '#f9f9f9',
       },
       text: {
         'xs': '12px',
