@@ -50,9 +50,11 @@ module.exports = {
         '250': '250px',
         '278': '278px',
         '318': '318px',
+        '331': '331px',
         '340': '340px',
         '362': '362',
         '370': '370px',
+        '420': '420px',
         '500': '500px',
       },
       colors: {
@@ -63,6 +65,7 @@ module.exports = {
         primary: '#fff',
         secondary: '#ff642b',
         tertiary: '#f9f9f9',
+        quaternary: '#ff642f',
       },
       text: {
         'xs': '12px',
