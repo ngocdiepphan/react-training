@@ -18,7 +18,7 @@ export const recipe = [
       "Preheat your oven to 175°C (350°F).",
       "In a food processor, blend the graham crackers into fine crumbs.",
       "Mix the graham cracker crumbs with the melted butter until evenly coated.",
-      "Press the mixture into the bottom of a 23cm (9-inch) springform pan to form a crust.",
+      "Press the mixture into the bottom of a 23cm (9-inch) spring form pan to form a crust.",
       "Bake the crust for 10 minutes, then set aside to cool.",
       "In a large mixing bowl, beat the cream cheese until smooth and creamy.",
       "Add the granulated sugar and mix until well combined.",
@@ -32,7 +32,7 @@ export const recipe = [
       "In a small saucepan, heat the strawberry jam over low heat until it becomes liquid.",
       "Arrange the sliced strawberries on top of the cooled cheesecake.",
       "Pour the warmed strawberry jam over the strawberries to glaze them.",
-      "Remove the cheesecake from the springform pan.",
+      "Remove the cheesecake from the spring form pan.",
       "Slice and serve chilled. Enjoy your homemade Strawberry Cream Cheesecake!"
     ],
     "nutrition": [
