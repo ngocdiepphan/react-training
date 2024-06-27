@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/DataDisplay/Layouts/Header";
-import NutritionFacts from "../../components/DataDisplay/Nutrition/index"
 import { recipe } from "@/data";
+import NutritionFacts from "@/components/DataDisplay/Nutrition/index"
 
 
 const HomePage: React.FC = () => {
