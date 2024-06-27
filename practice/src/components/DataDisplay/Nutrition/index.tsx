@@ -1,6 +1,6 @@
 import React from 'react';
 import NutritionItem from '../NutritionItem/index';
-import { NutritionFact } from '@/type';
+import { NutritionFact } from '@/type/recipe';
 
 export interface NutritionFactsProps {
   data: NutritionFact[];

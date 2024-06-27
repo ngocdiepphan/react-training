@@ -1,7 +1,7 @@
 import React from 'react';
 import { StoryFn, Meta } from '@storybook/react';
 import NutritionFacts, { NutritionFactsProps } from './index';
-import { recipe } from '@/data';
+import { recipe } from '@/mocks/recipe';
 
 export default {
   title: 'Components/NutritionFacts',
