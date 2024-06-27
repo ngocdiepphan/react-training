@@ -1,20 +1,19 @@
-import React from "react";
-import NutritionItem from "../NutritionItem/index";
+import React from 'react';
+import NutritionItem from '../NutritionItem/index';
+import { NutritionFact } from '@/type';
 
-const NutritionFacts: React.FC = () => {
+export interface NutritionFactsProps {
+  data: NutritionFact[];
+}
+
+const NutritionFacts: React.FC<NutritionFactsProps> = ({ data }) => {
   return (
     <article className="nutrition bg-tertiary p-24 mt-50">
       <h5 className="font-serif text-xl md:text-3xl">Nutrition Facts</h5>
       <ul>
-        <NutritionItem label="Calories" value="350" />
-        <NutritionItem label="Total Fat" value="20g" />
-        <NutritionItem label="Saturated Fat" value="5g" />
-        <NutritionItem label="Cholesterol" value="80mg" />
-        <NutritionItem label="Sodium" value="800mg" />
-        <NutritionItem label="Total Carbohydrate" value="15g" />
-        <NutritionItem label="Dietary Fiber" value="5g" />
-        <NutritionItem label="Total Sugars" value="3g" />
-        <NutritionItem label="Protein" value="30g" />
+        {data.map((item, index) => (
+          <NutritionItem key={index} label={item.label} value={item.value} />
+        ))}
       </ul>
     </article>
   );
