@@ -1,7 +1,7 @@
 export interface Recipe {
   name: string;
   description: string;
-  ingredient: string[];
+  ingredient: IngredientProps[];
   instruction: string[];
   nutrition: NutritionFact[];
   creator: string;
@@ -15,4 +15,8 @@ export interface Recipe {
 export interface NutritionFact {
   label: string;
   value: string;
+}
+
+export interface IngredientProps {
+  ingredients: string[];
 }
