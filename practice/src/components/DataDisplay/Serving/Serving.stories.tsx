@@ -7,7 +7,9 @@ export default {
   component: Serving,
 } as Meta;
 
-const Template: StoryFn = (args) => <Serving {...args} />;
+const Template: StoryFn<{ serving: string }> = (args) => <Serving {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+  serving: "4 people",
+};

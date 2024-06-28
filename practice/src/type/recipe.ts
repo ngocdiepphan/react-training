@@ -10,6 +10,7 @@ export interface Recipe {
   ratings: number;
   createdAt: number;
   id: string;
+  prepTime: string;
 }
 
 export interface NutritionFact {
