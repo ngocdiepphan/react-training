@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, StoryFn } from "@storybook/react";
-import BtnFeedback from "./index"; 
+import BtnFeedback from "./index";
 
 export default {
   title: "Components/BtnFeedback",

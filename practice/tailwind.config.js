@@ -60,6 +60,7 @@ module.exports = {
       colors: {
         primary: '#000',
         secondary: '#7f7f7f',
+        tertiary: '#ff642f',
       },
       backgroundColor: {
         primary: '#fff',
@@ -72,7 +73,7 @@ module.exports = {
         'sm': '14px',
         'lg': '16px',
         'xl': '17px'
-      },
+      }
     },
   },
   plugins: [],
