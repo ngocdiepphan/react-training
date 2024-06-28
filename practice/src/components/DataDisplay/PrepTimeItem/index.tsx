@@ -1,6 +1,6 @@
 import React from "react";
 
-interface PrepTimeItemProps {
+export interface PrepTimeItemProps {
   prepTime: string;
 }
 
