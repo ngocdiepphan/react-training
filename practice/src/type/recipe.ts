@@ -22,5 +22,8 @@ export interface IngredientProps {
 }
 
 export interface InstructionProps {
-  instruction: string[];
+  instruction: {
+    step: number;
+    description: string;
+  }[];
 }
