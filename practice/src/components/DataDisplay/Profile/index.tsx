@@ -2,12 +2,16 @@ import React from "react";
 import InfoUser from "@/components/DataDisplay/InfoUser";
 import Reply from "@/components/DataDisplay/Reply";
 import Favorite from "@/components/DataDisplay/Favorite";
-import { profileData } from "@/mocks/profile";
+import { Profile } from "@/type/profile";
 
-const Profile: React.FC = () => {
+export interface ProfilesProps {
+  profiles: Profile[];
+}
+
+const Profiles: React.FC<ProfilesProps> = ({ profiles }) => {
   return (
     <article className="my-35">
-      {profileData.map((profile) => (
+      {profiles.map((profile) => (
         <div key={profile.id} className="flex flex-col gap-20">
           <InfoUser
             id={profile.id}
@@ -32,4 +36,4 @@ const Profile: React.FC = () => {
   );
 };
 
-export default Profile;
+export default Profiles;
