@@ -3,4 +3,5 @@ export interface ProfileProps {
   name: string;
   status: string;
   img: string;
+  reply: number;
 }
