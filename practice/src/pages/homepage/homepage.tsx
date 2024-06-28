@@ -5,7 +5,8 @@ import NutritionFacts from "@/components/DataDisplay/Nutrition/index";
 import Ingredient from "@/components/DataDisplay/Ingredient";
 import Instruction from "@/components/DataDisplay/Instruction";
 import PrepTime from "@/components/DataDisplay/PrepTime/index";
-import Profile from "@/components/DataDisplay/Profile";
+import { profileData } from "@/mocks/profile";
+import Profiles from "@/components/DataDisplay/Profile/index";
 
 const HomePage: React.FC = () => {
   const recipeData = recipe[1];
@@ -20,7 +21,7 @@ const HomePage: React.FC = () => {
       <Ingredient ingredients={ingredientData} />
       <Instruction instruction={instructionData} />
       <PrepTime />
-      <Profile />
+      <Profiles profiles={profileData} />
     </div>
   );
 };

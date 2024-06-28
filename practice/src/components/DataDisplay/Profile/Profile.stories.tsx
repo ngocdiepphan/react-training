@@ -1,16 +1,16 @@
 import React from "react";
-import Profile from "./index";
+import Profiles from "./index";
 import { profileData } from "@/mocks/profile";
 import { Meta, StoryFn } from "@storybook/react";
 
 export default {
   title: "Components/Profile",
-  component: Profile,
+  component: Profiles,
 } as Meta;
 
-const Template: StoryFn = () => <Profile />;
+const Template: StoryFn<typeof Profiles> = (args) => <Profiles {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  profileData: profileData,
+  profiles: profileData,
 };

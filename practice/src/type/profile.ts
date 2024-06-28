@@ -1,4 +1,4 @@
-export interface ProfileProps {
+export interface Profile {
   id: number;
   name: string;
   status: string;
