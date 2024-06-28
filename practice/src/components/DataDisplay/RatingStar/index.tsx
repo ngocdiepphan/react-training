@@ -6,11 +6,14 @@ export interface Star {
 }
 
 const Rating: React.FC<Star> = ({ ratings }) => {
-  const renderRating = (ratings: number): JSX.Element[] => {
+  const renderRating = (ratings: number) => {
     const stars = [];
     for (let i = 0; i < ratings; i++) {
       stars.push(
-        <img key={i} className="w-14 h-14" src={star} alt="Icon star" />,
+        <img key={i}
+        className="w-14 h-14"
+        src={star}
+        alt="Icon star" />,
       );
     }
     return stars;
