@@ -7,7 +7,9 @@ export default {
   component: PrepTimeItem,
 } as Meta;
 
-const Template: StoryFn = (args) => <PrepTimeItem {...args} />;
+const Template: StoryFn<{ prepTime: string }> = (args) => <PrepTimeItem {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+  prepTime: "15 min",
+};

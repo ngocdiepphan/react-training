@@ -51,7 +51,12 @@ export const recipe = [
     "category": "Desserts",
     "ratings": 52,
     "createdAt": 1719397875,
-    "id": "1"
+    "id": "1",
+    "prepTime": {
+      "min": "15 min",
+      "max": "20 max"
+    },
+    serving: "4 people"
   },
   {
     "name": "Caramel Strawberry Milkshake",
@@ -90,6 +95,11 @@ export const recipe = [
     "category": "Beverages",
     "ratings": 3,
     "createdAt": 1719397975,
-    "id": "2"
+    "id": "2",
+    "prepTime": {
+      "min": "5 min",
+      "max": "10 max"
+    },
+    serving: "3 people"
   }
 ];
