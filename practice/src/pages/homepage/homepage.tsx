@@ -8,6 +8,7 @@ import PrepTime from "@/components/DataDisplay/PrepTime/index";
 import InfoUser from "@/components/DataDisplay/InfoUser/index";
 import { profileData } from "@/mocks/profile";
 import Reply from "@/components/DataDisplay/Reply/index";
+import Favorite from "@/components/DataDisplay/Favorite";
 
 const HomePage: React.FC = () => {
   const recipeData = recipe[1];
@@ -32,6 +33,7 @@ const HomePage: React.FC = () => {
             reply={profile.reply}
           />
           <Reply replyCount={profile.reply} />
+          <Favorite favoriteCount={profile.favorite} />
         </div>
       ))}
     </div>
