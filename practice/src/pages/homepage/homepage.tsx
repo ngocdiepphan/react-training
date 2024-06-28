@@ -7,6 +7,7 @@ import Instruction from "@/components/DataDisplay/Instruction";
 import PrepTime from "@/components/DataDisplay/PrepTime/index";
 import { profileData } from "@/mocks/profile";
 import Profiles from "@/components/DataDisplay/Profile/index";
+import Feedback from "@/components/DataDisplay/Feedback";
 
 const HomePage: React.FC = () => {
   const recipeData = recipe[1];
@@ -22,6 +23,7 @@ const HomePage: React.FC = () => {
       <Instruction instruction={instructionData} />
       <PrepTime />
       <Profiles profiles={profileData} />
+      <Feedback />
     </div>
   );
 };
