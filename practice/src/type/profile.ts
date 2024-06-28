@@ -4,4 +4,6 @@ export interface ProfileProps {
   status: string;
   img: string;
   reply: number;
+  favorite: number;
+  comment: string;
 }
