@@ -1,6 +1,6 @@
 import React from "react";
 
-interface DrawerItemProps {
+export interface DrawerItemProps {
   title: string;
   type: "user" | "recipe";
   image?: string;
@@ -8,10 +8,10 @@ interface DrawerItemProps {
 
 const DrawerItem: React.FC<DrawerItemProps> = ({ title, type, image }) => {
   return (
-    <li className={`navigation__item ${type}`} data-id={type}>
-      {image && type === "recipe" && <img className="w-14 h-14" src={image} alt={`Icon ${type}`} />}
-      <p className="drawer__title">{title}</p>
-    </li>
+    <li className={`flex flex-row gap-10 pl-8 h-30 items-center my-30 hover:bg-hover hover:scale-110 ${type}`} data-id={type}>
+    <img className="w-14 h-14 hover:scale-150" src={image} alt={`Icon ${type}`} />
+    <p className="text-white text-base">{title}</p>
+  </li>
   );
 };
 
