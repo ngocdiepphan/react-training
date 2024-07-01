@@ -7,7 +7,7 @@ const SignInForm: React.FC = () => {
   const navigate = useNavigate();
 
   const handleSignIn = () => {
-    navigate("/homepage");
+    navigate("/dashboard");
   };
 
   return (

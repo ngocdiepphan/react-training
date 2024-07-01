@@ -10,7 +10,7 @@ export interface ButtonProps {
     | "loadComment"
     | "post"
     | "submit"
-    | "add";
+    | "add"
   children?: string | any;
   onClick?: () => void;
   icon?: string;
