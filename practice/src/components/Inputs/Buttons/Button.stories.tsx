@@ -39,3 +39,17 @@ Join.args = {
   variant: "join",
   children: "join",
 };
+
+export const LoadComment = Template.bind({});
+LoadComment.args = {
+  type: "button",
+  variant: "loadComment",
+  children: "Load more 25 comment",
+};
+
+export const Post = Template.bind({});
+Post.args = {
+  type: "button",
+  variant: "post",
+  children: "Post comment",
+};

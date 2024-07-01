@@ -31,6 +31,12 @@ const HomePage: React.FC = () => {
       <Button type="button" variant="primary">
         Load More
       </Button>
+      <Button type="button" variant="loadComment">
+        Load 25 more comments
+      </Button>
+      <Button type="button" variant="post">
+        Post comment
+      </Button>
     </div>
   );
 };
