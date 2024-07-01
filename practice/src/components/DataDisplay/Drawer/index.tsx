@@ -8,7 +8,7 @@ import iconRecipe from "@/assets/images/dashboards/product-preview.png";
 const Drawer: React.FC = () => {
   return (
     <div className="flex-col gap-20 w-212  bg-secondaryDrawer hidden md:block">
-      <div className="p-20">
+      <div className="py-20 px-10">
         <Button type="button" variant="add" icon={iconNew}>
           New recipes
         </Button>
