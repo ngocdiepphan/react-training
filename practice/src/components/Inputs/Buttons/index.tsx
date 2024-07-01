@@ -9,9 +9,12 @@ export interface ButtonProps {
     | "join"
     | "loadComment"
     | "post"
-    | "submit";
-  children: string;
+    | "submit"
+    | "add";
+  children?: string | any;
   onClick?: () => void;
+  icon?: string;
+  iconHover?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -19,8 +22,10 @@ const Button: React.FC<ButtonProps> = ({
   variant,
   onClick,
   children,
+  icon,
 }) => {
-  const baseStyles = "font-sans items-center rounded-md cursor-pointer";
+  const baseStyles =
+    "flex flex-row justify-center gap-8 font-sans items-center rounded-md cursor-pointer";
   const pill = "rounded-md";
   const variantStyles = {
     primary:
@@ -34,12 +39,20 @@ const Button: React.FC<ButtonProps> = ({
     post: "w-208 h-37 border hover:bg-quaternary",
     submit:
       "mt-5 font-serif bg-teal-500 text-white py-3 px-4 w-full rounded-md hover:bg-teal-600 h-40",
+    add: "text-base bg-drawer w-160 h-30 hover:text-white hover:bg-hover",
   };
 
   const styles = `${baseStyles} ${variantStyles[variant]} ${pill}`;
 
   return (
     <button type={type} className={styles} onClick={onClick}>
+      {icon && (
+        <img
+          src={icon}
+          alt="Icon"
+          className="w-16 h-16 items-center hover:scale-150"
+        />
+      )}
       {children}
     </button>
   );

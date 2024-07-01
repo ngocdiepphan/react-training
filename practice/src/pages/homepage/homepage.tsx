@@ -9,7 +9,9 @@ import { profileData } from "@/mocks/profile";
 import Profiles from "@/components/DataDisplay/Profile/index";
 import Feedback from "@/components/DataDisplay/Feedback";
 import Rating from "@/components/DataDisplay/RatingStar";
-import Button from "@/components/Inputs/Buttons";
+import Button from "@/components/Inputs/Buttons/index";
+import iconNew from "@/assets/images/dashboards/add.svg";
+import newHover from "@/assets/images/dashboards/add-hover.svg";
 
 const HomePage: React.FC = () => {
   const recipeData = recipe[1];
@@ -36,6 +38,9 @@ const HomePage: React.FC = () => {
       </Button>
       <Button type="button" variant="post">
         Post comment
+      </Button>
+      <Button type="button" variant="add" icon={iconNew}>
+        New recipes
       </Button>
     </div>
   );
