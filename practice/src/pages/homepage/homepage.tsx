@@ -9,6 +9,7 @@ import { profileData } from "@/mocks/profile";
 import Profiles from "@/components/DataDisplay/Profile/index";
 import Feedback from "@/components/DataDisplay/Feedback";
 import Rating from "@/components/DataDisplay/RatingStar";
+import Button from "@/components/Inputs/Buttons";
 
 const HomePage: React.FC = () => {
   const recipeData = recipe[1];
@@ -27,6 +28,9 @@ const HomePage: React.FC = () => {
       <Profiles profiles={profileData} />
       <Feedback />
       <Rating ratings={ratingData} />
+      <Button type="button" variant="primary">
+        Load More
+      </Button>
     </div>
   );
 };

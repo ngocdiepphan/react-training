@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import InputField from "../../../Inputs/TextField";
-import Button from "../../../Inputs/Buttons/Submit";
+import Button from "../../../Inputs/Submit";
 
 const SignUpForm: React.FC = () => {
   return (

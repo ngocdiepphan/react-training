@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import InputField from "../../../Inputs/TextField";
-import Button from "../../../Inputs/Buttons/Submit";
+import Button from "../../../Inputs/Submit";
 
 const SignInForm: React.FC = () => {
   const navigate = useNavigate();
@@ -9,7 +9,7 @@ const SignInForm: React.FC = () => {
   const handleSignIn = () => {
     navigate("/homepage");
   };
-  
+
   return (
     <div className="bg-gray-100 min-h-screen flex justify-center">
       <form className="bg-white p-8 rounded-lg shadow-md mt-8 mb-64 w-80 md:w-96 lg:w-120 mx-4">
