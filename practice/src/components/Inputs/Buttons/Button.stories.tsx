@@ -1,6 +1,7 @@
 import React from "react";
 import { Meta, StoryFn } from "@storybook/react";
 import Button, { ButtonProps } from "./index";
+import iconNew from "@/assets/images/dashboards/add.svg";
 
 export default {
   title: "Components/Button",
@@ -37,14 +38,14 @@ export const BtnJoin = Template.bind({});
 BtnJoin.args = {
   type: "button",
   variant: "join",
-  children: "join",
+  children: "Join",
 };
 
 export const BtnLoadComment = Template.bind({});
 BtnLoadComment.args = {
   type: "button",
   variant: "loadComment",
-  children: "Load more 25 comment",
+  children: "Load more 25 comments",
 };
 
 export const BtnPost = Template.bind({});
@@ -52,4 +53,16 @@ BtnPost.args = {
   type: "button",
   variant: "post",
   children: "Post comment",
+};
+
+export const BtnNew = Template.bind({});
+BtnNew.args = {
+  type: "button",
+  variant: "add",
+  children: (
+    <>
+      <img src={iconNew} alt="New Icon" className="w-6 h-6 mr-2" />
+      New recipes
+    </>
+  ),
 };

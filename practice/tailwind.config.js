@@ -68,7 +68,9 @@ module.exports = {
         primary: '#fff',
         secondary: '#ff642b',
         tertiary: '#f9f9f9',
-        quaternary: '#ff642f',
+        quaternary: '#8fc1d1',
+        drawer: '#b9e4f2',
+        hover: '#1ca1c1',
       },
       text: {
         'xs': '12px',
