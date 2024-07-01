@@ -49,7 +49,7 @@ export const recipe = [
     "creator": "creator 1",
     "collection_id": 4,
     "category": "Desserts",
-    "ratings": 52,
+    "ratings": 4,
     "createdAt": 1719397875,
     "id": "1",
     "prepTime": {

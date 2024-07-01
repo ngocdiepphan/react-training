@@ -8,12 +8,14 @@ import PrepTime from "@/components/DataDisplay/PrepTime/index";
 import { profileData } from "@/mocks/profile";
 import Profiles from "@/components/DataDisplay/Profile/index";
 import Feedback from "@/components/DataDisplay/Feedback";
+import Rating from "@/components/DataDisplay/RatingStar";
 
 const HomePage: React.FC = () => {
   const recipeData = recipe[1];
   const nutritionData = recipeData.nutrition;
   const ingredientData = recipeData.ingredient;
   const instructionData = recipeData.instruction;
+  const ratingData = recipeData.ratings;
 
   return (
     <div>
@@ -24,6 +26,7 @@ const HomePage: React.FC = () => {
       <PrepTime />
       <Profiles profiles={profileData} />
       <Feedback />
+      <Rating ratings={ratingData} />
     </div>
   );
 };

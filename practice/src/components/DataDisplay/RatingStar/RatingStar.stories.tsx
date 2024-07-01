@@ -1,13 +1,15 @@
-import React from 'react';
-import { StoryFn, Meta } from '@storybook/react';
-import Rating from './index';
+import React from "react";
+import { StoryFn, Meta } from "@storybook/react";
+import Rating, { Star } from "./index";
 
 export default {
-  title: 'Components/Rating',
+  title: "Components/Rating",
   component: Rating,
 } as Meta;
 
-const Template: StoryFn = (args) => <Rating {...args} />;
+const Template: StoryFn<Star> = (args) => <Rating {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+  ratings: 5,
+};
