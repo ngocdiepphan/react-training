@@ -12,43 +12,43 @@ export default {
 
 const Template: StoryFn<ButtonProps> = (args) => <Button {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const BtnLoadMore = Template.bind({});
+BtnLoadMore.args = {
   type: "button",
   variant: "primary",
   children: "Load more",
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
+export const BtnRecipe = Template.bind({});
+BtnRecipe.args = {
   type: "button",
   variant: "secondary",
   children: "156 Recipes",
 };
 
-export const Feedback = Template.bind({});
-Feedback.args = {
+export const BtnFeedback = Template.bind({});
+BtnFeedback.args = {
   type: "button",
   variant: "feedback",
   children: "Share your feedback",
 };
 
-export const Join = Template.bind({});
-Join.args = {
+export const BtnJoin = Template.bind({});
+BtnJoin.args = {
   type: "button",
   variant: "join",
   children: "join",
 };
 
-export const LoadComment = Template.bind({});
-LoadComment.args = {
+export const BtnLoadComment = Template.bind({});
+BtnLoadComment.args = {
   type: "button",
   variant: "loadComment",
   children: "Load more 25 comment",
 };
 
-export const Post = Template.bind({});
-Post.args = {
+export const BtnPost = Template.bind({});
+BtnPost.args = {
   type: "button",
   variant: "post",
   children: "Post comment",
