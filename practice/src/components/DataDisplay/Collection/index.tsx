@@ -1,6 +1,6 @@
 import React from "react";
 import sushi from "@/assets/images/collections/sushi.png";
-import BtnRecipe from "@/components/Inputs/BtnRecipe";
+import Button from "@/components/Inputs/Buttons";
 
 const Collection: React.FC = () => {
   return (
@@ -11,7 +11,9 @@ const Collection: React.FC = () => {
           <p className="font-serif leading-36 font-normal w-318 h-72 text-3xl md:w-250 md:h-60 lg:w-340 lg:h-87 lg:text-4xl">
             Sushi Combos for your Next Party
           </p>
-          <BtnRecipe />
+          <Button type="button" variant="secondary">
+            156 Recipes
+          </Button>
         </div>
       </article>
     </>
