@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import InputField from "../../../Inputs/TextField";
-import Button from "../../../Inputs/Submit";
+import Button from "@/components/Inputs/Buttons/index";
 
 const SignUpForm: React.FC = () => {
   return (
-    <div className="bg-gray-100 min-h-screen flex justify-center">
+    <div className="bg-gray-100 min-h-screen flex justify-center pt-50">
       <form
-        className="bg-white p-8 rounded-lg shadow-md mt-8 mb-28 w-80 md:w-96 lg:w-120 mx-4 h-512px"
+        className="bg-white rounded-lg shadow-md mt-8 mb-28 w-318 h-450 mx-4 px-30 pt-20"
         id="form-sign-up"
       >
         <InputField label="Email" type="text" id="email" name="email" />
@@ -28,7 +28,9 @@ const SignUpForm: React.FC = () => {
           id="confirmPassword"
           name="confirmPassword"
         />
-        <Button type="submit">Sign Up</Button>
+        <Button type="submit" variant="submit">
+          Sign Up
+        </Button>
       </form>
     </div>
   );

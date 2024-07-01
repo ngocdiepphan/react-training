@@ -8,7 +8,8 @@ export interface ButtonProps {
     | "feedback"
     | "join"
     | "loadComment"
-    | "post";
+    | "post"
+    | "submit";
   children: string;
   onClick?: () => void;
 }
@@ -31,6 +32,8 @@ const Button: React.FC<ButtonProps> = ({
     join: "text-white bg-secondary border border-solid uppercase h-48 hover:bg-orange-500 md:w-129 md:h-66 md:rounded-tr-md md:rounded-br-md md:rounded-l-none border-white",
     loadComment: "w-full h-56 border hover:bg-quaternary",
     post: "w-208 h-37 border hover:bg-quaternary",
+    submit:
+      "mt-5 font-serif bg-teal-500 text-white py-3 px-4 w-full rounded-md hover:bg-teal-600 h-40",
   };
 
   const styles = `${baseStyles} ${variantStyles[variant]} ${pill}`;
