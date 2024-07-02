@@ -18,55 +18,51 @@ const FormAdd: React.FC = () => {
         </div>
         <div className="flex-col p-30 pt-0 ">
           <div className="flex flex-row items-center mb-20">
-          <InputField
-            label="Image"
-            type="text"
-            id="image"
-            name="Image"
-            variant="secondary"
-          />
+            <InputField
+              label="Image"
+              type="text"
+              id="image"
+              name="Image"
+              variant="secondary"
+            />
           </div>
           <div className="flex flex-row items-center mb-20">
-          <InputField
-            label="Name"
-            type="text"
-            id="name"
-            name="Name"
-            variant="secondary"
-          />
+            <InputField
+              label="Name"
+              type="text"
+              id="name"
+              name="Name"
+              variant="secondary"
+            />
           </div>
 
           <OptionCategory />
 
           <div className="flex flex-row items-center mb-20">
-         <InputField
-            label="Creator"
-            type="text"
-            id="creator"
-            name="Creator"
-            variant="secondary"
-          />
-
-         </div>
+            <InputField
+              label="Creator"
+              type="text"
+              id="creator"
+              name="Creator"
+              variant="secondary"
+            />
+          </div>
           <OptionRating />
           <div className="flex flex-row items-center mb-20">
-          <InputField
-            label="Description"
-            type="text"
-            id="description"
-            name="Description"
-            variant="secondary"
-          />
+            <InputField
+              label="Description"
+              type="text"
+              id="description"
+              name="Description"
+              variant="secondary"
+            />
           </div>
           <div className="flex justify-center">
-          <Button type="button" variant="save">
-            Save
-          </Button>
+            <Button type="button" variant="save">
+              Save
+            </Button>
           </div>
         </div>
-
-
-
       </form>
     </>
   );
