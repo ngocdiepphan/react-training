@@ -7,7 +7,8 @@ import {
 } from 'react-router-dom';
 import SignInForm from './components/DataDisplay/Auth/SignIn/index';
 import SignUpForm from './components/DataDisplay/Auth/SignUp/index';
-import HomePage from './pages/homepage/homepage';
+// import HomePage from './pages/homepage/homepage';
+import Dashboard from './pages/dashboards';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <Route path="/" element={<Navigate to="/sign-in" />} />
         <Route path="/sign-in" element={<SignInForm />} />
         <Route path="/sign-up" element={<SignUpForm />} />
-        <Route path="/homepage" element={<HomePage />} />
+        {/* <Route path="/homepage" element={<HomePage />} /> */}
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
 

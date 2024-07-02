@@ -48,6 +48,7 @@ module.exports = {
         '160': '160px',
         '180': '180px',
         '208': "208px",
+        '212': "212px",
         '250': '250px',
         '278': '278px',
         '318': '318px',
@@ -63,6 +64,7 @@ module.exports = {
         primary: '#000',
         secondary: '#7f7f7f',
         tertiary: '#ff642f',
+        hover: '#1ca1c1',
       },
       backgroundColor: {
         primary: '#fff',
@@ -71,6 +73,8 @@ module.exports = {
         quaternary: '#8fc1d1',
         drawer: '#b9e4f2',
         hover: '#1ca1c1',
+        secondaryDrawer: '#4a4e58',
+
       },
       text: {
         'xs': '12px',
