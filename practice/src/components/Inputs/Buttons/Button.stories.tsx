@@ -73,3 +73,10 @@ BtnSave.args = {
   variant: "save",
   children: "Save",
 };
+
+export const BtnDelete = Template.bind({});
+BtnDelete .args = {
+  type: "button",
+  variant: "save",
+  children: "Delete",
+};
