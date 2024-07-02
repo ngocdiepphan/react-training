@@ -76,7 +76,7 @@ module.exports = {
         hover: '#1ca1c1',
         secondaryDrawer: '#4a4e58',
         save: '#f4f5f9',
-
+        modal: '#d7ebf5'
       },
       text: {
         'xs': '12px',

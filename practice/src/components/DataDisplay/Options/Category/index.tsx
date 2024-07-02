@@ -1,11 +1,12 @@
 import React from "react";
-
+import InputField from "@/components/Inputs/TextField";
 const OptionCategory: React.FC = () => {
   return (
-    <>
+    <div className="flex flex-row items-center mb-20">
+      <label className="text-md w-80">Category</label>
       <select
         id="input_category"
-        className="border border-save w-180 p-8 outline-none h-40 cursor-pointer md:w-220 hover:border-hover"
+        className="border w-full border-save outline-none p-8 h-30 cursor-pointer md:w-220 hover:border-hover"
       >
         <option value=""></option>
         <option value="Pasta">Pasta</option>
@@ -15,7 +16,7 @@ const OptionCategory: React.FC = () => {
         <option value="Smoothies">Smoothies</option>
         <option value="Breakfast">Breakfast</option>
       </select>
-    </>
+    </div>
   );
 };
 

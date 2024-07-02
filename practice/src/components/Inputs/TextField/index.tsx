@@ -5,21 +5,44 @@ export interface InputFieldProps {
   type: string;
   id: string;
   name: string;
+  variant: "primary" | "secondary";
 }
 
-const InputField: React.FC<InputFieldProps> = ({ label, type, id, name }) => {
+const InputField: React.FC<InputFieldProps> = ({
+  label,
+  type,
+  id,
+  name,
+  variant,
+}) => {
+  const labelBaseStyle = "font-serif";
+  const inputBaseStyle = "border p-14 w-full";
+
+  const labelVariantStyles = {
+    primary: "block mb-10 text-start",
+    secondary: "text-md w-80",
+  };
+
+  const inputVariantStyles = {
+    primary: "border-gray-300 rounded-md px-10 py-8 w-full mb-16",
+    secondary: "border-save w-180 p-8 outline-none h-27 cursor-pointer md:w-220 hover:border-hover"
+  };
+
+  const labelStyles = `${labelBaseStyle} ${labelVariantStyles[variant]}`;
+  const inputStyles = `${inputBaseStyle} ${inputVariantStyles[variant]}`;
+
   return (
-    <div className="mb-4">
-      <label htmlFor={id} className="block font-serif mb-2 text-start">
+    <>
+    <label htmlFor={id} className={labelStyles}>
         {label}
       </label>
       <input
         id={id}
         name={name}
         type={type}
-        className="border border-gray-300 rounded-md px-3 py-2 w-full"
+        className={inputStyles}
       />
-    </div>
+    </>
   );
 };
 
