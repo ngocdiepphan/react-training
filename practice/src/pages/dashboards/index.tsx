@@ -2,6 +2,7 @@ import Drawer from "@/components/DataDisplay/Drawer/index";
 import Button from "@/components/Inputs/Buttons/index";
 import React from "react";
 import OptionCategory from "@/components/DataDisplay/Options/Category/index";
+import OptionRating from "@/components/DataDisplay/Options/Rating";
 const Dashboard: React.FC = () => {
   return (
     <>
@@ -10,6 +11,7 @@ const Dashboard: React.FC = () => {
         Save
       </Button>
       <OptionCategory />
+      <OptionRating />
     </>
   );
 };
