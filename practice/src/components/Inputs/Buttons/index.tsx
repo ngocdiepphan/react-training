@@ -11,6 +11,7 @@ export interface ButtonProps {
     | "post"
     | "submit"
     | "add"
+    | "save"
   children?: string | any;
   onClick?: () => void;
   icon?: string;
@@ -40,6 +41,7 @@ const Button: React.FC<ButtonProps> = ({
     submit:
       "mt-5 font-serif bg-teal-500 text-white py-3 px-4 w-full rounded-md hover:bg-teal-600 h-40",
     add: "text-base bg-drawer w-160 h-30 hover:text-white hover:bg-hover mx-20",
+    save: "border-none outline-none py-20 text-hover bg-save font-bold w-102 h-30 md:py-30 hover:text-white hover:bg-hover"
   };
 
   const styles = `${baseStyles} ${variantStyles[variant]} ${pill}`;
