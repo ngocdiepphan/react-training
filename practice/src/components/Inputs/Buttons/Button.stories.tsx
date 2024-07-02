@@ -66,3 +66,10 @@ BtnNew.args = {
     </>
   ),
 };
+
+export const BtnSave = Template.bind({});
+BtnSave.args = {
+  type: "button",
+  variant: "save",
+  children: "Save",
+};
