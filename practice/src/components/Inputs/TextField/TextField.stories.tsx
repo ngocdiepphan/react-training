@@ -9,8 +9,8 @@ export default {
 
 const Template: StoryFn<InputFieldProps> = (args) => <InputField {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const InputBorder = Template.bind({});
+InputBorder.args = {
   label: "Name",
   type: "text",
   id: "name",
@@ -18,8 +18,8 @@ Primary.args = {
   variant: "primary",
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
+export const InputForm = Template.bind({});
+InputForm.args = {
   label: "Category",
   type: "text",
   id: "category",
