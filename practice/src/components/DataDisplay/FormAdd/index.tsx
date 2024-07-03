@@ -58,7 +58,7 @@ const FormAdd: React.FC = () => {
             />
           </div>
           <div className="flex justify-center">
-            <Button type="button" variant="save">
+            <Button type="button" variant="confirm">
               Save
             </Button>
           </div>

@@ -19,10 +19,10 @@ const Panel: React.FC = () => {
       </div>
 
       <div className="flex flex-row gap-40 justify-end m-30">
-        <Button type="button" variant="save">
+        <Button type="button" variant="confirm">
           Delete
         </Button>
-        <Button type="button" variant="save">
+        <Button type="button" variant="confirm">
           Save
         </Button>
       </div>
