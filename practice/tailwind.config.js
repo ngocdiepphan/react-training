@@ -66,6 +66,7 @@ module.exports = {
         secondary: '#7f7f7f',
         tertiary: '#ff642f',
         hover: '#1ca1c1',
+        border: '#ccd7e6'
       },
       backgroundColor: {
         primary: '#fff',
