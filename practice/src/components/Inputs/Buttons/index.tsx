@@ -40,8 +40,8 @@ const Button: React.FC<ButtonProps> = ({
     post: "w-208 h-37 border hover:bg-quaternary",
     submit:
       "mt-5 font-serif bg-teal-500 text-white py-3 px-4 w-full rounded-md hover:bg-teal-600 h-40",
-    add: "text-base bg-drawer w-160 h-30 hover:text-white hover:bg-hover mx-20",
-    save: "border-none outline-none py-20 text-hover bg-save font-bold w-102 h-20 md:h-24  hover:text-white hover:bg-hover"
+    add: "text-base bg-drawerPrimary w-160 h-30 hover:text-white hover:bg-hoverPrimary mx-20",
+    save: "border-none outline-none py-20 text-hoverPrimary bg-buttonPrimary font-bold w-102 h-20 md:h-24  hover:text-white hover:bg-hoverPrimary"
   };
 
   const styles = `${baseStyles} ${variantStyles[variant]} ${pill}`;

@@ -11,7 +11,7 @@ const Panel: React.FC = () => {
             <img className="" src={iconBack} alt="Icon back" />
           </div>
           <div className="flex-grow flex justify-center">
-            <p className="py-20 cursor-pointer text-hover font-bold hover:text-white hover:bg-hover">
+            <p className="py-20 cursor-pointer text-hoverPrimary font-bold hover:text-white hover:bg-hoverPrimary">
               General
             </p>
           </div>
