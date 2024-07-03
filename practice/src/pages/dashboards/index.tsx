@@ -10,7 +10,7 @@ const Dashboard: React.FC = () => {
   return (
     <>
       <Drawer />
-      <Button type="button" variant="save">
+      <Button type="button" variant="confirm">
         Save
       </Button>
       <OptionCategory />

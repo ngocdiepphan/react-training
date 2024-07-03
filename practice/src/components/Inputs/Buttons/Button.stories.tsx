@@ -30,7 +30,7 @@ BtnRecipe.args = {
 export const BtnFeedback = Template.bind({});
 BtnFeedback.args = {
   type: "button",
-  variant: "feedback",
+  variant: "action",
   children: "Share your feedback",
 };
 
@@ -70,13 +70,13 @@ BtnNew.args = {
 export const BtnSave = Template.bind({});
 BtnSave.args = {
   type: "button",
-  variant: "save",
+  variant: "confirm",
   children: "Save",
 };
 
 export const BtnDelete = Template.bind({});
 BtnDelete .args = {
   type: "button",
-  variant: "save",
+  variant: "confirm",
   children: "Delete",
 };
