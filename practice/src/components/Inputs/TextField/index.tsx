@@ -25,7 +25,7 @@ const InputField: React.FC<InputFieldProps> = ({
 
   const inputVariantStyles = {
     primary: "border-gray-300 rounded-md px-10 py-8 w-full mb-16",
-    secondary: "border-save w-180 p-8 outline-none h-27 cursor-pointer md:w-220 hover:border-hover"
+    secondary: "border-buttonPrimary w-180 p-8 outline-none h-27 cursor-pointer md:w-220 hover:border-hoverPrimary"
   };
 
   const labelStyles = `${labelBaseStyle} ${labelVariantStyles[variant]}`;

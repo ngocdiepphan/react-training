@@ -6,7 +6,7 @@ const OptionRating: React.FC = () => {
     <label className="w-80">Rating</label>
       <select
         id="input_ratings"
-        className="border w-full border-save outline-none p-8 h-30 cursor-pointer md:w-220 hover:border-hover"
+        className="border w-full border-buttonPrimary outline-none p-8 h-30 cursor-pointer md:w-220 hover:border-hoverPrimary"
       >
         <option value="1">1</option>
         <option value="2">2</option>

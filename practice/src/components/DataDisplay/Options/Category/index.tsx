@@ -6,7 +6,7 @@ const OptionCategory: React.FC = () => {
       <label className="text-md w-80">Category</label>
       <select
         id="input_category"
-        className="border w-full border-save outline-none p-8 h-30 cursor-pointer md:w-220 hover:border-hover"
+        className="border w-full border-buttonPrimary outline-none p-8 h-30 cursor-pointer md:w-220 hover:border-hoverPrimary"
       >
         <option value=""></option>
         <option value="Pasta">Pasta</option>

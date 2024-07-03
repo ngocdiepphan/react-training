@@ -65,19 +65,19 @@ module.exports = {
         primary: '#000',
         secondary: '#7f7f7f',
         tertiary: '#ff642f',
-        hover: '#1ca1c1',
-        border: '#ccd7e6'
+        hoverPrimary: '#1ca1c1',
+        borderPrimary: '#ccd7e6'
       },
       backgroundColor: {
         primary: '#fff',
         secondary: '#ff642b',
         tertiary: '#f9f9f9',
         quaternary: '#8fc1d1',
-        drawer: '#b9e4f2',
-        hover: '#1ca1c1',
-        secondaryDrawer: '#4a4e58',
-        save: '#f4f5f9',
-        modal: '#d7ebf5'
+        drawerPrimary: '#33b6d5',
+        drawerSecondary: '#4a4e58',
+        hoverPrimary: '#1ca1c1',
+        buttonPrimary: '#f4f5f9',
+        modalPrimary: '#d7ebf5'
       },
       text: {
         'xs': '12px',

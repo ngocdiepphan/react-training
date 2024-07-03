@@ -9,7 +9,7 @@ const FormAdd: React.FC = () => {
   return (
     <>
       <form
-        className="show-form text-xs h-auto md:text-sm font-serif w-370 absolute bg-modal md:w-420 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+        className="show-form text-xs h-auto md:text-sm font-serif w-370 absolute bg-modalPrimary md:w-420 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         id="form-add-recipes"
       >
         <div className="flex items-center justify-between px-10 py-20 transition-all">
