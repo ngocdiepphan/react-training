@@ -84,6 +84,12 @@ module.exports = {
         'sm': '14px',
         'lg': '16px',
         'xl': '17px'
+      },
+      backgroundImage: {
+        'new': "url('/src/assets/images/dashboards/add-icon.svg')",
+        'userItem': "url('/src/assets/images/dashboards/user-icon.svg')",
+        'back': "url('/src/assets/images/dashboards/back-icon.svg')",
+        'recipeItem': "url('/src/assets/images/dashboards/recipe-icon.svg')",
       }
     },
   },
