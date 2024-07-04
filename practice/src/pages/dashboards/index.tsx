@@ -16,7 +16,7 @@ const Dashboard: React.FC = () => {
       </Button>
       <OptionCategory />
       <OptionRating />
-      {/* <FormAdd /> */}
+      <FormAdd />
       <Panel />
       <Toolbar />
     </>
