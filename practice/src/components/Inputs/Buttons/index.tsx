@@ -5,7 +5,7 @@ export interface ButtonProps {
   variant: "primary" | "secondary" | "action" | "join" | "loadComment" | "post" | "submit" | "add" | "confirm";
   children: string | JSX.Element;
   onClick?: () => void;
-  item?: string;
+  icon?: string;
   iconHover?: string;
 }
 
@@ -14,7 +14,7 @@ const Button: React.FC<ButtonProps> = ({
   variant,
   onClick,
   children,
-  item,
+  icon,
 }) => {
   const baseStyles =
     "flex flex-row justify-center gap-8 font-sans items-center rounded-md cursor-pointer";
@@ -37,11 +37,15 @@ const Button: React.FC<ButtonProps> = ({
   };
 
   const styles = `${baseStyles} ${variantStyles[variant]} ${pill}`;
-  const iconClass = item ? `bg-${item}` : `bg-${variant}`;
+  const iconClass = icon ? `bg-${icon}` : `bg-${variant}`;
 
   return (
     <button type={type} className={styles} onClick={onClick}>
-      <span className={`w-30 h-30 bg-no-repeat bg-center hover:scale-150 ${iconClass}`}></span>
+      {icon && (
+        <span
+          className={`w-30 h-30 bg-no-repeat bg-center hover:scale-150 ${iconClass}`}
+        ></span>
+      )}
       {children}
     </button>
   );
