@@ -86,12 +86,11 @@ module.exports = {
         'xl': '17px'
       },
       backgroundImage: {
-
-        'user-item': "url('/src/assets/images/dashboards/user-icon.svg')",
-        'back': "url('/src/assets/images/dashboards/back-icon.svg')",
-        'recipe-item': "url('/src/assets/images/dashboards/food-icon.svg')",
-        'close': "url('/src/assets/images/dashboards/close-icon.svg')",
-        'add-item': "url('/src/assets/images/dashboards/add-icon.svg')",
+        'user-item': 'url("assets/images/dashboards/user-icon.svg")',
+        'back': 'url("assets/images/dashboards/back-icon.svg")',
+        'recipe-item': 'url("assets/images/dashboards/food-icon.svg")',
+        'close': 'url("assets/images/dashboards/close-icon.svg")',
+        'add-item': 'url("assets/images/dashboards/add-icon.svg")',
       }
     },
   },
