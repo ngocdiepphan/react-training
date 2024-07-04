@@ -7,6 +7,7 @@ import FormAdd from "../../components/DataDisplay/FormAdd";
 import Panel from "../../components/DataDisplay/Panel";
 import Toolbar from "components/DataDisplay/Toolbar";
 import TableUser from "components/DataDisplay/Tables/TableUser";
+import TableRecipe from "components/DataDisplay/Tables/TableRecipe";
 
 const Dashboard: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const Dashboard: React.FC = () => {
       <Panel />
       <Toolbar />
       <TableUser />
+      <TableRecipe />
     </>
   );
 };

@@ -1,6 +1,7 @@
 export const recipe = [
   {
     "name": "Strawberry Cream Cheesecake",
+    "img": "http://localhost:1234/banner.cb63b542.png",
     "description": "A delicious and creamy cheesecake topped with fresh strawberries and a sweet strawberry glaze.",
     "ingredient": [
       "400g graham crackers",
@@ -60,6 +61,7 @@ export const recipe = [
   },
   {
     "name": "Caramel Strawberry Milkshake",
+    "img": "http://localhost:1234/soup.30943852.png",
     "description": "A sweet and creamy milkshake with the rich flavors of caramel and fresh strawberries.",
     "ingredient": [
       "250ml whole milk",
