@@ -15,12 +15,12 @@ export const UserItem = Template.bind({});
 UserItem.args = {
   title: 'User',
   type: 'user',
-  image: iconUser,
+  icon: iconUser,
 };
 
 export const RecipeItem = Template.bind({});
 RecipeItem.args = {
   title: 'Recipes',
   type: 'recipe',
-  image: iconRecipe,
+  icon: iconRecipe,
 };

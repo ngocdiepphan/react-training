@@ -91,6 +91,8 @@ module.exports = {
         'recipe-item': 'url("assets/images/dashboards/food-icon.svg")',
         'close': 'url("assets/images/dashboards/close-icon.svg")',
         'add-item': 'url("assets/images/dashboards/add-icon.svg")',
+        'menu': 'url("assets/images/header/menu.svg")',
+
       }
     },
   },

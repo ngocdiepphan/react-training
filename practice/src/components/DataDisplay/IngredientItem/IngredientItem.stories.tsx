@@ -1,8 +1,6 @@
 import React from 'react';
 import { StoryFn, Meta } from '@storybook/react';
 import IngredientItem, { IngredientItemProps } from './index';
-import { recipe } from '@/mocks/recipe';
-
 export default {
   title: 'Components/IngredientItem',
   component: IngredientItem,

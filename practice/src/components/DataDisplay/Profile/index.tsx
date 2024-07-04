@@ -1,8 +1,8 @@
 import React from "react";
-import InfoUser from "@/components/DataDisplay/InfoUser";
-import Reply from "@/components/DataDisplay/Reply";
-import Favorite from "@/components/DataDisplay/Favorite";
-import { Profile } from "@/type/profile";
+import InfoUser from "../InfoUser/index";
+import Reply from "../Reply/index";
+import Favorite from "../Favorite";
+import { Profile } from "../../../type/profile";
 
 export interface ProfilesProps {
   profiles: Profile[];

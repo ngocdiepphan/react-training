@@ -1,6 +1,6 @@
 import React from "react";
 import sushi from "@/assets/images/collections/sushi.png";
-import Button from "@/components/Inputs/Buttons";
+import Button from "../../Inputs/Buttons";
 
 const Collection: React.FC = () => {
   return (

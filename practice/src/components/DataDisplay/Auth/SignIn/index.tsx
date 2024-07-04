@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import InputField from "../../../Inputs/TextField";
-import Button from "@/components/Inputs/Buttons/index";
+import Button from "../../../Inputs/Buttons";
 
 const SignInForm: React.FC = () => {
   const navigate = useNavigate();

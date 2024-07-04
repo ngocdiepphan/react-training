@@ -1,8 +1,8 @@
 import React from "react";
-import PrepTimeItem from "@/components/DataDisplay/PrepTimeItem/index";
-import Serving from "@/components/DataDisplay/Serving/index";
+import PrepTimeItem from "../PrepTimeItem";
+import Serving from "../Serving";
 import iconPrint from "@/assets/images/recipe-details/print.svg";
-import { recipe } from "@/mocks/recipe";
+import { recipe } from "../../../mocks/recipe";
 
 const PrepTime: React.FC = () => {
   const recipeItem = recipe[1];

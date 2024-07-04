@@ -1,6 +1,6 @@
 import React from 'react';
 import IngredientItem from '../IngredientItem/index';
-import { IngredientProps } from '@/type/recipe';
+import { IngredientProps } from '../../../type/recipe';
 
 const Ingredient: React.FC<IngredientProps> = ({ ingredients }) => {
   return (

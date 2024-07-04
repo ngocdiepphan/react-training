@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import Drawer from '@/components/DataDisplay/Drawer';
+import Drawer from '../Drawer';
 
 export default {
   title: 'Components/Drawer',

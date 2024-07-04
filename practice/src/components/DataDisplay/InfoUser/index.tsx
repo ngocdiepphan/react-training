@@ -1,7 +1,7 @@
 import React from "react";
-import { ProfileProps } from "@/type/profile";
+import { Profile } from "../../../type/profile";
 
-const InfoUser: React.FC<ProfileProps> = ({ name, status, img }) => {
+const InfoUser: React.FC<Profile> = ({ name, status, img }) => {
   return (
     <article className="mt-35">
       <div className="flex flex-row gap-20 pt-35 border-t border-t-gray-300 hover:border-t-primary">

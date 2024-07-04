@@ -1,9 +1,8 @@
 import React from "react";
-import InputField from "@/components/Inputs/TextField";
+import InputField from "../../Inputs/TextField/index";
 import OptionCategory from "../Options/Category";
 import OptionRating from "../Options/Rating";
-import Button from "@/components/Inputs/Buttons";
-import iconClose from "@/assets/images/dashboards/close-icon.svg";
+import Button from "../../Inputs/Buttons";
 
 const FormAdd: React.FC = () => {
   return (
