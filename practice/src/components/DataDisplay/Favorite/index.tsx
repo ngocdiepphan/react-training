@@ -1,5 +1,4 @@
 import React from "react";
-import iconFavorite from "@/assets/images/recipe-details/favorite.svg";
 
 export interface FavoriteProps {
   favoriteCount: number;
@@ -8,7 +7,7 @@ export interface FavoriteProps {
 const Favorite: React.FC<FavoriteProps> = ({ favoriteCount }) => {
   return (
     <div className="flex flex-row gap-5">
-      <img className="" src={iconFavorite} alt="Icon favorite" />
+      <span className="bg-favorite w-16 h-14"></span>
       <p className="font-sans text-secondary text-xs">
         Favorite ({favoriteCount})
       </p>

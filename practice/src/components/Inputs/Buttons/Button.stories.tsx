@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta, StoryFn } from "@storybook/react";
 import Button, { ButtonProps } from "./index";
-import iconNew from "@/assets/images/dashboards/add.svg";
+import iconNew from "../../../../public/assets/images/dashboards/add.svg";
 
 export default {
   title: "Components/Button",

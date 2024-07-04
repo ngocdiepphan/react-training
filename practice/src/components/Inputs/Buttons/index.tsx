@@ -14,7 +14,7 @@ const Button: React.FC<ButtonProps> = ({
   variant,
   onClick,
   children,
-  icon,
+  icon
 }) => {
   const baseStyles =
     "flex flex-row justify-center gap-8 font-sans items-center rounded-md cursor-pointer";

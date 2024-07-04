@@ -1,5 +1,4 @@
 import React from "react";
-import star from "@/assets/images/delicious/star.svg";
 
 export interface Star {
   ratings: number;
@@ -10,10 +9,7 @@ const Rating: React.FC<Star> = ({ ratings }) => {
     const stars = [];
     for (let i = 0; i < ratings; i++) {
       stars.push(
-        <img key={i}
-        className="w-14 h-14"
-        src={star}
-        alt="Icon star" />,
+        <span className="bg-star w-14 h-14"></span>
       );
     }
     return stars;

@@ -4,9 +4,10 @@ export interface DrawerItemProps {
   title: string;
   type: string;
   icon?: string;
+  className?: string
 }
 
-const DrawerItem: React.FC<DrawerItemProps> = ({ title, type, icon }) => {
+const DrawerItem: React.FC<DrawerItemProps> = ({ title, type, icon ,className}) => {
   const iconClass = icon ? `bg-${icon}` : `bg-${type}`;
 
   return (

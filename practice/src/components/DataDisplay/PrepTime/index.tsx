@@ -1,7 +1,6 @@
 import React from "react";
 import PrepTimeItem from "../PrepTimeItem";
 import Serving from "../Serving";
-import iconPrint from "@/assets/images/recipe-details/print.svg";
 import { recipe } from "../../../mocks/recipe";
 
 const PrepTime: React.FC = () => {
@@ -11,7 +10,7 @@ const PrepTime: React.FC = () => {
       <PrepTimeItem prepTime={`${recipeItem.prepTime.min}`} />
       <PrepTimeItem prepTime={`${recipeItem.prepTime.max}`} />
       <Serving serving={recipeItem.serving} />
-      <img className="ml-32 w-18 h-20" src={iconPrint} alt="Icon print" />
+       <span className="bg-print w-20 h-22"></span>
     </ul>
   );
 };

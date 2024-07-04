@@ -1,5 +1,4 @@
 import React from "react";
-import iconReply from "@/assets/images/recipe-details/reply.svg";
 
 export interface ReplyProps {
   replyCount: number;
@@ -8,7 +7,7 @@ export interface ReplyProps {
 const Reply: React.FC<ReplyProps> = ({ replyCount }) => {
   return (
     <div className="flex flex-row gap-5">
-      <img className="" src={iconReply} alt="Icon reply" />
+      <span className="bg-reply w-14 h-24 bg-no-repeat"></span>
       <p className="font-sans text-secondary text-xs">Reply ({replyCount})</p>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import caramel from "@/assets/images/recipes/caramel-strawberry-milkshake.png";
+import caramel from "../../../../public/assets/images/recipes/caramel-strawberry-milkshake.png";
 
 const LastRecipe: React.FC = () => {
   return (

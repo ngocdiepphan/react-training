@@ -13,7 +13,6 @@ const FormAdd: React.FC = () => {
       >
         <div className="flex items-center justify-between px-10 py-20 transition-all">
           <p className="text-xl font-semibold text-gray-800">Add recipes</p>
-          {/* <img className="" src={iconClose} alt="Icon close" /> */}
           <span className="bg-close w-30 h-30 bg-no-repeat"></span>
         </div>
         <div className="flex-col p-30 pt-0 ">

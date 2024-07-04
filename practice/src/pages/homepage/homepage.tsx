@@ -1,15 +1,19 @@
 import React from "react";
 import Header from "../../components/DataDisplay/Layouts/Header";
-import { recipe } from "@/mocks/recipe";
-import NutritionFacts from "@/components/DataDisplay/Nutrition/index";
-import Ingredient from "@/components/DataDisplay/Ingredient";
-import Instruction from "@/components/DataDisplay/Instruction";
-import PrepTime from "@/components/DataDisplay/PrepTime/index";
-import { profileData } from "@/mocks/profile";
-import Profiles from "@/components/DataDisplay/Profile/index";
-import Feedback from "@/components/DataDisplay/Feedback";
-import Rating from "@/components/DataDisplay/RatingStar";
-import Button from "@/components/Inputs/Buttons/index";
+import { recipe } from "../../mocks/recipe";
+import NutritionFacts from "../../components/DataDisplay/Nutrition/index";
+import Ingredient from "../../components/DataDisplay/Ingredient";
+import Instruction from "../../components/DataDisplay/Instruction";
+import PrepTime from "../../components/DataDisplay/PrepTime/index";
+import { profileData } from "../../mocks/profile";
+import Profiles from "../../components/DataDisplay/Profile/index";
+import Feedback from "../../components/DataDisplay/Feedback";
+import Rating from "../../components/DataDisplay/RatingStar";
+import Button from "../../components/Inputs/Buttons/index";
+import FooterSocial from "components/DataDisplay/FooterSocial";
+import Banner from "components/DataDisplay/Banner";
+import CreateDate from "components/DataDisplay/CreatDate";
+import FooterContact from "components/DataDisplay/FooterContact";
 
 const HomePage: React.FC = () => {
   const recipeData = recipe[1];
@@ -37,6 +41,10 @@ const HomePage: React.FC = () => {
       <Button type="button" variant="post">
         Post comment
       </Button>
+      <FooterSocial />
+      <Banner />
+      <CreateDate />
+      <FooterContact />
     </div>
   );
 };

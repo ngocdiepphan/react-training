@@ -1,5 +1,5 @@
 import React from "react";
-import sushi from "@/assets/images/collections/sushi.png";
+import sushi  from "../../../../public/assets/images/collections/sushi.png";
 import Button from "../../Inputs/Buttons";
 
 const Collection: React.FC = () => {

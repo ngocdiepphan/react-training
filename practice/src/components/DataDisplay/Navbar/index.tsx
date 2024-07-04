@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logoImage from "@/assets/images/logo/logo.svg";
-import iconSearch from "@/assets/images/header/search.svg";
-import avata from "@/assets/images/header/avata-header.png";
-import iconDropdown from "@/assets/images/header/arrow-down.svg";
+import logoImage from "../../../../public/assets/images/logo/Logo.png";
 import ItemMenu from "../ItemMenu/index";
 
 const Navbar: React.FC = () => {
@@ -20,19 +17,19 @@ const Navbar: React.FC = () => {
             <a href="index.html" className="hover:text-blue-500 mb-0">
               Home Page
             </a>
-            <img src={iconDropdown} className="" alt="icon dropdown" />
+            <span className="bg-dropdown w-9 h-5"></span>
           </li>
           <li className="flex flex-row items-center gap-8">
             <a href="category.html" className="">
               Recipe Page
             </a>
-            <img src={iconDropdown} className="" alt="icon dropdown" />
+            <span className="bg-dropdown w-9 h-5"></span>
           </li>
           <li className="flex flex-row items-center gap-8">
             <a href="#" className="hover:text-blue-500 mb-0 ">
               Pages
             </a>
-            <img src={iconDropdown} className="" alt="icon dropdown" />
+            <span className="bg-dropdown w-9 h-5"></span>
           </li>
           <li className="flex flex-row items-center gap-8">
             <a href="#" className="hover:text-blue-500 mb-0 ">
@@ -47,11 +44,9 @@ const Navbar: React.FC = () => {
         </ul>
 
         <div className="flex items-center gap-24">
-          <a href="#">
-            <img src={iconSearch} className="w-27 h-27" alt="Picture search" />
-          </a>
-          <img src={avata} className="w-32 h-32" alt="Picture avata" />
-          <span className="bg-menu"></span>
+          <span className="bg-search w-32 h-30 bg-no-repeat"></span>
+          <span className="bg-avata w-32 h-32"></span>
+          <span className="bg-menu w-24 h-24"></span>
           <ItemMenu />
         </div>
       </nav>

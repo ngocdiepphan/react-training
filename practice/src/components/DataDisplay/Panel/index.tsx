@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "@/components/Inputs/Buttons";
+import Button from "components/Inputs/Buttons";
 
 const Panel: React.FC = () => {
   return (
