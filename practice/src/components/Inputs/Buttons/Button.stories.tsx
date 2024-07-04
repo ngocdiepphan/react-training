@@ -55,18 +55,6 @@ BtnPost.args = {
   children: "Post comment",
 };
 
-export const BtnNew = Template.bind({});
-BtnNew.args = {
-  type: "button",
-  variant: "add",
-  children: (
-    <>
-      <img src={iconNew} alt="New Icon" className="w-6 h-6 mr-2" />
-      New recipes
-    </>
-  ),
-};
-
 export const BtnSave = Template.bind({});
 BtnSave.args = {
   type: "button",

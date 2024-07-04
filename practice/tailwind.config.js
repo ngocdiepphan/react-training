@@ -68,6 +68,7 @@ module.exports = {
         primary: '#000',
         secondary: '#7f7f7f',
         tertiary: '#ff642f',
+        quaternary: '#475466',
         hoverPrimary: '#1ca1c1',
         borderPrimary: '#ccd7e6'
       },
@@ -110,6 +111,7 @@ module.exports = {
         'youtube': 'url("assets/images/footer/youtube.svg")',
         'arrow-right': 'url("assets/images/banner/arrows-right.svg")',
         'create-date': 'url("assets/images/recipe-details/icon-date.svg")',
+        'search-icon': 'url("assets/images/dashboards/search-symbolic.svg")',
       }
     },
   },

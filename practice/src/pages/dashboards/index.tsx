@@ -5,6 +5,7 @@ import OptionCategory from "../../components/DataDisplay/Options/Category";
 import OptionRating from "../../components/DataDisplay/Options/Rating";
 import FormAdd from "../../components/DataDisplay/FormAdd";
 import Panel from "../../components/DataDisplay/Panel";
+import Toolbar from "components/DataDisplay/Toolbar";
 
 const Dashboard: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const Dashboard: React.FC = () => {
       <OptionRating />
       <FormAdd />
       <Panel />
+      <Toolbar />
     </>
   );
 };
