@@ -1,6 +1,6 @@
 import React from "react";
 import Profiles from "./index";
-import { profileData } from "@/mocks/profile";
+import { profileData } from "mocks/profile";
 import { Meta, StoryFn } from "@storybook/react";
 
 export default {

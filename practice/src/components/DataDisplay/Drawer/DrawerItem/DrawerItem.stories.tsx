@@ -1,8 +1,8 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 import DrawerItem, { DrawerItemProps } from './index';
-import iconUser from "@/assets/images/dashboards/user-icon.svg";
-import iconRecipe from "@/assets/images/dashboards/product-preview.png";
+import iconUser from "../../../../public/assets/images/dashboards/user-icon.svg";
+import iconRecipe from "../../../../public/assets/images/dashboards/product-preview.png";
 
 export default {
   title: 'Components/DrawerItem',
@@ -15,12 +15,12 @@ export const UserItem = Template.bind({});
 UserItem.args = {
   title: 'User',
   type: 'user',
-  image: iconUser,
+  icon: iconUser,
 };
 
 export const RecipeItem = Template.bind({});
 RecipeItem.args = {
   title: 'Recipes',
   type: 'recipe',
-  image: iconRecipe,
+  icon: iconRecipe,
 };

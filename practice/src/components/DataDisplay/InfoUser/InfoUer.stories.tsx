@@ -1,14 +1,14 @@
 import React from "react";
 import { StoryFn, Meta } from "@storybook/react";
 import InfoUser from "./index";
-import { ProfileProps } from "@/type/profile";
+import { Profile } from "../../../type/profile";
 
 export default {
   title: "Components/InfoUser",
   component: InfoUser,
 } as Meta;
 
-const Template: StoryFn<ProfileProps> = (args) => <InfoUser {...args} />;
+const Template: StoryFn<Profile> = (args) => <InfoUser {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

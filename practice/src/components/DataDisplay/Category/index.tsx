@@ -1,5 +1,5 @@
 import React from "react";
-import pasta from '@/assets/images/categories/pasta.png';
+import pasta from "../../../../public/assets/images/categories/pasta.png";
 
 const Category: React.FC = () => {
   return (

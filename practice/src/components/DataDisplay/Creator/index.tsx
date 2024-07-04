@@ -1,5 +1,5 @@
 import React from "react";
-import creator from "@/assets/images/recipe-details/tricia-albert.png";
+import creator from "../../../../public/assets/images/recipe-details/tricia-albert.png";
 
 const Creator: React.FC = () => {
   return (

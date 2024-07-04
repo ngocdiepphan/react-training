@@ -1,6 +1,5 @@
 import React from "react";
-import iconBack from "@/assets/images/dashboards/back-icon.svg";
-import Button from "@/components/Inputs/Buttons";
+import Button from "components/Inputs/Buttons";
 
 const Panel: React.FC = () => {
   return (
@@ -8,7 +7,7 @@ const Panel: React.FC = () => {
       <div className="sticky top-0 flex items-center z-1 bg-white border-b border-gray-400">
         <div className="flex items-center justify-between w-full">
           <div className="flex items-center pl-20">
-            <img className="" src={iconBack} alt="Icon back" />
+            <span className="bg-back w-20 h-20"></span>
           </div>
           <div className="flex-grow flex justify-center">
             <p className="py-20 cursor-pointer text-hoverPrimary font-bold hover:text-white hover:bg-hoverPrimary">

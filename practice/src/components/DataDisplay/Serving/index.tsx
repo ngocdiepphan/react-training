@@ -1,5 +1,4 @@
 import React from "react";
-import iconEdit from "@/assets/images/recipe-details/icon-edit.svg";
 
 const Serving: React.FC<{ serving: string }> = ({ serving }) => {
   return (
@@ -7,7 +6,7 @@ const Serving: React.FC<{ serving: string }> = ({ serving }) => {
       <p className="uppercase text-xs text-secondary">SERVINGS</p>
       <p className="uppercase text-sm flex flex-row gap-10">
         {serving}
-        <img className="" src={iconEdit} alt="Icon edit" />
+        <span className="bg-serving w-16 h-16"></span>
       </p>
     </li>
   );

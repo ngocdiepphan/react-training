@@ -1,6 +1,6 @@
 import React from "react";
 import InstructionItem from "../InstructionItem/index";
-import { InstructionProps } from "@/type/recipe";
+import { InstructionProps } from "../../../type/recipe";
 
 const Instruction: React.FC<InstructionProps> = ({ instruction }) => {
   return (

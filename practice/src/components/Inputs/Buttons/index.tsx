@@ -14,7 +14,7 @@ const Button: React.FC<ButtonProps> = ({
   variant,
   onClick,
   children,
-  icon,
+  icon
 }) => {
   const baseStyles =
     "flex flex-row justify-center gap-8 font-sans items-center rounded-md cursor-pointer";
@@ -32,19 +32,19 @@ const Button: React.FC<ButtonProps> = ({
     submit:
       "mt-5 font-serif bg-teal-500 text-white py-3 px-4 w-full rounded-md hover:bg-teal-600 h-40",
     add: "text-base bg-drawerPrimary w-160 h-30 hover:text-white hover:bg-hoverPrimary mx-20",
-    confirm: "border-none outline-none py-20 text-hoverPrimary bg-buttonPrimary font-bold w-102 h-20 md:h-24  hover:text-white hover:bg-hoverPrimary"
+    confirm:
+      "border-none outline-none py-20 text-hoverPrimary bg-buttonPrimary font-bold w-102 h-20 md:h-24  hover:text-white hover:bg-hoverPrimary",
   };
 
   const styles = `${baseStyles} ${variantStyles[variant]} ${pill}`;
+  const iconClass = icon ? `bg-${icon}` : `bg-${variant}`;
 
   return (
     <button type={type} className={styles} onClick={onClick}>
       {icon && (
-        <img
-          src={icon}
-          alt="Icon"
-          className="w-16 h-16 items-center hover:scale-150"
-        />
+        <span
+          className={`w-30 h-30 bg-no-repeat bg-center hover:scale-150 ${iconClass}`}
+        ></span>
       )}
       {children}
     </button>

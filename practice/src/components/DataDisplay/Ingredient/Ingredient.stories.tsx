@@ -1,8 +1,8 @@
 import React from 'react';
 import { StoryFn, Meta } from '@storybook/react';
 import Ingredient from './index';
-import { IngredientProps } from '@/type/recipe';
-import { recipe } from '@/mocks/recipe';
+import { IngredientProps } from '../../../type/recipe';
+import { recipe } from '../../../mocks/recipe';
 
 export default {
   title: 'Components/Ingredient',

@@ -1,12 +1,11 @@
 import React from "react";
-import iconMenu from "@/assets/images/header/menu.svg";
 
 const BtnMenu: React.FC = () => {
   return (
     <>
       <input type="checkbox" id="check" className="hidden" />
       <label htmlFor="check" className="cursor-pointer">
-        <img src={iconMenu} className="w-24 h-24" alt="Menu" />
+        <span className="bg-menu w-24 h-24"></span>
       </label>
       <label
         htmlFor="check"

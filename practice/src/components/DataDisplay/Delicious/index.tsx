@@ -1,5 +1,5 @@
 import React from "react";
-import Spinach from "@/assets/images/delicious/spinach-and-cheese-pasta.png";
+import Spinach from "../../../../public/assets/images/delicious/spinach-and-cheese-pasta.png";
 import Rating from "../RatingStar";
 
 const Delicious: React.FC = () => {

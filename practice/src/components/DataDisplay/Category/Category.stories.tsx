@@ -1,5 +1,3 @@
-// .storybook/Category.stories.tsx
-
 import React from 'react';
 import { StoryFn, Meta } from '@storybook/react';
 import Category from './index';
