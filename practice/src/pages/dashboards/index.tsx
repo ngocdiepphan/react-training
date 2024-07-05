@@ -1,15 +1,15 @@
-import Drawer from "../../components/DataDisplay/Drawer";
-import Button from "../../components/Inputs/Buttons";
-import React from "react";
-import OptionCategory from "../../components/DataDisplay/Options/Category";
-import OptionRating from "../../components/DataDisplay/Options/Rating";
-import FormAdd from "../../components/DataDisplay/FormAdd";
-import Panel from "../../components/DataDisplay/Panel";
-import Toolbar from "components/DataDisplay/Toolbar";
-import TableUser from "components/DataDisplay/Tables/TableUser";
-import TableRecipe from "components/DataDisplay/Tables/TableRecipe";
+import React from 'react';
+import Drawer from '../../components/DataDisplay/Drawer';
+import Button from '../../components/Inputs/Buttons';
+import OptionCategory from '../../components/DataDisplay/Options/Category';
+import OptionRating from '../../components/DataDisplay/Options/Rating';
+import FormAdd from '../../components/DataDisplay/FormAdd';
+import Panel from '../../components/DataDisplay/Panel';
+import Toolbar from '../../components/DataDisplay/Toolbar';
+import Table from "components/DataDisplay/Table";
 
 const Dashboard: React.FC = () => {
+
   return (
     <>
       <Drawer />
@@ -21,8 +21,7 @@ const Dashboard: React.FC = () => {
       <FormAdd />
       <Panel />
       <Toolbar />
-      <TableUser />
-      <TableRecipe />
+      <Table />
     </>
   );
 };
