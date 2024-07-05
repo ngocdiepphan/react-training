@@ -1,8 +1,8 @@
 export interface Recipe {
   name: string;
   description: string;
-  ingredient: IngredientProps[];
-  instruction: InstructionProps[];
+  ingredient: string[];
+  instruction: { step: number; description: string; }[];
   nutrition: NutritionFact[];
   creator: string;
   collection_id: number;
@@ -10,7 +10,12 @@ export interface Recipe {
   ratings: number;
   createdAt: number;
   id: string;
-  prepTime: string;
+  prepTime: {
+    min: string;
+    max: string;
+  };
+  serving: string;
+  img: string;
 }
 
 export interface NutritionFact {
