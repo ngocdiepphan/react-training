@@ -3,7 +3,7 @@ import { Props } from "type/table";
 
 const Table = <T,>({ columns, data }: Props<T>) => {
   return (
-    <table>
+    <table className="w-full text-xl font-semibold text-quaternary font-sans">
       <thead>
         <tr>
           {columns.map((column) => (
@@ -11,7 +11,7 @@ const Table = <T,>({ columns, data }: Props<T>) => {
           ))}
         </tr>
       </thead>
-      <tbody>
+      <tbody className="text-base font-normal" id="user-body">
         {data.map((item, index) => (
           <tr
             key={index.toString()}
