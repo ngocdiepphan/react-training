@@ -1,30 +1,15 @@
-import React from "react";
-import TableHeader from "../TableHeader";
-import TableRow from "../TableRow";
-import { UserRow } from "type/table";
-import { TableColumn } from "type/table";
+import React from 'react';
+import Table from '../index';
+import { TableColumn, UserRow } from 'type/table';
+import { user } from 'mocks/user';
 
-export const columnUser: TableColumn<UserRow>[] = [
-  { key: "img", header: "Image" },
-  { key: "username", header: "Full name" },
-  { key: "email", header: "Email" },
+const userColumns: TableColumn<UserRow>[] = [
+  { key: 'img', header: 'Image' },
+  { key: 'username', header: 'Full Name' },
+  { key: 'email', header: 'Email' }
 ];
+const UserTable = () => (
+  <Table columns={userColumns} data={user} />
+);
 
-interface TableUserProps {
-  data: UserRow[];
-}
-
-const TableUser: React.FC<TableUserProps> = ({ data }) => {
-  return (
-    <table className="w-full text-xl font-semibold text-quaternary font-sans">
-      <thead className="table__head">
-        <TableHeader columns={columnUser} />
-      </thead>
-      <tbody className="text-base font-normal" id="user-body">
-        <TableRow columns={columnUser} data={data} />
-      </tbody>
-    </table>
-  );
-};
-
-export default TableUser;
+export default UserTable;

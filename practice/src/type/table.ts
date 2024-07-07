@@ -13,3 +13,13 @@ export interface UserRow {
   username: string;
   img: string;
 }
+
+export interface RecipeRow {
+  img: string;
+  name: string;
+  category: string;
+  creator: string;
+  createdAt: number;
+  ratings: number;
+  description: string;
+}

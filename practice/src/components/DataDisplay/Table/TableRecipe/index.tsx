@@ -1,14 +1,9 @@
 import React from "react";
-import TableHeader from "../TableHeader";
-import TableRow from "../TableRow";
-import { Recipe } from "type/recipe";
-import { TableColumn } from "type/table";
+import Table from "../index";
+import { TableColumn, RecipeRow } from "type/table";
+import { recipe } from "mocks/recipe";
 
-interface Props {
-  data: Recipe[];
-}
-
-const columns: TableColumn<Recipe>[] = [
+const recipeColumns: TableColumn<RecipeRow>[] = [
   { key: "img", header: "Image" },
   { key: "name", header: "Name" },
   { key: "category", header: "Category" },
@@ -18,22 +13,6 @@ const columns: TableColumn<Recipe>[] = [
   { key: "description", header: "Description" },
 ];
 
-const TableRecipe: React.FC<Props> = ({ data }) => {
-  const formattedData = data.map((item) => ({
-    ...item,
-    createdAt: new Date(item.createdAt).toLocaleDateString(),
-  }));
+const RecipeTable = () => <Table columns={recipeColumns} data={recipe} />;
 
-  return (
-    <table className="w-full text-xl font-semibold text-quaternary font-sans">
-      <thead className="table__head">
-        <TableHeader columns={columns} />
-      </thead>
-      <tbody className="text-base font-normal" id="user-body">
-        <TableRow columns={columns} data={formattedData} />
-      </tbody>
-    </table>
-  );
-};
-
-export default TableRecipe;
+export default RecipeTable;
