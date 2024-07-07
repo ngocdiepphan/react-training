@@ -6,8 +6,11 @@ import OptionRating from "../../components/DataDisplay/Options/Rating";
 import FormAdd from "../../components/DataDisplay/FormAdd";
 import Panel from "../../components/DataDisplay/Panel";
 import Toolbar from "../../components/DataDisplay/Toolbar";
-import UserTable from "components/DataDisplay/Table/TableUser";
-import RecipeTable from "components/DataDisplay/Table/TableRecipe";
+import Table from "components/DataDisplay/Table";
+import { recipeColumns } from "type/table";
+import { userColumns } from "type/table";
+import { user } from "mocks/user";
+import { recipe } from "mocks/recipe";
 
 const Dashboard: React.FC = () => {
   return (
@@ -21,9 +24,10 @@ const Dashboard: React.FC = () => {
       <FormAdd />
       <Panel />
       <Toolbar />
-      {/* <Table /> */}
-      <UserTable />
-      <RecipeTable />
+      {/* <UserTable />
+      <RecipeTable /> */}
+      <Table columns={userColumns} data={user} />
+      <Table columns={recipeColumns} data={recipe} />
     </>
   );
 };

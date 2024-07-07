@@ -23,3 +23,19 @@ export interface RecipeRow {
   ratings: number;
   description: string;
 }
+
+export const recipeColumns: TableColumn<RecipeRow>[] = [
+  { key: "img", header: "Image" },
+  { key: "name", header: "Name" },
+  { key: "category", header: "Category" },
+  { key: "creator", header: "Creator" },
+  { key: "createdAt", header: "Created At" },
+  { key: "ratings", header: "Ratings" },
+  { key: "description", header: "Description" },
+];
+
+export const userColumns: TableColumn<UserRow>[] = [
+  { key: 'img', header: 'Image' },
+  { key: 'username', header: 'Full Name' },
+  { key: 'email', header: 'Email' }
+];
