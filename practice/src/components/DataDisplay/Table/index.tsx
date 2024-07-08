@@ -1,7 +1,13 @@
 import React from "react";
-import { Props } from "type/table";
+import { TableColumn } from "type/table";
 
-const Table = <T,>({ columns, data }: Props<T>) => {
+interface Props<T> {
+  columns: TableColumn<T>[];
+  data: T[];
+  onRowClick: (rowData: T) => void; 
+}
+
+const Table = <T,>({ columns, data, onRowClick }: Props<T>) => {
   return (
     <table className="w-full text-xl font-semibold text-quaternary font-sans">
       <thead>
@@ -15,7 +21,8 @@ const Table = <T,>({ columns, data }: Props<T>) => {
         {data.map((item, index) => (
           <tr
             key={index.toString()}
-            className="table__row border-b-2 h-50 hover:bg-blue-50"
+            className="table__row border-b-2 h-50 hover:bg-blue-50 cursor-pointer"
+            onClick={() => onRowClick(item)}
           >
             {columns.map((column) => (
               <td key={column.key.toString()} className="align-middle p-20">
