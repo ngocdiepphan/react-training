@@ -1,9 +1,11 @@
 import React from "react";
 import Button from "components/Inputs/Buttons";
+import {userColumns, recipeColumns ,selectedUser, selectedRecipe} from "type/table";
+import PanelForm from "./PanelForm";
 
 const Panel: React.FC = () => {
   return (
-    <div className="bg-primary border border-gray-300 fixed h-full w-full top-0 left-0 m-0 md:right-auto lg:ml-10 lg:static lg:w-500">
+    <aside className="bg-primary border border-gray-300 fixed h-full w-full top-0 left-0 m-0 md:right-auto lg:ml-10 lg:static lg:w-500">
       <div className="sticky top-0 flex items-center z-1 bg-white border-b border-gray-400">
         <div className="flex items-center justify-between w-full">
           <div className="flex items-center pl-20">
@@ -25,7 +27,9 @@ const Panel: React.FC = () => {
           Save
         </Button>
       </div>
-    </div>
+      <PanelForm columns={userColumns} data={selectedUser} />
+      <PanelForm columns={recipeColumns} data={selectedRecipe} />
+    </aside>
   );
 };
 
