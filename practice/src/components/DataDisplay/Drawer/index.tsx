@@ -4,7 +4,7 @@ import DrawerItem from "./DrawerItem";
 
 const Drawer: React.FC = () => {
   return (
-    <div className="flex-col gap-20 w-212 bg-drawerSecondary hidden md:block">
+    <div className="flex-col gap-20 w-212 bg-drawerSecondary hidden md:hidden lg:block h-lvh">
       <div className="py-20 px-10">
         <Button type="button" variant="add" icon="add-item">
           New recipes

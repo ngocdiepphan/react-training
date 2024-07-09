@@ -81,7 +81,8 @@ module.exports = {
         drawerSecondary: '#4a4e58',
         hoverPrimary: '#1ca1c1',
         buttonPrimary: '#f4f5f9',
-        modalPrimary: '#d7ebf5'
+        modalPrimary: '#d7ebf5',
+        dashboardPrimary: '#ebedf0',
       },
       text: {
         'xs': '12px',
