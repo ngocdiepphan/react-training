@@ -1,7 +1,9 @@
 export interface UserProps {
-  id: number;
-  name: string;
+  email: string;
   password: string;
-  role: "admin" | "user";
-  isLoggedIn?: boolean;
+  // id: string;
+  username: string;
+  role: string;
+  img: string;
 }
+

@@ -6,6 +6,7 @@ export interface TableColumn<T> {
 export interface Props<T> {
   columns: TableColumn<T>[];
   data: T[];
+  onRowClick: (rowData: T) => void;
 }
 
 export interface UserRow {
@@ -35,7 +36,7 @@ export const recipeColumns: TableColumn<RecipeRow>[] = [
 ];
 
 export const userColumns: TableColumn<UserRow>[] = [
-  { key: 'img', header: 'Image' },
-  { key: 'username', header: 'Full Name' },
-  { key: 'email', header: 'Email' }
+  { key: "img", header: "Image" },
+  { key: "username", header: "Full Name" },
+  { key: "email", header: "Email" },
 ];

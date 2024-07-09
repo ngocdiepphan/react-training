@@ -1,30 +1,19 @@
 import React from "react";
-import Button from "components/Inputs/Buttons";
+import PanelForm from "../Panel/PanelForm";
+import { UserProps } from "type/user";
+import { Recipe } from "type/recipe";
+import { userColumns, recipeColumns } from "type/table";
 
-const Panel: React.FC = () => {
+interface PanelProps {
+  selectedUser: UserProps | null;
+  selectedRecipe: Recipe | null;
+}
+
+const Panel: React.FC<PanelProps> = ({ selectedUser, selectedRecipe }) => {
   return (
-    <div className="bg-primary border border-gray-300 fixed h-full w-full top-0 left-0 m-0 md:right-auto lg:ml-10 lg:static lg:w-500">
-      <div className="sticky top-0 flex items-center z-1 bg-white border-b border-gray-400">
-        <div className="flex items-center justify-between w-full">
-          <div className="flex items-center pl-20">
-            <span className="bg-back w-20 h-20"></span>
-          </div>
-          <div className="flex-grow flex justify-center">
-            <p className="py-20 cursor-pointer text-hoverPrimary font-bold hover:text-white hover:bg-hoverPrimary">
-              General
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="flex flex-row gap-40 justify-end m-30">
-        <Button type="button" variant="confirm">
-          Delete
-        </Button>
-        <Button type="button" variant="confirm">
-          Save
-        </Button>
-      </div>
+    <div>
+      {selectedUser && <PanelForm columns={userColumns} data={selectedUser} />}
+      {selectedRecipe && (<PanelForm columns={recipeColumns} data={selectedRecipe} />)}
     </div>
   );
 };
