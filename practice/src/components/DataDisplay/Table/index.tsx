@@ -4,13 +4,13 @@ import { TableColumn } from "type/table";
 interface Props<T> {
   columns: TableColumn<T>[];
   data: T[];
-  onRowClick: (rowData: T) => void; 
+  onRowClick: (rowData: T) => void;
 }
 
 const Table = <T,>({ columns, data, onRowClick }: Props<T>) => {
   return (
     <table className="w-full text-xl font-semibold text-quaternary font-sans">
-      <thead>
+      <thead className="w-full">
         <tr>
           {columns.map((column) => (
             <th key={column.key as string}>{column.header}</th>

@@ -6,7 +6,7 @@ const SignUpForm: React.FC = () => {
   return (
     <div className="bg-gray-100 min-h-screen flex justify-center pt-50">
       <form
-        className="bg-white rounded-lg shadow-md mt-8 mb-28 w-318 h-450 mx-4 px-30 pt-20"
+        className="bg-primary rounded-lg shadow-md mt-8 mb-28 w-318 h-450 mx-4 px-30 pt-20"
         id="form-sign-up"
       >
         <InputField

@@ -8,7 +8,7 @@ import {
 import SignInForm from './components/DataDisplay/Auth/SignIn/index';
 import SignUpForm from './components/DataDisplay/Auth/SignUp/index';
 // import HomePage from './pages/homepage/homepage';
-import Dashboard from './pages/dashboards';
+import Dashboard from './pages/dashboard';
 
 function App() {
   return (
