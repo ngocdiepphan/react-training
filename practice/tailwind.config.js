@@ -89,6 +89,7 @@ module.exports = {
       },
       fontSize: {
         'small': '12px',
+        'medium': '50px',
         'large': '76px',
       },
       backgroundImage: {

@@ -4,7 +4,7 @@ import arrowDropdown from "../../../../public/assets/images/footer/arrow-down.sv
 const FooterContact: React.FC = () => {
   return (
     <>
-      <article className="flex items-center justify-center border border-solid border-gray-50 hover:border-b-primary md:border-b-0 md:flex-col md:items-start hover:border-solid">
+      <article className="flex items-center justify-center border-b border-b-borderPrimary hover:border-b-primary md:border-b-0 md:flex-col md:items-start hover:border-solid">
         <h4 className="mt-12 text-primary font-sans text-sm mb-16 md:text-base">
           Tastebite
         </h4>
@@ -25,7 +25,7 @@ const FooterContact: React.FC = () => {
           </li>
         </ul>
       </article>
-      <article className="flex items-center justify-center border border-solid border-gray-50 hover:border-b-primary md:border-b-0 md:flex-col md:items-start hover:border-solid">
+      <article className="flex items-center justify-center border-b border-b-borderPrimary hover:border-b-primary md:border-b-0 md:flex-col md:items-start hover:border-solid">
         <h4 className="mt-12 text-primary font-sans text-sm mb-16 md:text-base">
           Legal
         </h4>
@@ -46,7 +46,7 @@ const FooterContact: React.FC = () => {
         </ul>
       </article>
 
-      <article className="flex items-center justify-center border border-solid border-gray-50 hover:border-b-primary md:border-b-0 md:flex-col md:items-start hover:border-solid">
+      <article className="flex items-center justify-center border-b border-b-borderPrimary hover:border-b-primary md:border-b-0 md:flex-col md:items-start hover:border-solid">
         <h4 className="mt-12 text-primary font-sans text-sm mb-16 md:text-base">
           Follow
         </h4>

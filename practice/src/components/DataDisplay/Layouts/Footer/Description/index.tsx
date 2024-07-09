@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../../public/assets/images/logo/logo.svg";
+import logo from "../../../../../../public/assets/images/logo/Logo.png";
 
 const FooterDesc: React.FC = () => {
   return (

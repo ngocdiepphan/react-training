@@ -1,14 +1,26 @@
 import React from "react";
-import caramel from "../../../../public/assets/images/recipes/caramel-strawberry-milkshake.png";
+import { recipe } from "mocks/recipe";
 
 const LastRecipe: React.FC = () => {
   return (
-    <>
-      <article className="flex flex-col gap-16 cursor-pointer border-none text-primary">
-        <img className="" src={caramel} alt="Picture Caramel strawberry Milkshake" />
-        <p className=" w-180 mt-12 text-sm md:text-lg md:w-full font-sans">Caramel strawberry Milkshake</p>
-      </article>
-    </>
+    <li className="grid grid-cols-2 gap-24 md:gap-30 md:grid-cols-3 lg:grid-cols-4">
+      {recipe.map((recipeItem) => (
+        <article
+          key={recipeItem.id}
+          className="flex flex-col gap-16 cursor-pointer border-none text-primary"
+        >
+          <img
+            className=""
+            src={recipeItem.img}
+            alt={`Picture of ${recipeItem.name}`}
+          />
+          <p className="w-180 mt-12 text-sm md:text-lg md:w-full font-sans">
+            {recipeItem.name}
+          </p>
+        </article>
+      ))}
+    </li>
   );
 };
+
 export default LastRecipe;
