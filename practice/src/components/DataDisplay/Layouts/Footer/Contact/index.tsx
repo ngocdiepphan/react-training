@@ -11,16 +11,16 @@ const FooterContact: React.FC = () => {
 
         <span className="bg-dropdown cursor-pointer ml-auto md:hidden w-9 h-5"></span>
         <ul className="">
-          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-14">
+          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-8">
             About us
           </li>
-          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-14">
+          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-8">
             Careers
           </li>
-          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-14">
+          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-8">
             Contact us
           </li>
-          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-14">
+          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-8">
             Feedback
           </li>
         </ul>
@@ -31,16 +31,16 @@ const FooterContact: React.FC = () => {
         </h4>
         <span className="bg-dropdown cursor-pointer ml-auto md:hidden w-9 h-5"></span>
         <ul className="">
-          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-14">
+          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-8">
             Terms
           </li>
-          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-14">
+          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-8">
             Conditions
           </li>
-          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-14">
+          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-8">
             Cookies
           </li>
-          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-14">
+          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-8">
             Copyright
           </li>
         </ul>
@@ -52,16 +52,16 @@ const FooterContact: React.FC = () => {
         </h4>
         <span className="bg-dropdown cursor-pointer ml-auto md:hidden w-9 h-5"></span>
         <ul className="">
-          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-14">
+          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-8">
             Facebook
           </li>
-          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-14">
+          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-8">
             Twitter
           </li>
-          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-14">
+          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-8">
             Instagram
           </li>
-          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-14">
+          <li className="md:hover:text-primary hidden md:hover:text-lg md:block md:text-secondary md:font-sans md:mb-8">
             Youtube
           </li>
         </ul>
