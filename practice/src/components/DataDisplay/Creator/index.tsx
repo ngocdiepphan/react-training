@@ -1,8 +1,10 @@
 import React from "react";
-import { Recipe } from "type/recipe";
 
 interface Props {
-  recipe: Recipe;
+  recipe: {
+    creator: string;
+    imgCreator: string;
+  };
 }
 
 const Creator: React.FC<Props> = ({ recipe }) => {
@@ -12,7 +14,7 @@ const Creator: React.FC<Props> = ({ recipe }) => {
         <img
           className="w-30 h-30 rounded-full"
           src={recipe.imgCreator}
-          alt={`Picture ${recipe.creator}`}
+          alt={`Picture of ${recipe.creator}`}
         />
         <p className="font-sans text-xs">{recipe.creator}</p>
       </li>
