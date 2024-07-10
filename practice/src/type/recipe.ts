@@ -8,7 +8,7 @@ export interface Recipe {
   collection_id: number;
   category: string;
   ratings: number;
-  createdAt: number;
+  createdAt: string;
   id: string;
   prepTime: {
     min: string;
@@ -16,6 +16,7 @@ export interface Recipe {
   };
   serving: string;
   img: string;
+  imgCreator: string;
 }
 
 export interface NutritionFact {
