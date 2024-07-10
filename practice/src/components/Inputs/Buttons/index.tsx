@@ -28,7 +28,7 @@ const Button: React.FC<ButtonProps> = ({
       "mb-37 md:mb-40 w-250 md:w-278 h-37 border border-primary text-base font-sans flex justify-center hover:bg-secondary",
     join: "text-white bg-secondary border border-solid uppercase h-48 hover:bg-orange-500 md:w-129 md:h-66 md:rounded-tr-md md:rounded-br-md md:rounded-l-none border-white",
     loadComment: "w-full h-56 border hover:bg-secondary",
-    post: "w-208 h-37 border hover:bg-secondary",
+    post: "absolute right-37 bottom-76 w-208 h-37 border hover:bg-secondary ",
     submit:
       "mt-5 font-serif bg-teal-500 text-white py-3 px-4 w-full rounded-md hover:bg-teal-600 h-40",
     add: "text-base bg-drawerPrimary w-160 h-30 hover:text-white hover:bg-hoverPrimary mx-20",

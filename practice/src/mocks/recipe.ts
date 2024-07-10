@@ -48,10 +48,11 @@ export const recipe = [
       { "label": "Protein", "value": "7g" }
     ],
     "creator": "creator 1",
+    "imgCreator": "https://i.imgur.com/zJmTqKWb.jpg",
     "collection_id": 4,
     "category": "Desserts",
     "ratings": 4,
-    "createdAt": 1719397875,
+    "createdAt": "2024-03-11",
     "id": "1",
     "prepTime": {
       "min": "15 min",
@@ -94,9 +95,10 @@ export const recipe = [
     ],
     "creator": "creator 2",
     "collection_id": 2,
+    "imgCreator": "https://i.imgur.com/zJmTqKWb.jpg",
     "category": "Pasta",
     "ratings": 3,
-    "createdAt": 1719397975,
+    "createdAt": "2024-02-10",
     "id": "2",
     "prepTime": {
       "min": "5 min",
@@ -149,10 +151,11 @@ export const recipe = [
       { "label": "Protein", "value": "4g" }
     ],
     "creator": "creator 1",
+    "imgCreator": "https://i.imgur.com/zJmTqKWb.jpg",
     "collection_id": 1,
     "category": "Desserts",
     "ratings": 5,
-    "createdAt": 1719397975,
+    "createdAt": "2023-10-04",
     "id": "3",
     "prepTime": {
       "min": "20 min",
@@ -198,10 +201,11 @@ export const recipe = [
       { "label": "Protein", "value": "35g" }
     ],
     "creator": "creator 3",
+    "imgCreator": "https://i.imgur.com/zJmTqKWb.jpg",
     "collection_id": 2,
     "category": "Breakfast",
     "ratings": 4,
-    "createdAt": 1719397975,
+    "createdAt": "2024-05-18",
     "id": "4",
     "prepTime": {
       "min": "15 min",
@@ -244,10 +248,11 @@ export const recipe = [
       { label: "Protein", value: "14g" }
     ],
     creator: "chef 1",
+    "imgCreator": "https://i.imgur.com/zJmTqKWb.jpg",
     collection_id: 3,
     category: "Pizza",
     ratings: 4,
-    createdAt: 1719397975,
+    "createdAt": "2024-05-01",
     id: "4",
     prepTime: {
       min: "20 min",
@@ -292,10 +297,11 @@ export const recipe = [
       { label: "Protein", value: "15g" }
     ],
     creator: "chef 2",
+    "imgCreator": "https://i.imgur.com/zJmTqKWb.jpg",
     collection_id: 5,
     category: "Vegan",
     ratings: 5,
-    createdAt: 1719397975,
+    "createdAt": "2024-04-24",
     id: "5",
     prepTime: {
       min: "30 min",
@@ -343,10 +349,11 @@ export const recipe = [
       { label: "Protein", value: "5g" }
     ],
     creator: "chef 1",
+    "imgCreator": "https://i.imgur.com/zJmTqKWb.jpg",
     collection_id: 3,
     category: "Desserts",
     ratings: 4,
-    createdAt: 1719397975,
+    "createdAt": "2024-02-22",
     id: "4",
     prepTime: {
       min: "15 min",
@@ -391,7 +398,7 @@ export const recipe = [
     collection_id: 5,
     category: "Breakfast",
     ratings: 5,
-    createdAt: 1719397975,
+    "createdAt": "2023-12-28",
     id: "5",
     prepTime: {
       min: "10 min",
@@ -431,7 +438,7 @@ export const recipe = [
     "collection_id": 4,
     "category": "Smoothies",
     "ratings": 5,
-    "createdAt": 1719397975,
+    "createdAt": "2024-03-09",
     "id": "5",
     "prepTime": {
       "min": "5 min",

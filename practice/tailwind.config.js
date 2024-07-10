@@ -88,6 +88,7 @@ module.exports = {
         subscriptPrimary: '#ffd8ca'
       },
       fontSize: {
+        'xs-small': '10px',
         'small': '12px',
         'medium': '50px',
         'large': '76px',
@@ -116,6 +117,10 @@ module.exports = {
         'create-date': 'url("assets/images/recipe-details/icon-date.svg")',
         'search-icon': 'url("assets/images/dashboards/search-symbolic.svg")',
         'arrow-up':'url("assets/images/banner/arrows-up.svg")',
+        'upload-primary': 'url("assets/images/recipe-page/icon-upload-mb.svg")',
+        'upload-secondary': 'url("assets/images/recipe-page/icon-upload.svg")',
+        'save-primary': 'url("assets/images/recipe-page/icon-save-mb.svg")',
+        'save-secondary': 'url("assets/images/recipe-page/icon-save.svg")',
       }
     },
   },

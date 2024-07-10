@@ -1,14 +1,21 @@
 import React from 'react';
-import IngredientItem from '../IngredientItem/index';
-import { IngredientProps } from '../../../type/recipe';
+import IngredientItem from '../IngredientItem'; 
 
-const Ingredient: React.FC<IngredientProps> = ({ ingredients }) => {
+interface Props {
+  recipe: {
+    ingredient: string[];
+  };
+}
+
+const Ingredient: React.FC<Props> = ({ recipe }) => {
+  const { ingredient } = recipe;
+
   return (
     <article className="ingredient">
       <h5 className="font-serif text-xl my-27 md:text-3xl">Ingredients</h5>
       <ul>
-        {ingredients.map((ingredient, index) => (
-          <IngredientItem key={index} label={ingredient} />
+        {ingredient.map((item, index) => (
+          <IngredientItem key={index} label={item} />
         ))}
       </ul>
     </article>

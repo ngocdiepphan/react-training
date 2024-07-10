@@ -10,17 +10,16 @@ import Profiles from "../components/DataDisplay/Profile/index";
 import Feedback from "../components/DataDisplay/Feedback";
 import Rating from "../components/DataDisplay/RatingStar";
 import Button from "../components/Inputs/Buttons/index";
-import FooterSocial from "components/DataDisplay/Layouts/Footer/Social";
-import Banner from "components/DataDisplay/Banner";
-import CreateDate from "components/DataDisplay/CreatDate";
-import FooterContact from "components/DataDisplay/Layouts/Footer/Contact";
+import FooterSocial from "../components/DataDisplay/Layouts/Footer/Social";
+import Banner from "../components/DataDisplay/Banner";
+import FooterContact from "../components/DataDisplay/Layouts/Footer/Contact";
 import imgBanner from "../../public/assets/images/banner/banner.png";
-import Delicious from "components/DataDisplay/Delicious";
-import Category from "components/DataDisplay/Category";
-import Form from "components/Inputs/Form";
-import Collection from "components/DataDisplay/Collection";
-import LastRecipe from "components/DataDisplay/LastRecipe";
-import FooterDesc from "components/DataDisplay/Layouts/Footer/Description";
+import Delicious from "../components/DataDisplay/Delicious";
+import Category from "../components/DataDisplay/Category";
+import Form from "../components/Inputs/Form";
+import Collection from "../components/DataDisplay/Collection";
+import LastRecipe from "../components/DataDisplay/LastRecipe";
+import FooterDesc from "../components/DataDisplay/Layouts/Footer/Description";
 
 const HomePage: React.FC = () => {
   const recipeData = recipe[1];
@@ -132,8 +131,9 @@ const HomePage: React.FC = () => {
             Load More
           </Button>
         </section>
-        {/* -- END RECIPES --*/}
+        {/*-- END RECIPES -- */}
       </main>
+      {/* -- END MAIN --*/}
 
       <footer className="bg-tertiary px-12 flex flex-col md:px-50 lg:px-42 lg:my-auto lg:mx-0">
         {/* -- START FOOTER */}
@@ -152,24 +152,8 @@ const HomePage: React.FC = () => {
 
         {/* -- END FOOTER */}
       </footer>
-      <NutritionFacts data={nutritionData} />
-      <Ingredient ingredients={ingredientData} />
-      <Instruction instruction={instructionData} />
-      <PrepTime />
-      <Profiles profiles={profileData} />
-      <Feedback />
-      <Rating ratings={ratingData} />
-      {/* <Button type="button" variant="primary">
-        Load More
-      </Button> */}
-      <Button type="button" variant="loadComment">
-        Load 25 more comments
-      </Button>
-      <Button type="button" variant="post">
-        Post comment
-      </Button>
-      <Banner />
-      <CreateDate />
+
+
       <Button type="button" variant="confirm" children="add user" />
       <Button type="button" variant="confirm">
         Save
