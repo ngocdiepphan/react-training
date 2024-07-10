@@ -58,11 +58,12 @@ module.exports = {
         '318': '318px',
         '331': '331px',
         '340': '340px',
-        '362': '362',
+        '362': '362px',
         '370': '370px',
         '420': '420px',
         '450': '450px',
         '500': '500px',
+        '550': '550px',
       },
       colors: {
         primary: '#000',
@@ -83,12 +84,13 @@ module.exports = {
         buttonPrimary: '#f4f5f9',
         modalPrimary: '#d7ebf5',
         dashboardPrimary: '#ebedf0',
+        bannerPrimary: '#e4f1ff',
+        subscriptPrimary: '#ffd8ca'
       },
-      text: {
-        'xs': '12px',
-        'sm': '14px',
-        'lg': '16px',
-        'xl': '17px'
+      fontSize: {
+        'small': '12px',
+        'medium': '50px',
+        'large': '76px',
       },
       backgroundImage: {
         'user-item': 'url("assets/images/dashboards/user-icon.svg")',
@@ -113,6 +115,7 @@ module.exports = {
         'arrow-right': 'url("assets/images/banner/arrows-right.svg")',
         'create-date': 'url("assets/images/recipe-details/icon-date.svg")',
         'search-icon': 'url("assets/images/dashboards/search-symbolic.svg")',
+        'arrow-up':'url("assets/images/banner/arrows-up.svg")',
       }
     },
   },

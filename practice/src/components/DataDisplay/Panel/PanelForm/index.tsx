@@ -27,6 +27,7 @@ const PanelForm = <T,>({ columns, data }: PanelFormProps<T>) => {
         <Button type="button" variant="confirm">
           Delete
         </Button>
+        <Button type="button" variant="confirm" children='add usser'/>
         <Button type="button" variant="confirm">
           Save
         </Button>

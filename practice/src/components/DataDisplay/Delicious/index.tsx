@@ -1,20 +1,23 @@
 import React from "react";
-import Spinach from "../../../../public/assets/images/delicious/spinach-and-cheese-pasta.png";
 import Rating from "../RatingStar";
+import { recipe } from "mocks/recipe";
 
 const Delicious: React.FC = () => {
   return (
-    <>
-      <article className="flex flex-col gap-14">
-        <img
-          className="card__image"
-          src={Spinach}
-          alt="Picture Spinach and Cheese Pasta"
-        />
-        <Rating />
-        <p className="text-lg md:text-3xl">Spinach and Cheese Pasta</p>
-      </article>
-    </>
+    <li className="flex flex-wrap gap-24 md:flex-row md:grid md:grid-cols-3 md:gap-20">
+      {recipe.map((item, index) => (
+        <article key={index} className="flex flex-col gap-10">
+          <img
+            className="card__image w-full"
+            src={item.img}
+            alt={`Picture of ${item.name}`}
+          />
+          <Rating ratings={item.ratings} />
+          <p className="font-sans text-lg md:text-xl">{item.name}</p>
+        </article>
+      ))}
+    </li>
   );
 };
+
 export default Delicious;
