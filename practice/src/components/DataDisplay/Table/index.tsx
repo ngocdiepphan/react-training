@@ -9,7 +9,7 @@ interface Props<T> {
 
 const Table = <T,>({ columns, data, onRowClick }: Props<T>) => {
   return (
-    <table className="w-full text-xl font-semibold text-quaternary font-sans">
+    <table className="w-full text-xl font-semibold text-quaternary font-sans overflow-auto">
       <thead className="w-full">
         <tr>
           {columns.map((column) => (

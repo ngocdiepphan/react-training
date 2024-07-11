@@ -13,15 +13,22 @@ import Drawer from "components/DataDisplay/Drawer";
 const Dashboard: React.FC = () => {
   const [selectedUser, setSelectedUser] = useState<UserProps | null>(null);
   const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
+  const [showPanel, setShowPanel] = useState(false);
+
+  const handleClosePanel = () => {
+    setShowPanel(!showPanel);
+  };
 
   const handleUserRowClick = (rowData: UserProps) => {
     setSelectedUser(rowData);
     setSelectedRecipe(null);
+    setShowPanel(true);
   };
 
   const handleRecipeRowClick = (recipeData: Recipe) => {
     setSelectedRecipe(recipeData);
     setSelectedUser(null);
+    setShowPanel(true);
   };
 
   return (
@@ -38,25 +45,25 @@ const Dashboard: React.FC = () => {
       {/* -- END HEADER -- */}
 
       {/* -- START MAIN -- */}
-      <main className=" main-body flex lg:p-10 flex-row font-sans text-sm bg-dashboardPrimary">
+      <main className=" main-body flex lg:pl-0 lg:p-10 flex-row font-sans text-sm bg-dashboardPrimary">
         <div className="drawer">
           <Drawer />
-          <FormAdd />
+          {/* <FormAdd /> */}
         </div>
 
         <div className="content flex flex-row font-sans bg-dashboardPrimary w-full">
-          <div className="content__wrapper content-hinder w-full">
+          <div className="content__wrapper content-hinder lg:pl-10 w-full">
             <Toolbar />
             <div
               className="show w-full overflow-auto bg-primary border border-borderPrimary "
               id="table-wrapper"
             >
               <div className="flex gap-4">
-                <Table
+                {/* <Table
                   columns={userColumns}
                   data={user}
                   onRowClick={handleUserRowClick}
-                />
+                /> */}
                 <Table
                   columns={recipeColumns}
                   data={recipe}
@@ -65,15 +72,13 @@ const Dashboard: React.FC = () => {
               </div>
             </div>
           </div>
-          <aside
-            className="panel hinder-panel content-dashboard bg-primary border border-gray-300 fixed h-full w-full top-0 left-0 m-0 md:right-auto lg:static "
-            id="panel-details"
-          >
+          {showPanel && (
             <Panel
               selectedUser={selectedUser}
               selectedRecipe={selectedRecipe}
+              onClosePanel={handleClosePanel}
             />
-          </aside>
+          )}
         </div>
       </main>
       {/* -- END MAIN -- */}

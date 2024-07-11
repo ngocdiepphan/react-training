@@ -5,15 +5,19 @@ import Button from "../../../Inputs/Buttons";
 export interface PanelFormProps<T> {
   columns: TableColumn<T>[];
   data: T;
+  onClosePanel?: () => void;
 }
 
-const PanelForm = <T,>({ columns, data }: PanelFormProps<T>) => {
+const PanelForm = <T,>({ columns, data, onClosePanel }: PanelFormProps<T>) => {
   return (
     <>
       <div className="sticky top-0 flex items-center z-1 bg-primary border-b border-gray-400">
         <div className="flex items-center justify-between w-full">
           <div className="flex items-center pl-20">
-            <span className="bg-back w-20 h-20"></span>
+            <span
+              className="bg-back w-20 h-20 cursor-pointer"
+              onClick={onClosePanel}
+            ></span>
           </div>
           <div className="flex-grow flex justify-center">
             <p className="py-20 cursor-pointer text-hoverPrimary font-bold hover:text-white hover:bg-hoverPrimary">
@@ -27,7 +31,6 @@ const PanelForm = <T,>({ columns, data }: PanelFormProps<T>) => {
         <Button type="button" variant="confirm">
           Delete
         </Button>
-        <Button type="button" variant="confirm" children='add usser'/>
         <Button type="button" variant="confirm">
           Save
         </Button>
@@ -77,7 +80,7 @@ const PanelForm = <T,>({ columns, data }: PanelFormProps<T>) => {
               <input
                 type="text"
                 className="max-w-212 border p-8 font-medium text-quaternary rounded outline-none hover:border-hoverPrimary"
-                value={(data as any)[column.key] as string}
+                value={data[column.key] as string}
               />
             )}
           </div>
