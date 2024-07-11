@@ -7,9 +7,9 @@ import {
 } from 'react-router-dom';
 import SignInForm from './components/DataDisplay/Auth/SignIn/index';
 import SignUpForm from './components/DataDisplay/Auth/SignUp/index';
-import HomePage from './pages/homepage';
+// import HomePage from './pages/homepage';
 import RecipeDetail from './pages/recipe-detail'
-// import Dashboard from './pages/dashboard';
+import Dashboard from './pages/dashboard';
 
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
         <Route path="/" element={<Navigate to="/sign-in" />} />
         <Route path="/sign-in" element={<SignInForm />} />
         <Route path="/sign-up" element={<SignUpForm />} />
-        <Route path="/homepage" element={<HomePage />} />
-        {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+        {/* <Route path="/homepage" element={<HomePage />} /> */}
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/recipe/:id" element={<RecipeDetail />} />
       </Routes>
     </Router>
