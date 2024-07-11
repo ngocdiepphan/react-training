@@ -6,6 +6,9 @@ export interface InputFieldProps {
   id: string;
   name: string;
   variant: "primary" | "secondary";
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  errorMessage: string;
 }
 
 const InputField: React.FC<InputFieldProps> = ({
@@ -14,8 +17,11 @@ const InputField: React.FC<InputFieldProps> = ({
   id,
   name,
   variant,
+  value,
+  onChange,
+  errorMessage,
 }) => {
-  const labelBaseStyle = "font-serif";
+  const labelBaseStyle = "font-serif text-xl";
   const inputBaseStyle = "border p-14 w-full";
 
   const labelVariantStyles = {
@@ -24,7 +30,7 @@ const InputField: React.FC<InputFieldProps> = ({
   };
 
   const inputVariantStyles = {
-    primary: "border-gray-300 rounded-md px-10 py-8 w-full mb-16",
+    primary: "border-gray-300 rounded-md px-10 py-8 w-full mb-10",
     secondary: "border-buttonPrimary w-180 p-8 outline-none h-27 cursor-pointer md:w-220 hover:border-hoverPrimary"
   };
 
@@ -32,8 +38,8 @@ const InputField: React.FC<InputFieldProps> = ({
   const inputStyles = `${inputBaseStyle} ${inputVariantStyles[variant]}`;
 
   return (
-    <>
-    <label htmlFor={id} className={labelStyles}>
+    <div className="mb-30">
+      <label htmlFor={id} className={labelStyles}>
         {label}
       </label>
       <input
@@ -41,8 +47,11 @@ const InputField: React.FC<InputFieldProps> = ({
         name={name}
         type={type}
         className={inputStyles}
+        value={value}
+        onChange={onChange}
       />
-    </>
+      {errorMessage && <p className="mb-20 text-red-500 ">{errorMessage}</p>}
+    </div>
   );
 };
 

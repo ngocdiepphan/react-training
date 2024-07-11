@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,  useEffect } from "react";
 import FormAdd from "../components/DataDisplay/FormAdd";
 import Panel from "../components/DataDisplay/Panel";
 import Toolbar from "../components/DataDisplay/Toolbar";
@@ -14,6 +14,37 @@ const Dashboard: React.FC = () => {
   const [selectedUser, setSelectedUser] = useState<UserProps | null>(null);
   const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
   const [showPanel, setShowPanel] = useState(false);
+
+
+  // const [userData, setUserData] = useState<UserProps[]>([]);
+  // const [recipeData, setRecipeData] = useState<Recipe[]>([]);
+  // useEffect(() => {
+  //   // Fetch user data
+  //   APIHelper.fetchUsers()
+  //     .then((response) => {
+  //       if (response.data) {
+  //         setUserData(response.data);
+  //       } else {
+  //         console.error("Failed to fetch users:", response.error?.message);
+  //       }
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error fetching users:", error.message);
+  //     });
+
+  //   // Fetch recipe data
+  //   APIHelper.fetchRecipes()
+  //     .then((response) => {
+  //       if (response.data) {
+  //         setRecipeData(response.data);
+  //       } else {
+  //         console.error("Failed to fetch recipes:", response.error?.message);
+  //       }
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error fetching recipes:", error.message);
+  //     });
+  // }, []);
 
   const handleClosePanel = () => {
     setShowPanel(!showPanel);
@@ -59,16 +90,16 @@ const Dashboard: React.FC = () => {
               id="table-wrapper"
             >
               <div className="flex gap-4">
-                {/* <Table
+                <Table
                   columns={userColumns}
                   data={user}
                   onRowClick={handleUserRowClick}
-                /> */}
-                <Table
+                />
+                {/* <Table
                   columns={recipeColumns}
                   data={recipe}
                   onRowClick={handleRecipeRowClick}
-                />
+                /> */}
               </div>
             </div>
           </div>

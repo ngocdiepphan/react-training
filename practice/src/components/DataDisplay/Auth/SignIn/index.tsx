@@ -13,7 +13,7 @@ const SignInForm: React.FC = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen flex justify-center pt-60">
-      <form className="bg-primary p-8 rounded-lg shadow-md mt-8 mb-64 w-318 h-318 mx-4 px-30 pt-20">
+      <form className="bg-primary p-8 rounded-lg shadow-md mt-8 mb-64 w-420 h-420 mx-4 px-30 pt-20">
         <div className="mb-4">
           <InputField
             label="Email"

@@ -64,6 +64,7 @@ module.exports = {
         '450': '450px',
         '500': '500px',
         '550': '550px',
+        '650': '650px',
       },
       colors: {
         primary: '#000',
