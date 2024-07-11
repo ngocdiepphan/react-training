@@ -14,6 +14,7 @@ class UserService {
       const formDataWithRole = {
         ...formData,
         role: 'user',
+        img: "",
       };
 
       console.log('Signing up with:', formDataWithRole);

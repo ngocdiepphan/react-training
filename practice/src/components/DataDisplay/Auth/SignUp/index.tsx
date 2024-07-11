@@ -14,7 +14,9 @@ const SignUpForm: React.FC = () => {
     username: "",
     password: "",
     confirmPassword: "",
-    role: ""
+    role: "",
+    img: "",
+    id: "",
   });
   const [errors, setErrors] = useState({
     email: "",

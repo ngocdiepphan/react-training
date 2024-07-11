@@ -47,6 +47,15 @@
       "confirmPassword": "12345678",
       "role": "user",
       "id": "XXFWJGL"
+    },
+    {
+      "email": "test@gmail.com",
+      "username": "Diep Phan@",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "role": "user",
+      "img": "",
+      "id": "XvgE2vV"
     }
   ],
   "recipes": [
