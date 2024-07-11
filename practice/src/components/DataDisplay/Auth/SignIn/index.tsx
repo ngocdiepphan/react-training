@@ -3,31 +3,78 @@ import { Link, useNavigate } from "react-router-dom";
 import InputField from "../../../Inputs/TextField";
 import Button from "../../../Inputs/Buttons";
 import { validateEmail, validateMinLength } from "helpers";
+import UserService from "services/auth";
 
 const SignInForm: React.FC = () => {
   const navigate = useNavigate();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const userService = new UserService();
+
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+  const [errors, setErrors] = useState({
+    email: "",
+    password: "",
+  });
   const [error, setError] = useState("");
 
-  const handleChangeEmail = (value: string) => {
-    setEmail(value);
-    setError("");
+  const handleChange = (field: string, value: string) => {
+    setFormData({
+      ...formData,
+      [field]: value,
+    });
+
+    switch (field) {
+      case "email":
+        setErrors({
+          ...errors,
+          email: validateEmail(value) || "",
+        });
+        break;
+      case "password":
+        setErrors({
+          ...errors,
+          password: validateMinLength("Password", value, 8) || "",
+        });
+        break;
+      default:
+        break;
+    }
   };
 
-  const handleChangePassword = (value: string) => {
-    setPassword(value);
-    setError("");
+  const handleSignIn = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    // Validate form
+    const emailError = validateEmail(formData.email);
+    const passwordError = validateMinLength("Password", formData.password, 8);
+
+    setErrors({
+      email: emailError || "",
+      password: passwordError || "",
+    });
+
+    if (!emailError && !passwordError) {
+      const response = await userService.signInUser(
+        formData.email,
+        formData.password,
+      );
+
+      if (response.error) {
+        setError("Invalid email or password. Please try again.");
+      } else if (response.data && "role" in response.data) {
+        localStorage.setItem("user", JSON.stringify(response.data));
+
+        if (response.data.role === "admin") {
+          navigate("/dashboard");
+        } else {
+          navigate("/homepage");
+        }
+      }
+    }
   };
 
-  // const handleSignIn = async (e: React.FormEvent<HTMLFormElement>) => {
-  //   e.preventDefault();
-  // };
-
-  const handleSignIn = () => {
-    // navigate("/homepage");
-    navigate("/dashboard");
-  };
   return (
     <div className="bg-gray-100 min-h-screen flex justify-center pt-60">
       <form
@@ -41,9 +88,9 @@ const SignInForm: React.FC = () => {
             id="email"
             name="email"
             variant="primary"
-            value={email}
-            onChange={(e) => handleChangeEmail(e.target.value)}
-            errorMessage={validateEmail(email) || error}
+            value={formData.email}
+            onChange={(e) => handleChange("email", e.target.value)}
+            errorMessage={errors.email || error}
           />
         </div>
         <div className="mb-4">
@@ -53,12 +100,12 @@ const SignInForm: React.FC = () => {
             id="password"
             name="password"
             variant="primary"
-            value={password}
-            onChange={(e) => handleChangePassword(e.target.value)}
-            errorMessage={validateMinLength("Password", password, 8) || error}
+            value={formData.password}
+            onChange={(e) => handleChange("password", e.target.value)}
+            errorMessage={errors.password}
           />
         </div>
-        <Button type="submit" variant="submit" onClick={handleSignIn}>
+        <Button type="submit" variant="submit">
           Sign In
         </Button>
         <div id="display-data"></div>

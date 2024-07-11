@@ -1,6 +1,6 @@
-import APIHelper, { ApiResponse } from './helper';
-import { UserProps } from 'type/user';
-import { API } from 'constants/url';
+import APIHelper, { ApiResponse } from "./helper";
+import { UserProps } from "type/user";
+import { API } from "constants/url";
 
 class UserService {
   private apiHelper: APIHelper;
@@ -13,21 +13,66 @@ class UserService {
     try {
       const formDataWithRole = {
         ...formData,
-        role: 'user',
+        role: "user",
         img: "",
       };
 
-      console.log('Signing up with:', formDataWithRole);
+      console.log("Signing up with:", formDataWithRole);
 
-      const response = await this.apiHelper.request(`${API.BASE_URL}${API.API_USERS}`, 'POST', formDataWithRole);
+      const response = await this.apiHelper.request(
+        `${API.BASE_URL}${API.API_USERS}`,
+        "POST",
+        formDataWithRole,
+      );
 
-      console.log('Sign up response:', response);
+      console.log("Sign up response:", response);
       return response;
     } catch (error) {
-      console.error('Failed to sign up user:', error);
+      console.error("Failed to sign up user:", error);
       return {
         data: null,
-        error: { message: (error as Error).message || 'Failed to sign up user' },
+        error: {
+          message: (error as Error).message || "Failed to sign up user",
+        },
+      };
+    }
+  }
+
+  async signInUser(
+    email: string,
+    password: string,
+  ): Promise<ApiResponse<UserProps>> {
+    try {
+      const response = await this.apiHelper.request(
+        `${API.BASE_URL}${API.API_USERS}?email=${email}&password=${password}`,
+        "GET",
+      );
+      console.log("Authentication response:", response);
+
+      if (response.error) {
+        throw new Error(
+          response.error.message || "Failed to authenticate user",
+        );
+      }
+
+      const users = response.data as UserProps[];
+
+      const user = users.find(
+        (user: UserProps) => user.email === email && user.password === password,
+      );
+
+      if (user && user.role) {
+        return { data: user, error: null };
+      } else {
+        throw new Error("Invalid email or password");
+      }
+    } catch (error) {
+      console.error("Failed to authenticate user:", error);
+      return {
+        data: null,
+        error: {
+          message: (error as Error).message || "Failed to authenticate user",
+        },
       };
     }
   }
