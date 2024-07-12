@@ -1,14 +1,14 @@
 import React, { useState,  useEffect } from "react";
-import FormAdd from "../components/DataDisplay/FormAdd";
-import Panel from "../components/DataDisplay/Panel";
-import Toolbar from "../components/DataDisplay/Toolbar";
-import Table from "../components/DataDisplay/Table";
+import FormAdd from "../components/FormAdd";
+import Panel from "../components/Panel";
+import Toolbar from "../components/Toolbar";
+import Table from "../components/Table";
 import { userColumns, recipeColumns } from "../type/table";
 import { user } from "../mocks/user";
 import { recipe } from "../mocks/recipe";
 import { UserProps } from "../type/user";
 import { Recipe } from "../type/recipe";
-import Drawer from "components/DataDisplay/Drawer";
+import Drawer from "components/Drawer";
 
 const Dashboard: React.FC = () => {
   const [selectedUser, setSelectedUser] = useState<UserProps | null>(null);

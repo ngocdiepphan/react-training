@@ -1,21 +1,21 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { recipe } from "mocks/recipe";
-import CreateDate from "components/DataDisplay/CreatDate";
-import Header from "components/DataDisplay/Layouts/Header";
-import Creator from "components/DataDisplay/Creator";
-import Rating from "components/DataDisplay/RatingStar";
-import PrepTime from "components/DataDisplay/PrepTime";
-import Ingredient from "components/DataDisplay/Ingredient";
-import NutritionFacts from "components/DataDisplay/Nutrition";
-import Instruction from "components/DataDisplay/Instruction";
-import Feedback from "components/DataDisplay/Feedback";
-import Profiles from "../components/DataDisplay/Profile/index";
+import CreateDate from "components/CreatedAt";
+import Header from "components/Layouts/Header";
+import Creator from "components/Creator";
+import Rating from "components/RatingStar";
+import PrepTime from "components/PrepTime";
+import Ingredient from "components/Ingredient";
+import NutritionFacts from "components/Nutrition";
+import Instruction from "components/Instruction";
+import Feedback from "components/Feedback";
+import Profiles from "../components/Profile/index";
 import { profileData } from "../mocks/profile";
-import Button from "components/Inputs/Buttons";
-import FooterContact from "components/DataDisplay/Layouts/Footer/Contact";
-import FooterDesc from "components/DataDisplay/Layouts/Footer/Description";
-import FooterSocial from "components/DataDisplay/Layouts/Footer/Social";
+import Button from "components/Buttons";
+import FooterContact from "components/Layouts/Footer/Contact";
+import FooterDesc from "components/Layouts/Footer/Description";
+import FooterSocial from "components/Layouts/Footer/Social";
 
 const RecipeDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
