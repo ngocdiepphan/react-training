@@ -1,0 +1,20 @@
+import Button from "../Buttons";
+import React from "react";
+import DrawerItem from "./DrawerItem";
+
+const Drawer: React.FC = () => {
+  return (
+    <div className="flex-col gap-20 w-212 bg-drawerSecondary hidden md:hidden lg:block h-full">
+      <div className="py-20 px-10">
+        <Button type="button" variant="add">
+          New recipes
+        </Button>
+        <ul className="navigation">
+        <DrawerItem title="User" type="user" icon="user-item" className="bg-user-item" />
+        <DrawerItem title="Recipes" type="recipe" icon="recipe-item" className="bg-recipe-item" />
+        </ul>
+      </div>
+    </div>
+  );
+};
+export default Drawer;

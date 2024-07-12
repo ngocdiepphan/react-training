@@ -1,32 +1,19 @@
 import React from "react";
-import Header from "../components/DataDisplay/Layouts/Header";
+import Header from "../components/Layouts/Header";
 import { recipe } from "../mocks/recipe";
-import NutritionFacts from "../components/DataDisplay/Nutrition/index";
-import Ingredient from "../components/DataDisplay/Ingredient";
-import Instruction from "../components/DataDisplay/Instruction";
-import PrepTime from "../components/DataDisplay/PrepTime/index";
-import { profileData } from "../mocks/profile";
-import Profiles from "../components/DataDisplay/Profile/index";
-import Feedback from "../components/DataDisplay/Feedback";
-import Rating from "../components/DataDisplay/RatingStar";
-import Button from "../components/Inputs/Buttons/index";
-import FooterSocial from "../components/DataDisplay/Layouts/Footer/Social";
-import Banner from "../components/DataDisplay/Banner";
-import FooterContact from "../components/DataDisplay/Layouts/Footer/Contact";
+import Button from "../components/Buttons/index";
+import FooterSocial from "../components/Layouts/Footer/Social";
+import Banner from "../components/Banner";
+import FooterContact from "../components/Layouts/Footer/Contact";
 import imgBanner from "../../public/assets/images/banner/banner.png";
-import Delicious from "../components/DataDisplay/Delicious";
-import Category from "../components/DataDisplay/Category";
+import Delicious from "../components/Delicious";
+import Category from "../components/Category";
 import Form from "../components/Inputs/Form";
-import Collection from "../components/DataDisplay/Collection";
-import LastRecipe from "../components/DataDisplay/LastRecipe";
-import FooterDesc from "../components/DataDisplay/Layouts/Footer/Description";
+import Collection from "../components/Collection";
+import LastRecipe from "../components/LastRecipe";
+import FooterDesc from "../components/Layouts/Footer/Description";
 
 const HomePage: React.FC = () => {
-  const recipeData = recipe[1];
-  const nutritionData = recipeData.nutrition;
-  const ingredientData = recipeData.ingredient;
-  const instructionData = recipeData.instruction;
-  const ratingData = recipeData.ratings;
 
   return (
     <>

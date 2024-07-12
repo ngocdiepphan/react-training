@@ -56,6 +56,15 @@
       "role": "user",
       "img": "",
       "id": "XvgE2vV"
+    },
+    {
+      "email": "ngocdiepphan180402@gmail.com",
+      "username": "DiepPhan",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "role": "user",
+      "img": "",
+      "id": "xbu_zCZ"
     }
   ],
   "recipes": [
