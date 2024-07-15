@@ -19,23 +19,24 @@ const SignInForm: React.FC = () => {
   });
   const [error, setError] = useState("");
 
-  const handleChange = (field: string, value: string) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
     setFormData({
       ...formData,
-      [field]: value,
+      [name]: value,
     });
 
-    switch (field) {
+    switch (name) {
       case "email":
         setErrors({
           ...errors,
-          // email: validateEmail(value) || "",
+          email: validateEmail(value) || "",
         });
         break;
       case "password":
         setErrors({
           ...errors,
-          // password: validateMinLength("Password", value, 8) || "",
+          password: validateMinLength("Password", value, 8) || "",
         });
         break;
       default:
@@ -46,33 +47,30 @@ const SignInForm: React.FC = () => {
   const handleSignIn = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Validate form
-    const emailError = validateEmail(formData.email);
-    const passwordError = validateMinLength("Password", formData.password, 8);
+    const isValid = formData.email && formData.password;
 
-    setErrors({
-      email: emailError || "",
-      password: passwordError || "",
-    });
-
-    if (!emailError && !passwordError) {
-      const response = await userService.signInUser(
-        formData.email,
-        formData.password,
-      );
-
-      if (response.error) {
-        setError("Invalid email or password. Please try again.");
-      } else if (response.data && "role" in response.data) {
-        localStorage.setItem("user", JSON.stringify(response.data));
-
-        if (response.data.role === "admin") {
-          navigate("/dashboard");
-        } else {
-          navigate("/homepage");
-        }
-      }
+    if (!isValid) {
+      setErrors({
+        email: !formData.email ? "Email is required" : "",
+        password: !formData.password ? "Password is required" : "",
+      });
+      return;
     }
+
+    const response = await userService.signInUser(
+      formData.email,
+      formData.password,
+    );
+
+    const data = response.data;
+
+    if (!data || !("role" in data)) {
+      setError("Role information not found in response.");
+      return;
+    }
+
+    localStorage.setItem("user", JSON.stringify(data));
+    navigate(data.role === "admin" ? "/dashboard" : "/homepage");
   };
 
   return (
@@ -89,7 +87,7 @@ const SignInForm: React.FC = () => {
             name="email"
             variant="primary"
             value={formData.email}
-            onChange={(e) => handleChange("email", e.target.value)}
+            onChange={handleChange}
             errorMessage={errors.email || error}
           />
         </div>
@@ -101,7 +99,7 @@ const SignInForm: React.FC = () => {
             name="password"
             variant="primary"
             value={formData.password}
-            onChange={(e) => handleChange("password", e.target.value)}
+            onChange={handleChange}
             errorMessage={errors.password}
           />
         </div>

@@ -31,40 +31,6 @@
       "password": "password1",
       "role": "user",
       "img": "https://i.imgur.com/4A8GZ9kb.jpg"
-    },
-    {
-      "id": "5",
-      "email": "test4@gmail.com11",
-      "username": "user4",
-      "password": "password1",
-      "role": "user",
-      "img": "https://docs.webix.com/usermanager-backend/users/87/avatar/503723673.jpg"
-    },
-    {
-      "email": "diep@test.com",
-      "username": "DiepPhan",
-      "password": "12345678",
-      "confirmPassword": "12345678",
-      "role": "user",
-      "id": "XXFWJGL"
-    },
-    {
-      "email": "test@gmail.com",
-      "username": "Diep Phan@",
-      "password": "12345678",
-      "confirmPassword": "12345678",
-      "role": "user",
-      "img": "",
-      "id": "XvgE2vV"
-    },
-    {
-      "email": "ngocdiepphan180402@gmail.com",
-      "username": "DiepPhan",
-      "password": "12345678",
-      "confirmPassword": "12345678",
-      "role": "user",
-      "img": "",
-      "id": "xbu_zCZ"
     }
   ],
   "recipes": [
