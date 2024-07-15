@@ -5,7 +5,7 @@ import {
   Routes,
   Navigate,
 } from 'react-router-dom';
-import SignInForm from './pages/Auth/SignIn';
+import SignInForm from './pages/Auth/SingIn';
 import SignUpForm from './pages/Auth/SignUp';
 import HomePage from './pages/homepage';
 import RecipeDetail from './pages/recipe-detail'
