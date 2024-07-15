@@ -23,7 +23,6 @@ function App() {
         <Route path="/recipe/:id" element={<RecipeDetail />} />
       </Routes>
     </Router>
-
   );
 }
 

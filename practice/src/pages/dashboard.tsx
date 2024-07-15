@@ -1,4 +1,4 @@
-import React, { useState,  useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import FormAdd from "../components/FormAdd";
 import Panel from "../components/Panel";
 import Toolbar from "../components/Toolbar";
@@ -14,40 +14,13 @@ const Dashboard: React.FC = () => {
   const [selectedUser, setSelectedUser] = useState<UserProps | null>(null);
   const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
   const [showPanel, setShowPanel] = useState(false);
-
-
-  // const [userData, setUserData] = useState<UserProps[]>([]);
-  // const [recipeData, setRecipeData] = useState<Recipe[]>([]);
-  // useEffect(() => {
-  //   // Fetch user data
-  //   APIHelper.fetchUsers()
-  //     .then((response) => {
-  //       if (response.data) {
-  //         setUserData(response.data);
-  //       } else {
-  //         console.error("Failed to fetch users:", response.error?.message);
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error fetching users:", error.message);
-  //     });
-
-  //   // Fetch recipe data
-  //   APIHelper.fetchRecipes()
-  //     .then((response) => {
-  //       if (response.data) {
-  //         setRecipeData(response.data);
-  //       } else {
-  //         console.error("Failed to fetch recipes:", response.error?.message);
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error fetching recipes:", error.message);
-  //     });
-  // }, []);
+  const [showDrawer, setShowDrawer] = useState(false);
 
   const handleClosePanel = () => {
     setShowPanel(!showPanel);
+  };
+  const handleShowDrawer = () => {
+    setShowDrawer(!showDrawer);
   };
 
   const handleUserRowClick = (rowData: UserProps) => {
@@ -68,7 +41,10 @@ const Dashboard: React.FC = () => {
       <header>
         <div className="navbar-user__wrapper flex flex-row text-quaternary font-semibold w-full h-48 bg-primary p-20">
           <div className="navbar-user__item flex flex-row gap-20 items-center cursor-pointer">
-            <span className="bg-menu w-24 h-24 lg:hidden"></span>
+            <span
+              className="bg-menu w-24 h-24 lg:hidden"
+              onClick={handleShowDrawer}
+            ></span>
             <h1 className="navbar-user__title text-2xl font-sans">Dashboard</h1>
           </div>
         </div>
@@ -77,10 +53,7 @@ const Dashboard: React.FC = () => {
 
       {/* -- START MAIN -- */}
       <main className=" main-body flex lg:pl-0 lg:p-10 flex-row font-sans text-sm bg-dashboardPrimary">
-        <div className="drawer">
-          <Drawer />
-          {/* <FormAdd /> */}
-        </div>
+        <Drawer onShowDrawer={showDrawer} />
 
         <div className="content flex flex-row font-sans bg-dashboardPrimary w-full">
           <div className="content__wrapper content-hinder lg:pl-10 w-full">
