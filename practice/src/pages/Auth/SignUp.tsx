@@ -68,23 +68,23 @@ const SignUpForm: React.FC = () => {
     e.preventDefault();
 
     if (!formData.email || !formData.username || !formData.password || !formData.confirmPassword) {
-      alert("Please fill in all fields.");
+      setErrors({
+        email: !formData.email ? "Email is required" : errors.email,
+        username: !formData.username ? "Username is required" : errors.username,
+        password: !formData.password ? "Password is required" : errors.password,
+        confirmPassword: !formData.confirmPassword ? "Confirm Password is required" : errors.confirmPassword,
+      });
       return;
     }
 
     if (!errors.email && !errors.username && !errors.password && !errors.confirmPassword) {
       const response = await userService.signUpUser(formData);
-
-      console.log('Response:', response);
-
       if (response.error) {
         alert(`Sign up failed: ${response.error.message}`);
       } else {
         alert("Sign up successful!");
         navigate('/sign-in');
       }
-    } else {
-      alert("Please fix the errors before submitting.");
     }
   };
 

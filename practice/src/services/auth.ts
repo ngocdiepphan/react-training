@@ -17,15 +17,12 @@ class UserService {
         img: "",
       };
 
-      console.log("Signing up with:", formDataWithRole);
-
       const response = await this.apiHelper.request(
         `${API.BASE_URL}${API.API_USERS}`,
         "POST",
         formDataWithRole,
       );
 
-      console.log("Sign up response:", response);
       return response;
     } catch (error) {
       console.error("Failed to sign up user:", error);
@@ -47,7 +44,6 @@ class UserService {
         `${API.BASE_URL}${API.API_USERS}?email=${email}&password=${password}`,
         "GET",
       );
-      console.log("Authentication response:", response);
 
       if (response.error) {
         throw new Error(

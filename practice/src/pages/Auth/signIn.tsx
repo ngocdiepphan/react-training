@@ -47,11 +47,13 @@ const SignInForm: React.FC = () => {
   const handleSignIn = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (!formData.email || !formData.password) {
-      alert("Please fill in all fields.");
+    if (!formData.email || !formData.password ) {
+      setErrors({
+        email: !formData.email ? "Email is required" : errors.email,
+        password: !formData.password ? "Password is required" : errors.password,
+      });
       return;
     }
-
     const response = await userService.signInUser(
       formData.email,
       formData.password,
