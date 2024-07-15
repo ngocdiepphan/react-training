@@ -49,8 +49,8 @@ const SignInForm: React.FC = () => {
 
     if (!formData.email || !formData.password ) {
       setErrors({
-        email: !formData.email ? "Email is required" : errors.email,
-        password: !formData.password ? "Password is required" : errors.password,
+        email: !formData.email ? "Email is required" : "",
+        password: !formData.password ? "Password is required" : "",
       });
       return;
     }

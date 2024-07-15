@@ -69,10 +69,10 @@ const SignUpForm: React.FC = () => {
 
     if (!formData.email || !formData.username || !formData.password || !formData.confirmPassword) {
       setErrors({
-        email: !formData.email ? "Email is required" : errors.email,
-        username: !formData.username ? "Username is required" : errors.username,
-        password: !formData.password ? "Password is required" : errors.password,
-        confirmPassword: !formData.confirmPassword ? "Confirm Password is required" : errors.confirmPassword,
+        email: !formData.email ? "Email is required" : "",
+        username: !formData.username ? "Username is required" : "",
+        password: !formData.password ? "Password is required" : "",
+        confirmPassword: !formData.confirmPassword ? "Confirm Password is required" : "",
       });
       return;
     }
