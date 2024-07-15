@@ -18,6 +18,7 @@ const SignUpForm: React.FC = () => {
     img: "",
     id: "",
   });
+
   const [errors, setErrors] = useState({
     email: "",
     username: "",
@@ -25,13 +26,15 @@ const SignUpForm: React.FC = () => {
     confirmPassword: ""
   });
 
-  const handleChange = (field: string, value: string) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+
     setFormData({
       ...formData,
-      [field]: value,
+      [name]: value,
     });
 
-    switch (field) {
+    switch (name) {
       case "email":
         setErrors({
           ...errors,
@@ -64,22 +67,15 @@ const SignUpForm: React.FC = () => {
   const handleSignUp = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Validate form
-    const emailError = validateEmail(formData.email);
-    const usernameError = validateMinLength("Username", formData.username, 2);
-    const passwordError = validateMinLength("Password", formData.password, 8);
-    const confirmPasswordError = validatePasswordMatch(formData.password, formData.confirmPassword);
+    if (!formData.email || !formData.username || !formData.password || !formData.confirmPassword) {
+      alert("Please fill in all fields.");
+      return;
+    }
 
-    setErrors({
-      email: emailError || "",
-      username: usernameError || "",
-      password: passwordError || "",
-      confirmPassword: confirmPasswordError || "",
-    });
-
-    if (!emailError && !usernameError && !passwordError && !confirmPasswordError) {
-      // Proceed with sign up
+    if (!errors.email && !errors.username && !errors.password && !errors.confirmPassword) {
       const response = await userService.signUpUser(formData);
+
+      console.log('Response:', response);
 
       if (response.error) {
         alert(`Sign up failed: ${response.error.message}`);
@@ -87,6 +83,8 @@ const SignUpForm: React.FC = () => {
         alert("Sign up successful!");
         navigate('/sign-in');
       }
+    } else {
+      alert("Please fix the errors before submitting.");
     }
   };
 
@@ -104,7 +102,7 @@ const SignUpForm: React.FC = () => {
           name="email"
           variant="primary"
           value={formData.email}
-          onChange={(e) => handleChange("email", e.target.value)}
+          onChange={handleChange}
           errorMessage={errors.email}
         />
         <InputField
@@ -114,7 +112,7 @@ const SignUpForm: React.FC = () => {
           name="username"
           variant="primary"
           value={formData.username}
-          onChange={(e) => handleChange("username", e.target.value)}
+          onChange={handleChange}
           errorMessage={errors.username}
         />
         <InputField
@@ -124,7 +122,7 @@ const SignUpForm: React.FC = () => {
           name="password"
           variant="primary"
           value={formData.password}
-          onChange={(e) => handleChange("password", e.target.value)}
+          onChange={handleChange}
           errorMessage={errors.password}
         />
         <InputField
@@ -134,7 +132,7 @@ const SignUpForm: React.FC = () => {
           name="confirmPassword"
           variant="primary"
           value={formData.confirmPassword}
-          onChange={(e) => handleChange("confirmPassword", e.target.value)}
+          onChange={handleChange}
           errorMessage={errors.confirmPassword}
         />
         <Button type="submit" variant="submit">

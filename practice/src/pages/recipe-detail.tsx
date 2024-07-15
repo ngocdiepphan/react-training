@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { recipe } from "mocks/recipe";
-import CreateDate from "components/CreatedAt";
+import CreateDate from "components/CreatDate";
 import Header from "components/Layouts/Header";
 import Creator from "components/Creator";
 import Rating from "components/RatingStar";
