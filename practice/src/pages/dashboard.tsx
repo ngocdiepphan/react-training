@@ -15,12 +15,17 @@ const Dashboard: React.FC = () => {
   const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
   const [showPanel, setShowPanel] = useState(false);
   const [showDrawer, setShowDrawer] = useState(false);
+  const [showFormAdd, setShowFormAdd] = useState(false);
 
   const handleClosePanel = () => {
     setShowPanel(!showPanel);
   };
   const handleShowDrawer = () => {
     setShowDrawer(!showDrawer);
+  };
+
+  const handleShowFormAdd = () => {
+    setShowFormAdd(!showFormAdd);
   };
 
   const handleUserRowClick = (rowData: UserProps) => {
@@ -53,7 +58,10 @@ const Dashboard: React.FC = () => {
 
       {/* -- START MAIN -- */}
       <main className=" main-body flex lg:pl-0 lg:p-10 flex-row font-sans text-sm bg-dashboardPrimary">
-        <Drawer onShowDrawer={showDrawer} />
+        <div className="drawer">
+          <Drawer onShowDrawer={showDrawer} onShowFormAdd={handleShowFormAdd} />
+          {showFormAdd && <FormAdd />}
+        </div>
 
         <div className="content flex flex-row font-sans bg-dashboardPrimary w-full">
           <div className="content__wrapper content-hinder lg:pl-10 w-full">
