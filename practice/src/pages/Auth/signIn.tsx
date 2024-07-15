@@ -47,30 +47,30 @@ const SignInForm: React.FC = () => {
   const handleSignIn = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (!formData.email || !formData.password ) {
+    const isValid = formData.email && formData.password;
+
+    if (!isValid) {
       setErrors({
         email: !formData.email ? "Email is required" : "",
         password: !formData.password ? "Password is required" : "",
       });
       return;
     }
+
     const response = await userService.signInUser(
       formData.email,
       formData.password,
     );
 
-    if (response.error) {
-      setError("Invalid email or password. Please try again.");
-      return;
-    }
+    const data = response.data;
 
-    if (!response.data || !("role" in response.data)) {
+    if (!data || !("role" in data)) {
       setError("Role information not found in response.");
       return;
     }
 
-    localStorage.setItem("user", JSON.stringify(response.data));
-    navigate(response.data.role === "admin" ? "/dashboard" : "/homepage");
+    localStorage.setItem("user", JSON.stringify(data));
+    navigate(data.role === "admin" ? "/dashboard" : "/homepage");
   };
 
   return (

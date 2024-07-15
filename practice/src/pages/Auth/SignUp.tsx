@@ -67,7 +67,9 @@ const SignUpForm: React.FC = () => {
   const handleSignUp = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (!formData.email || !formData.username || !formData.password || !formData.confirmPassword) {
+    const isValid = formData.email && formData.username && formData.password && formData.confirmPassword;
+
+    if (!isValid) {
       setErrors({
         email: !formData.email ? "Email is required" : "",
         username: !formData.username ? "Username is required" : "",
