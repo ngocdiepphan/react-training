@@ -20,7 +20,7 @@ export interface RecipeRow {
   name: string;
   category: string;
   creator: string;
-  createdAt: number;
+  createdAt: string;
   ratings: number;
   description: string;
 }

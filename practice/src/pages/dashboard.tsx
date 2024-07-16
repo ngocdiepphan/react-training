@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import FormAdd from "../components/FormAdd";
 import Panel from "../components/Panel";
 import Toolbar from "../components/Toolbar";
@@ -16,6 +16,7 @@ const Dashboard: React.FC = () => {
   const [showPanel, setShowPanel] = useState(false);
   const [showDrawer, setShowDrawer] = useState(false);
   const [showFormAdd, setShowFormAdd] = useState(false);
+  const [selectedTable, setSelectedTable] = useState<"user" | "recipe">("user");
 
   const handleClosePanel = () => {
     setShowPanel(!showPanel);
@@ -40,6 +41,10 @@ const Dashboard: React.FC = () => {
     setShowPanel(true);
   };
 
+  const handleDrawerItemClick = (item: "user" | "recipe") => {
+    setSelectedTable(item);
+  };
+
   return (
     <>
       {/* -- START HEADER -- */}
@@ -59,7 +64,11 @@ const Dashboard: React.FC = () => {
       {/* -- START MAIN -- */}
       <main className=" main-body flex lg:pl-0 lg:p-10 flex-row font-sans text-sm bg-dashboardPrimary">
         <div className="drawer">
-          <Drawer onShowDrawer={showDrawer} onShowFormAdd={handleShowFormAdd} />
+          <Drawer
+            onShowDrawer={showDrawer}
+            onShowFormAdd={handleShowFormAdd}
+            onDrawerItemClick={handleDrawerItemClick}
+          />
           {showFormAdd && <FormAdd />}
         </div>
 
@@ -71,16 +80,20 @@ const Dashboard: React.FC = () => {
               id="table-wrapper"
             >
               <div className="flex gap-4">
-                <Table
-                  columns={userColumns}
-                  data={user}
-                  onRowClick={handleUserRowClick}
-                />
-                {/* <Table
-                  columns={recipeColumns}
-                  data={recipe}
-                  onRowClick={handleRecipeRowClick}
-                /> */}
+                {selectedTable === "user" && (
+                  <Table
+                    columns={userColumns}
+                    data={user}
+                    onRowClick={handleUserRowClick}
+                  />
+                )}
+                {selectedTable === "recipe" && (
+                  <Table
+                    columns={recipeColumns}
+                    data={recipe}
+                    onRowClick={handleRecipeRowClick}
+                  />
+                )}
               </div>
             </div>
           </div>
