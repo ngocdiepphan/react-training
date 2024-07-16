@@ -1,7 +1,7 @@
 export const recipe = [
   {
     "name": "Strawberry Cream Cheesecake",
-    "img": "http://localhost:1234/banner.cb63b542.png",
+    "img": "https://media.istockphoto.com/id/1676097087/photo/pastel-de-tres-leches-three-milk-cake-latin-america-bakery-with-strawberries.webp?b=1&s=170667a&w=0&k=20&c=fafTp3QFmHBxk7OjEEhmAG3Q_4MQvAlwT2lk8lwcPIg=",
     "description": "A delicious and creamy cheesecake topped with fresh strawberries and a sweet strawberry glaze.",
     "ingredient": [
       "400g graham crackers",
@@ -62,7 +62,7 @@ export const recipe = [
   },
   {
     "name": "Caramel Strawberry Milkshake",
-    "img": "http://localhost:1234/banner.cb63b542.png",
+    "img": "https://media.istockphoto.com/id/1676097087/photo/pastel-de-tres-leches-three-milk-cake-latin-america-bakery-with-strawberries.webp?b=1&s=170667a&w=0&k=20&c=fafTp3QFmHBxk7OjEEhmAG3Q_4MQvAlwT2lk8lwcPIg=",
     "description": "A sweet and creamy milkshake with the rich flavors of caramel and fresh strawberries.",
     "ingredient": [
       "250ml whole milk",
@@ -108,7 +108,7 @@ export const recipe = [
   },
   {
     "name": "Fancy Glazed Donuts",
-    "img": "http://localhost:1234/banner.cb63b542.png",
+    "img": "https://www.istockphoto.com/photo/donut-stack-gm1137450970-303330981?utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2FFancy-Glazed-Donuts&utm_medium=affiliate&utm_source=unsplash&utm_term=Fancy+Glazed+Donuts%3A%3A%3A",
     "description": "Soft and fluffy donuts with a rich, sweet glaze and a variety of colorful toppings.",
     "ingredient": [
       "500g all-purpose flour",
@@ -165,7 +165,7 @@ export const recipe = [
   },
   {
     "name": "Mighty Cheesy Breakfast Burger",
-    "img": "http://localhost:1234/banner.cb63b542.png",
+    "img": "https://www.istockphoto.com/photo/the-copycat-mighty-muffin-breakfast-sandwich-gm1659762573-534872128?utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2FMighty-Cheesy-Breakfast-Burger&utm_medium=affiliate&utm_source=unsplash&utm_term=Mighty+Cheesy+Breakfast+Burger%3A%3A%3A",
     "description": "A hearty breakfast burger with a juicy beef patty, crispy bacon, a fried egg, and melted cheese.",
     "ingredient": [
       "500g ground beef",
@@ -445,6 +445,1169 @@ export const recipe = [
       "max": "10 min"
     },
     "serving": "2 servings"
-  }
-
+  },
+  {
+  "name": "Cashew Vegan Rice",
+  "img": "https://example.com/your-image-url.jpg",
+  "description": "A delightful vegan dish with rice, cashews, and assorted vegetables, seasoned to perfection.",
+  "ingredient": [
+    "2 cups of jasmine rice",
+    "1 cup of cashew nuts",
+    "1 red bell pepper, diced",
+    "1 yellow bell pepper, diced",
+    "1 cup of peas",
+    "4 cloves of garlic, minced",
+    "2 tablespoons of soy sauce",
+    "1 tablespoon of sesame oil",
+    "Salt and pepper to taste",
+    "Fresh cilantro for garnish"
+  ],
+  "instruction": [
+    { "step": 1, "description": "Cook jasmine rice according to package instructions." },
+    { "step": 2, "description": "In a large pan or wok, heat sesame oil over medium heat." },
+    { "step": 3, "description": "Add minced garlic and sauté until fragrant." },
+    { "step": 4, "description": "Add diced bell peppers and peas, stir-frying until vegetables are tender." },
+    { "step": 5, "description": "Stir in cooked jasmine rice and cashew nuts, mixing well." },
+    { "step": 6, "description": "Drizzle soy sauce over the rice mixture, seasoning with salt and pepper to taste." },
+    { "step": 7, "description": "Continue cooking for another 3-5 minutes, allowing flavors to meld." },
+    { "step": 8, "description": "Remove from heat and garnish with fresh cilantro before serving." },
+    { "step": 9, "description": "Serve hot and enjoy your delicious Cashew Vegan Rice!" }
+  ],
+  "nutrition": [
+    { "label": "Calories", "value": "350" },
+    { "label": "Total Fat", "value": "12g" },
+    { "label": "Saturated Fat", "value": "2g" },
+    { "label": "Cholesterol", "value": "0mg" },
+    { "label": "Sodium", "value": "600mg" },
+    { "label": "Total Carbohydrate", "value": "50g" },
+    { "label": "Dietary Fiber", "value": "5g" },
+    { "label": "Total Sugars", "value": "5g" },
+    { "label": "Protein", "value": "10g" }
+  ],
+  "creator": "Your Name",
+  "imgCreator": "https://example.com/your-profile-image.jpg",
+  "collection_id": 5,
+  "category": "Main Dishes",
+  "ratings": 5,
+  "createdAt": "2024-07-16",
+  "id": "2",
+  "prepTime": {
+    "min": "15 minutes",
+    "max": "20 minutes"
+  },
+  "serving": "4 servings"
+},
+{
+  "name": "Smoked Salmon Salad Sandwich",
+  "img": "https://example.com/your-image-url.jpg",
+  "description": "A delicious sandwich featuring smoked salmon salad with fresh vegetables and herbs.",
+  "ingredient": [
+    "8 slices of whole grain bread",
+    "200g smoked salmon, thinly sliced",
+    "1/2 cup Greek yogurt",
+    "1 tablespoon lemon juice",
+    "1 tablespoon capers, chopped",
+    "1/4 cup red onion, finely chopped",
+    "1/4 cup cucumber, diced",
+    "1 tablespoon fresh dill, chopped",
+    "Salt and pepper to taste",
+    "Lettuce leaves and tomato slices for serving"
+  ],
+  "instruction": [
+    { "step": 1, "description": "In a bowl, combine Greek yogurt, lemon juice, chopped capers, red onion, cucumber, and fresh dill." },
+    { "step": 2, "description": "Season the mixture with salt and pepper to taste, adjusting as needed." },
+    { "step": 3, "description": "Spread the smoked salmon slices evenly over 4 slices of whole grain bread." },
+    { "step": 4, "description": "Top each with a generous portion of the yogurt mixture." },
+    { "step": 5, "description": "Add lettuce leaves and tomato slices on top of the yogurt mixture." },
+    { "step": 6, "description": "Cover each sandwich with another slice of whole grain bread." },
+    { "step": 7, "description": "Slice the sandwiches diagonally and serve immediately. Enjoy your Smoked Salmon Salad Sandwich!" }
+  ],
+  "nutrition": [
+    { "label": "Calories", "value": "350" },
+    { "label": "Total Fat", "value": "10g" },
+    { "label": "Saturated Fat", "value": "2g" },
+    { "label": "Cholesterol", "value": "25mg" },
+    { "label": "Sodium", "value": "600mg" },
+    { "label": "Total Carbohydrate", "value": "40g" },
+    { "label": "Dietary Fiber", "value": "5g" },
+    { "label": "Total Sugars", "value": "5g" },
+    { "label": "Protein", "value": "25g" }
+  ],
+  "creator": "Your Name",
+  "imgCreator": "https://example.com/your-profile-image.jpg",
+  "collection_id": 6,
+  "category": "Sandwiches",
+  "ratings": 4.5,
+  "createdAt": "2024-07-16",
+  "id": "3",
+  "prepTime": {
+    "min": "15 minutes",
+    "max": "20 minutes"
+  },
+  "serving": "4 sandwiches"
+},
+{
+  "name": "Salmon in Creamy Sun Dried Tomato Sauce",
+  "img": "https://example.com/your-image-url.jpg",
+  "description": "Pan-seared salmon fillets served in a rich and creamy sun dried tomato sauce.",
+  "ingredient": [
+    "4 salmon fillets",
+    "Salt and black pepper, to taste",
+    "2 tablespoons olive oil",
+    "1/2 cup sun dried tomatoes, chopped",
+    "4 cloves garlic, minced",
+    "1 cup heavy cream",
+    "1/2 cup chicken broth",
+    "1/4 cup grated Parmesan cheese",
+    "1 teaspoon dried basil",
+    "1/2 teaspoon dried oregano",
+    "Fresh basil leaves for garnish"
+  ],
+  "instruction": [
+    { "step": 1, "description": "Season the salmon fillets with salt and black pepper on both sides." },
+    { "step": 2, "description": "In a large skillet, heat olive oil over medium-high heat." },
+    { "step": 3, "description": "Add salmon fillets to the skillet and cook for 4-5 minutes per side, or until cooked through and golden brown. Remove from skillet and set aside." },
+    { "step": 4, "description": "In the same skillet, add chopped sun dried tomatoes and minced garlic. Cook for 2 minutes, stirring frequently." },
+    { "step": 5, "description": "Pour in heavy cream and chicken broth, stirring to combine. Bring to a simmer." },
+    { "step": 6, "description": "Stir in grated Parmesan cheese, dried basil, and dried oregano. Season with salt and black pepper to taste." },
+    { "step": 7, "description": "Return salmon fillets to the skillet, spooning the creamy sauce over them. Simmer for 2-3 minutes, allowing flavors to meld." },
+    { "step": 8, "description": "Garnish with fresh basil leaves and serve hot. Enjoy your Salmon in Creamy Sun Dried Tomato Sauce!" }
+  ],
+  "nutrition": [
+    { "label": "Calories", "value": "450" },
+    { "label": "Total Fat", "value": "30g" },
+    { "label": "Saturated Fat", "value": "12g" },
+    { "label": "Cholesterol", "value": "120mg" },
+    { "label": "Sodium", "value": "400mg" },
+    { "label": "Total Carbohydrate", "value": "8g" },
+    { "label": "Dietary Fiber", "value": "2g" },
+    { "label": "Total Sugars", "value": "4g" },
+    { "label": "Protein", "value": "35g" }
+  ],
+  "creator": "Your Name",
+  "imgCreator": "https://example.com/your-profile-image.jpg",
+  "collection_id": 7,
+  "category": "Seafood",
+  "ratings": 4.8,
+  "createdAt": "2024-07-16",
+  "id": "4",
+  "prepTime": {
+    "min": "20 minutes",
+    "max": "25 minutes"
+  },
+  "serving": "4 servings"
+},
+{
+  "name": "Healthy Jam Waffle Breakfast",
+  "img": "https://example.com/your-image-url.jpg",
+  "description": "A nutritious breakfast featuring whole grain waffles topped with yogurt, fresh fruit, and a drizzle of jam.",
+  "ingredient": [
+    "4 whole grain waffles",
+    "1/2 cup Greek yogurt",
+    "1/2 cup mixed berries (such as strawberries, blueberries, raspberries)",
+    "2 tablespoons fruit jam (preferably low sugar)",
+    "1 tablespoon honey or maple syrup (optional)",
+    "Fresh mint leaves for garnish"
+  ],
+  "instruction": [
+    { "step": 1, "description": "Toast the whole grain waffles according to package instructions until golden and crispy." },
+    { "step": 2, "description": "Spread Greek yogurt evenly over each toasted waffle." },
+    { "step": 3, "description": "Top with mixed berries, arranging them decoratively." },
+    { "step": 4, "description": "Drizzle fruit jam over the berries, ensuring even distribution." },
+    { "step": 5, "description": "If desired, drizzle with honey or maple syrup for added sweetness." },
+    { "step": 6, "description": "Garnish with fresh mint leaves for a pop of color and flavor." },
+    { "step": 7, "description": "Serve immediately and enjoy your Healthy Jam Waffle Breakfast!" }
+  ],
+  "nutrition": [
+    { "label": "Calories", "value": "300" },
+    { "label": "Total Fat", "value": "8g" },
+    { "label": "Saturated Fat", "value": "2g" },
+    { "label": "Cholesterol", "value": "10mg" },
+    { "label": "Sodium", "value": "300mg" },
+    { "label": "Total Carbohydrate", "value": "50g" },
+    { "label": "Dietary Fiber", "value": "6g" },
+    { "label": "Total Sugars", "value": "15g" },
+    { "label": "Protein", "value": "10g" }
+  ],
+  "creator": "Your Name",
+  "imgCreator": "https://example.com/your-profile-image.jpg",
+  "collection_id": 8,
+  "category": "Breakfast",
+  "ratings": 4.5,
+  "createdAt": "2024-07-16",
+  "id": "5",
+  "prepTime": {
+    "min": "10 minutes",
+    "max": "15 minutes"
+  },
+  "serving": "4 servings"
+},
+{
+  "name": "Chocolate and Banana Jar Cake",
+  "img": "https://example.com/your-image-url.jpg",
+  "description": "A decadent jar cake combining rich chocolate cake with creamy banana filling, perfect for a delightful dessert.",
+  "ingredient": [
+    "1 cup all-purpose flour",
+    "1/2 cup cocoa powder",
+    "1 teaspoon baking powder",
+    "1/2 teaspoon baking soda",
+    "1/4 teaspoon salt",
+    "1/2 cup unsalted butter, softened",
+    "1 cup granulated sugar",
+    "2 large eggs",
+    "1 teaspoon vanilla extract",
+    "1/2 cup buttermilk",
+    "2 ripe bananas, mashed",
+    "1/4 cup chocolate chips",
+    "Whipped cream for topping (optional)",
+    "Sliced bananas and chocolate shavings for garnish (optional)"
+  ],
+  "instruction": [
+    { "step": 1, "description": "Preheat oven to 350°F (175°C). Grease and flour four 8-ounce jars." },
+    { "step": 2, "description": "In a bowl, sift together flour, cocoa powder, baking powder, baking soda, and salt." },
+    { "step": 3, "description": "In another bowl, cream together butter and sugar until light and fluffy." },
+    { "step": 4, "description": "Add eggs one at a time, beating well after each addition. Stir in vanilla extract." },
+    { "step": 5, "description": "Gradually add dry ingredients to the butter mixture, alternating with buttermilk, beginning and ending with dry ingredients. Mix until just combined." },
+    { "step": 6, "description": "Fold in mashed bananas and chocolate chips." },
+    { "step": 7, "description": "Divide batter evenly among the prepared jars, filling each about halfway." },
+    { "step": 8, "description": "Place jars on a baking sheet and bake for 25-30 minutes, or until a toothpick inserted into the center comes out clean." },
+    { "step": 9, "description": "Remove from oven and let cool slightly. Top with whipped cream, sliced bananas, and chocolate shavings if desired." },
+    { "step": 10, "description": "Serve warm and enjoy your Chocolate and Banana Jar Cake!" }
+  ],
+  "nutrition": [
+    { "label": "Calories", "value": "350" },
+    { "label": "Total Fat", "value": "15g" },
+    { "label": "Saturated Fat", "value": "9g" },
+    { "label": "Cholesterol", "value": "70mg" },
+    { "label": "Sodium", "value": "250mg" },
+    { "label": "Total Carbohydrate", "value": "50g" },
+    { "label": "Dietary Fiber", "value": "3g" },
+    { "label": "Total Sugars", "value": "30g" },
+    { "label": "Protein", "value": "5g" }
+  ],
+  "creator": "Your Name",
+  "imgCreator": "https://example.com/your-profile-image.jpg",
+  "collection_id": 9,
+  "category": "Desserts",
+  "ratings": 4.7,
+  "createdAt": "2024-07-16",
+  "id": "6",
+  "prepTime": {
+    "min": "20 minutes",
+    "max": "25 minutes"
+  },
+  "serving": "4 jar cakes"
+},
+{
+  "name": "Chocolate and Banana Jar Cake",
+  "img": "https://example.com/your-image-url.jpg",
+  "description": "A decadent jar cake combining rich chocolate cake with creamy banana filling, perfect for a delightful dessert.",
+  "ingredient": [
+    "1 cup all-purpose flour",
+    "1/2 cup cocoa powder",
+    "1 teaspoon baking powder",
+    "1/2 teaspoon baking soda",
+    "1/4 teaspoon salt",
+    "1/2 cup unsalted butter, softened",
+    "1 cup granulated sugar",
+    "2 large eggs",
+    "1 teaspoon vanilla extract",
+    "1/2 cup buttermilk",
+    "2 ripe bananas, mashed",
+    "1/4 cup chocolate chips",
+    "Whipped cream for topping (optional)",
+    "Sliced bananas and chocolate shavings for garnish (optional)"
+  ],
+  "instruction": [
+    { "step": 1, "description": "Preheat oven to 350°F (175°C). Grease and flour four 8-ounce jars." },
+    { "step": 2, "description": "In a bowl, sift together flour, cocoa powder, baking powder, baking soda, and salt." },
+    { "step": 3, "description": "In another bowl, cream together butter and sugar until light and fluffy." },
+    { "step": 4, "description": "Add eggs one at a time, beating well after each addition. Stir in vanilla extract." },
+    { "step": 5, "description": "Gradually add dry ingredients to the butter mixture, alternating with buttermilk, beginning and ending with dry ingredients. Mix until just combined." },
+    { "step": 6, "description": "Fold in mashed bananas and chocolate chips." },
+    { "step": 7, "description": "Divide batter evenly among the prepared jars, filling each about halfway." },
+    { "step": 8, "description": "Place jars on a baking sheet and bake for 25-30 minutes, or until a toothpick inserted into the center comes out clean." },
+    { "step": 9, "description": "Remove from oven and let cool slightly. Top with whipped cream, sliced bananas, and chocolate shavings if desired." },
+    { "step": 10, "description": "Serve warm and enjoy your Chocolate and Banana Jar Cake!" }
+  ],
+  "nutrition": [
+    { "label": "Calories", "value": "350" },
+    { "label": "Total Fat", "value": "15g" },
+    { "label": "Saturated Fat", "value": "9g" },
+    { "label": "Cholesterol", "value": "70mg" },
+    { "label": "Sodium", "value": "250mg" },
+    { "label": "Total Carbohydrate", "value": "50g" },
+    { "label": "Dietary Fiber", "value": "3g" },
+    { "label": "Total Sugars", "value": "30g" },
+    { "label": "Protein", "value": "5g" }
+  ],
+  "creator": "Your Name",
+  "imgCreator": "https://example.com/your-profile-image.jpg",
+  "collection_id": 9,
+  "category": "Desserts",
+  "ratings": 4.7,
+  "createdAt": "2024-07-16",
+  "id": "6",
+  "prepTime": {
+    "min": "20 minutes",
+    "max": "25 minutes"
+  },
+  "serving": "4 jar cakes"
+},
+{
+  "name": "Blueberry Carrot Cake",
+  "img": "https://example.com/your-image-url.jpg",
+  "description": "A delightful twist on classic carrot cake with the addition of juicy blueberries, topped with cream cheese frosting.",
+  "ingredient": [
+    "2 cups all-purpose flour",
+    "1 teaspoon baking powder",
+    "1 teaspoon baking soda",
+    "1/2 teaspoon salt",
+    "1 teaspoon ground cinnamon",
+    "1/2 teaspoon ground nutmeg",
+    "1 cup granulated sugar",
+    "1/2 cup brown sugar",
+    "1/2 cup vegetable oil",
+    "3 large eggs",
+    "1 teaspoon vanilla extract",
+    "2 cups grated carrots (about 3 medium carrots)",
+    "1 cup fresh blueberries",
+    "1/2 cup chopped walnuts or pecans (optional)",
+    "Cream cheese frosting (store-bought or homemade)",
+    "Fresh blueberries and carrot curls for garnish (optional)"
+  ],
+  "instruction": [
+    { "step": 1, "description": "Preheat oven to 350°F (175°C). Grease and flour two 9-inch round cake pans." },
+    { "step": 2, "description": "In a medium bowl, whisk together flour, baking powder, baking soda, salt, cinnamon, and nutmeg." },
+    { "step": 3, "description": "In a large bowl, whisk together granulated sugar, brown sugar, oil, eggs, and vanilla extract until smooth." },
+    { "step": 4, "description": "Gradually add the dry ingredients to the wet ingredients, mixing until just combined." },
+    { "step": 5, "description": "Fold in grated carrots, blueberries, and chopped nuts (if using) until evenly distributed." },
+    { "step": 6, "description": "Divide the batter evenly between the prepared cake pans." },
+    { "step": 7, "description": "Bake for 25-30 minutes, or until a toothpick inserted into the center comes out clean." },
+    { "step": 8, "description": "Remove from oven and let the cakes cool in the pans for 10 minutes before transferring to a wire rack to cool completely." },
+    { "step": 9, "description": "Once cooled, frost the top of one cake layer with cream cheese frosting. Place the second cake layer on top and frost the top and sides of the cake with remaining frosting." },
+    { "step": 10, "description": "Garnish with fresh blueberries and carrot curls if desired." },
+    { "step": 11, "description": "Slice and serve. Enjoy your Blueberry Carrot Cake!" }
+  ],
+  "nutrition": [
+    { "label": "Calories", "value": "400" },
+    { "label": "Total Fat", "value": "20g" },
+    { "label": "Saturated Fat", "value": "5g" },
+    { "label": "Cholesterol", "value": "60mg" },
+    { "label": "Sodium", "value": "300mg" },
+    { "label": "Total Carbohydrate", "value": "50g" },
+    { "label": "Dietary Fiber", "value": "3g" },
+    { "label": "Total Sugars", "value": "30g" },
+    { "label": "Protein", "value": "5g" }
+  ],
+  "creator": "Your Name",
+  "imgCreator": "https://example.com/your-profile-image.jpg",
+  "collection_id": 11,
+  "category": "Desserts",
+  "ratings": 4.8,
+  "createdAt": "2024-07-16",
+  "id": "8",
+  "prepTime": {
+    "min": "30 minutes",
+    "max": "35 minutes"
+  },
+  "serving": "12 slices"
+},
+{
+  "name": "Vegan Cauliflower Salad",
+  "img": "https://example.com/your-image-url.jpg",
+  "description": "A refreshing and nutritious salad featuring roasted cauliflower, chickpeas, and a tangy tahini dressing.",
+  "ingredient": [
+    "1 head cauliflower, cut into florets",
+    "1 can (15 oz) chickpeas, drained and rinsed",
+    "2 tablespoons olive oil",
+    "1 teaspoon ground cumin",
+    "1/2 teaspoon smoked paprika",
+    "Salt and pepper, to taste",
+    "1/4 cup tahini",
+    "2 tablespoons lemon juice",
+    "1 clove garlic, minced",
+    "2 tablespoons water, or more as needed",
+    "1/4 cup fresh parsley, chopped",
+    "1/4 cup pomegranate seeds (optional, for garnish)"
+  ],
+  "instruction": [
+    { "step": 1, "description": "Preheat oven to 400°F (200°C). Line a baking sheet with parchment paper." },
+    { "step": 2, "description": "In a large bowl, toss cauliflower florets and chickpeas with olive oil, ground cumin, smoked paprika, salt, and pepper until evenly coated." },
+    { "step": 3, "description": "Spread the cauliflower and chickpeas in a single layer on the prepared baking sheet." },
+    { "step": 4, "description": "Roast in the preheated oven for 25-30 minutes, stirring halfway through, until cauliflower is tender and chickpeas are crispy." },
+    { "step": 5, "description": "While the cauliflower and chickpeas are roasting, prepare the tahini dressing. In a small bowl, whisk together tahini, lemon juice, minced garlic, and water until smooth. Add more water as needed to achieve desired consistency." },
+    { "step": 6, "description": "Once roasted, remove cauliflower and chickpeas from the oven and let cool slightly." },
+    { "step": 7, "description": "Transfer roasted cauliflower and chickpeas to a serving bowl. Drizzle with tahini dressing and toss gently to combine." },
+    { "step": 8, "description": "Sprinkle with chopped fresh parsley and pomegranate seeds (if using) for garnish." },
+    { "step": 9, "description": "Serve warm or at room temperature. Enjoy your Vegan Cauliflower Salad!" }
+  ],
+  "nutrition": [
+    { "label": "Calories", "value": "250" },
+    { "label": "Total Fat", "value": "12g" },
+    { "label": "Saturated Fat", "value": "1.5g" },
+    { "label": "Sodium", "value": "300mg" },
+    { "label": "Total Carbohydrate", "value": "30g" },
+    { "label": "Dietary Fiber", "value": "8g" },
+    { "label": "Total Sugars", "value": "5g" },
+    { "label": "Protein", "value": "8g" }
+  ],
+  "creator": "Your Name",
+  "imgCreator": "https://example.com/your-profile-image.jpg",
+  "collection_id": 12,
+  "category": "Salads",
+  "ratings": 4.5,
+  "createdAt": "2024-07-16",
+  "id": "9",
+  "prepTime": {
+    "min": "10 minutes",
+    "max": "35 minutes"
+  },
+  "serving": "4 servings"
+},
+{
+  "name": "Roasted Red Pepper Soup",
+  "img": "https://example.com/your-image-url.jpg",
+  "description": "A velvety and flavorful soup made with roasted red peppers, tomatoes, and aromatic herbs.",
+  "ingredient": [
+    "6 large red bell peppers",
+    "2 tablespoons olive oil",
+    "1 onion, chopped",
+    "3 cloves garlic, minced",
+    "1 can (14 oz) diced tomatoes",
+    "4 cups vegetable broth",
+    "1 teaspoon smoked paprika",
+    "1/2 teaspoon dried thyme",
+    "Salt and pepper, to taste",
+    "1/2 cup coconut milk (or cream for a richer soup)",
+    "Fresh basil or parsley, chopped, for garnish"
+  ],
+  "instruction": [
+    { "step": 1, "description": "Preheat oven to 450°F (230°C). Line a baking sheet with parchment paper." },
+    { "step": 2, "description": "Cut the bell peppers in half lengthwise and remove the seeds and stems. Place them cut-side down on the baking sheet." },
+    { "step": 3, "description": "Roast the peppers in the preheated oven for 20-25 minutes, or until the skins are charred and blistered." },
+    { "step": 4, "description": "Remove the peppers from the oven and immediately transfer them to a bowl. Cover with plastic wrap and let them steam for 10 minutes." },
+    { "step": 5, "description": "Peel off the skins from the peppers and discard. Chop the roasted peppers into smaller pieces." },
+    { "step": 6, "description": "In a large pot, heat olive oil over medium heat. Add chopped onion and sauté until translucent, about 5-7 minutes." },
+    { "step": 7, "description": "Add minced garlic to the pot and sauté for another minute until fragrant." },
+    { "step": 8, "description": "Stir in diced tomatoes, chopped roasted red peppers, vegetable broth, smoked paprika, dried thyme, salt, and pepper. Bring to a boil." },
+    { "step": 9, "description": "Reduce heat and simmer for 15-20 minutes, allowing the flavors to meld together." },
+    { "step": 10, "description": "Remove the pot from heat and let the soup cool slightly." },
+    { "step": 11, "description": "Using an immersion blender, blend the soup until smooth and creamy. Alternatively, carefully transfer the soup in batches to a blender and blend until smooth. Be cautious with hot liquids." },
+    { "step": 12, "description": "Stir in coconut milk or cream to the soup, adjusting the consistency and seasoning as desired." },
+    { "step": 13, "description": "Reheat the soup gently over low heat if necessary. Serve hot, garnished with chopped fresh basil or parsley." },
+    { "step": 14, "description": "Enjoy your delicious Roasted Red Pepper Soup!" }
+  ],
+  "nutrition": [
+    { "label": "Calories", "value": "180" },
+    { "label": "Total Fat", "value": "10g" },
+    { "label": "Saturated Fat", "value": "3g" },
+    { "label": "Sodium", "value": "700mg" },
+    { "label": "Total Carbohydrate", "value": "20g" },
+    { "label": "Dietary Fiber", "value": "5g" },
+    { "label": "Total Sugars", "value": "10g" },
+    { "label": "Protein", "value": "4g" }
+  ],
+  "creator": "Your Name",
+  "imgCreator": "https://example.com/your-profile-image.jpg",
+  "collection_id": 13,
+  "category": "Soups",
+  "ratings": 4.7,
+  "createdAt": "2024-07-16",
+  "id": "10",
+  "prepTime": {
+    "min": "15 minutes",
+    "max": "40 minutes"
+  },
+  "serving": "6 servings"
+},
+{
+  "name": "Eggs and Avocado Toast",
+  "img": "https://example.com/your-image-url.jpg",
+  "description": "A delicious and nutritious breakfast or snack featuring creamy avocado spread on toasted bread with perfectly cooked eggs on top.",
+  "ingredient": [
+    "2 slices whole grain bread",
+    "1 ripe avocado",
+    "2 eggs",
+    "Salt and pepper, to taste",
+    "Optional toppings: cherry tomatoes, feta cheese, red pepper flakes, cilantro"
+  ],
+  "instruction": [
+    { "step": 1, "description": "Toast the slices of whole grain bread until golden brown and crispy." },
+    { "step": 2, "description": "While the bread is toasting, prepare the avocado. Cut the avocado in half, remove the pit, and scoop out the flesh into a bowl. Mash with a fork until smooth or slightly chunky, depending on preference." },
+    { "step": 3, "description": "Season the mashed avocado with salt and pepper to taste." },
+    { "step": 4, "description": "In a non-stick skillet, cook the eggs to your liking (fried, scrambled, poached, etc.). Season with salt and pepper." },
+    { "step": 5, "description": "Spread the mashed avocado evenly over the toasted bread slices." },
+    { "step": 6, "description": "Top each avocado toast with the cooked eggs." },
+    { "step": 7, "description": "Garnish with optional toppings like cherry tomatoes, crumbled feta cheese, red pepper flakes, or fresh cilantro." },
+    { "step": 8, "description": "Serve immediately and enjoy your Eggs and Avocado Toast!" }
+  ],
+  "nutrition": [
+    { "label": "Calories", "value": "350" },
+    { "label": "Total Fat", "value": "20g" },
+    { "label": "Saturated Fat", "value": "4g" },
+    { "label": "Cholesterol", "value": "190mg" },
+    { "label": "Sodium", "value": "400mg" },
+    { "label": "Total Carbohydrate", "value": "30g" },
+    { "label": "Dietary Fiber", "value": "8g" },
+    { "label": "Total Sugars", "value": "2g" },
+    { "label": "Protein", "value": "15g" }
+  ],
+  "creator": "Your Name",
+  "imgCreator": "https://example.com/your-profile-image.jpg",
+  "collection_id": 14,
+  "category": "Breakfast",
+  "ratings": 4.9,
+  "createdAt": "2024-07-16",
+  "id": "11",
+  "prepTime": {
+    "min": "10 minutes",
+    "max": "15 minutes"
+  },
+  "serving": "2 servings"
+},
+{
+  "name": "Pork Shoulder Cashew Noodles",
+  "img": "https://example.com/your-image-url.jpg",
+  "description": "A savory and satisfying noodle dish featuring tender pork shoulder, crunchy cashews, and flavorful Asian-inspired seasonings.",
+  "ingredient": [
+    "300g pork shoulder, thinly sliced",
+    "200g rice noodles",
+    "1 red bell pepper, thinly sliced",
+    "1 cup snap peas",
+    "3 cloves garlic, minced",
+    "2 tablespoons soy sauce",
+    "1 tablespoon oyster sauce",
+    "1 tablespoon hoisin sauce",
+    "1 tablespoon sesame oil",
+    "1/2 cup unsalted cashews",
+    "2 green onions, sliced",
+    "Salt and pepper, to taste",
+    "Optional garnish: cilantro, lime wedges"
+  ],
+  "instruction": [
+    { "step": 1, "description": "Cook rice noodles according to package instructions until al dente. Drain and set aside." },
+    { "step": 2, "description": "In a large skillet or wok, heat sesame oil over medium-high heat." },
+    { "step": 3, "description": "Add thinly sliced pork shoulder and cook until browned and cooked through, about 4-5 minutes. Season with salt and pepper." },
+    { "step": 4, "description": "Push pork to one side of the skillet and add minced garlic. Cook for 1 minute until fragrant." },
+    { "step": 5, "description": "Add red bell pepper and snap peas to the skillet. Stir-fry for 2-3 minutes until vegetables are tender-crisp." },
+    { "step": 6, "description": "In a small bowl, whisk together soy sauce, oyster sauce, and hoisin sauce. Pour over the pork and vegetables in the skillet." },
+    { "step": 7, "description": "Add cooked rice noodles and unsalted cashews to the skillet. Toss everything together until well combined and heated through." },
+    { "step": 8, "description": "Remove from heat and garnish with sliced green onions. Adjust seasoning with salt and pepper if needed." },
+    { "step": 9, "description": "Serve hot, garnished with optional cilantro and lime wedges. Enjoy your Pork Shoulder Cashew Noodles!" }
+  ],
+  "nutrition": [
+    { "label": "Calories", "value": "450" },
+    { "label": "Total Fat", "value": "15g" },
+    { "label": "Saturated Fat", "value": "3g" },
+    { "label": "Cholesterol", "value": "45mg" },
+    { "label": "Sodium", "value": "800mg" },
+    { "label": "Total Carbohydrate", "value": "55g" },
+    { "label": "Dietary Fiber", "value": "5g" },
+    { "label": "Total Sugars", "value": "6g" },
+    { "label": "Protein", "value": "25g" }
+  ],
+  "creator": "Your Name",
+  "imgCreator": "https://example.com/your-profile-image.jpg",
+  "collection_id": 15,
+  "category": "Main Dish",
+  "ratings": 4.8,
+  "createdAt": "2024-07-16",
+  "id": "12",
+  "prepTime": {
+    "min": "20 minutes",
+    "max": "30 minutes"
+  },
+  "serving": "4 servings"
+},
+{
+  "name": "Toasted Farfalle in Pesto Sauce",
+  "img": "https://example.com/your-image-url.jpg",
+  "description": "A delightful pasta dish featuring toasted farfalle tossed in a vibrant and aromatic basil pesto sauce.",
+  "ingredient": [
+    "300g farfalle pasta",
+    "1 cup fresh basil leaves",
+    "1/2 cup grated Parmesan cheese, plus extra for serving",
+    "1/4 cup pine nuts, toasted",
+    "2 cloves garlic",
+    "1/2 cup extra virgin olive oil",
+    "Salt and pepper, to taste",
+    "Optional: cherry tomatoes, grilled chicken breast, fresh basil leaves for garnish"
+  ],
+  "instruction": [
+    { "step": 1, "description": "Cook farfalle pasta in a large pot of salted boiling water until al dente according to package instructions. Drain and set aside." },
+    { "step": 2, "description": "While the pasta is cooking, prepare the pesto sauce. In a food processor, combine fresh basil leaves, grated Parmesan cheese, toasted pine nuts, garlic cloves, and a pinch of salt and pepper." },
+    { "step": 3, "description": "Pulse the ingredients while slowly adding extra virgin olive oil until the pesto reaches a smooth and creamy consistency. Adjust seasoning if needed." },
+    { "step": 4, "description": "In a large skillet, heat a tablespoon of olive oil over medium heat. Add the cooked farfalle pasta and toast for 2-3 minutes until lightly golden and crispy." },
+    { "step": 5, "description": "Reduce heat to low and add the prepared pesto sauce to the skillet. Toss the pasta gently until it is well coated with the pesto sauce." },
+    { "step": 6, "description": "Remove from heat and serve immediately, garnished with extra grated Parmesan cheese and optional cherry tomatoes, grilled chicken breast, or fresh basil leaves." },
+    { "step": 7, "description": "Enjoy your delicious Toasted Farfalle in Pesto Sauce!" }
+  ],
+  "nutrition": [
+    { "label": "Calories", "value": "450" },
+    { "label": "Total Fat", "value": "30g" },
+    { "label": "Saturated Fat", "value": "5g" },
+    { "label": "Cholesterol", "value": "10mg" },
+    { "label": "Sodium", "value": "300mg" },
+    { "label": "Total Carbohydrate", "value": "40g" },
+    { "label": "Dietary Fiber", "value": "3g" },
+    { "label": "Total Sugars", "value": "2g" },
+    { "label": "Protein", "value": "10g" }
+  ],
+  "creator": "Your Name",
+  "imgCreator": "https://example.com/your-profile-image.jpg",
+  "collection_id": 16,
+  "category": "Pasta",
+  "ratings": 4.9,
+  "createdAt": "2024-07-16",
+  "id": "13",
+  "prepTime": {
+    "min": "15 minutes",
+    "max": "20 minutes"
+  },
+  "serving": "4 servings"
+},
+{
+  "name": "Cheesy Bacon Burger Sliders",
+  "img": "https://example.com/your-image-url.jpg",
+  "description": "Delicious mini burgers topped with crispy bacon and melted cheese, perfect for parties or a quick meal.",
+  "ingredient": [
+    "12 slider buns",
+    "500g ground beef",
+    "Salt and pepper, to taste",
+    "1 tablespoon Worcestershire sauce",
+    "1 cup shredded cheddar cheese",
+    "12 slices cooked bacon",
+    "1/2 cup mayonnaise",
+    "1 tablespoon Dijon mustard",
+    "1 tablespoon ketchup",
+    "1 tablespoon pickle relish",
+    "Optional: lettuce, tomato slices, onion slices"
+  ],
+  "instruction": [
+    { "step": 1, "description": "Preheat your oven to 180°C (350°F)." },
+    { "step": 2, "description": "Slice the slider buns in half and place the bottom halves on a baking sheet lined with parchment paper." },
+    { "step": 3, "description": "In a mixing bowl, combine ground beef, salt, pepper, and Worcestershire sauce. Mix until well combined." },
+    { "step": 4, "description": "Form the seasoned ground beef into 12 small patties, slightly larger than the slider buns." },
+    { "step": 5, "description": "Heat a grill or skillet over medium-high heat. Cook the burger patties for 3-4 minutes on each side, or until cooked to your desired doneness." },
+    { "step": 6, "description": "Place a slice of cheese on each patty during the last minute of cooking to melt." },
+    { "step": 7, "description": "Spread mayonnaise on the inside of the top halves of the slider buns." },
+    { "step": 8, "description": "In a small bowl, mix together Dijon mustard, ketchup, and pickle relish to make the sauce." },
+    { "step": 9, "description": "Assemble the sliders: Place a cooked burger patty with melted cheese on each bottom bun. Top with a slice of bacon and optional lettuce, tomato, and onion slices. Spread the sauce on the top bun halves." },
+    { "step": 10, "description": "Place the assembled sliders in the preheated oven for 5 minutes, or until the buns are lightly toasted and the cheese is fully melted." },
+    { "step": 11, "description": "Remove from the oven and serve hot. Enjoy your Cheesy Bacon Burger Sliders!" }
+  ],
+  "nutrition": [
+    { "label": "Calories", "value": "350" },
+    { "label": "Total Fat", "value": "20g" },
+    { "label": "Saturated Fat", "value": "8g" },
+    { "label": "Cholesterol", "value": "60mg" },
+    { "label": "Sodium", "value": "500mg" },
+    { "label": "Total Carbohydrate", "value": "25g" },
+    { "label": "Dietary Fiber", "value": "2g" },
+    { "label": "Total Sugars", "value": "4g" },
+    { "label": "Protein", "value": "18g" }
+  ],
+  "creator": "Your Name",
+  "imgCreator": "https://example.com/your-profile-image.jpg",
+  "collection_id": 17,
+  "category": "Appetizer",
+  "ratings": 4.8,
+  "createdAt": "2024-07-16",
+  "id": "14",
+  "prepTime": {
+    "min": "20 minutes",
+    "max": "25 minutes"
+  },
+  "serving": "12 sliders"
+},
+{
+  "name": "Fig and Raisins Oatmeal",
+  "img": "https://example.com/your-image-url.jpg",
+  "description": "A comforting and nutritious oatmeal bowl featuring sweet figs, plump raisins, and warm spices.",
+  "ingredient": [
+    "1 cup rolled oats",
+    "2 cups water or milk (your choice)",
+    "Pinch of salt",
+    "1/4 cup dried figs, chopped",
+    "1/4 cup raisins",
+    "1 tablespoon honey or maple syrup (optional)",
+    "1/2 teaspoon ground cinnamon",
+    "1/4 teaspoon ground nutmeg",
+    "Optional toppings: sliced fresh figs, toasted nuts, yogurt"
+  ],
+  "instruction": [
+    { "step": 1, "description": "In a saucepan, bring water or milk to a boil over medium-high heat." },
+    { "step": 2, "description": "Stir in rolled oats and salt. Reduce heat to medium-low and simmer, stirring occasionally, for about 5 minutes or until oats are tender and the mixture has thickened to your desired consistency." },
+    { "step": 3, "description": "Add chopped dried figs, raisins, honey or maple syrup (if using), ground cinnamon, and ground nutmeg. Stir well to combine." },
+    { "step": 4, "description": "Cook for an additional 2-3 minutes, or until the dried fruits are softened and flavors are well blended." },
+    { "step": 5, "description": "Remove from heat and let it sit for a minute to thicken further." },
+    { "step": 6, "description": "Serve hot in bowls. Garnish with sliced fresh figs, toasted nuts, a drizzle of honey or maple syrup, and a dollop of yogurt if desired." },
+    { "step": 7, "description": "Enjoy your warm and delicious Fig and Raisins Oatmeal!" }
+  ],
+  "nutrition": [
+    { "label": "Calories", "value": "250" },
+    { "label": "Total Fat", "value": "4g" },
+    { "label": "Saturated Fat", "value": "1g" },
+    { "label": "Cholesterol", "value": "0mg" },
+    { "label": "Sodium", "value": "80mg" },
+    { "label": "Total Carbohydrate", "value": "50g" },
+    { "label": "Dietary Fiber", "value": "7g" },
+    { "label": "Total Sugars", "value": "20g" },
+    { "label": "Protein", "value": "5g" }
+  ],
+  "creator": "Your Name",
+  "imgCreator": "https://example.com/your-profile-image.jpg",
+  "collection_id": 18,
+  "category": "Breakfast",
+  "ratings": 4.7,
+  "createdAt": "2024-07-16",
+  "id": "15",
+  "prepTime": {
+    "min": "10 minutes",
+    "max": "15 minutes"
+  },
+  "serving": "2 servings"
+},
+{
+  "name": "Silky Smooth Panna Cotta",
+  "img": "https://example.com/your-image-url.jpg",
+  "description": "A classic Italian dessert featuring silky smooth cream infused with vanilla and set with gelatin.",
+  "ingredient": [
+    "2 cups heavy cream",
+    "1 cup whole milk",
+    "1/2 cup granulated sugar",
+    "1 vanilla bean, split lengthwise (or 1 teaspoon vanilla extract)",
+    "2 1/4 teaspoons powdered gelatin",
+    "3 tablespoons cold water",
+    "Optional: fresh berries, fruit coulis, or caramel sauce for serving"
+  ],
+  "instruction": [
+    { "step": 1, "description": "In a saucepan, combine heavy cream, whole milk, and granulated sugar. Scrape the seeds from the vanilla bean and add both the seeds and pod to the mixture. Alternatively, add vanilla extract." },
+    { "step": 2, "description": "Heat the mixture over medium heat, stirring occasionally, until it just begins to simmer. Remove from heat and let it steep for about 15 minutes to infuse the flavors." },
+    { "step": 3, "description": "Meanwhile, in a small bowl, sprinkle gelatin over cold water. Let it sit for about 5 minutes to soften." },
+    { "step": 4, "description": "Strain the cream mixture through a fine-mesh sieve into a clean saucepan, discarding the vanilla bean pod." },
+    { "step": 5, "description": "Place the saucepan with the cream mixture back over medium heat. Warm the mixture until it is hot but not boiling." },
+    { "step": 6, "description": "Add the softened gelatin to the warm cream mixture, stirring until completely dissolved." },
+    { "step": 7, "description": "Divide the mixture among serving glasses or ramekins. Chill in the refrigerator for at least 4 hours, or until set." },
+    { "step": 8, "description": "To serve, run a knife around the edge of each panna cotta and invert onto plates if desired. Alternatively, serve them directly in their containers." },
+    { "step": 9, "description": "Garnish with fresh berries, fruit coulis, or caramel sauce if desired. Enjoy your silky smooth Panna Cotta!" }
+  ],
+  "nutrition": [
+    { "label": "Calories", "value": "300" },
+    { "label": "Total Fat", "value": "25g" },
+    { "label": "Saturated Fat", "value": "15g" },
+    { "label": "Cholesterol", "value": "90mg" },
+    { "label": "Sodium", "value": "30mg" },
+    { "label": "Total Carbohydrate", "value": "15g" },
+    { "label": "Dietary Fiber", "value": "0g" },
+    { "label": "Total Sugars", "value": "12g" },
+    { "label": "Protein", "value": "4g" }
+  ],
+  "creator": "Your Name",
+  "imgCreator": "https://example.com/your-profile-image.jpg",
+  "collection_id": 19,
+  "category": "Dessert",
+  "ratings": 4.9,
+  "createdAt": "2024-07-16",
+  "id": "16",
+  "prepTime": {
+    "min": "20 minutes",
+    "max": "25 minutes"
+  },
+  "serving": "4 servings"
+},
+{
+  "name": "Triple Decker Cranberry Cake",
+  "img": "https://example.com/your-image-url.jpg",
+  "description": "A delightful triple-layer cake featuring tart cranberries and a hint of citrus, perfect for any occasion.",
+  "ingredient": [
+    "For the cake layers:",
+    "- 2 cups all-purpose flour",
+    "- 2 teaspoons baking powder",
+    "- 1/2 teaspoon baking soda",
+    "- 1/2 teaspoon salt",
+    "- 1 cup unsalted butter, softened",
+    "- 1 1/2 cups granulated sugar",
+    "- 3 large eggs",
+    "- 1 teaspoon vanilla extract",
+    "- 1 cup buttermilk",
+    "- Zest of 1 orange",
+    "- 1 cup fresh or frozen cranberries, coarsely chopped",
+    "For the frosting:",
+    "- 1 cup unsalted butter, softened",
+    "- 4 cups powdered sugar",
+    "- 2 tablespoons milk or cream",
+    "- 1 teaspoon vanilla extract",
+    "- Zest of 1 orange",
+    "- Additional fresh cranberries for decoration (optional)"
+  ],
+  "instruction": [
+    { "step": 1, "description": "Preheat your oven to 350°F (175°C). Grease and flour three 8-inch round cake pans." },
+    { "step": 2, "description": "In a medium bowl, whisk together flour, baking powder, baking soda, and salt. Set aside." },
+    { "step": 3, "description": "In a large mixing bowl, beat butter and sugar together until light and fluffy." },
+    { "step": 4, "description": "Add eggs one at a time, beating well after each addition. Stir in vanilla extract." },
+    { "step": 5, "description": "Add flour mixture alternately with buttermilk, beginning and ending with flour mixture. Mix until just combined." },
+    { "step": 6, "description": "Fold in orange zest and chopped cranberries gently." },
+    { "step": 7, "description": "Divide batter evenly among prepared cake pans. Smooth the tops with a spatula." },
+    { "step": 8, "description": "Bake in preheated oven for 25-30 minutes, or until a toothpick inserted into the center comes out clean." },
+    { "step": 9, "description": "Remove from oven and let cakes cool in pans for 10 minutes before transferring to wire racks to cool completely." },
+    { "step": 10, "description": "Meanwhile, prepare the frosting: In a large mixing bowl, beat butter until creamy. Gradually add powdered sugar, milk or cream, vanilla extract, and orange zest. Beat until smooth and fluffy." },
+    { "step": 11, "description": "To assemble, place one cake layer on a serving plate. Spread a layer of frosting over the top. Repeat with the remaining layers. Frost the top and sides of the cake evenly." },
+    { "step": 12, "description": "If desired, decorate the top of the cake with additional fresh cranberries." },
+    { "step": 13, "description": "Chill the cake for at least 1 hour before serving to set the frosting. Enjoy your Triple Decker Cranberry Cake!" }
+  ],
+  "nutrition": [
+    { "label": "Calories", "value": "450" },
+    { "label": "Total Fat", "value": "22g" },
+    { "label": "Saturated Fat", "value": "14g" },
+    { "label": "Cholesterol", "value": "90mg" },
+    { "label": "Sodium", "value": "300mg" },
+    { "label": "Total Carbohydrate", "value": "60g" },
+    { "label": "Dietary Fiber", "value": "1g" },
+    { "label": "Total Sugars", "value": "45g" },
+    { "label": "Protein", "value": "4g" }
+  ],
+  "creator": "Your Name",
+  "imgCreator": "https://example.com/your-profile-image.jpg",
+  "collection_id": 20,
+  "category": "Dessert",
+  "ratings": 4.8,
+  "createdAt": "2024-07-16",
+  "id": "17",
+  "prepTime": {
+    "min": "30 minutes",
+    "max": "40 minutes"
+  },
+  "serving": "12 servings"
+},
+{
+  "name": "Very Berry Healthy Summer Smoothie",
+  "img": "https://example.com/your-image-url.jpg",
+  "description": "A refreshing and nutritious smoothie packed with a variety of berries and creamy yogurt.",
+  "ingredient": [
+    "1 cup mixed berries (such as strawberries, blueberries, raspberries)",
+    "1 ripe banana, peeled and sliced",
+    "1/2 cup plain Greek yogurt",
+    "1/2 cup spinach leaves (optional, for added nutrition)",
+    "1 tablespoon honey or maple syrup (optional, for sweetness)",
+    "1/2 cup almond milk or any milk of your choice",
+    "Ice cubes (optional, for a chilled smoothie)"
+  ],
+  "instruction": [
+    { "step": 1, "description": "Add mixed berries, banana, Greek yogurt, spinach leaves (if using), honey or maple syrup (if using), and almond milk to a blender." },
+    { "step": 2, "description": "Blend until smooth and creamy. Add more almond milk if needed to reach your desired consistency." },
+    { "step": 3, "description": "If using ice cubes, add them to the blender and blend until smooth." },
+    { "step": 4, "description": "Pour the smoothie into glasses and serve immediately. Enjoy your Very Berry Healthy Summer Smoothie!" }
+  ],
+  "nutrition": [
+    { "label": "Calories", "value": "200" },
+    { "label": "Total Fat", "value": "3g" },
+    { "label": "Saturated Fat", "value": "0.5g" },
+    { "label": "Cholesterol", "value": "2mg" },
+    { "label": "Sodium", "value": "50mg" },
+    { "label": "Total Carbohydrate", "value": "40g" },
+    { "label": "Dietary Fiber", "value": "6g" },
+    { "label": "Total Sugars", "value": "28g" },
+    { "label": "Protein", "value": "8g" }
+  ],
+  "creator": "Your Name",
+  "imgCreator": "https://example.com/your-profile-image.jpg",
+  "collection_id": 21,
+  "category": "Smoothie",
+  "ratings": 4.5,
+  "createdAt": "2024-07-16",
+  "id": "18",
+  "prepTime": {
+    "min": "5 minutes",
+    "max": "10 minutes"
+  },
+  "serving": "2 servings"
+},
+{
+  "name": "Crispy Orange Chips",
+  "img": "https://example.com/your-image-url.jpg",
+  "description": "Delicious crispy chips made from fresh oranges, perfect as a healthy snack or garnish for desserts.",
+  "ingredient": [
+    "2 large oranges",
+    "1 tablespoon granulated sugar (optional, for sprinkling)"
+  ],
+  "instruction": [
+    { "step": 1, "description": "Preheat your oven to 200°F (95°C) and line a baking sheet with parchment paper." },
+    { "step": 2, "description": "Slice the oranges crosswise into very thin slices, about 1/8 inch thick." },
+    { "step": 3, "description": "Arrange the orange slices in a single layer on the prepared baking sheet." },
+    { "step": 4, "description": "If desired, sprinkle granulated sugar evenly over the orange slices for added sweetness." },
+    { "step": 5, "description": "Bake in the preheated oven for 2-3 hours, flipping the slices halfway through, until the oranges are dried and crispy." },
+    { "step": 6, "description": "Remove from the oven and let the orange chips cool completely on the baking sheet. They will continue to crisp up as they cool." },
+    { "step": 7, "description": "Once cooled, transfer the crispy orange chips to a serving plate or airtight container. Enjoy as a snack or use them as a garnish for desserts!" }
+  ],
+  "nutrition": [
+    { "label": "Calories", "value": "60" },
+    { "label": "Total Fat", "value": "0g" },
+    { "label": "Saturated Fat", "value": "0g" },
+    { "label": "Cholesterol", "value": "0mg" },
+    { "label": "Sodium", "value": "0mg" },
+    { "label": "Total Carbohydrate", "value": "15g" },
+    { "label": "Dietary Fiber", "value": "3g" },
+    { "label": "Total Sugars", "value": "12g" },
+    { "label": "Protein", "value": "1g" }
+  ],
+  "creator": "Your Name",
+  "imgCreator": "https://example.com/your-profile-image.jpg",
+  "collection_id": 22,
+  "category": "Snack",
+  "ratings": 4.7,
+  "createdAt": "2024-07-16",
+  "id": "19",
+  "prepTime": {
+    "min": "10 minutes",
+    "max": "15 minutes"
+  },
+  "serving": "2 servings"
+},
+{
+  "name": "Turmeric Lavender Tea",
+  "img": "https://example.com/your-image-url.jpg",
+  "description": "A soothing tea blend infused with the warm spice of turmeric and the calming aroma of lavender.",
+  "ingredient": [
+    "2 cups water",
+    "1 teaspoon ground turmeric",
+    "1 teaspoon dried lavender buds",
+    "1 teaspoon honey or maple syrup (optional, for sweetness)",
+    "1 teaspoon fresh lemon juice (optional, for added flavor)"
+  ],
+  "instruction": [
+    { "step": 1, "description": "In a small saucepan, bring the water to a boil." },
+    { "step": 2, "description": "Add the ground turmeric and dried lavender buds to the boiling water." },
+    { "step": 3, "description": "Reduce the heat to low and let the mixture simmer for 5-7 minutes to infuse the flavors." },
+    { "step": 4, "description": "Remove the saucepan from heat and let the tea steep for an additional 3-5 minutes." },
+    { "step": 5, "description": "Strain the tea into cups using a fine mesh sieve or tea strainer." },
+    { "step": 6, "description": "Stir in honey or maple syrup and fresh lemon juice to taste, if desired." },
+    { "step": 7, "description": "Serve warm and enjoy the soothing flavors of Turmeric Lavender Tea!" }
+  ],
+  "nutrition": [
+    { "label": "Calories", "value": "10" },
+    { "label": "Total Fat", "value": "0g" },
+    { "label": "Saturated Fat", "value": "0g" },
+    { "label": "Cholesterol", "value": "0mg" },
+    { "label": "Sodium", "value": "5mg" },
+    { "label": "Total Carbohydrate", "value": "2g" },
+    { "label": "Dietary Fiber", "value": "0g" },
+    { "label": "Total Sugars", "value": "1g" },
+    { "label": "Protein", "value": "0g" }
+  ],
+  "creator": "Your Name",
+  "imgCreator": "https://example.com/your-profile-image.jpg",
+  "collection_id": 23,
+  "category": "Tea",
+  "ratings": 4.6,
+  "createdAt": "2024-07-16",
+  "id": "20",
+  "prepTime": {
+    "min": "10 minutes",
+    "max": "15 minutes"
+  },
+  "serving": "2 servings"
+},
+{
+  "name": "Blue Velvet Brownies",
+  "img": "https://example.com/your-image-url.jpg",
+  "description": "Decadent brownies with a vibrant blue hue, topped with a cream cheese frosting for a delightful treat.",
+  "ingredient": [
+    "1 cup all-purpose flour",
+    "1/4 teaspoon baking powder",
+    "1/4 teaspoon salt",
+    "1/2 cup unsalted butter, melted",
+    "1 cup granulated sugar",
+    "2 large eggs",
+    "1 teaspoon vanilla extract",
+    "2 tablespoons cocoa powder",
+    "1 tablespoon blue food coloring (gel preferred for vibrant color)"
+  ],
+  "instruction": [
+    { "step": 1, "description": "Preheat your oven to 350°F (175°C). Grease or line an 8x8-inch baking pan with parchment paper." },
+    { "step": 2, "description": "In a small bowl, whisk together flour, baking powder, and salt. Set aside." },
+    { "step": 3, "description": "In a large mixing bowl, combine melted butter and sugar. Mix until well combined." },
+    { "step": 4, "description": "Add eggs, one at a time, mixing well after each addition. Stir in vanilla extract." },
+    { "step": 5, "description": "Gradually add the flour mixture to the wet ingredients, mixing until just combined." },
+    { "step": 6, "description": "Stir in cocoa powder and blue food coloring until evenly incorporated and batter is smooth." },
+    { "step": 7, "description": "Pour the batter into the prepared baking pan, spreading it evenly with a spatula." },
+    { "step": 8, "description": "Bake in the preheated oven for 25-30 minutes, or until a toothpick inserted into the center comes out clean or with a few moist crumbs." },
+    { "step": 9, "description": "Remove from the oven and let the brownies cool completely in the pan on a wire rack." },
+    { "step": 10, "description": "Once cooled, prepare the cream cheese frosting (optional) and spread it evenly over the brownies." },
+    { "step": 11, "description": "Cut into squares and serve. Enjoy your decadent Blue Velvet Brownies!" }
+  ],
+  "nutrition": [
+    { "label": "Calories", "value": "200" },
+    { "label": "Total Fat", "value": "10g" },
+    { "label": "Saturated Fat", "value": "6g" },
+    { "label": "Cholesterol", "value": "55mg" },
+    { "label": "Sodium", "value": "150mg" },
+    { "label": "Total Carbohydrate", "value": "25g" },
+    { "label": "Dietary Fiber", "value": "1g" },
+    { "label": "Total Sugars", "value": "18g" },
+    { "label": "Protein", "value": "3g" }
+  ],
+  "creator": "Your Name",
+  "imgCreator": "https://example.com/your-profile-image.jpg",
+  "collection_id": 24,
+  "category": "Dessert",
+  "ratings": 4.8,
+  "createdAt": "2024-07-16",
+  "id": "21",
+  "prepTime": {
+    "min": "15 minutes",
+    "max": "20 minutes"
+  },
+  "serving": "9 brownies"
+},
+{
+  "name": "Birthday Cupcakes",
+  "img": "https://example.com/your-image-url.jpg",
+  "description": "Delightful cupcakes perfect for celebrating birthdays, topped with colorful buttercream frosting and sprinkles.",
+  "ingredient": [
+    "1 1/2 cups all-purpose flour",
+    "1 1/2 teaspoons baking powder",
+    "1/4 teaspoon salt",
+    "1/2 cup unsalted butter, softened",
+    "1 cup granulated sugar",
+    "2 large eggs",
+    "1 teaspoon vanilla extract",
+    "1/2 cup milk",
+    "1/2 cup rainbow sprinkles (for batter)",
+    "1 batch buttercream frosting (see below)",
+    "Additional rainbow sprinkles (for decoration)"
+  ],
+  "instruction": [
+    { "step": 1, "description": "Preheat your oven to 350°F (175°C). Line a muffin tin with cupcake liners." },
+    { "step": 2, "description": "In a medium bowl, whisk together flour, baking powder, and salt. Set aside." },
+    { "step": 3, "description": "In a large mixing bowl, cream together softened butter and sugar until light and fluffy." },
+    { "step": 4, "description": "Add eggs, one at a time, beating well after each addition. Stir in vanilla extract." },
+    { "step": 5, "description": "Gradually add the flour mixture to the butter mixture, alternating with milk, beginning and ending with flour mixture. Mix until just combined." },
+    { "step": 6, "description": "Fold in rainbow sprinkles until evenly distributed throughout the batter." },
+    { "step": 7, "description": "Divide the batter evenly among the prepared cupcake liners, filling each about 2/3 full." },
+    { "step": 8, "description": "Bake in the preheated oven for 18-20 minutes, or until a toothpick inserted into the center comes out clean." },
+    { "step": 9, "description": "Remove from the oven and let the cupcakes cool in the pan for 5 minutes, then transfer them to a wire rack to cool completely." },
+    { "step": 10, "description": "Prepare the buttercream frosting according to your favorite recipe or use a store-bought version." },
+    { "step": 11, "description": "Once the cupcakes are completely cool, frost them generously with buttercream frosting." },
+    { "step": 12, "description": "Decorate with additional rainbow sprinkles on top. Serve and enjoy your festive Birthday Cupcakes!" }
+  ],
+  "nutrition": [
+    { "label": "Calories", "value": "250" },
+    { "label": "Total Fat", "value": "12g" },
+    { "label": "Saturated Fat", "value": "7g" },
+    { "label": "Cholesterol", "value": "55mg" },
+    { "label": "Sodium", "value": "180mg" },
+    { "label": "Total Carbohydrate", "value": "32g" },
+    { "label": "Dietary Fiber", "value": "0g" },
+    { "label": "Total Sugars", "value": "22g" },
+    { "label": "Protein", "value": "3g" }
+  ],
+  "creator": "Your Name",
+  "imgCreator": "https://example.com/your-profile-image.jpg",
+  "collection_id": 25,
+  "category": "Dessert",
+  "ratings": 4.9,
+  "createdAt": "2024-07-16",
+  "id": "22",
+  "prepTime": {
+    "min": "20 minutes",
+    "max": "25 minutes"
+  },
+  "serving": "12 cupcakes"
+},
+{
+  "name": "Gourmet Fillet in Roasted Almond Sauce",
+  "img": "https://example.com/your-image-url.jpg",
+  "description": "Tender fillet steak served with a rich and creamy roasted almond sauce, perfect for a gourmet dining experience.",
+  "ingredient": [
+    "4 fillet steaks, about 6 oz each",
+    "Salt and pepper, to taste",
+    "2 tablespoons olive oil",
+    "1/2 cup roasted almonds, chopped",
+    "2 cloves garlic, minced",
+    "1 cup heavy cream",
+    "1/2 cup chicken or beef broth",
+    "1 tablespoon Dijon mustard",
+    "1 tablespoon fresh parsley, chopped (for garnish)"
+  ],
+  "instruction": [
+    { "step": 1, "description": "Season the fillet steaks generously with salt and pepper on both sides." },
+    { "step": 2, "description": "In a large skillet, heat olive oil over medium-high heat until hot." },
+    { "step": 3, "description": "Add the fillet steaks to the skillet and cook for 3-4 minutes per side for medium-rare, or until desired doneness. Remove steaks from skillet and let rest." },
+    { "step": 4, "description": "In the same skillet, add chopped roasted almonds and garlic. Cook for 1-2 minutes until garlic is fragrant." },
+    { "step": 5, "description": "Deglaze the skillet with chicken or beef broth, scraping up any browned bits from the bottom of the pan." },
+    { "step": 6, "description": "Stir in heavy cream and Dijon mustard. Bring to a simmer and cook for 3-4 minutes, or until the sauce has thickened slightly." },
+    { "step": 7, "description": "Return the fillet steaks to the skillet and coat them with the almond cream sauce. Cook for another 1-2 minutes to heat through." },
+    { "step": 8, "description": "Remove from heat. Garnish with chopped parsley before serving." },
+    { "step": 9, "description": "Serve the gourmet fillet steaks with roasted almond sauce immediately. Enjoy your exquisite dining experience!" }
+  ],
+  "nutrition": [
+    { "label": "Calories", "value": "600" },
+    { "label": "Total Fat", "value": "45g" },
+    { "label": "Saturated Fat", "value": "20g" },
+    { "label": "Cholesterol", "value": "180mg" },
+    { "label": "Sodium", "value": "300mg" },
+    { "label": "Total Carbohydrate", "value": "6g" },
+    { "label": "Dietary Fiber", "value": "2g" },
+    { "label": "Total Sugars", "value": "2g" },
+    { "label": "Protein", "value": "45g" }
+  ],
+  "creator": "Your Name",
+  "imgCreator": "https://example.com/your-profile-image.jpg",
+  "collection_id": 26,
+  "category": "Main Course",
+  "ratings": 4.7,
+  "createdAt": "2024-07-16",
+  "id": "23",
+  "prepTime": {
+    "min": "15 minutes",
+    "max": "20 minutes"
+  },
+  "serving": "4 servings"
+},
+{
+  "name": "Four Ingredient Oatmeal Pancakes",
+  "img": "https://example.com/your-image-url.jpg",
+  "description": "Quick and easy pancakes made with just four simple ingredients: oats, eggs, banana, and baking powder.",
+  "ingredient": [
+    "1 cup rolled oats",
+    "2 large eggs",
+    "1 ripe banana",
+    "1 teaspoon baking powder"
+  ],
+  "instruction": [
+    { "step": 1, "description": "Place rolled oats in a blender or food processor. Pulse until oats are ground into a flour-like consistency." },
+    { "step": 2, "description": "Add eggs, ripe banana, and baking powder to the blender or food processor with the ground oats." },
+    { "step": 3, "description": "Blend until the batter is smooth and well combined." },
+    { "step": 4, "description": "Heat a non-stick skillet or griddle over medium heat. Lightly grease with oil or cooking spray." },
+    { "step": 5, "description": "Pour about 1/4 cup of batter onto the skillet for each pancake. Cook for 2-3 minutes, or until bubbles form on the surface." },
+    { "step": 6, "description": "Flip the pancakes and cook for another 1-2 minutes, or until golden brown and cooked through." },
+    { "step": 7, "description": "Remove from the skillet and repeat with the remaining batter." },
+    { "step": 8, "description": "Serve warm with your favorite toppings such as maple syrup, fresh fruits, or nuts. Enjoy your delicious Four Ingredient Oatmeal Pancakes!" }
+  ],
+  "nutrition": [
+    { "label": "Calories", "value": "120" },
+    { "label": "Total Fat", "value": "4g" },
+    { "label": "Saturated Fat", "value": "1g" },
+    { "label": "Cholesterol", "value": "95mg" },
+    { "label": "Sodium", "value": "200mg" },
+    { "label": "Total Carbohydrate", "value": "17g" },
+    { "label": "Dietary Fiber", "value": "2g" },
+    { "label": "Total Sugars", "value": "5g" },
+    { "label": "Protein", "value": "6g" }
+  ],
+  "creator": "Your Name",
+  "imgCreator": "https://example.com/your-profile-image.jpg",
+  "collection_id": 27,
+  "category": "Breakfast",
+  "ratings": 4.5,
+  "createdAt": "2024-07-16",
+  "id": "24",
+  "prepTime": {
+    "min": "10 minutes",
+    "max": "15 minutes"
+  },
+  "serving": "Makes about 6 pancakes"
+}
 ];
