@@ -4,7 +4,7 @@ import OptionCategory from "../Options/Category";
 import OptionRating from "../Options/Rating";
 import Button from "../Buttons";
 
-const FormAdd: React.FC = () => {
+const Modal: React.FC = () => {
   const [showForm, setShowForm] = useState(true);
 
   const handleCloseForm = () => {
@@ -14,6 +14,13 @@ const FormAdd: React.FC = () => {
   const handleSaveForm = () => {
     setShowForm(false);
   };
+
+  const formFields = [
+    { label: "Image", type: "text", id: "image", name: "Image", variant: "secondary" },
+    { label: "Name", type: "text", id: "name", name: "Name", variant: "secondary" },
+    { label: "Creator", type: "text", id: "creator", name: "Creator", variant: "secondary" },
+    { label: "Description", type: "text", id: "description", name: "Description", variant: "secondary" }
+  ];
 
   return (
     <>
@@ -30,44 +37,19 @@ const FormAdd: React.FC = () => {
             ></span>
           </div>
           <div className="flex flex-col p-30 pt-0 justify-between md:justify-around">
-            <div className="flex flex-row items-center md:justify-around mb-20">
-              <InputField
-                label="Image"
-                type="text"
-                id="image"
-                name="Image"
-                variant="secondary"
-              />
-            </div>
-            <div className="flex flex-row md:justify-around items-center mb-20">
-              <InputField
-                label="Name"
-                type="text"
-                id="name"
-                name="Name"
-                variant="secondary"
-              />
-            </div>
+            {formFields.map((field, index) => (
+              <div className="flex flex-row items-center md:justify-around mb-20" key={index}>
+                <InputField
+                  label={field.label}
+                  type={field.type}
+                  id={field.id}
+                  name={field.name}
+                  variant={field.variant}
+                />
+              </div>
+            ))}
             <OptionCategory />
-            <div className="flex flex-row md:justify-around items-center mb-20">
-              <InputField
-                label="Creator"
-                type="text"
-                id="creator"
-                name="Creator"
-                variant="secondary"
-              />
-            </div>
             <OptionRating />
-            <div className="flex flex-row md:justify-around items-center mb-20">
-              <InputField
-                label="Description"
-                type="text"
-                id="description"
-                name="Description"
-                variant="secondary"
-              />
-            </div>
             <div className="flex justify-center">
               <Button type="button" variant="confirm" onClick={handleSaveForm}>
                 Save
@@ -80,4 +62,4 @@ const FormAdd: React.FC = () => {
   );
 };
 
-export default FormAdd;
+export default Modal;
