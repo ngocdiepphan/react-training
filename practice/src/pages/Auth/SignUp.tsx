@@ -3,11 +3,11 @@ import { useNavigate } from "react-router-dom";
 import InputField from "../../components/Inputs/TextField";
 import Button from "../../components/Buttons";
 import { validateEmail, validateMinLength, validatePasswordMatch } from "helpers";
-import UserService from "services/auth";
+import AuthenticationService from "services/auth";
 
 const SignUpForm: React.FC = () => {
   const navigate = useNavigate();
-  const userService = new UserService();
+  const AuthService = new AuthenticationService();
 
   const [formData, setFormData] = useState({
     email: "",
@@ -80,7 +80,7 @@ const SignUpForm: React.FC = () => {
     }
 
     if (!errors.email && !errors.username && !errors.password && !errors.confirmPassword) {
-      const response = await userService.signUpUser(formData);
+      const response = await AuthService.signUpUser(formData);
       if (response.error) {
         alert(`Sign up failed: ${response.error.message}`);
       } else {

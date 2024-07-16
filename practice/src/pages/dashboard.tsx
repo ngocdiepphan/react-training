@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Modal from "../components/Modal";
 import Panel from "../components/Panel";
 import Toolbar from "../components/Toolbar";
 import Table from "../components/Table";
 import { userColumns, recipeColumns } from "../type/table";
-import { user } from "../mocks/user";
-import { recipe } from "../mocks/recipe";
 import { UserProps } from "../type/user";
 import { Recipe } from "../type/recipe";
 import Drawer from "components/Drawer";
+import UserService from "services/user";
+import RecipeService from "services/recipe";
 
 const Dashboard: React.FC = () => {
   const [selectedUser, setSelectedUser] = useState<UserProps | null>(null);
@@ -17,6 +17,8 @@ const Dashboard: React.FC = () => {
   const [showDrawer, setShowDrawer] = useState(false);
   const [showFormAdd, setShowFormAdd] = useState(false);
   const [selectedTable, setSelectedTable] = useState<string>("");
+  const [users, setUsers] = useState<UserProps[]>([]);
+  const [recipes, setRecipes] = useState<Recipe[]>([]);
 
   const handleClosePanel = () => {
     setShowPanel(!showPanel);
@@ -44,6 +46,33 @@ const Dashboard: React.FC = () => {
   const handleDrawerItemClick = (itemType: string) => {
     setSelectedTable(itemType);
   };
+
+  const userService = new UserService();
+  const recipeService = new RecipeService();
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      const userResponse = await userService.fetchUsers();
+      if (userResponse.error) {
+        return;
+      }
+      setUsers((userResponse.data as UserProps[]) || []);
+    };
+
+    fetchUser();
+  }, []);
+
+  useEffect(() => {
+    const fetchRecipe = async () => {
+      const recipeResponse = await recipeService.fetchRecipes();
+      if (recipeResponse.error) {
+        return;
+      }
+      setRecipes((recipeResponse.data as Recipe[]) || []);
+    };
+
+    fetchRecipe();
+  }, []);
 
   return (
     <>
@@ -74,7 +103,7 @@ const Dashboard: React.FC = () => {
 
         <div className="content flex flex-row font-sans bg-dashboardPrimary w-full">
           <div className="content__wrapper content-hinder lg:pl-10 w-full">
-          <Toolbar title={selectedTable === "user" ? "User" : "Recipe"} />
+            <Toolbar title={selectedTable === "user" ? "User" : "Recipe"} />
             <div
               className="show w-full overflow-auto bg-primary border border-borderPrimary "
               id="table-wrapper"
@@ -83,14 +112,14 @@ const Dashboard: React.FC = () => {
                 {selectedTable === "user" && (
                   <Table
                     columns={userColumns}
-                    data={user}
+                    data={users}
                     onRowClick={handleUserRowClick}
                   />
                 )}
                 {selectedTable === "recipe" && (
                   <Table
                     columns={recipeColumns}
-                    data={recipe}
+                    data={recipes}
                     onRowClick={handleRecipeRowClick}
                   />
                 )}
