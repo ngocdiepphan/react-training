@@ -2,7 +2,7 @@ import APIHelper, { ApiResponse } from "./helper";
 import { UserProps } from "type/user";
 import { API } from "constants/url";
 
-class UserService {
+class AuthenticationService {
   private apiHelper: APIHelper;
 
   constructor() {
@@ -63,7 +63,6 @@ class UserService {
         throw new Error("Invalid email or password");
       }
     } catch (error) {
-      console.error("Failed to authenticate user:", error);
       return {
         data: null,
         error: {
@@ -74,4 +73,4 @@ class UserService {
   }
 }
 
-export default UserService;
+export default AuthenticationService;

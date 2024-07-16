@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Modal from "../components/Modal";
 import Panel from "../components/Panel";
 import Toolbar from "../components/Toolbar";
 import Table from "../components/Table";
 import { userColumns, recipeColumns } from "../type/table";
-import { user } from "../mocks/user";
-import { recipe } from "../mocks/recipe";
 import { UserProps } from "../type/user";
 import { Recipe } from "../type/recipe";
 import Drawer from "components/Drawer";
+import UserService from "services/user";
+import RecipeService from "services/recipe";
 
 const Dashboard: React.FC = () => {
   const [selectedUser, setSelectedUser] = useState<UserProps | null>(null);
@@ -17,6 +17,9 @@ const Dashboard: React.FC = () => {
   const [showDrawer, setShowDrawer] = useState(false);
   const [showFormAdd, setShowFormAdd] = useState(false);
   const [selectedTable, setSelectedTable] = useState<string>("");
+  const [users, setUsers] = useState<UserProps[]>([]);
+  const [recipes, setRecipes] = useState<Recipe[]>([]);
+
 
   const handleClosePanel = () => {
     setShowPanel(!showPanel);
@@ -44,6 +47,30 @@ const Dashboard: React.FC = () => {
   const handleDrawerItemClick = (itemType: string) => {
     setSelectedTable(itemType);
   };
+
+  const userService = new UserService();
+  const recipeService = new RecipeService();
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const userResponse = await userService.fetchUsers();
+      if (userResponse.error) {
+        console.error("Error fetching users:", userResponse.error.message);
+        return;
+      }
+      setUsers(userResponse.data as UserProps[] || []);
+
+      const recipeResponse = await recipeService.fetchRecipes();
+      if (recipeResponse.error) {
+        console.error("Error fetching recipes:", recipeResponse.error.message);
+        return;
+      }
+      setRecipes(recipeResponse.data as Recipe[] || []);
+    };
+
+    fetchData();
+  }, []);
+
 
   return (
     <>
@@ -83,14 +110,14 @@ const Dashboard: React.FC = () => {
                 {selectedTable === "user" && (
                   <Table
                     columns={userColumns}
-                    data={user}
+                    data={users}
                     onRowClick={handleUserRowClick}
                   />
                 )}
                 {selectedTable === "recipe" && (
                   <Table
                     columns={recipeColumns}
-                    data={recipe}
+                    data={recipes}
                     onRowClick={handleRecipeRowClick}
                   />
                 )}

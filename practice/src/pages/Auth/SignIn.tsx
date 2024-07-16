@@ -3,11 +3,11 @@ import { Link, useNavigate } from "react-router-dom";
 import InputField from "../../components/Inputs/TextField";
 import Button from "../../components/Buttons";
 import { validateEmail, validateMinLength } from "helpers";
-import UserService from "services/auth";
+import AuthenticationService from "services/auth";
 
 const SignInForm: React.FC = () => {
   const navigate = useNavigate();
-  const userService = new UserService();
+  const AuthService = new AuthenticationService();
 
   const [formData, setFormData] = useState({
     email: "",
@@ -57,7 +57,7 @@ const SignInForm: React.FC = () => {
       return;
     }
 
-    const response = await userService.signInUser(
+    const response = await AuthService.signInUser(
       formData.email,
       formData.password,
     );
