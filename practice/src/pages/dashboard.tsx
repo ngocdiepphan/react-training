@@ -16,7 +16,7 @@ const Dashboard: React.FC = () => {
   const [showPanel, setShowPanel] = useState(false);
   const [showDrawer, setShowDrawer] = useState(false);
   const [showFormAdd, setShowFormAdd] = useState(false);
-  const [selectedTable, setSelectedTable] = useState<"user" | "recipe">("user");
+  const [selectedTable, setSelectedTable] = useState<string>("");
 
   const handleClosePanel = () => {
     setShowPanel(!showPanel);
@@ -41,8 +41,8 @@ const Dashboard: React.FC = () => {
     setShowPanel(true);
   };
 
-  const handleDrawerItemClick = (item: "user" | "recipe") => {
-    setSelectedTable(item);
+  const handleDrawerItemClick = (itemType: string) => {
+    setSelectedTable(itemType);
   };
 
   return (
@@ -74,7 +74,7 @@ const Dashboard: React.FC = () => {
 
         <div className="content flex flex-row font-sans bg-dashboardPrimary w-full">
           <div className="content__wrapper content-hinder lg:pl-10 w-full">
-            <Toolbar />
+          <Toolbar title={selectedTable === "user" ? "User" : "Recipe"} />
             <div
               className="show w-full overflow-auto bg-primary border border-borderPrimary "
               id="table-wrapper"
