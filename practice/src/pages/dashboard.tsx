@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FormAdd from "../components/FormAdd";
+import Modal from "../components/Modal";
 import Panel from "../components/Panel";
 import Toolbar from "../components/Toolbar";
 import Table from "../components/Table";
@@ -69,7 +69,7 @@ const Dashboard: React.FC = () => {
             onShowFormAdd={handleShowFormAdd}
             onDrawerItemClick={handleDrawerItemClick}
           />
-          {showFormAdd && <FormAdd />}
+          {showFormAdd && <Modal />}
         </div>
 
         <div className="content flex flex-row font-sans bg-dashboardPrimary w-full">
