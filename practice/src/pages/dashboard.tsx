@@ -20,7 +20,6 @@ const Dashboard: React.FC = () => {
   const [users, setUsers] = useState<UserProps[]>([]);
   const [recipes, setRecipes] = useState<Recipe[]>([]);
 
-
   const handleClosePanel = () => {
     setShowPanel(!showPanel);
   };
@@ -52,25 +51,28 @@ const Dashboard: React.FC = () => {
   const recipeService = new RecipeService();
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchUser = async () => {
       const userResponse = await userService.fetchUsers();
       if (userResponse.error) {
-        console.error("Error fetching users:", userResponse.error.message);
         return;
       }
-      setUsers(userResponse.data as UserProps[] || []);
-
-      const recipeResponse = await recipeService.fetchRecipes();
-      if (recipeResponse.error) {
-        console.error("Error fetching recipes:", recipeResponse.error.message);
-        return;
-      }
-      setRecipes(recipeResponse.data as Recipe[] || []);
+      setUsers((userResponse.data as UserProps[]) || []);
     };
 
-    fetchData();
+    fetchUser();
   }, []);
 
+  useEffect(() => {
+    const fetchRecipe = async () => {
+      const recipeResponse = await recipeService.fetchRecipes();
+      if (recipeResponse.error) {
+        return;
+      }
+      setRecipes((recipeResponse.data as Recipe[]) || []);
+    };
+
+    fetchRecipe();
+  }, []);
 
   return (
     <>
@@ -101,7 +103,7 @@ const Dashboard: React.FC = () => {
 
         <div className="content flex flex-row font-sans bg-dashboardPrimary w-full">
           <div className="content__wrapper content-hinder lg:pl-10 w-full">
-          <Toolbar title={selectedTable === "user" ? "User" : "Recipe"} />
+            <Toolbar title={selectedTable === "user" ? "User" : "Recipe"} />
             <div
               className="show w-full overflow-auto bg-primary border border-borderPrimary "
               id="table-wrapper"
