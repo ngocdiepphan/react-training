@@ -26,19 +26,19 @@ const InputField: React.FC<InputFieldProps> = ({
 
   const labelVariantStyles = {
     primary: "block mb-10 text-start",
-    secondary: "text-md w-80",
+    secondary: "text-xs md:text-xl w-80",
   };
 
   const inputVariantStyles = {
     primary: "border-gray-300 rounded-md px-10 py-8 w-full mb-10",
-    secondary: "border-buttonPrimary w-180 p-8 outline-none h-27 cursor-pointer md:w-220 hover:border-hoverPrimary"
+    secondary: "border-buttonPrimary w-180 p-8 outline-none h-30 md:h-35 cursor-pointer md:w-220 hover:border-hoverPrimary"
   };
 
   const labelStyles = `${labelBaseStyle} ${labelVariantStyles[variant]}`;
   const inputStyles = `${inputBaseStyle} ${inputVariantStyles[variant]}`;
 
   return (
-    <div className="mb-30">
+    <>
       <label htmlFor={id} className={labelStyles}>
         {label}
       </label>
@@ -51,7 +51,7 @@ const InputField: React.FC<InputFieldProps> = ({
         onChange={onChange}
       />
       {errorMessage && <p className="mb-20 text-red-500 ">{errorMessage}</p>}
-    </div>
+    </>
   );
 };
 
