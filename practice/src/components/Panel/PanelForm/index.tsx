@@ -7,6 +7,7 @@ export interface PanelFormProps<T> {
   data: T;
   onSave: (editedData: T) => void;
   onClosePanel?: () => void;
+  onDelete: (deleteData: T) => void;
 }
 
 const PanelForm = <T,>({
@@ -14,6 +15,7 @@ const PanelForm = <T,>({
   data,
   onClosePanel,
   onSave,
+  onDelete,
 }: PanelFormProps<T>) => {
   const [editedData, setEditedData] = useState<T>(data);
 
@@ -32,6 +34,10 @@ const PanelForm = <T,>({
   };
   const handleSave = () => {
     onSave(editedData);
+  };
+
+  const handleDelete = () => {
+    onDelete(data);
   };
 
   return (
@@ -53,7 +59,7 @@ const PanelForm = <T,>({
       </div>
 
       <div className="flex flex-row gap-40 justify-end m-30">
-        <Button type="button" variant="confirm">
+        <Button type="button" variant="confirm" onClick={handleDelete}>
           Delete
         </Button>
         <Button type="button" variant="confirm" onClick={handleSave}>

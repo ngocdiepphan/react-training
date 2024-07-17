@@ -1026,15 +1026,42 @@
         }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "350" },
-        { "label": "Total Fat", "value": "12g" },
-        { "label": "Saturated Fat", "value": "2g" },
-        { "label": "Cholesterol", "value": "0mg" },
-        { "label": "Sodium", "value": "600mg" },
-        { "label": "Total Carbohydrate", "value": "50g" },
-        { "label": "Dietary Fiber", "value": "5g" },
-        { "label": "Total Sugars", "value": "5g" },
-        { "label": "Protein", "value": "10g" }
+        {
+          "label": "Calories",
+          "value": "350"
+        },
+        {
+          "label": "Total Fat",
+          "value": "12g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "2g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "0mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "600mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "50g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "5g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "5g"
+        },
+        {
+          "label": "Protein",
+          "value": "10g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -1096,15 +1123,42 @@
         }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "350" },
-        { "label": "Total Fat", "value": "10g" },
-        { "label": "Saturated Fat", "value": "2g" },
-        { "label": "Cholesterol", "value": "25mg" },
-        { "label": "Sodium", "value": "600mg" },
-        { "label": "Total Carbohydrate", "value": "40g" },
-        { "label": "Dietary Fiber", "value": "5g" },
-        { "label": "Total Sugars", "value": "5g" },
-        { "label": "Protein", "value": "25g" }
+        {
+          "label": "Calories",
+          "value": "350"
+        },
+        {
+          "label": "Total Fat",
+          "value": "10g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "2g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "25mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "600mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "40g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "5g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "5g"
+        },
+        {
+          "label": "Protein",
+          "value": "25g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -1171,15 +1225,42 @@
         }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "450" },
-        { "label": "Total Fat", "value": "30g" },
-        { "label": "Saturated Fat", "value": "12g" },
-        { "label": "Cholesterol", "value": "120mg" },
-        { "label": "Sodium", "value": "400mg" },
-        { "label": "Total Carbohydrate", "value": "8g" },
-        { "label": "Dietary Fiber", "value": "2g" },
-        { "label": "Total Sugars", "value": "4g" },
-        { "label": "Protein", "value": "35g" }
+        {
+          "label": "Calories",
+          "value": "450"
+        },
+        {
+          "label": "Total Fat",
+          "value": "30g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "12g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "120mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "400mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "8g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "2g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "4g"
+        },
+        {
+          "label": "Protein",
+          "value": "35g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -1237,15 +1318,42 @@
         }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "300" },
-        { "label": "Total Fat", "value": "8g" },
-        { "label": "Saturated Fat", "value": "2g" },
-        { "label": "Cholesterol", "value": "10mg" },
-        { "label": "Sodium", "value": "300mg" },
-        { "label": "Total Carbohydrate", "value": "50g" },
-        { "label": "Dietary Fiber", "value": "6g" },
-        { "label": "Total Sugars", "value": "15g" },
-        { "label": "Protein", "value": "10g" }
+        {
+          "label": "Calories",
+          "value": "300"
+        },
+        {
+          "label": "Total Fat",
+          "value": "8g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "2g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "10mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "300mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "50g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "6g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "15g"
+        },
+        {
+          "label": "Protein",
+          "value": "10g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -1323,15 +1431,42 @@
         }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "350" },
-        { "label": "Total Fat", "value": "15g" },
-        { "label": "Saturated Fat", "value": "9g" },
-        { "label": "Cholesterol", "value": "70mg" },
-        { "label": "Sodium", "value": "250mg" },
-        { "label": "Total Carbohydrate", "value": "50g" },
-        { "label": "Dietary Fiber", "value": "3g" },
-        { "label": "Total Sugars", "value": "30g" },
-        { "label": "Protein", "value": "5g" }
+        {
+          "label": "Calories",
+          "value": "350"
+        },
+        {
+          "label": "Total Fat",
+          "value": "15g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "9g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "70mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "250mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "50g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "3g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "30g"
+        },
+        {
+          "label": "Protein",
+          "value": "5g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -1409,15 +1544,42 @@
         }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "350" },
-        { "label": "Total Fat", "value": "15g" },
-        { "label": "Saturated Fat", "value": "9g" },
-        { "label": "Cholesterol", "value": "70mg" },
-        { "label": "Sodium", "value": "250mg" },
-        { "label": "Total Carbohydrate", "value": "50g" },
-        { "label": "Dietary Fiber", "value": "3g" },
-        { "label": "Total Sugars", "value": "30g" },
-        { "label": "Protein", "value": "5g" }
+        {
+          "label": "Calories",
+          "value": "350"
+        },
+        {
+          "label": "Total Fat",
+          "value": "15g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "9g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "70mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "250mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "50g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "3g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "30g"
+        },
+        {
+          "label": "Protein",
+          "value": "5g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -1501,15 +1663,42 @@
         }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "400" },
-        { "label": "Total Fat", "value": "20g" },
-        { "label": "Saturated Fat", "value": "5g" },
-        { "label": "Cholesterol", "value": "60mg" },
-        { "label": "Sodium", "value": "300mg" },
-        { "label": "Total Carbohydrate", "value": "50g" },
-        { "label": "Dietary Fiber", "value": "3g" },
-        { "label": "Total Sugars", "value": "30g" },
-        { "label": "Protein", "value": "5g" }
+        {
+          "label": "Calories",
+          "value": "400"
+        },
+        {
+          "label": "Total Fat",
+          "value": "20g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "5g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "60mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "300mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "50g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "3g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "30g"
+        },
+        {
+          "label": "Protein",
+          "value": "5g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -1581,14 +1770,38 @@
         }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "250" },
-        { "label": "Total Fat", "value": "12g" },
-        { "label": "Saturated Fat", "value": "1.5g" },
-        { "label": "Sodium", "value": "300mg" },
-        { "label": "Total Carbohydrate", "value": "30g" },
-        { "label": "Dietary Fiber", "value": "8g" },
-        { "label": "Total Sugars", "value": "5g" },
-        { "label": "Protein", "value": "8g" }
+        {
+          "label": "Calories",
+          "value": "250"
+        },
+        {
+          "label": "Total Fat",
+          "value": "12g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "1.5g"
+        },
+        {
+          "label": "Sodium",
+          "value": "300mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "30g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "8g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "5g"
+        },
+        {
+          "label": "Protein",
+          "value": "8g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -1679,14 +1892,38 @@
         }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "180" },
-        { "label": "Total Fat", "value": "10g" },
-        { "label": "Saturated Fat", "value": "3g" },
-        { "label": "Sodium", "value": "700mg" },
-        { "label": "Total Carbohydrate", "value": "20g" },
-        { "label": "Dietary Fiber", "value": "5g" },
-        { "label": "Total Sugars", "value": "10g" },
-        { "label": "Protein", "value": "4g" }
+        {
+          "label": "Calories",
+          "value": "180"
+        },
+        {
+          "label": "Total Fat",
+          "value": "10g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "3g"
+        },
+        {
+          "label": "Sodium",
+          "value": "700mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "20g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "5g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "10g"
+        },
+        {
+          "label": "Protein",
+          "value": "4g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -1747,15 +1984,42 @@
         }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "350" },
-        { "label": "Total Fat", "value": "20g" },
-        { "label": "Saturated Fat", "value": "4g" },
-        { "label": "Cholesterol", "value": "190mg" },
-        { "label": "Sodium", "value": "400mg" },
-        { "label": "Total Carbohydrate", "value": "30g" },
-        { "label": "Dietary Fiber", "value": "8g" },
-        { "label": "Total Sugars", "value": "2g" },
-        { "label": "Protein", "value": "15g" }
+        {
+          "label": "Calories",
+          "value": "350"
+        },
+        {
+          "label": "Total Fat",
+          "value": "20g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "4g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "190mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "400mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "30g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "8g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "2g"
+        },
+        {
+          "label": "Protein",
+          "value": "15g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -1828,15 +2092,42 @@
         }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "450" },
-        { "label": "Total Fat", "value": "15g" },
-        { "label": "Saturated Fat", "value": "3g" },
-        { "label": "Cholesterol", "value": "45mg" },
-        { "label": "Sodium", "value": "800mg" },
-        { "label": "Total Carbohydrate", "value": "55g" },
-        { "label": "Dietary Fiber", "value": "5g" },
-        { "label": "Total Sugars", "value": "6g" },
-        { "label": "Protein", "value": "25g" }
+        {
+          "label": "Calories",
+          "value": "450"
+        },
+        {
+          "label": "Total Fat",
+          "value": "15g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "3g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "45mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "800mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "55g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "5g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "6g"
+        },
+        {
+          "label": "Protein",
+          "value": "25g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -1896,15 +2187,42 @@
         }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "450" },
-        { "label": "Total Fat", "value": "30g" },
-        { "label": "Saturated Fat", "value": "5g" },
-        { "label": "Cholesterol", "value": "10mg" },
-        { "label": "Sodium", "value": "300mg" },
-        { "label": "Total Carbohydrate", "value": "40g" },
-        { "label": "Dietary Fiber", "value": "3g" },
-        { "label": "Total Sugars", "value": "2g" },
-        { "label": "Protein", "value": "10g" }
+        {
+          "label": "Calories",
+          "value": "450"
+        },
+        {
+          "label": "Total Fat",
+          "value": "30g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "5g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "10mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "300mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "40g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "3g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "2g"
+        },
+        {
+          "label": "Protein",
+          "value": "10g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -1937,7 +2255,10 @@
         "Optional: lettuce, tomato slices, onion slices"
       ],
       "instruction": [
-        { "step": 1, "description": "Preheat your oven to 180°C (350°F)." },
+        {
+          "step": 1,
+          "description": "Preheat your oven to 180°C (350°F)."
+        },
         {
           "step": 2,
           "description": "Slice the slider buns in half and place the bottom halves on a baking sheet lined with parchment paper."
@@ -1980,15 +2301,42 @@
         }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "350" },
-        { "label": "Total Fat", "value": "20g" },
-        { "label": "Saturated Fat", "value": "8g" },
-        { "label": "Cholesterol", "value": "60mg" },
-        { "label": "Sodium", "value": "500mg" },
-        { "label": "Total Carbohydrate", "value": "25g" },
-        { "label": "Dietary Fiber", "value": "2g" },
-        { "label": "Total Sugars", "value": "4g" },
-        { "label": "Protein", "value": "18g" }
+        {
+          "label": "Calories",
+          "value": "350"
+        },
+        {
+          "label": "Total Fat",
+          "value": "20g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "8g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "60mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "500mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "25g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "2g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "4g"
+        },
+        {
+          "label": "Protein",
+          "value": "18g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -2049,15 +2397,42 @@
         }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "250" },
-        { "label": "Total Fat", "value": "4g" },
-        { "label": "Saturated Fat", "value": "1g" },
-        { "label": "Cholesterol", "value": "0mg" },
-        { "label": "Sodium", "value": "80mg" },
-        { "label": "Total Carbohydrate", "value": "50g" },
-        { "label": "Dietary Fiber", "value": "7g" },
-        { "label": "Total Sugars", "value": "20g" },
-        { "label": "Protein", "value": "5g" }
+        {
+          "label": "Calories",
+          "value": "250"
+        },
+        {
+          "label": "Total Fat",
+          "value": "4g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "1g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "0mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "80mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "50g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "7g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "20g"
+        },
+        {
+          "label": "Protein",
+          "value": "5g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -2124,15 +2499,42 @@
         }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "300" },
-        { "label": "Total Fat", "value": "25g" },
-        { "label": "Saturated Fat", "value": "15g" },
-        { "label": "Cholesterol", "value": "90mg" },
-        { "label": "Sodium", "value": "30mg" },
-        { "label": "Total Carbohydrate", "value": "15g" },
-        { "label": "Dietary Fiber", "value": "0g" },
-        { "label": "Total Sugars", "value": "12g" },
-        { "label": "Protein", "value": "4g" }
+        {
+          "label": "Calories",
+          "value": "300"
+        },
+        {
+          "label": "Total Fat",
+          "value": "25g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "15g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "90mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "30mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "15g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "0g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "12g"
+        },
+        {
+          "label": "Protein",
+          "value": "4g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -2227,15 +2629,42 @@
         }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "450" },
-        { "label": "Total Fat", "value": "22g" },
-        { "label": "Saturated Fat", "value": "14g" },
-        { "label": "Cholesterol", "value": "90mg" },
-        { "label": "Sodium", "value": "300mg" },
-        { "label": "Total Carbohydrate", "value": "60g" },
-        { "label": "Dietary Fiber", "value": "1g" },
-        { "label": "Total Sugars", "value": "45g" },
-        { "label": "Protein", "value": "4g" }
+        {
+          "label": "Calories",
+          "value": "450"
+        },
+        {
+          "label": "Total Fat",
+          "value": "22g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "14g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "90mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "300mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "60g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "1g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "45g"
+        },
+        {
+          "label": "Protein",
+          "value": "4g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -2282,15 +2711,42 @@
         }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "200" },
-        { "label": "Total Fat", "value": "3g" },
-        { "label": "Saturated Fat", "value": "0.5g" },
-        { "label": "Cholesterol", "value": "2mg" },
-        { "label": "Sodium", "value": "50mg" },
-        { "label": "Total Carbohydrate", "value": "40g" },
-        { "label": "Dietary Fiber", "value": "6g" },
-        { "label": "Total Sugars", "value": "28g" },
-        { "label": "Protein", "value": "8g" }
+        {
+          "label": "Calories",
+          "value": "200"
+        },
+        {
+          "label": "Total Fat",
+          "value": "3g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "0.5g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "2mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "50mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "40g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "6g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "28g"
+        },
+        {
+          "label": "Protein",
+          "value": "8g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -2344,15 +2800,42 @@
         }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "60" },
-        { "label": "Total Fat", "value": "0g" },
-        { "label": "Saturated Fat", "value": "0g" },
-        { "label": "Cholesterol", "value": "0mg" },
-        { "label": "Sodium", "value": "0mg" },
-        { "label": "Total Carbohydrate", "value": "15g" },
-        { "label": "Dietary Fiber", "value": "3g" },
-        { "label": "Total Sugars", "value": "12g" },
-        { "label": "Protein", "value": "1g" }
+        {
+          "label": "Calories",
+          "value": "60"
+        },
+        {
+          "label": "Total Fat",
+          "value": "0g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "0g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "0mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "0mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "15g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "3g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "12g"
+        },
+        {
+          "label": "Protein",
+          "value": "1g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -2409,15 +2892,42 @@
         }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "10" },
-        { "label": "Total Fat", "value": "0g" },
-        { "label": "Saturated Fat", "value": "0g" },
-        { "label": "Cholesterol", "value": "0mg" },
-        { "label": "Sodium", "value": "5mg" },
-        { "label": "Total Carbohydrate", "value": "2g" },
-        { "label": "Dietary Fiber", "value": "0g" },
-        { "label": "Total Sugars", "value": "1g" },
-        { "label": "Protein", "value": "0g" }
+        {
+          "label": "Calories",
+          "value": "10"
+        },
+        {
+          "label": "Total Fat",
+          "value": "0g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "0g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "0mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "5mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "2g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "0g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "1g"
+        },
+        {
+          "label": "Protein",
+          "value": "0g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -2494,15 +3004,42 @@
         }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "200" },
-        { "label": "Total Fat", "value": "10g" },
-        { "label": "Saturated Fat", "value": "6g" },
-        { "label": "Cholesterol", "value": "55mg" },
-        { "label": "Sodium", "value": "150mg" },
-        { "label": "Total Carbohydrate", "value": "25g" },
-        { "label": "Dietary Fiber", "value": "1g" },
-        { "label": "Total Sugars", "value": "18g" },
-        { "label": "Protein", "value": "3g" }
+        {
+          "label": "Calories",
+          "value": "200"
+        },
+        {
+          "label": "Total Fat",
+          "value": "10g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "6g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "55mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "150mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "25g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "1g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "18g"
+        },
+        {
+          "label": "Protein",
+          "value": "3g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -2585,15 +3122,42 @@
         }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "250" },
-        { "label": "Total Fat", "value": "12g" },
-        { "label": "Saturated Fat", "value": "7g" },
-        { "label": "Cholesterol", "value": "55mg" },
-        { "label": "Sodium", "value": "180mg" },
-        { "label": "Total Carbohydrate", "value": "32g" },
-        { "label": "Dietary Fiber", "value": "0g" },
-        { "label": "Total Sugars", "value": "22g" },
-        { "label": "Protein", "value": "3g" }
+        {
+          "label": "Calories",
+          "value": "250"
+        },
+        {
+          "label": "Total Fat",
+          "value": "12g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "7g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "55mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "180mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "32g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "0g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "22g"
+        },
+        {
+          "label": "Protein",
+          "value": "3g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -2662,15 +3226,42 @@
         }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "600" },
-        { "label": "Total Fat", "value": "45g" },
-        { "label": "Saturated Fat", "value": "20g" },
-        { "label": "Cholesterol", "value": "180mg" },
-        { "label": "Sodium", "value": "300mg" },
-        { "label": "Total Carbohydrate", "value": "6g" },
-        { "label": "Dietary Fiber", "value": "2g" },
-        { "label": "Total Sugars", "value": "2g" },
-        { "label": "Protein", "value": "45g" }
+        {
+          "label": "Calories",
+          "value": "600"
+        },
+        {
+          "label": "Total Fat",
+          "value": "45g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "20g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "180mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "300mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "6g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "2g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "2g"
+        },
+        {
+          "label": "Protein",
+          "value": "45g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -2730,15 +3321,42 @@
         }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "120" },
-        { "label": "Total Fat", "value": "4g" },
-        { "label": "Saturated Fat", "value": "1g" },
-        { "label": "Cholesterol", "value": "95mg" },
-        { "label": "Sodium", "value": "200mg" },
-        { "label": "Total Carbohydrate", "value": "17g" },
-        { "label": "Dietary Fiber", "value": "2g" },
-        { "label": "Total Sugars", "value": "5g" },
-        { "label": "Protein", "value": "6g" }
+        {
+          "label": "Calories",
+          "value": "120"
+        },
+        {
+          "label": "Total Fat",
+          "value": "4g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "1g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "95mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "200mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "17g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "2g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "5g"
+        },
+        {
+          "label": "Protein",
+          "value": "6g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -2768,29 +3386,92 @@
         "1 teaspoon vanilla extract"
       ],
       "instruction": [
-        { "step": 1, "description": "Preheat your oven to 400°F (200°C). Line a baking sheet with parchment paper." },
-        { "step": 2, "description": "In a large bowl, whisk together flour, sugar, baking powder, and salt." },
-        { "step": 3, "description": "Add cold butter cubes to the flour mixture. Using a pastry cutter or your fingers, cut the butter into the flour until the mixture resembles coarse crumbs." },
-        { "step": 4, "description": "Gently fold in mixed fresh berries." },
-        { "step": 5, "description": "In a separate bowl, mix together milk and vanilla extract." },
-        { "step": 6, "description": "Add the milk mixture to the flour mixture, stirring until just combined. Be careful not to overmix." },
-        { "step": 7, "description": "Turn the dough out onto a lightly floured surface. Pat the dough into a rectangle about 1 inch thick." },
-        { "step": 8, "description": "Using a biscuit cutter or a glass, cut out biscuits and place them on the prepared baking sheet." },
-        { "step": 9, "description": "Gather the scraps of dough, pat into a rectangle again, and cut out more biscuits until all the dough is used." },
-        { "step": 10, "description": "Bake in the preheated oven for 15-18 minutes, or until the biscuits are golden brown and cooked through." },
-        { "step": 11, "description": "Remove from the oven and let cool slightly on a wire rack before serving warm." },
-        { "step": 12, "description": "Serve these delightful Berry Madness Biscuits with butter or jam. Enjoy!" }
+        {
+          "step": 1,
+          "description": "Preheat your oven to 400°F (200°C). Line a baking sheet with parchment paper."
+        },
+        {
+          "step": 2,
+          "description": "In a large bowl, whisk together flour, sugar, baking powder, and salt."
+        },
+        {
+          "step": 3,
+          "description": "Add cold butter cubes to the flour mixture. Using a pastry cutter or your fingers, cut the butter into the flour until the mixture resembles coarse crumbs."
+        },
+        {
+          "step": 4,
+          "description": "Gently fold in mixed fresh berries."
+        },
+        {
+          "step": 5,
+          "description": "In a separate bowl, mix together milk and vanilla extract."
+        },
+        {
+          "step": 6,
+          "description": "Add the milk mixture to the flour mixture, stirring until just combined. Be careful not to overmix."
+        },
+        {
+          "step": 7,
+          "description": "Turn the dough out onto a lightly floured surface. Pat the dough into a rectangle about 1 inch thick."
+        },
+        {
+          "step": 8,
+          "description": "Using a biscuit cutter or a glass, cut out biscuits and place them on the prepared baking sheet."
+        },
+        {
+          "step": 9,
+          "description": "Gather the scraps of dough, pat into a rectangle again, and cut out more biscuits until all the dough is used."
+        },
+        {
+          "step": 10,
+          "description": "Bake in the preheated oven for 15-18 minutes, or until the biscuits are golden brown and cooked through."
+        },
+        {
+          "step": 11,
+          "description": "Remove from the oven and let cool slightly on a wire rack before serving warm."
+        },
+        {
+          "step": 12,
+          "description": "Serve these delightful Berry Madness Biscuits with butter or jam. Enjoy!"
+        }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "220" },
-        { "label": "Total Fat", "value": "9g" },
-        { "label": "Saturated Fat", "value": "6g" },
-        { "label": "Cholesterol", "value": "25mg" },
-        { "label": "Sodium", "value": "280mg" },
-        { "label": "Total Carbohydrate", "value": "32g" },
-        { "label": "Dietary Fiber", "value": "2g" },
-        { "label": "Total Sugars", "value": "8g" },
-        { "label": "Protein", "value": "4g" }
+        {
+          "label": "Calories",
+          "value": "220"
+        },
+        {
+          "label": "Total Fat",
+          "value": "9g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "6g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "25mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "280mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "32g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "2g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "8g"
+        },
+        {
+          "label": "Protein",
+          "value": "4g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -2820,26 +3501,80 @@
         "Fresh basil leaves, for garnish (optional)"
       ],
       "instruction": [
-        { "step": 1, "description": "Cook pasta according to package instructions until al dente. Drain and set aside." },
-        { "step": 2, "description": "In a large skillet, heat olive oil over medium heat. Add minced garlic and sauté for 1-2 minutes until fragrant." },
-        { "step": 3, "description": "Add chopped spinach to the skillet and cook until wilted, about 2-3 minutes." },
-        { "step": 4, "description": "Pour in heavy cream and bring to a simmer. Let simmer for 2-3 minutes." },
-        { "step": 5, "description": "Stir in grated Parmesan cheese until melted and smooth." },
-        { "step": 6, "description": "Season with salt and pepper to taste." },
-        { "step": 7, "description": "Add cooked pasta to the skillet and toss to coat evenly with the spinach and cheese sauce." },
-        { "step": 8, "description": "Remove from heat. Garnish with fresh basil leaves if desired." },
-        { "step": 9, "description": "Serve warm and enjoy your creamy Spinach and Cheese Pasta!" }
+        {
+          "step": 1,
+          "description": "Cook pasta according to package instructions until al dente. Drain and set aside."
+        },
+        {
+          "step": 2,
+          "description": "In a large skillet, heat olive oil over medium heat. Add minced garlic and sauté for 1-2 minutes until fragrant."
+        },
+        {
+          "step": 3,
+          "description": "Add chopped spinach to the skillet and cook until wilted, about 2-3 minutes."
+        },
+        {
+          "step": 4,
+          "description": "Pour in heavy cream and bring to a simmer. Let simmer for 2-3 minutes."
+        },
+        {
+          "step": 5,
+          "description": "Stir in grated Parmesan cheese until melted and smooth."
+        },
+        {
+          "step": 6,
+          "description": "Season with salt and pepper to taste."
+        },
+        {
+          "step": 7,
+          "description": "Add cooked pasta to the skillet and toss to coat evenly with the spinach and cheese sauce."
+        },
+        {
+          "step": 8,
+          "description": "Remove from heat. Garnish with fresh basil leaves if desired."
+        },
+        {
+          "step": 9,
+          "description": "Serve warm and enjoy your creamy Spinach and Cheese Pasta!"
+        }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "550" },
-        { "label": "Total Fat", "value": "32g" },
-        { "label": "Saturated Fat", "value": "17g" },
-        { "label": "Cholesterol", "value": "85mg" },
-        { "label": "Sodium", "value": "450mg" },
-        { "label": "Total Carbohydrate", "value": "48g" },
-        { "label": "Dietary Fiber", "value": "3g" },
-        { "label": "Total Sugars", "value": "3g" },
-        { "label": "Protein", "value": "18g" }
+        {
+          "label": "Calories",
+          "value": "550"
+        },
+        {
+          "label": "Total Fat",
+          "value": "32g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "17g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "85mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "450mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "48g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "3g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "3g"
+        },
+        {
+          "label": "Protein",
+          "value": "18g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -2870,31 +3605,100 @@
         "Oil for frying (such as vegetable or canola oil)"
       ],
       "instruction": [
-        { "step": 1, "description": "In a large bowl, combine flour, sugar, yeast, and salt." },
-        { "step": 2, "description": "In a separate bowl, whisk together warmed milk, melted butter, eggs, and vanilla extract." },
-        { "step": 3, "description": "Pour the wet ingredients into the dry ingredients. Mix until a soft dough forms." },
-        { "step": 4, "description": "Transfer the dough to a lightly floured surface and knead for about 5-7 minutes, or until smooth and elastic." },
-        { "step": 5, "description": "Place the dough in a greased bowl, cover with a clean kitchen towel, and let it rise in a warm place for about 1 hour, or until doubled in size." },
-        { "step": 6, "description": "Punch down the dough to release air bubbles. Roll out the dough to about 1/2 inch thickness." },
-        { "step": 7, "description": "Using a donut cutter or two different-sized round cookie cutters, cut out donuts and donut holes." },
-        { "step": 8, "description": "Place the cut-out donuts and holes on a lightly floured baking sheet. Cover with a kitchen towel and let rise for another 30 minutes." },
-        { "step": 9, "description": "Heat oil in a deep fryer or large pot to 350°F (175°C)." },
-        { "step": 10, "description": "Carefully add a few donuts at a time to the hot oil. Fry for about 1-2 minutes per side, or until golden brown." },
-        { "step": 11, "description": "Remove donuts from the oil and place on a wire rack to drain and cool slightly." },
-        { "step": 12, "description": "For the glaze, mix together powdered sugar and enough milk to reach desired consistency. Dip each donut into the glaze and place back on the wire rack to set." },
-        { "step": 13, "description": "Optional: Decorate with sprinkles, chopped nuts, or drizzle with melted chocolate." },
-        { "step": 14, "description": "Serve warm and enjoy your Fancy Glazed Donuts!" }
+        {
+          "step": 1,
+          "description": "In a large bowl, combine flour, sugar, yeast, and salt."
+        },
+        {
+          "step": 2,
+          "description": "In a separate bowl, whisk together warmed milk, melted butter, eggs, and vanilla extract."
+        },
+        {
+          "step": 3,
+          "description": "Pour the wet ingredients into the dry ingredients. Mix until a soft dough forms."
+        },
+        {
+          "step": 4,
+          "description": "Transfer the dough to a lightly floured surface and knead for about 5-7 minutes, or until smooth and elastic."
+        },
+        {
+          "step": 5,
+          "description": "Place the dough in a greased bowl, cover with a clean kitchen towel, and let it rise in a warm place for about 1 hour, or until doubled in size."
+        },
+        {
+          "step": 6,
+          "description": "Punch down the dough to release air bubbles. Roll out the dough to about 1/2 inch thickness."
+        },
+        {
+          "step": 7,
+          "description": "Using a donut cutter or two different-sized round cookie cutters, cut out donuts and donut holes."
+        },
+        {
+          "step": 8,
+          "description": "Place the cut-out donuts and holes on a lightly floured baking sheet. Cover with a kitchen towel and let rise for another 30 minutes."
+        },
+        {
+          "step": 9,
+          "description": "Heat oil in a deep fryer or large pot to 350°F (175°C)."
+        },
+        {
+          "step": 10,
+          "description": "Carefully add a few donuts at a time to the hot oil. Fry for about 1-2 minutes per side, or until golden brown."
+        },
+        {
+          "step": 11,
+          "description": "Remove donuts from the oil and place on a wire rack to drain and cool slightly."
+        },
+        {
+          "step": 12,
+          "description": "For the glaze, mix together powdered sugar and enough milk to reach desired consistency. Dip each donut into the glaze and place back on the wire rack to set."
+        },
+        {
+          "step": 13,
+          "description": "Optional: Decorate with sprinkles, chopped nuts, or drizzle with melted chocolate."
+        },
+        {
+          "step": 14,
+          "description": "Serve warm and enjoy your Fancy Glazed Donuts!"
+        }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "300" },
-        { "label": "Total Fat", "value": "15g" },
-        { "label": "Saturated Fat", "value": "6g" },
-        { "label": "Cholesterol", "value": "45mg" },
-        { "label": "Sodium", "value": "150mg" },
-        { "label": "Total Carbohydrate", "value": "38g" },
-        { "label": "Dietary Fiber", "value": "1g" },
-        { "label": "Total Sugars", "value": "20g" },
-        { "label": "Protein", "value": "4g" }
+        {
+          "label": "Calories",
+          "value": "300"
+        },
+        {
+          "label": "Total Fat",
+          "value": "15g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "6g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "45mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "150mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "38g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "1g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "20g"
+        },
+        {
+          "label": "Protein",
+          "value": "4g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
@@ -2924,24 +3728,72 @@
         "Optional toppings: lettuce, tomato, avocado slices"
       ],
       "instruction": [
-        { "step": 1, "description": "Preheat your grill or skillet over medium-high heat." },
-        { "step": 2, "description": "Divide the ground beef into 4 equal portions and form into patties. Season with salt and pepper." },
-        { "step": 3, "description": "Grill or cook the patties on the skillet for about 4-5 minutes per side, or until desired doneness. Place a slice of cheddar cheese on each patty during the last minute of cooking." },
-        { "step": 4, "description": "While the patties are cooking, fry the eggs in a separate skillet over medium heat. Cook until the whites are set and the yolks are still runny. Season with salt and pepper." },
-        { "step": 5, "description": "Toast the hamburger buns until golden brown." },
-        { "step": 6, "description": "Assemble the burgers: Place a cooked beef patty with melted cheese on the bottom half of each bun. Top with a slice of bacon, a fried egg, and any optional toppings." },
-        { "step": 7, "description": "Close the burgers with the top half of the buns. Serve immediately and enjoy your Mighty Cheesy Breakfast Burger!" }
+        {
+          "step": 1,
+          "description": "Preheat your grill or skillet over medium-high heat."
+        },
+        {
+          "step": 2,
+          "description": "Divide the ground beef into 4 equal portions and form into patties. Season with salt and pepper."
+        },
+        {
+          "step": 3,
+          "description": "Grill or cook the patties on the skillet for about 4-5 minutes per side, or until desired doneness. Place a slice of cheddar cheese on each patty during the last minute of cooking."
+        },
+        {
+          "step": 4,
+          "description": "While the patties are cooking, fry the eggs in a separate skillet over medium heat. Cook until the whites are set and the yolks are still runny. Season with salt and pepper."
+        },
+        {
+          "step": 5,
+          "description": "Toast the hamburger buns until golden brown."
+        },
+        {
+          "step": 6,
+          "description": "Assemble the burgers: Place a cooked beef patty with melted cheese on the bottom half of each bun. Top with a slice of bacon, a fried egg, and any optional toppings."
+        },
+        {
+          "step": 7,
+          "description": "Close the burgers with the top half of the buns. Serve immediately and enjoy your Mighty Cheesy Breakfast Burger!"
+        }
       ],
       "nutrition": [
-        { "label": "Calories", "value": "650" },
-        { "label": "Total Fat", "value": "40g" },
-        { "label": "Saturated Fat", "value": "18g" },
-        { "label": "Cholesterol", "value": "280mg" },
-        { "label": "Sodium", "value": "900mg" },
-        { "label": "Total Carbohydrate", "value": "30g" },
-        { "label": "Dietary Fiber", "value": "2g" },
-        { "label": "Total Sugars", "value": "4g" },
-        { "label": "Protein", "value": "40g" }
+        {
+          "label": "Calories",
+          "value": "650"
+        },
+        {
+          "label": "Total Fat",
+          "value": "40g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "18g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "280mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "900mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "30g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "2g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "4g"
+        },
+        {
+          "label": "Protein",
+          "value": "40g"
+        }
       ],
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",

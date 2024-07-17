@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import PanelForm, { PanelFormProps } from "./PanelForm";
+import PanelForm from "./PanelForm";
 import { UserProps } from "type/user";
 import { Recipe } from "type/recipe";
 import { userColumns, recipeColumns } from "type/table";
@@ -10,6 +10,7 @@ interface PanelProps {
   selectedRecipe: Recipe | null;
   onClosePanel?: () => void;
   onSaveUser: (editedUser: UserProps) => void;
+  onDeleteUser: (deletedUser: UserProps) => void;
 }
 
 const Panel = ({
@@ -17,22 +18,31 @@ const Panel = ({
   selectedRecipe,
   onClosePanel,
   onSaveUser,
+  onDeleteUser,
 }: PanelProps) => {
   const userService = new UserService();
 
-  const handleUserSave = async (editedUser: UserProps) => {
+  const handleUpdateUser = async (editedUser: UserProps) => {
     const response = await userService.updateUser(editedUser);
     if (response.error) {
-     return;
+      return;
     } else {
       alert("Edit user successful!");
       onSaveUser(editedUser);
       onClosePanel?.();
     }
   };
+  useEffect(() => {}, [selectedUser]);
 
-  useEffect(() => {
-  }, [selectedUser]);
+  const handleDeleteUser = async (deletedUser: UserProps) => {
+    const response = await userService.deleteUser(deletedUser.id);
+    if (response.error) {
+      return;
+    }
+    alert("User deleted successfully!");
+    onDeleteUser(deletedUser);
+    onClosePanel?.();
+  };
 
   return (
     <aside
@@ -43,7 +53,8 @@ const Panel = ({
         <PanelForm
           columns={userColumns}
           data={selectedUser}
-          onSave={handleUserSave}
+          onSave={handleUpdateUser}
+          onDelete={handleDeleteUser}
           onClosePanel={onClosePanel}
         />
       )}
