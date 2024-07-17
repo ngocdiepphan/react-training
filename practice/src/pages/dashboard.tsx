@@ -47,6 +47,18 @@ const Dashboard: React.FC = () => {
     setSelectedTable(itemType);
   };
 
+  const handleOnSaveUserFromPanel = (data: UserProps) => {
+    setUsers((prevUser) => {
+      const index = prevUser.findIndex((item) => item.id === data.id);
+      if (index !== -1) {
+          const  updatedUsers = [...prevUser];
+          updatedUsers[index] = data;
+          return  updatedUsers;
+      }
+      return prevUser;
+  });
+  }
+
   const userService = new UserService();
   const recipeService = new RecipeService();
 
@@ -131,6 +143,7 @@ const Dashboard: React.FC = () => {
               selectedUser={selectedUser}
               selectedRecipe={selectedRecipe}
               onClosePanel={handleClosePanel}
+              onSaveUser={handleOnSaveUserFromPanel}
             />
           )}
         </div>

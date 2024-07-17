@@ -1,14 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { TableColumn } from "type/table";
 import Button from "../../Buttons";
 
 export interface PanelFormProps<T> {
   columns: TableColumn<T>[];
   data: T;
+  onSave: (editedData: T) => void;
   onClosePanel?: () => void;
 }
 
-const PanelForm = <T,>({ columns, data, onClosePanel }: PanelFormProps<T>) => {
+const PanelForm = <T,>({
+  columns,
+  data,
+  onClosePanel,
+  onSave,
+}: PanelFormProps<T>) => {
+  const [editedData, setEditedData] = useState<T>(data);
+
+  useEffect(() => {
+    setEditedData(data);
+  }, [data]);
+
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
+  ) => {
+    const { name, value } = e.target;
+    setEditedData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+  const handleSave = () => {
+    onSave(editedData);
+  };
+
   return (
     <>
       <div className="sticky top-0 flex items-center z-1 bg-primary border-b border-gray-400">
@@ -31,7 +56,7 @@ const PanelForm = <T,>({ columns, data, onClosePanel }: PanelFormProps<T>) => {
         <Button type="button" variant="confirm">
           Delete
         </Button>
-        <Button type="button" variant="confirm">
+        <Button type="button" variant="confirm" onClick={handleSave}>
           Save
         </Button>
       </div>
@@ -46,7 +71,9 @@ const PanelForm = <T,>({ columns, data, onClosePanel }: PanelFormProps<T>) => {
             {column.key === "category" || column.key === "ratings" ? (
               <select
                 className="max-w-212 border p-8 font-medium text-quaternary rounded outline-none hover:border-hoverPrimary"
-                value={(data as any)[column.key] as string}
+                name={column.key.toString()}
+                value={editedData[column.key] as string}
+                onChange={handleInputChange}
               >
                 {(() => {
                   switch (column.key) {
@@ -79,8 +106,10 @@ const PanelForm = <T,>({ columns, data, onClosePanel }: PanelFormProps<T>) => {
             ) : (
               <input
                 type="text"
+                name={column.key.toString()}
                 className="max-w-212 border p-8 font-medium text-quaternary rounded outline-none hover:border-hoverPrimary"
-                value={data[column.key] as string}
+                value={editedData[column.key] as string}
+                onChange={handleInputChange}
               />
             )}
           </div>
