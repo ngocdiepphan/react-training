@@ -21,14 +21,36 @@ class UserService {
     }
   };
 
-  updateUser = async (updatedUser: UserProps): Promise<ApiResponse<UserProps>> => {
+  updateUser = async (
+    updatedUser: UserProps,
+  ): Promise<ApiResponse<UserProps>> => {
     try {
-      const res = await fetch(`${API.BASE_URL}${API.API_USERS}/${updatedUser.id}`, {
-        method: "PUT",
+      const res = await fetch(
+        `${API.BASE_URL}${API.API_USERS}/${updatedUser.id}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(updatedUser),
+        },
+      );
+      return await this.apiHelper.handleResponse<UserProps>(res);
+    } catch (error) {
+      return {
+        data: null,
+        error: { message: (error as Error).message },
+      };
+    }
+  };
+
+  deleteUser = async (userId: string): Promise<ApiResponse<UserProps>> => {
+    try {
+      const res = await fetch(`${API.BASE_URL}${API.API_USERS}/${userId}`, {
+        method: "DELETE",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(updatedUser),
       });
       return await this.apiHelper.handleResponse<UserProps>(res);
     } catch (error) {
@@ -37,7 +59,7 @@ class UserService {
         error: { message: (error as Error).message },
       };
     }
-}
+  };
 }
 
 export default UserService;
