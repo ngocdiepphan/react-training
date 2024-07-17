@@ -32,6 +32,7 @@ const PanelForm = <T,>({
       [name]: value,
     }));
   };
+
   const handleSave = () => {
     onSave(editedData);
   };

@@ -21,7 +21,6 @@ const Dashboard: React.FC = () => {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
 
   const handleClosePanel = () => {
-    // setShowPanel(!showPanel);
     setShowPanel(false);
   };
   const handleShowDrawer = () => {
@@ -57,6 +56,18 @@ const Dashboard: React.FC = () => {
         return updatedUsers;
       }
       return prevUser;
+    });
+  };
+
+  const handleOnSaveRecipeFromPanel = (data: Recipe) => {
+    setRecipes((prevRecipes) => {
+      const index = prevRecipes.findIndex((item) => item.id === data.id);
+      if (index !== -1) {
+        const updatedRecipes = [...prevRecipes];
+        updatedRecipes[index] = data;
+        return updatedRecipes;
+      }
+      return prevRecipes;
     });
   };
 
@@ -149,6 +160,7 @@ const Dashboard: React.FC = () => {
               selectedRecipe={selectedRecipe}
               onClosePanel={handleClosePanel}
               onSaveUser={handleOnSaveUserFromPanel}
+              onSaveRecipe={handleOnSaveRecipeFromPanel}
               onDeleteUser={handleDeleteUser}
             />
           )}

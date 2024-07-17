@@ -4,12 +4,14 @@ import { UserProps } from "type/user";
 import { Recipe } from "type/recipe";
 import { userColumns, recipeColumns } from "type/table";
 import UserService from "services/user";
+import RecipeService from "services/recipe";
 
 interface PanelProps {
   selectedUser: UserProps | null;
   selectedRecipe: Recipe | null;
   onClosePanel?: () => void;
   onSaveUser: (editedUser: UserProps) => void;
+  onSaveRecipe: (data: Recipe) => void;
   onDeleteUser: (deletedUser: UserProps) => void;
 }
 
@@ -18,9 +20,11 @@ const Panel = ({
   selectedRecipe,
   onClosePanel,
   onSaveUser,
+  onSaveRecipe,
   onDeleteUser,
 }: PanelProps) => {
   const userService = new UserService();
+  const recipeService = new RecipeService();
 
   const handleUpdateUser = async (editedUser: UserProps) => {
     const response = await userService.updateUser(editedUser);
@@ -33,6 +37,18 @@ const Panel = ({
     }
   };
   useEffect(() => {}, [selectedUser]);
+
+  const handleUpdateRecipe = async (editRecipe: Recipe) => {
+    const response = await recipeService.updateRecipe (editRecipe);
+    if (response.error) {
+      return;
+    } else {
+      alert ("Recipe edit successful!");
+      onSaveRecipe(editRecipe)
+      onClosePanel?.();
+    }
+  }
+  useEffect(() => {}, [selectedRecipe]);
 
   const handleDeleteUser = async (deletedUser: UserProps) => {
     const response = await userService.deleteUser(deletedUser.id);
@@ -62,7 +78,7 @@ const Panel = ({
         <PanelForm
           columns={recipeColumns}
           data={selectedRecipe}
-          // onSave={handleRecipeSave}
+          onSave={handleUpdateRecipe}
           onClosePanel={onClosePanel}
         />
       )}

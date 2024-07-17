@@ -20,6 +20,29 @@ class RecipeService {
       };
     }
   };
+
+  updateRecipe = async (
+    updatedRecipe: Recipe,
+  ): Promise<ApiResponse<Recipe>> => {
+    try {
+      const res = await fetch(
+        `${API.BASE_URL}${API.API_RECIPES}/${updatedRecipe.id}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(updatedRecipe),
+        },
+      );
+      return await this.apiHelper.handleResponse<Recipe>(res);
+    } catch (error) {
+      return {
+        data: null,
+        error: { message: (error as Error).message },
+      };
+    }
+  };
 }
 
 export default RecipeService;
