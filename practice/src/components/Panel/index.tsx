@@ -13,6 +13,7 @@ interface PanelProps {
   onSaveUser: (editedUser: UserProps) => void;
   onSaveRecipe: (data: Recipe) => void;
   onDeleteUser: (deletedUser: UserProps) => void;
+  onDeleteRecipe: (deletedRecipe: Recipe) => void;
 }
 
 const Panel = ({
@@ -22,6 +23,7 @@ const Panel = ({
   onSaveUser,
   onSaveRecipe,
   onDeleteUser,
+  onDeleteRecipe
 }: PanelProps) => {
   const userService = new UserService();
   const recipeService = new RecipeService();
@@ -60,6 +62,16 @@ const Panel = ({
     onClosePanel?.();
   };
 
+  const handleDeleteRecipe = async (deletedRecipe: Recipe) => {
+    const response = await userService.deleteUser(deletedRecipe.id);
+    if (response.error) {
+      return;
+    }
+    alert("User deleted successfully!");
+    onDeleteRecipe(deletedRecipe);
+    onClosePanel?.();
+  };
+
   return (
     <aside
       className="panel hinder-panel lg:ml-10 content-dashboard bg-primary border border-gray-300 fixed h-full w-full top-0 left-0 m-0 md:right-auto lg:static"
@@ -79,6 +91,7 @@ const Panel = ({
           columns={recipeColumns}
           data={selectedRecipe}
           onSave={handleUpdateRecipe}
+          onDelete={handleDeleteRecipe}
           onClosePanel={onClosePanel}
         />
       )}

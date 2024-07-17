@@ -43,6 +43,23 @@ class RecipeService {
       };
     }
   };
+
+  deleteRecipe = async (recipeId: string): Promise<ApiResponse<Recipe>> => {
+    try {
+      const res = await fetch(`${API.BASE_URL}${API.API_RECIPES}/${recipeId}`, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      return await this.apiHelper.handleResponse<Recipe>(res);
+    } catch (error) {
+      return {
+        data: null,
+        error: { message: (error as Error).message },
+      };
+    }
+  };
 }
 
 export default RecipeService;
