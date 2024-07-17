@@ -74,6 +74,9 @@ const Dashboard: React.FC = () => {
   const handleDeleteUser = (data: UserProps) => {
     setUsers((prevUsers) => prevUsers.filter((user) => user.id !== data.id));
   };
+  const handleDeleteRecipe = (data: Recipe) => {
+    setRecipes((prevRecipes) => prevRecipes.filter((recipe) => recipe.id !== data.id));
+  };
 
   const userService = new UserService();
   const recipeService = new RecipeService();
@@ -162,6 +165,7 @@ const Dashboard: React.FC = () => {
               onSaveUser={handleOnSaveUserFromPanel}
               onSaveRecipe={handleOnSaveRecipeFromPanel}
               onDeleteUser={handleDeleteUser}
+              onDeleteRecipe={handleDeleteRecipe}
             />
           )}
         </div>
