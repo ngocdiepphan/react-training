@@ -48,10 +48,16 @@ const Dashboard: React.FC = () => {
   };
 
   const handleOnSaveUserFromPanel = (data: UserProps) => {
-    setUsers((prevUser) =>
-      prevUser.map((item) => (item.id === data.id ? data : item)),
-    );
-  };
+    setUsers((prevUser) => {
+      const index = prevUser.findIndex((item) => item.id === data.id);
+      if (index !== -1) {
+          const  updatedUsers = [...prevUser];
+          updatedUsers[index] = data;
+          return  updatedUsers;
+      }
+      return prevUser;
+  });
+  }
 
   const userService = new UserService();
   const recipeService = new RecipeService();

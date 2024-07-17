@@ -20,7 +20,7 @@ class UserService {
       };
     }
   };
-  
+
   updateUser = async (updatedUser: UserProps): Promise<ApiResponse<UserProps>> => {
     try {
       const res = await fetch(`${API.BASE_URL}${API.API_USERS}/${updatedUser.id}`, {
