@@ -68,7 +68,7 @@ const PanelForm = <T,>({
         </Button>
       </div>
 
-      <form className="flex flex-col items-start overflow-auto sticky t-0 mt-80 mr-30 ml-40">
+      <form className="flex flex-col items-start overflow-auto t-0 mt-80 mr-30 ml-40">
         {columns.map((column) => (
           <div
             key={String(column.key)}

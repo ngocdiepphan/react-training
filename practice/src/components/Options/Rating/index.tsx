@@ -1,10 +1,19 @@
 import React from "react";
 
-const OptionRating: React.FC = () => {
+interface OptionRatingProps {
+  onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+}
+
+const OptionRating = ({ onChange }: OptionRatingProps) => {
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    onChange(e);
+  };
+
   return (
     <div className="flex flex-row items-center mb-20 md:justify-around">
       <label className="w-80 text-xs md:text-xl">Rating</label>
       <select
+        onChange={handleChange}
         id="input_ratings"
         className="border w-full border-buttonPrimary outline-none p-8 h-30 md:h-35 cursor-pointer md:w-220 hover:border-hoverPrimary"
       >
