@@ -6,6 +6,7 @@ import Button from "../Buttons";
 import { Recipe } from "type/recipe";
 import RecipeService from "services/recipe";
 import { RecipeRow } from "type/table";
+import { formatDate } from "helpers";
 
 interface ModalProps {
   onAddRecipe: (newRecipe: Recipe) => void;
@@ -37,7 +38,7 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
     const date = new Date(e.target.value);
     setFormData((prevData) => ({
       ...prevData,
-      createdAt: date.toISOString().split("T")[0],
+      createdAt: formatDate(date),
     }));
   };
 
