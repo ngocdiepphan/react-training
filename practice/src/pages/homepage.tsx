@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../components/Layouts/Header";
-import { recipe } from "../mocks/recipe";
 import Button from "../components/Buttons/index";
 import FooterSocial from "../components/Layouts/Footer/Social";
 import Banner from "../components/Banner";
@@ -12,8 +11,23 @@ import Form from "../components/Inputs/Form";
 import Collection from "../components/Collection";
 import LastRecipe from "../components/LastRecipe";
 import FooterDesc from "../components/Layouts/Footer/Description";
+import RecipeService from "services/recipe";
+import { Recipe } from "type/recipe";
 
 const HomePage: React.FC = () => {
+  const [recipes, setRecipes] = useState<Recipe[]>([]);
+  const recipeService = new RecipeService();
+  useEffect(() => {
+    const fetchRecipe = async () => {
+      const recipeResponse = await recipeService.fetchRecipes();
+      if (recipeResponse.error) {
+        return;
+      }
+      setRecipes((recipeResponse.data as Recipe[]) || []);
+    };
+
+    fetchRecipe();
+  }, []);
 
   return (
     <>
@@ -27,11 +41,7 @@ const HomePage: React.FC = () => {
       <main>
         {/* -- START HEADER SECTION -- */}
         <section className="mx-12 md:mx-102 lg:mx-30 flex flex-col lg:flex-row">
-          <img
-            className="lg:max-w-550"
-            src={imgBanner}
-            alt="Picture banner"
-          />
+          <img className="lg:max-w-550" src={imgBanner} alt="Picture banner" />
           <div className="flex flex-col gap-20 bg-bannerPrimary pt-30 pr-35 pl-24 h-318 lg:h-420 md:pt-50 md:pl-48 md:pb-35 md:h-331 lg:pt-96 lg:pl-30 lg:pr-20">
             <div className="flex gap-10 font-sans text-xs lg:w-350">
               <span className="w-20 h-20 bg-arrow-up"></span>
@@ -112,7 +122,7 @@ const HomePage: React.FC = () => {
             Latest Recipes
           </h4>
           <ul className="" id="latest-recipes">
-            <LastRecipe />
+            <LastRecipe recipes={recipes} />
           </ul>
           <Button type="button" variant="primary">
             Load More
@@ -139,12 +149,6 @@ const HomePage: React.FC = () => {
 
         {/* -- END FOOTER */}
       </footer>
-
-
-      <Button type="button" variant="confirm" children="add user" />
-      <Button type="button" variant="confirm">
-        Save
-      </Button>
     </>
   );
 };

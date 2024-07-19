@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { recipe } from "mocks/recipe";
 import CreateDate from "components/CreatDate";
 import Header from "components/Layouts/Header";
 import Creator from "components/Creator";
@@ -16,13 +15,32 @@ import Button from "components/Buttons";
 import FooterContact from "components/Layouts/Footer/Contact";
 import FooterDesc from "components/Layouts/Footer/Description";
 import FooterSocial from "components/Layouts/Footer/Social";
+import RecipeService from "services/recipe";
+import { Recipe } from "type/recipe";
 
 const RecipeDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const recipeData = recipe.find((r) => r.id === id);
+  const [recipeData, setRecipeData] = useState<Recipe | null>(null);
+  const recipeService = new RecipeService();
+
+  useEffect(() => {
+    const fetchRecipe = async () => {
+      if (id) {
+        const recipeResponse = await recipeService.getById(id);
+
+        if (recipeResponse.error) {
+          console.error("recipe-detail", recipeResponse.error.message);
+          return;
+        }
+        setRecipeData(recipeResponse.data as Recipe);
+      }
+    };
+
+    fetchRecipe();
+  }, [id]);
 
   if (!recipeData) {
-    return <p>Recipe not found</p>;
+    return <p>Recipe not found!</p>;
   }
 
   return (

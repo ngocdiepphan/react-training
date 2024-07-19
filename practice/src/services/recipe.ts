@@ -22,6 +22,18 @@ class RecipeService {
     }
   };
 
+  getById = async (recipeId: string): Promise<ApiResponse<Recipe>> => {
+    try {
+      const res = await fetch(`${API.BASE_URL}${API.API_RECIPES}/${recipeId}`);
+      return await this.apiHelper.handleResponse<Recipe>(res);
+    } catch (error) {
+      return {
+        data: null,
+        error: { message: (error as Error).message },
+      };
+    }
+  };
+
   updateRecipe = async (
     updatedRecipe: Recipe,
   ): Promise<ApiResponse<Recipe>> => {
