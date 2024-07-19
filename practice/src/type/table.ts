@@ -20,7 +20,7 @@ export interface RecipeRow {
   name: string;
   category: string;
   creator: string;
-  createdAt: string;
+  createdAt: Date | string;
   ratings: number;
   description: string;
 }
@@ -30,8 +30,8 @@ export const recipeColumns: TableColumn<RecipeRow>[] = [
   { key: "name", header: "Name" },
   { key: "category", header: "Category" },
   { key: "creator", header: "Creator" },
-  { key: "createdAt", header: "Created At" },
-  { key: "ratings", header: "Ratings" },
+  { key: "createdAt", header: "CreatedAt" },
+  { key: "ratings", header: "Rating" },
   { key: "description", header: "Description" },
 ];
 

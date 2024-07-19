@@ -74,8 +74,13 @@ const Dashboard: React.FC = () => {
   const handleDeleteUser = (data: UserProps) => {
     setUsers((prevUsers) => prevUsers.filter((user) => user.id !== data.id));
   };
+
   const handleDeleteRecipe = (data: Recipe) => {
     setRecipes((prevRecipes) => prevRecipes.filter((recipe) => recipe.id !== data.id));
+  };
+
+  const handleAddRecipe = (newRecipe: Recipe) => {
+    setRecipes((prevRecipes) => [...prevRecipes, newRecipe]);
   };
 
   const userService = new UserService();
@@ -129,7 +134,10 @@ const Dashboard: React.FC = () => {
             onShowFormAdd={handleShowFormAdd}
             onDrawerItemClick={handleDrawerItemClick}
           />
-          {showFormAdd && <Modal />}
+          {showFormAdd && <Modal
+          onAddRecipe={handleAddRecipe}
+         />}
+
         </div>
 
         <div className="content flex flex-row font-sans bg-dashboardPrimary w-full">

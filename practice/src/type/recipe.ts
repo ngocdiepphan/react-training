@@ -8,7 +8,7 @@ export interface Recipe {
   collection_id: number;
   category: string;
   ratings: number;
-  createdAt: string;
+  createdAt: Date | string;
   id: string;
   prepTime: {
     min: string;

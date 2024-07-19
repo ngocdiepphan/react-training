@@ -33,7 +33,7 @@ const Panel = ({
     if (response.error) {
       return;
     } else {
-      alert("Edit user successful!");
+      alert("User edited successfully!");
       onSaveUser(editedUser);
       onClosePanel?.();
     }
@@ -45,11 +45,12 @@ const Panel = ({
     if (response.error) {
       return;
     } else {
-      alert ("Recipe edit successful!");
+      alert ("Recipe updated successfully!");
       onSaveRecipe(editRecipe)
       onClosePanel?.();
     }
   }
+  
   useEffect(() => {}, [selectedRecipe]);
 
   const handleDeleteUser = async (deletedUser: UserProps) => {
@@ -63,11 +64,11 @@ const Panel = ({
   };
 
   const handleDeleteRecipe = async (deletedRecipe: Recipe) => {
-    const response = await userService.deleteUser(deletedRecipe.id);
+    const response = await recipeService.deleteRecipe(deletedRecipe.id);
     if (response.error) {
       return;
     }
-    alert("User deleted successfully!");
+    alert("Recipe deleted successfully!");
     onDeleteRecipe(deletedRecipe);
     onClosePanel?.();
   };

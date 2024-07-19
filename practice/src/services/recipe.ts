@@ -1,6 +1,7 @@
 import APIHelper, { ApiResponse } from "./helper";
 import { API } from "../constants/url";
 import { Recipe } from "type/recipe";
+import { RecipeRow } from "type/table";
 
 class RecipeService {
   private apiHelper: APIHelper;
@@ -51,6 +52,26 @@ class RecipeService {
         headers: {
           "Content-Type": "application/json",
         },
+      });
+      return await this.apiHelper.handleResponse<Recipe>(res);
+    } catch (error) {
+      return {
+        data: null,
+        error: { message: (error as Error).message },
+      };
+    }
+  };
+
+  addRecipe = async (
+    newRecipe: Recipe | RecipeRow,
+  ): Promise<ApiResponse<Recipe | RecipeRow>> => {
+    try {
+      const res = await fetch(`${API.BASE_URL}${API.API_RECIPES}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newRecipe),
       });
       return await this.apiHelper.handleResponse<Recipe>(res);
     } catch (error) {

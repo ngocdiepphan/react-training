@@ -1,10 +1,18 @@
 import React from "react";
 
-const OptionCategory: React.FC = () => {
+interface OptionCategoryProps {
+  onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+}
+const OptionCategory = ({ onChange }: OptionCategoryProps) => {
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    onChange(e);
+  };
+
   return (
     <div className="flex flex-row items-center mb-20 md:justify-around">
       <label className="w-80 text-sx md:text-xl">Category</label>
       <select
+        onChange={handleChange}
         id="input_category"
         className="border w-full border-buttonPrimary outline-none p-8 h-30 md:h-35 cursor-pointer md:w-220 hover:border-hoverPrimary"
       >
