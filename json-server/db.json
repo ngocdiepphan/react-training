@@ -35,247 +35,111 @@
   ],
   "recipes": [
     {
-      "name": "Strawberry Cream Cheesecake",
-      "img": "http://localhost:1234/banner.cb63b542.png",
-      "description": "A delicious and creamy cheesecake topped with fresh strawberries and a sweet strawberry glaze.",
+      "name": "Spinach and Cheese Pasta",
+      "img": "https://github.com/user-attachments/assets/f29b4e79-4f1e-4b41-9fc8-3a21b3eca500",
+      "description": "A delicious pasta dish with creamy spinach and cheese sauce, perfect for a quick and comforting meal.",
       "ingredient": [
-        "400g graham crackers",
-        "150g unsalted butter, melted",
-        "900g cream cheese, softened",
-        "200g granulated sugar",
-        "4 large eggs",
-        "250ml sour cream",
-        "2 teaspoons vanilla extract",
-        "1 tablespoon lemon juice",
-        "300g fresh strawberries, sliced",
-        "200g strawberry jam"
+        "12 oz pasta (such as penne or fusilli)",
+        "2 tablespoons olive oil",
+        "3 cloves garlic, minced",
+        "4 cups fresh spinach, chopped",
+        "1 cup heavy cream",
+        "1 cup grated Parmesan cheese",
+        "Salt and pepper, to taste",
+        "Fresh basil leaves, for garnish (optional)"
       ],
       "instruction": [
         {
           "step": 1,
-          "description": "Preheat your oven to 175°C (350°F)."
+          "description": "Cook pasta according to package instructions until al dente. Drain and set aside."
         },
         {
           "step": 2,
-          "description": "In a food processor, blend the graham crackers into fine crumbs."
+          "description": "In a large skillet, heat olive oil over medium heat. Add minced garlic and sauté for 1-2 minutes until fragrant."
         },
         {
           "step": 3,
-          "description": "Mix the graham cracker crumbs with the melted butter until evenly coated."
+          "description": "Add chopped spinach to the skillet and cook until wilted, about 2-3 minutes."
         },
         {
           "step": 4,
-          "description": "Press the mixture into the bottom of a 23cm (9-inch) spring form pan to form a crust."
+          "description": "Pour in heavy cream and bring to a simmer. Let simmer for 2-3 minutes."
         },
         {
           "step": 5,
-          "description": "Bake the crust for 10 minutes, then set aside to cool."
+          "description": "Stir in grated Parmesan cheese until melted and smooth."
         },
         {
           "step": 6,
-          "description": "In a large mixing bowl, beat the cream cheese until smooth and creamy."
+          "description": "Season with salt and pepper to taste."
         },
         {
           "step": 7,
-          "description": "Add the granulated sugar and mix until well combined."
+          "description": "Add cooked pasta to the skillet and toss to coat evenly with the spinach and cheese sauce."
         },
         {
           "step": 8,
-          "description": "Add the eggs one at a time, mixing well after each addition."
+          "description": "Remove from heat. Garnish with fresh basil leaves if desired."
         },
         {
           "step": 9,
-          "description": "Stir in the sour cream, vanilla extract, and lemon juice until the mixture is smooth."
-        },
-        {
-          "step": 10,
-          "description": "Pour the cheesecake filling over the cooled crust."
-        },
-        {
-          "step": 11,
-          "description": "Bake the cheesecake in the preheated oven for about 50-60 minutes, or until the center is set but still slightly jiggly."
-        },
-        {
-          "step": 12,
-          "description": "Turn off the oven and let the cheesecake cool in the oven with the door slightly open for about 1 hour."
-        },
-        {
-          "step": 13,
-          "description": "Remove the cheesecake from the oven and let it cool completely at room temperature."
-        },
-        {
-          "step": 14,
-          "description": "Refrigerate the cheesecake for at least 4 hours or overnight."
-        },
-        {
-          "step": 15,
-          "description": "In a small saucepan, heat the strawberry jam over low heat until it becomes liquid."
-        },
-        {
-          "step": 16,
-          "description": "Arrange the sliced strawberries on top of the cooled cheesecake."
-        },
-        {
-          "step": 17,
-          "description": "Pour the warmed strawberry jam over the strawberries to glaze them."
-        },
-        {
-          "step": 18,
-          "description": "Remove the cheesecake from the spring form pan."
-        },
-        {
-          "step": 19,
-          "description": "Slice and serve chilled. Enjoy your homemade Strawberry Cream Cheesecake!"
+          "description": "Serve warm and enjoy your creamy Spinach and Cheese Pasta!"
         }
       ],
       "nutrition": [
         {
           "label": "Calories",
-          "value": "450"
+          "value": "550"
         },
         {
           "label": "Total Fat",
-          "value": "28g"
+          "value": "32g"
         },
         {
           "label": "Saturated Fat",
-          "value": "16g"
+          "value": "17g"
         },
         {
           "label": "Cholesterol",
-          "value": "125mg"
+          "value": "85mg"
         },
         {
           "label": "Sodium",
-          "value": "320mg"
+          "value": "450mg"
         },
         {
           "label": "Total Carbohydrate",
-          "value": "40g"
+          "value": "48g"
         },
         {
           "label": "Dietary Fiber",
-          "value": "1g"
+          "value": "3g"
         },
         {
           "label": "Total Sugars",
-          "value": "30g"
+          "value": "3g"
         },
         {
           "label": "Protein",
-          "value": "7g"
+          "value": "18g"
         }
       ],
-      "creator": "creator 1",
-      "imgCreator": "https://i.imgur.com/zJmTqKWb.jpg",
+      "creator": "Jack Ryan",
+      "imgCreator": "https://example.com/your-profile-image.jpg",
       "collection_id": 4,
-      "category": "Desserts",
-      "ratings": 4,
-      "createdAt": "2024-03-11",
-      "id": "1",
-      "prepTime": {
-        "min": "15 min",
-        "max": "20 max"
-      },
-      "serving": "4 people"
-    },
-    {
-      "name": "Caramel Strawberry Milkshake",
-      "img": "http://localhost:1234/banner.cb63b542.png",
-      "description": "A sweet and creamy milkshake with the rich flavors of caramel and fresh strawberries.",
-      "ingredient": [
-        "250ml whole milk",
-        "200g fresh strawberries, hulled and sliced",
-        "3 scoops vanilla ice cream",
-        "50ml caramel sauce",
-        "Whipped cream (for topping)",
-        "Extra caramel sauce (for drizzling)",
-        "Fresh strawberries (for garnish)"
-      ],
-      "instruction": [
-        {
-          "step": 1,
-          "description": "In a blender, combine the milk, sliced strawberries, vanilla ice cream, and caramel sauce."
-        },
-        {
-          "step": 2,
-          "description": "Blend until smooth and creamy."
-        },
-        {
-          "step": 3,
-          "description": "Pour the milkshake into glasses."
-        },
-        {
-          "step": 4,
-          "description": "Top with whipped cream."
-        },
-        {
-          "step": 5,
-          "description": "Drizzle extra caramel sauce on top of the whipped cream."
-        },
-        {
-          "step": 6,
-          "description": "Garnish with fresh strawberries."
-        },
-        {
-          "step": 7,
-          "description": "Serve immediately and enjoy your Caramel Strawberry Milkshake!"
-        }
-      ],
-      "nutrition": [
-        {
-          "label": "Calories",
-          "value": "350"
-        },
-        {
-          "label": "Total Fat",
-          "value": "15g"
-        },
-        {
-          "label": "Saturated Fat",
-          "value": "9g"
-        },
-        {
-          "label": "Cholesterol",
-          "value": "60mg"
-        },
-        {
-          "label": "Sodium",
-          "value": "200mg"
-        },
-        {
-          "label": "Total Carbohydrate",
-          "value": "50g"
-        },
-        {
-          "label": "Dietary Fiber",
-          "value": "2g"
-        },
-        {
-          "label": "Total Sugars",
-          "value": "45g"
-        },
-        {
-          "label": "Protein",
-          "value": "6g"
-        }
-      ],
-      "creator": "creator 2",
-      "collection_id": 2,
-      "imgCreator": "https://i.imgur.com/zJmTqKWb.jpg",
-      "category": "Pasta",
+      "category": "Main Course",
       "ratings": 5,
-      "createdAt": "2024-02-10",
-      "id": "2",
+      "createdAt": "2024-07-16",
+      "id": "26",
       "prepTime": {
-        "min": "5 min",
-        "max": "10 max"
+        "min": "20 minutes",
+        "max": "25 minutes"
       },
-      "serving": "3 people"
+      "serving": "Serves 4"
     },
     {
       "name": "Fancy Glazed Donuts",
-      "img": "http://localhost:1234/banner.cb63b542.png",
+      "img": "https://github.com/user-attachments/assets/c8cd8def-589a-4881-a190-787f7222c402",
       "description": "Soft and fluffy donuts with a rich, sweet glaze and a variety of colorful toppings.",
       "ingredient": [
         "500g all-purpose flour",
@@ -380,9 +244,9 @@
           "value": "4g"
         }
       ],
-      "creator": "creator 1",
+      "creator": "Brian Michael",
       "imgCreator": "https://i.imgur.com/zJmTqKWb.jpg",
-      "collection_id": 1,
+      "collection_id": 4,
       "category": "Desserts",
       "ratings": 5,
       "createdAt": "2023-10-04",
@@ -395,379 +259,68 @@
     },
     {
       "name": "Mighty Cheesy Breakfast Burger",
-      "img": "http://localhost:1234/banner.cb63b542.png",
-      "description": "A hearty breakfast burger with a juicy beef patty, crispy bacon, a fried egg, and melted cheese.",
+      "img": "https://github.com/user-attachments/assets/c171aedf-8993-45a2-b808-96266cf72562",
+      "description": "A hearty breakfast burger loaded with cheese, bacon, eggs, and all your favorite breakfast flavors.",
       "ingredient": [
-        "500g ground beef",
-        "4 burger buns",
-        "4 slices of cheddar cheese",
+        "4 hamburger buns",
+        "1 lb ground beef",
+        "Salt and pepper, to taste",
+        "4 slices cheddar cheese",
+        "4 slices cooked bacon",
         "4 large eggs",
-        "8 slices of bacon",
-        "Lettuce leaves",
-        "Tomato slices",
-        "Onion slices",
-        "Salt and pepper to taste",
-        "Butter or oil for frying",
-        "Ketchup and mayonnaise (optional)"
+        "1 tablespoon butter",
+        "Optional toppings: lettuce, tomato, avocado slices"
       ],
       "instruction": [
         {
           "step": 1,
-          "description": "Season the ground beef with salt and pepper, and form it into 4 equal patties."
+          "description": "Preheat your grill or skillet over medium-high heat."
         },
         {
           "step": 2,
-          "description": "Heat a skillet or grill over medium-high heat and cook the patties for 4-5 minutes per side, or until desired doneness. Add a slice of cheddar cheese on top of each patty during the last minute of cooking to melt."
+          "description": "Divide the ground beef into 4 equal portions and form into patties. Season with salt and pepper."
         },
         {
           "step": 3,
-          "description": "In a separate skillet, cook the bacon until crispy. Remove and drain on paper towels."
+          "description": "Grill or cook the patties on the skillet for about 4-5 minutes per side, or until desired doneness. Place a slice of cheddar cheese on each patty during the last minute of cooking."
         },
         {
           "step": 4,
-          "description": "In the same skillet, fry the eggs to your preferred doneness (sunny side up, over easy, etc.)."
+          "description": "While the patties are cooking, fry the eggs in a separate skillet over medium heat. Cook until the whites are set and the yolks are still runny. Season with salt and pepper."
         },
         {
           "step": 5,
-          "description": "Toast the burger buns until golden brown."
+          "description": "Toast the hamburger buns until golden brown."
         },
         {
           "step": 6,
-          "description": "Assemble the burgers: Spread ketchup and mayonnaise on the bottom half of each bun if desired. Add lettuce, a beef patty with melted cheese, bacon slices, a fried egg, tomato slices, and onion slices. Top with the other half of the bun."
+          "description": "Assemble the burgers: Place a cooked beef patty with melted cheese on the bottom half of each bun. Top with a slice of bacon, a fried egg, and any optional toppings."
         },
         {
           "step": 7,
-          "description": "Serve immediately and enjoy your Mighty Cheesy Breakfast Burger!"
+          "description": "Close the burgers with the top half of the buns. Serve immediately and enjoy your Mighty Cheesy Breakfast Burger!"
         }
       ],
       "nutrition": [
         {
           "label": "Calories",
-          "value": "700"
+          "value": "650"
         },
         {
           "label": "Total Fat",
-          "value": "45g"
-        },
-        {
-          "label": "Saturated Fat",
-          "value": "18g"
-        },
-        {
-          "label": "Cholesterol",
-          "value": "300mg"
-        },
-        {
-          "label": "Sodium",
-          "value": "1200mg"
-        },
-        {
-          "label": "Total Carbohydrate",
           "value": "40g"
         },
         {
-          "label": "Dietary Fiber",
-          "value": "3g"
-        },
-        {
-          "label": "Total Sugars",
-          "value": "8g"
-        },
-        {
-          "label": "Protein",
-          "value": "35g"
-        }
-      ],
-      "creator": "creator 3",
-      "imgCreator": "https://i.imgur.com/zJmTqKWb.jpg",
-      "collection_id": 2,
-      "category": "Breakfast",
-      "ratings": 4,
-      "createdAt": "2024-05-18",
-      "id": "4",
-      "prepTime": {
-        "min": "15 min",
-        "max": "25 min"
-      },
-      "serving": "4 burgers"
-    },
-    {
-      "name": "Margherita Pizza",
-      "img": "http://localhost:1234/banner.cb63b542.png",
-      "description": "A classic Margherita pizza with tomato sauce, fresh mozzarella, and basil leaves.",
-      "ingredient": [
-        "1 pizza dough ball",
-        "1/2 cup tomato sauce",
-        "200g fresh mozzarella cheese, sliced",
-        "Fresh basil leaves",
-        "Salt and pepper to taste",
-        "Olive oil for drizzling"
-      ],
-      "instruction": [
-        {
-          "step": 1,
-          "description": "Preheat your oven to 230°C (450°F)."
-        },
-        {
-          "step": 2,
-          "description": "Roll out the pizza dough on a floured surface into a circle."
-        },
-        {
-          "step": 3,
-          "description": "Transfer the dough to a pizza stone or baking sheet."
-        },
-        {
-          "step": 4,
-          "description": "Spread tomato sauce evenly over the dough."
-        },
-        {
-          "step": 5,
-          "description": "Arrange slices of fresh mozzarella on top of the sauce."
-        },
-        {
-          "step": 6,
-          "description": "Season with salt and pepper to taste."
-        },
-        {
-          "step": 7,
-          "description": "Drizzle with olive oil."
-        },
-        {
-          "step": 8,
-          "description": "Bake in the preheated oven for 10-12 minutes or until the crust is golden and the cheese is bubbly and slightly browned."
-        },
-        {
-          "step": 9,
-          "description": "Remove from the oven and garnish with fresh basil leaves."
-        },
-        {
-          "step": 10,
-          "description": "Slice and serve hot. Enjoy your Margherita Pizza!"
-        }
-      ],
-      "nutrition": [
-        {
-          "label": "Calories",
-          "value": "300"
-        },
-        {
-          "label": "Total Fat",
-          "value": "12g"
-        },
-        {
           "label": "Saturated Fat",
-          "value": "6g"
-        },
-        {
-          "label": "Cholesterol",
-          "value": "30mg"
-        },
-        {
-          "label": "Sodium",
-          "value": "550mg"
-        },
-        {
-          "label": "Total Carbohydrate",
-          "value": "35g"
-        },
-        {
-          "label": "Dietary Fiber",
-          "value": "2g"
-        },
-        {
-          "label": "Total Sugars",
-          "value": "5g"
-        },
-        {
-          "label": "Protein",
-          "value": "14g"
-        }
-      ],
-      "creator": "chef 1",
-      "imgCreator": "https://i.imgur.com/zJmTqKWb.jpg",
-      "collection_id": 3,
-      "category": "Pizza",
-      "ratings": 4,
-      "createdAt": "2024-05-01",
-      "id": "4",
-      "prepTime": {
-        "min": "20 min",
-        "max": "30 min"
-      },
-      "serving": "1 pizza"
-    },
-    {
-      "name": "Vegan Buddha Bowl",
-      "img": "http://localhost:1234/banner.cb63b542.png",
-      "description": "A colorful and nutritious vegan Buddha bowl with a variety of fresh vegetables, grains, and a creamy tahini dressing.",
-      "ingredient": [
-        "1 cup quinoa",
-        "2 cups water",
-        "1 cup chickpeas, cooked",
-        "1 cup sweet potato, diced",
-        "1 cup broccoli florets",
-        "1 cup cherry tomatoes, halved",
-        "1/2 avocado, sliced",
-        "1/4 cup tahini",
-        "2 tbsp lemon juice",
-        "2 tbsp olive oil",
-        "Salt and pepper to taste"
-      ],
-      "instruction": [
-        {
-          "step": 1,
-          "description": "Rinse quinoa under cold water. In a medium saucepan, bring quinoa and water to a boil. Reduce heat to low, cover, and simmer for 15 minutes or until quinoa is fluffy and water is absorbed."
-        },
-        {
-          "step": 2,
-          "description": "Preheat oven to 200°C (400°F). Toss sweet potato with olive oil, salt, and pepper. Spread on a baking sheet and roast for 20-25 minutes or until tender and lightly browned."
-        },
-        {
-          "step": 3,
-          "description": "Steam broccoli florets for 3-4 minutes until tender-crisp. Remove from heat and set aside."
-        },
-        {
-          "step": 4,
-          "description": "In a small bowl, whisk together tahini, lemon juice, olive oil, salt, and pepper to make the dressing."
-        },
-        {
-          "step": 5,
-          "description": "Divide cooked quinoa among serving bowls. Arrange cooked chickpeas, roasted sweet potato, steamed broccoli, cherry tomatoes, and avocado slices on top of the quinoa."
-        },
-        {
-          "step": 6,
-          "description": "Drizzle tahini dressing over the bowls. Serve immediately and enjoy your Vegan Buddha Bowl!"
-        }
-      ],
-      "nutrition": [
-        {
-          "label": "Calories",
-          "value": "450"
-        },
-        {
-          "label": "Total Fat",
-          "value": "20g"
-        },
-        {
-          "label": "Saturated Fat",
-          "value": "3g"
-        },
-        {
-          "label": "Cholesterol",
-          "value": "0mg"
-        },
-        {
-          "label": "Sodium",
-          "value": "300mg"
-        },
-        {
-          "label": "Total Carbohydrate",
-          "value": "60g"
-        },
-        {
-          "label": "Dietary Fiber",
-          "value": "12g"
-        },
-        {
-          "label": "Total Sugars",
-          "value": "5g"
-        },
-        {
-          "label": "Protein",
-          "value": "15g"
-        }
-      ],
-      "creator": "chef 2",
-      "imgCreator": "https://i.imgur.com/zJmTqKWb.jpg",
-      "collection_id": 5,
-      "category": "Vegan",
-      "ratings": 5,
-      "createdAt": "2024-04-24",
-      "id": "5",
-      "prepTime": {
-        "min": "30 min",
-        "max": "40 min"
-      },
-      "serving": "2 bowls"
-    },
-    {
-      "name": "Triple Chocolate Brownies",
-      "img": "http://localhost:1234/banner.cb63b542.png",
-      "description": "Decadent and rich triple chocolate brownies with layers of dark, milk, and white chocolate.",
-      "ingredient": [
-        "200g dark chocolate, chopped",
-        "150g unsalted butter",
-        "200g granulated sugar",
-        "3 large eggs",
-        "1 tsp vanilla extract",
-        "100g all-purpose flour",
-        "50g cocoa powder",
-        "1/2 tsp salt",
-        "100g milk chocolate chips",
-        "100g white chocolate chips"
-      ],
-      "instruction": [
-        {
-          "step": 1,
-          "description": "Preheat your oven to 180°C (350°F). Grease and line a 20cm (8-inch) square baking tin with parchment paper."
-        },
-        {
-          "step": 2,
-          "description": "In a heatproof bowl over a pan of simmering water, melt the dark chocolate and butter together. Stir until smooth and well combined. Remove from heat and let it cool slightly."
-        },
-        {
-          "step": 3,
-          "description": "In a large mixing bowl, whisk together sugar, eggs, and vanilla extract until pale and fluffy."
-        },
-        {
-          "step": 4,
-          "description": "Add the melted chocolate mixture to the egg mixture and stir until well combined."
-        },
-        {
-          "step": 5,
-          "description": "Sift in flour, cocoa powder, and salt. Fold gently until just combined. Do not overmix."
-        },
-        {
-          "step": 6,
-          "description": "Fold in milk chocolate chips and white chocolate chips."
-        },
-        {
-          "step": 7,
-          "description": "Pour the batter into the prepared baking tin and smooth the top with a spatula."
-        },
-        {
-          "step": 8,
-          "description": "Bake in the preheated oven for 25-30 minutes or until a toothpick inserted into the center comes out with moist crumbs, not wet batter."
-        },
-        {
-          "step": 9,
-          "description": "Remove from the oven and let it cool completely in the tin. Once cooled, cut into squares and serve."
-        },
-        {
-          "step": 10,
-          "description": "Enjoy your indulgent Triple Chocolate Brownies!"
-        }
-      ],
-      "nutrition": [
-        {
-          "label": "Calories",
-          "value": "300"
-        },
-        {
-          "label": "Total Fat",
           "value": "18g"
         },
         {
-          "label": "Saturated Fat",
-          "value": "10g"
-        },
-        {
           "label": "Cholesterol",
-          "value": "70mg"
+          "value": "280mg"
         },
         {
           "label": "Sodium",
-          "value": "150mg"
+          "value": "900mg"
         },
         {
           "label": "Total Carbohydrate",
@@ -779,70 +332,182 @@
         },
         {
           "label": "Total Sugars",
-          "value": "20g"
+          "value": "4g"
         },
         {
           "label": "Protein",
-          "value": "5g"
+          "value": "40g"
         }
       ],
-      "creator": "chef 1",
-      "imgCreator": "https://i.imgur.com/zJmTqKWb.jpg",
-      "collection_id": 3,
-      "category": "Desserts",
-      "ratings": 4,
-      "createdAt": "2024-02-22",
-      "id": "4",
+      "creator": "Nina Marie",
+      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "collection_id": 4,
+      "category": "Breakfast",
+      "ratings": 5,
+      "createdAt": "2024-07-16",
+      "id": "28",
       "prepTime": {
-        "min": "15 min",
-        "max": "20 min"
+        "min": "15 minutes",
+        "max": "20 minutes"
       },
-      "serving": "12 brownies"
+      "serving": "Makes 4 burgers"
     },
     {
-      "name": "Avocado Toast with Poached Egg",
-      "img": "http://localhost:1234/banner.cb63b542.png",
-      "description": "A delicious and nutritious breakfast featuring creamy avocado spread on whole grain toast, topped with a perfectly poached egg.",
+      "name": "Berry Madness Biscuits",
+      "img": "https://github.com/user-attachments/assets/f0d654a1-958d-449a-bee9-0917af8c159c",
+      "description": "Delicious biscuits loaded with a medley of fresh berries, perfect for a delightful breakfast or snack.",
       "ingredient": [
-        "2 slices whole grain bread",
-        "1 ripe avocado",
-        "2 large eggs",
-        "Salt and pepper to taste",
-        "Red pepper flakes (optional)",
-        "Fresh cilantro or parsley for garnish"
+        "2 cups all-purpose flour",
+        "1/4 cup granulated sugar",
+        "1 tablespoon baking powder",
+        "1/2 teaspoon salt",
+        "1/2 cup unsalted butter, cold and cut into cubes",
+        "3/4 cup mixed fresh berries (such as blueberries, raspberries, and strawberries)",
+        "3/4 cup milk",
+        "1 teaspoon vanilla extract"
       ],
       "instruction": [
         {
           "step": 1,
-          "description": "Toast the slices of whole grain bread until golden brown and crispy."
+          "description": "Preheat your oven to 400°F (200°C). Line a baking sheet with parchment paper."
         },
         {
           "step": 2,
-          "description": "While the bread is toasting, prepare the avocado. Cut the avocado in half, remove the pit, and scoop out the flesh into a bowl."
+          "description": "In a large bowl, whisk together flour, sugar, baking powder, and salt."
         },
         {
           "step": 3,
-          "description": "Mash the avocado with a fork until smooth and creamy. Season with salt, pepper, and red pepper flakes if using."
+          "description": "Add cold butter cubes to the flour mixture. Using a pastry cutter or your fingers, cut the butter into the flour until the mixture resembles coarse crumbs."
         },
         {
           "step": 4,
-          "description": "Poach the eggs: Bring a pot of water to a gentle simmer. Crack one egg into a small bowl. Swirl the simmering water with a spoon to create a whirlpool, then gently slide the egg into the center of the whirlpool. Cook for 3-4 minutes until the egg whites are set but the yolk is still runny. Remove with a slotted spoon and repeat with the second egg."
+          "description": "Gently fold in mixed fresh berries."
         },
         {
           "step": 5,
-          "description": "Spread the mashed avocado evenly onto the toasted bread slices."
+          "description": "In a separate bowl, mix together milk and vanilla extract."
         },
         {
           "step": 6,
-          "description": "Top each slice with a poached egg."
+          "description": "Add the milk mixture to the flour mixture, stirring until just combined. Be careful not to overmix."
         },
         {
           "step": 7,
-          "description": "Sprinkle with additional salt, pepper, and red pepper flakes if desired. Garnish with fresh cilantro or parsley."
+          "description": "Turn the dough out onto a lightly floured surface. Pat the dough into a rectangle about 1 inch thick."
         },
         {
           "step": 8,
-          "description": "Serve immediately and enjoy your Avocado Toast with Poached Egg!"
+          "description": "Using a biscuit cutter or a glass, cut out biscuits and place them on the prepared baking sheet."
+        },
+        {
+          "step": 9,
+          "description": "Gather the scraps of dough, pat into a rectangle again, and cut out more biscuits until all the dough is used."
+        },
+        {
+          "step": 10,
+          "description": "Bake in the preheated oven for 15-18 minutes, or until the biscuits are golden brown and cooked through."
+        },
+        {
+          "step": 11,
+          "description": "Remove from the oven and let cool slightly on a wire rack before serving warm."
+        },
+        {
+          "step": 12,
+          "description": "Serve these delightful Berry Madness Biscuits with butter or jam. Enjoy!"
+        }
+      ],
+      "nutrition": [
+        {
+          "label": "Calories",
+          "value": "220"
+        },
+        {
+          "label": "Total Fat",
+          "value": "9g"
+        },
+        {
+          "label": "Saturated Fat",
+          "value": "6g"
+        },
+        {
+          "label": "Cholesterol",
+          "value": "25mg"
+        },
+        {
+          "label": "Sodium",
+          "value": "280mg"
+        },
+        {
+          "label": "Total Carbohydrate",
+          "value": "32g"
+        },
+        {
+          "label": "Dietary Fiber",
+          "value": "2g"
+        },
+        {
+          "label": "Total Sugars",
+          "value": "8g"
+        },
+        {
+          "label": "Protein",
+          "value": "4g"
+        }
+      ],
+      "creator": "Sara Lynn",
+      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "collection_id": 3,
+      "category": "Breakfast",
+      "ratings": 5,
+      "createdAt": "2024-07-16",
+      "id": "25",
+      "prepTime": {
+        "min": "20 minutes",
+        "max": "25 minutes"
+      },
+      "serving": "Makes about 8 biscuits"
+    },
+    {
+      "name": "Caramel Strawberry Milkshake",
+      "img": "https://github.com/user-attachments/assets/4a756c5e-b5c1-4472-89e9-dfe8187066e9",
+      "description": "A sweet and creamy milkshake with the rich flavors of caramel and fresh strawberries.",
+      "ingredient": [
+        "250ml whole milk",
+        "200g fresh strawberries, hulled and sliced",
+        "3 scoops vanilla ice cream",
+        "50ml caramel sauce",
+        "Whipped cream (for topping)",
+        "Extra caramel sauce (for drizzling)",
+        "Fresh strawberries (for garnish)"
+      ],
+      "instruction": [
+        {
+          "step": 1,
+          "description": "In a blender, combine the milk, sliced strawberries, vanilla ice cream, and caramel sauce."
+        },
+        {
+          "step": 2,
+          "description": "Blend until smooth and creamy."
+        },
+        {
+          "step": 3,
+          "description": "Pour the milkshake into glasses."
+        },
+        {
+          "step": 4,
+          "description": "Top with whipped cream."
+        },
+        {
+          "step": 5,
+          "description": "Drizzle extra caramel sauce on top of the whipped cream."
+        },
+        {
+          "step": 6,
+          "description": "Garnish with fresh strawberries."
+        },
+        {
+          "step": 7,
+          "description": "Serve immediately and enjoy your Caramel Strawberry Milkshake!"
         }
       ],
       "nutrition": [
@@ -852,128 +517,53 @@
         },
         {
           "label": "Total Fat",
-          "value": "20g"
-        },
-        {
-          "label": "Saturated Fat",
-          "value": "4g"
-        },
-        {
-          "label": "Cholesterol",
-          "value": "185mg"
-        },
-        {
-          "label": "Sodium",
-          "value": "350mg"
-        },
-        {
-          "label": "Total Carbohydrate",
-          "value": "30g"
-        },
-        {
-          "label": "Dietary Fiber",
-          "value": "8g"
-        },
-        {
-          "label": "Total Sugars",
-          "value": "2g"
-        },
-        {
-          "label": "Protein",
           "value": "15g"
-        }
-      ],
-      "creator": "chef 2",
-      "collection_id": 5,
-      "category": "Breakfast",
-      "ratings": 5,
-      "createdAt": "2023-12-28",
-      "id": "5",
-      "prepTime": {
-        "min": "10 min",
-        "max": "15 min"
-      },
-      "serving": "2 servings"
-    },
-    {
-      "name": "Berry Blast Smoothie",
-      "img": "http://localhost:1234/banner.cb63b542.png",
-      "description": "A refreshing and nutritious smoothie packed with mixed berries and yogurt.",
-      "ingredient": [
-        "1 cup mixed berries (strawberries, blueberries, raspberries)",
-        "1 banana, peeled and sliced",
-        "1 cup plain yogurt",
-        "1/2 cup milk (or almond milk)",
-        "1 tbsp honey (optional)",
-        "Ice cubes (optional)"
-      ],
-      "instruction": [
-        {
-          "step": 1,
-          "description": "In a blender, combine mixed berries, banana, yogurt, milk, and honey (if using)."
-        },
-        {
-          "step": 2,
-          "description": "Blend until smooth and creamy. Add ice cubes if a thicker consistency is desired."
-        },
-        {
-          "step": 3,
-          "description": "Pour into glasses and serve immediately. Enjoy your Berry Blast Smoothie!"
-        }
-      ],
-      "nutrition": [
-        {
-          "label": "Calories",
-          "value": "200"
-        },
-        {
-          "label": "Total Fat",
-          "value": "2g"
         },
         {
           "label": "Saturated Fat",
-          "value": "1g"
+          "value": "9g"
         },
         {
           "label": "Cholesterol",
-          "value": "5mg"
+          "value": "60mg"
         },
         {
           "label": "Sodium",
-          "value": "80mg"
+          "value": "200mg"
         },
         {
           "label": "Total Carbohydrate",
-          "value": "40g"
+          "value": "50g"
         },
         {
           "label": "Dietary Fiber",
-          "value": "5g"
+          "value": "2g"
         },
         {
           "label": "Total Sugars",
-          "value": "30g"
+          "value": "45g"
         },
         {
           "label": "Protein",
-          "value": "8g"
+          "value": "6g"
         }
       ],
-      "creator": "creator 4",
-      "collection_id": 4,
-      "category": "Smoothies",
+      "creator": "creator 2",
+      "collection_id": 2,
+      "imgCreator": "https://i.imgur.com/zJmTqKWb.jpg",
+      "category": "S",
       "ratings": 5,
-      "createdAt": "2024-03-09",
-      "id": "5",
+      "createdAt": "2024-02-10",
+      "id": "2",
       "prepTime": {
         "min": "5 min",
-        "max": "10 min"
+        "max": "10 max"
       },
-      "serving": "2 servings"
+      "serving": "3 people"
     },
     {
       "name": "Cashew Vegan Rice",
-      "img": "https://example.com/your-image-url.jpg",
+      "img": "https://github.com/user-attachments/assets/4c1a5f73-91a3-4a93-902b-213c7859ca4c",
       "description": "A delightful vegan dish with rice, cashews, and assorted vegetables, seasoned to perfection.",
       "ingredient": [
         "2 cups of jasmine rice",
@@ -1066,8 +656,8 @@
       "creator": "Your Name",
       "imgCreator": "https://example.com/your-profile-image.jpg",
       "collection_id": 5,
-      "category": "Main Dishes",
-      "ratings": 5,
+      "category": "Smoothies",
+      "ratings": 4,
       "createdAt": "2024-07-16",
       "id": "2",
       "prepTime": {
@@ -1078,7 +668,7 @@
     },
     {
       "name": "Smoked Salmon Salad Sandwich",
-      "img": "https://example.com/your-image-url.jpg",
+      "img": "https://github.com/user-attachments/assets/52c5f3bc-7bc5-4ca4-8c6d-d7799e89a440",
       "description": "A delicious sandwich featuring smoked salmon salad with fresh vegetables and herbs.",
       "ingredient": [
         "8 slices of whole grain bread",
@@ -1160,11 +750,11 @@
           "value": "25g"
         }
       ],
-      "creator": "Your Name",
+      "creator": "Anna Grace",
       "imgCreator": "https://example.com/your-profile-image.jpg",
-      "collection_id": 6,
-      "category": "Sandwiches",
-      "ratings": 4.5,
+      "collection_id": 5,
+      "category": "Breakfast",
+      "ratings": 3,
       "createdAt": "2024-07-16",
       "id": "3",
       "prepTime": {
@@ -1175,7 +765,7 @@
     },
     {
       "name": "Salmon in Creamy Sun Dried Tomato Sauce",
-      "img": "https://example.com/your-image-url.jpg",
+      "img": "https://github.com/user-attachments/assets/bb54fadd-341c-4d75-b3bd-6bbdd94aa729",
       "description": "Pan-seared salmon fillets served in a rich and creamy sun dried tomato sauce.",
       "ingredient": [
         "4 salmon fillets",
@@ -1262,11 +852,11 @@
           "value": "35g"
         }
       ],
-      "creator": "Your Name",
+      "creator": "Mia Belle",
       "imgCreator": "https://example.com/your-profile-image.jpg",
       "collection_id": 7,
-      "category": "Seafood",
-      "ratings": 4.8,
+      "category": "Breakfast",
+      "ratings": 4,
       "createdAt": "2024-07-16",
       "id": "4",
       "prepTime": {
@@ -1277,7 +867,7 @@
     },
     {
       "name": "Healthy Jam Waffle Breakfast",
-      "img": "https://example.com/your-image-url.jpg",
+      "img": "https://github.com/user-attachments/assets/9d1edf99-1364-4435-b0e9-69dc761788d4",
       "description": "A nutritious breakfast featuring whole grain waffles topped with yogurt, fresh fruit, and a drizzle of jam.",
       "ingredient": [
         "4 whole grain waffles",
@@ -1355,11 +945,11 @@
           "value": "10g"
         }
       ],
-      "creator": "Your Name",
+      "creator": "Brian Michael",
       "imgCreator": "https://example.com/your-profile-image.jpg",
-      "collection_id": 8,
+      "collection_id": 5,
       "category": "Breakfast",
-      "ratings": 4.5,
+      "ratings": 4,
       "createdAt": "2024-07-16",
       "id": "5",
       "prepTime": {
@@ -1370,7 +960,7 @@
     },
     {
       "name": "Chocolate and Banana Jar Cake",
-      "img": "https://example.com/your-image-url.jpg",
+      "img": "https://github.com/user-attachments/assets/fe57b649-45f7-4dcb-a278-f2e1187c97f8",
       "description": "A decadent jar cake combining rich chocolate cake with creamy banana filling, perfect for a delightful dessert.",
       "ingredient": [
         "1 cup all-purpose flour",
@@ -1468,9 +1058,9 @@
           "value": "5g"
         }
       ],
-      "creator": "Your Name",
+      "creator": "Nina Marie",
       "imgCreator": "https://example.com/your-profile-image.jpg",
-      "collection_id": 2,
+      "collection_id": 3,
       "category": "Desserts",
       "ratings": 5,
       "createdAt": "2024-07-16",
@@ -1482,71 +1072,77 @@
       "serving": "4 jar cakes"
     },
     {
-      "name": "Chocolate and Banana Jar Cake",
-      "img": "https://example.com/your-image-url.jpg",
-      "description": "A decadent jar cake combining rich chocolate cake with creamy banana filling, perfect for a delightful dessert.",
+      "name": "Caramel Blueberry Scones",
+      "img": "https://github.com/user-attachments/assets/ca8ec0cb-1580-4c90-982d-8bf69337be54",
+      "description": "Delicious scones filled with juicy blueberries and topped with a rich caramel glaze, perfect for breakfast or a sweet treat.",
       "ingredient": [
-        "1 cup all-purpose flour",
-        "1/2 cup cocoa powder",
-        "1 teaspoon baking powder",
-        "1/2 teaspoon baking soda",
-        "1/4 teaspoon salt",
-        "1/2 cup unsalted butter, softened",
-        "1 cup granulated sugar",
-        "2 large eggs",
+        "2 cups all-purpose flour",
+        "1/3 cup granulated sugar",
+        "1 tablespoon baking powder",
+        "1/2 teaspoon salt",
+        "1/2 cup unsalted butter, cold and cubed",
+        "1 cup fresh blueberries",
+        "1/2 cup heavy cream",
+        "1 large egg",
         "1 teaspoon vanilla extract",
-        "1/2 cup buttermilk",
-        "2 ripe bananas, mashed",
-        "1/4 cup chocolate chips",
-        "Whipped cream for topping (optional)",
-        "Sliced bananas and chocolate shavings for garnish (optional)"
+        "Caramel sauce for drizzling",
+        "Additional heavy cream for brushing (optional)",
+        "Coarse sugar for sprinkling (optional)"
       ],
       "instruction": [
         {
           "step": 1,
-          "description": "Preheat oven to 350°F (175°C). Grease and flour four 8-ounce jars."
+          "description": "Preheat oven to 400°F (200°C). Line a baking sheet with parchment paper."
         },
         {
           "step": 2,
-          "description": "In a bowl, sift together flour, cocoa powder, baking powder, baking soda, and salt."
+          "description": "In a large bowl, whisk together flour, sugar, baking powder, and salt."
         },
         {
           "step": 3,
-          "description": "In another bowl, cream together butter and sugar until light and fluffy."
+          "description": "Cut in the cold, cubed butter using a pastry cutter or your fingers until the mixture resembles coarse crumbs."
         },
         {
           "step": 4,
-          "description": "Add eggs one at a time, beating well after each addition. Stir in vanilla extract."
+          "description": "Gently fold in the fresh blueberries."
         },
         {
           "step": 5,
-          "description": "Gradually add dry ingredients to the butter mixture, alternating with buttermilk, beginning and ending with dry ingredients. Mix until just combined."
+          "description": "In a separate bowl, whisk together heavy cream, egg, and vanilla extract."
         },
         {
           "step": 6,
-          "description": "Fold in mashed bananas and chocolate chips."
+          "description": "Pour the wet ingredients into the dry ingredients and stir until just combined. Do not overmix."
         },
         {
           "step": 7,
-          "description": "Divide batter evenly among the prepared jars, filling each about halfway."
+          "description": "Turn the dough out onto a lightly floured surface and gently knead it a few times until it comes together."
         },
         {
           "step": 8,
-          "description": "Place jars on a baking sheet and bake for 25-30 minutes, or until a toothpick inserted into the center comes out clean."
+          "description": "Shape the dough into a circle about 1 inch thick and cut it into 8 wedges."
         },
         {
           "step": 9,
-          "description": "Remove from oven and let cool slightly. Top with whipped cream, sliced bananas, and chocolate shavings if desired."
+          "description": "Place the wedges onto the prepared baking sheet. Brush the tops with additional heavy cream and sprinkle with coarse sugar if desired."
         },
         {
           "step": 10,
-          "description": "Serve warm and enjoy your Chocolate and Banana Jar Cake!"
+          "description": "Bake for 18-22 minutes, or until the scones are golden brown and a toothpick inserted into the center comes out clean."
+        },
+        {
+          "step": 11,
+          "description": "Remove from oven and let cool on a wire rack. Drizzle with caramel sauce before serving."
+        },
+        {
+          "step": 12,
+          "description": "Enjoy your Caramel Blueberry Scones with a cup of tea or coffee!"
         }
       ],
       "nutrition": [
         {
           "label": "Calories",
-          "value": "350"
+          "value": "320"
         },
         {
           "label": "Total Fat",
@@ -1558,45 +1154,45 @@
         },
         {
           "label": "Cholesterol",
-          "value": "70mg"
+          "value": "60mg"
         },
         {
           "label": "Sodium",
-          "value": "250mg"
+          "value": "220mg"
         },
         {
           "label": "Total Carbohydrate",
-          "value": "50g"
+          "value": "42g"
         },
         {
           "label": "Dietary Fiber",
-          "value": "3g"
+          "value": "2g"
         },
         {
           "label": "Total Sugars",
-          "value": "30g"
+          "value": "18g"
         },
         {
           "label": "Protein",
           "value": "5g"
         }
       ],
-      "creator": "Your Name",
+      "creator": "Luke Thomas",
       "imgCreator": "https://example.com/your-profile-image.jpg",
-      "collection_id": 9,
-      "category": "Desserts",
-      "ratings": 4.7,
-      "createdAt": "2024-07-16",
-      "id": "6",
+      "collection_id": 10,
+      "category": "Dessert",
+      "ratings": 4,
+      "createdAt": "2024-07-19",
+      "id": "7a",
       "prepTime": {
-        "min": "20 minutes",
-        "max": "25 minutes"
+        "min": "15 minutes",
+        "max": "20 minutes"
       },
-      "serving": "4 jar cakes"
+      "serving": "8 scones"
     },
     {
       "name": "Blueberry Carrot Cake",
-      "img": "https://example.com/your-image-url.jpg",
+      "img": "https://github.com/user-attachments/assets/b3baacb7-5493-4ed1-851d-ffac46ea9c16",
       "description": "A delightful twist on classic carrot cake with the addition of juicy blueberries, topped with cream cheese frosting.",
       "ingredient": [
         "2 cups all-purpose flour",
@@ -1704,7 +1300,7 @@
       "imgCreator": "https://example.com/your-profile-image.jpg",
       "collection_id": 11,
       "category": "Desserts",
-      "ratings": 4.8,
+      "ratings": 4,
       "createdAt": "2024-07-16",
       "id": "8",
       "prepTime": {
@@ -1715,7 +1311,7 @@
     },
     {
       "name": "Vegan Cauliflower Salad",
-      "img": "https://example.com/your-image-url.jpg",
+      "img": "https://github.com/user-attachments/assets/936a240c-91bf-402e-93ea-7975d7ec2fce",
       "description": "A refreshing and nutritious salad featuring roasted cauliflower, chickpeas, and a tangy tahini dressing.",
       "ingredient": [
         "1 head cauliflower, cut into florets",
@@ -1803,11 +1399,11 @@
           "value": "8g"
         }
       ],
-      "creator": "Your Name",
+      "creator": "Ella Mae",
       "imgCreator": "https://example.com/your-profile-image.jpg",
       "collection_id": 12,
-      "category": "Salads",
-      "ratings": 4.5,
+      "category": "Vegan",
+      "ratings": 4,
       "createdAt": "2024-07-16",
       "id": "9",
       "prepTime": {
@@ -1818,7 +1414,7 @@
     },
     {
       "name": "Roasted Red Pepper Soup",
-      "img": "https://example.com/your-image-url.jpg",
+      "img": "https://github.com/user-attachments/assets/fa860aea-9df3-4e5c-a7bd-b95454cdc9b0",
       "description": "A velvety and flavorful soup made with roasted red peppers, tomatoes, and aromatic herbs.",
       "ingredient": [
         "6 large red bell peppers",
@@ -1925,11 +1521,11 @@
           "value": "4g"
         }
       ],
-      "creator": "Your Name",
+      "creator": "Chris Evans",
       "imgCreator": "https://example.com/your-profile-image.jpg",
       "collection_id": 13,
-      "category": "Soups",
-      "ratings": 4.7,
+      "category": "Breakfast",
+      "ratings": 4,
       "createdAt": "2024-07-16",
       "id": "10",
       "prepTime": {
@@ -1940,7 +1536,7 @@
     },
     {
       "name": "Eggs and Avocado Toast",
-      "img": "https://example.com/your-image-url.jpg",
+      "img": "https://github.com/user-attachments/assets/cf29cc3f-f1f5-4ee8-9ad8-2c31215aad8b",
       "description": "A delicious and nutritious breakfast or snack featuring creamy avocado spread on toasted bread with perfectly cooked eggs on top.",
       "ingredient": [
         "2 slices whole grain bread",
@@ -2021,11 +1617,11 @@
           "value": "15g"
         }
       ],
-      "creator": "Your Name",
+      "creator": "Ivy Grace",
       "imgCreator": "https://example.com/your-profile-image.jpg",
       "collection_id": 14,
       "category": "Breakfast",
-      "ratings": 4.9,
+      "ratings": 5,
       "createdAt": "2024-07-16",
       "id": "11",
       "prepTime": {
@@ -2036,7 +1632,7 @@
     },
     {
       "name": "Pork Shoulder Cashew Noodles",
-      "img": "https://example.com/your-image-url.jpg",
+      "img": "https://github.com/user-attachments/assets/47f36469-33d0-452e-87f3-24f18ac4d7a5",
       "description": "A savory and satisfying noodle dish featuring tender pork shoulder, crunchy cashews, and flavorful Asian-inspired seasonings.",
       "ingredient": [
         "300g pork shoulder, thinly sliced",
@@ -2129,11 +1725,11 @@
           "value": "25g"
         }
       ],
-      "creator": "Your Name",
+      "creator": "Eva Jane",
       "imgCreator": "https://example.com/your-profile-image.jpg",
-      "collection_id": 15,
-      "category": "Main Dish",
-      "ratings": 4.8,
+      "collection_id": 5,
+      "category": "Pasta",
+      "ratings": 5,
       "createdAt": "2024-07-16",
       "id": "12",
       "prepTime": {
@@ -2144,7 +1740,7 @@
     },
     {
       "name": "Toasted Farfalle in Pesto Sauce",
-      "img": "https://example.com/your-image-url.jpg",
+      "img": "https://github.com/user-attachments/assets/a6b1eee0-d154-4f25-82df-26628f46d7ce",
       "description": "A delightful pasta dish featuring toasted farfalle tossed in a vibrant and aromatic basil pesto sauce.",
       "ingredient": [
         "300g farfalle pasta",
@@ -2224,11 +1820,11 @@
           "value": "10g"
         }
       ],
-      "creator": "Your Name",
+      "creator": "Zoe Ann",
       "imgCreator": "https://example.com/your-profile-image.jpg",
-      "collection_id": 16,
-      "category": "Pasta",
-      "ratings": 4.9,
+      "collection_id": 4,
+      "category": "Vegan",
+      "ratings": 5,
       "createdAt": "2024-07-16",
       "id": "13",
       "prepTime": {
@@ -2239,7 +1835,7 @@
     },
     {
       "name": "Cheesy Bacon Burger Sliders",
-      "img": "https://example.com/your-image-url.jpg",
+      "img": "https://github.com/user-attachments/assets/e456be9d-ec45-4793-b856-be2aa4012375",
       "description": "Delicious mini burgers topped with crispy bacon and melted cheese, perfect for parties or a quick meal.",
       "ingredient": [
         "12 slider buns",
@@ -2338,11 +1934,11 @@
           "value": "18g"
         }
       ],
-      "creator": "Your Name",
+      "creator": "Sara Lynn",
       "imgCreator": "https://example.com/your-profile-image.jpg",
-      "collection_id": 17,
-      "category": "Appetizer",
-      "ratings": 4.8,
+      "collection_id": 2,
+      "category": "Breakfast",
+      "ratings": 4,
       "createdAt": "2024-07-16",
       "id": "14",
       "prepTime": {
@@ -2353,7 +1949,7 @@
     },
     {
       "name": "Fig and Raisins Oatmeal",
-      "img": "https://example.com/your-image-url.jpg",
+      "img": "https://github.com/user-attachments/assets/713840f3-f1db-454b-8810-371d280f9bc0",
       "description": "A comforting and nutritious oatmeal bowl featuring sweet figs, plump raisins, and warm spices.",
       "ingredient": [
         "1 cup rolled oats",
@@ -2434,11 +2030,11 @@
           "value": "5g"
         }
       ],
-      "creator": "Your Name",
+      "creator": "Ella Mae",
       "imgCreator": "https://example.com/your-profile-image.jpg",
-      "collection_id": 18,
-      "category": "Breakfast",
-      "ratings": 4.7,
+      "collection_id": 3,
+      "category": "Vegan",
+      "ratings": 5,
       "createdAt": "2024-07-16",
       "id": "15",
       "prepTime": {
@@ -2449,7 +2045,7 @@
     },
     {
       "name": "Silky Smooth Panna Cotta",
-      "img": "https://example.com/your-image-url.jpg",
+      "img": "https://github.com/user-attachments/assets/edeea0b0-5cc3-4969-8c50-4a378a0556a6",
       "description": "A classic Italian dessert featuring silky smooth cream infused with vanilla and set with gelatin.",
       "ingredient": [
         "2 cups heavy cream",
@@ -2536,7 +2132,7 @@
           "value": "4g"
         }
       ],
-      "creator": "Your Name",
+      "creator": "John Paul",
       "imgCreator": "https://example.com/your-profile-image.jpg",
       "collection_id": 19,
       "category": "Dessert",
@@ -2551,7 +2147,7 @@
     },
     {
       "name": "Triple Decker Cranberry Cake",
-      "img": "https://example.com/your-image-url.jpg",
+      "img": "https://github.com/user-attachments/assets/69f7b7b9-8c3d-4e80-ba7c-0a6607826e23",
       "description": "A delightful triple-layer cake featuring tart cranberries and a hint of citrus, perfect for any occasion.",
       "ingredient": [
         "For the cake layers:",
@@ -2666,11 +2262,11 @@
           "value": "4g"
         }
       ],
-      "creator": "Your Name",
+      "creator": "Scarlet Rose",
       "imgCreator": "https://example.com/your-profile-image.jpg",
-      "collection_id": 20,
+      "collection_id": 3,
       "category": "Dessert",
-      "ratings": 4.8,
+      "ratings": 4,
       "createdAt": "2024-07-16",
       "id": "17",
       "prepTime": {
@@ -2681,7 +2277,7 @@
     },
     {
       "name": "Very Berry Healthy Summer Smoothie",
-      "img": "https://example.com/your-image-url.jpg",
+      "img": "https://github.com/user-attachments/assets/b7d4f5be-5070-4373-b059-0f6fd09b8112",
       "description": "A refreshing and nutritious smoothie packed with a variety of berries and creamy yogurt.",
       "ingredient": [
         "1 cup mixed berries (such as strawberries, blueberries, raspberries)",
@@ -2748,11 +2344,11 @@
           "value": "8g"
         }
       ],
-      "creator": "Your Name",
+      "creator": "Hazel Sky",
       "imgCreator": "https://example.com/your-profile-image.jpg",
       "collection_id": 21,
       "category": "Smoothie",
-      "ratings": 4.5,
+      "ratings": 5,
       "createdAt": "2024-07-16",
       "id": "18",
       "prepTime": {
@@ -2763,7 +2359,7 @@
     },
     {
       "name": "Crispy Orange Chips",
-      "img": "https://example.com/your-image-url.jpg",
+      "img": "https://github.com/user-attachments/assets/13329311-fbba-430a-b13e-5ae266930349",
       "description": "Delicious crispy chips made from fresh oranges, perfect as a healthy snack or garnish for desserts.",
       "ingredient": [
         "2 large oranges",
@@ -2837,11 +2433,11 @@
           "value": "1g"
         }
       ],
-      "creator": "Your Name",
+      "creator": "Violet Storm",
       "imgCreator": "https://example.com/your-profile-image.jpg",
-      "collection_id": 22,
-      "category": "Snack",
-      "ratings": 4.7,
+      "collection_id": 6,
+      "category": "Vegan",
+      "ratings": 5,
       "createdAt": "2024-07-16",
       "id": "19",
       "prepTime": {
@@ -2852,7 +2448,7 @@
     },
     {
       "name": "Turmeric Lavender Tea",
-      "img": "https://example.com/your-image-url.jpg",
+      "img": "https://github.com/user-attachments/assets/6ec87a05-96d7-4f62-bb29-420c85b88526",
       "description": "A soothing tea blend infused with the warm spice of turmeric and the calming aroma of lavender.",
       "ingredient": [
         "2 cups water",
@@ -2929,11 +2525,11 @@
           "value": "0g"
         }
       ],
-      "creator": "Your Name",
+      "creator": "Spring Rain",
       "imgCreator": "https://example.com/your-profile-image.jpg",
-      "collection_id": 23,
-      "category": "Tea",
-      "ratings": 4.6,
+      "collection_id": 3,
+      "category": "Vegan",
+      "ratings": 5,
       "createdAt": "2024-07-16",
       "id": "20",
       "prepTime": {
@@ -2944,7 +2540,7 @@
     },
     {
       "name": "Blue Velvet Brownies",
-      "img": "https://example.com/your-image-url.jpg",
+      "img": "https://github.com/user-attachments/assets/912442a9-ced6-4bd3-a705-f15309ce0b59",
       "description": "Decadent brownies with a vibrant blue hue, topped with a cream cheese frosting for a delightful treat.",
       "ingredient": [
         "1 cup all-purpose flour",
@@ -3041,11 +2637,11 @@
           "value": "3g"
         }
       ],
-      "creator": "Your Name",
+      "creator": "Jade Forest",
       "imgCreator": "https://example.com/your-profile-image.jpg",
-      "collection_id": 24,
+      "collection_id": 5,
       "category": "Dessert",
-      "ratings": 4.8,
+      "ratings": 4,
       "createdAt": "2024-07-16",
       "id": "21",
       "prepTime": {
@@ -3056,7 +2652,7 @@
     },
     {
       "name": "Birthday Cupcakes",
-      "img": "https://example.com/your-image-url.jpg",
+      "img": "https://github.com/user-attachments/assets/829b4a2e-e3b0-4123-be95-c66ed010c4d4",
       "description": "Delightful cupcakes perfect for celebrating birthdays, topped with colorful buttercream frosting and sprinkles.",
       "ingredient": [
         "1 1/2 cups all-purpose flour",
@@ -3159,11 +2755,11 @@
           "value": "3g"
         }
       ],
-      "creator": "Your Name",
+      "creator": "Sara Lynn",
       "imgCreator": "https://example.com/your-profile-image.jpg",
-      "collection_id": 25,
+      "collection_id": 3,
       "category": "Dessert",
-      "ratings": 4.9,
+      "ratings": 4,
       "createdAt": "2024-07-16",
       "id": "22",
       "prepTime": {
@@ -3174,7 +2770,7 @@
     },
     {
       "name": "Gourmet Fillet in Roasted Almond Sauce",
-      "img": "https://example.com/your-image-url.jpg",
+      "img": "https://github.com/user-attachments/assets/fc4a2921-d201-4247-bcae-a2febafecff4",
       "description": "Tender fillet steak served with a rich and creamy roasted almond sauce, perfect for a gourmet dining experience.",
       "ingredient": [
         "4 fillet steaks, about 6 oz each",
@@ -3263,11 +2859,11 @@
           "value": "45g"
         }
       ],
-      "creator": "Your Name",
+      "creator": "Lily Anne",
       "imgCreator": "https://example.com/your-profile-image.jpg",
       "collection_id": 26,
-      "category": "Main Course",
-      "ratings": 4.7,
+      "category": "Breakfast",
+      "ratings": 5,
       "createdAt": "2024-07-16",
       "id": "23",
       "prepTime": {
@@ -3278,7 +2874,7 @@
     },
     {
       "name": "Four Ingredient Oatmeal Pancakes",
-      "img": "https://example.com/your-image-url.jpg",
+      "img": "https://github.com/user-attachments/assets/255f13af-b9ca-49e4-8642-6eacf61d57c4",
       "description": "Quick and easy pancakes made with just four simple ingredients: oats, eggs, banana, and baking powder.",
       "ingredient": [
         "1 cup rolled oats",
@@ -3358,11 +2954,11 @@
           "value": "6g"
         }
       ],
-      "creator": "Your Name",
+      "creator": "Mia Belle",
       "imgCreator": "https://example.com/your-profile-image.jpg",
       "collection_id": 27,
-      "category": "Breakfast",
-      "ratings": 4.5,
+      "category": "Dessert",
+      "ratings": 4,
       "createdAt": "2024-07-16",
       "id": "24",
       "prepTime": {
@@ -3370,443 +2966,6 @@
         "max": "15 minutes"
       },
       "serving": "Makes about 6 pancakes"
-    },
-    {
-      "name": "Berry Madness Biscuits",
-      "img": "https://example.com/your-image-url.jpg",
-      "description": "Delicious biscuits loaded with a medley of fresh berries, perfect for a delightful breakfast or snack.",
-      "ingredient": [
-        "2 cups all-purpose flour",
-        "1/4 cup granulated sugar",
-        "1 tablespoon baking powder",
-        "1/2 teaspoon salt",
-        "1/2 cup unsalted butter, cold and cut into cubes",
-        "3/4 cup mixed fresh berries (such as blueberries, raspberries, and strawberries)",
-        "3/4 cup milk",
-        "1 teaspoon vanilla extract"
-      ],
-      "instruction": [
-        {
-          "step": 1,
-          "description": "Preheat your oven to 400°F (200°C). Line a baking sheet with parchment paper."
-        },
-        {
-          "step": 2,
-          "description": "In a large bowl, whisk together flour, sugar, baking powder, and salt."
-        },
-        {
-          "step": 3,
-          "description": "Add cold butter cubes to the flour mixture. Using a pastry cutter or your fingers, cut the butter into the flour until the mixture resembles coarse crumbs."
-        },
-        {
-          "step": 4,
-          "description": "Gently fold in mixed fresh berries."
-        },
-        {
-          "step": 5,
-          "description": "In a separate bowl, mix together milk and vanilla extract."
-        },
-        {
-          "step": 6,
-          "description": "Add the milk mixture to the flour mixture, stirring until just combined. Be careful not to overmix."
-        },
-        {
-          "step": 7,
-          "description": "Turn the dough out onto a lightly floured surface. Pat the dough into a rectangle about 1 inch thick."
-        },
-        {
-          "step": 8,
-          "description": "Using a biscuit cutter or a glass, cut out biscuits and place them on the prepared baking sheet."
-        },
-        {
-          "step": 9,
-          "description": "Gather the scraps of dough, pat into a rectangle again, and cut out more biscuits until all the dough is used."
-        },
-        {
-          "step": 10,
-          "description": "Bake in the preheated oven for 15-18 minutes, or until the biscuits are golden brown and cooked through."
-        },
-        {
-          "step": 11,
-          "description": "Remove from the oven and let cool slightly on a wire rack before serving warm."
-        },
-        {
-          "step": 12,
-          "description": "Serve these delightful Berry Madness Biscuits with butter or jam. Enjoy!"
-        }
-      ],
-      "nutrition": [
-        {
-          "label": "Calories",
-          "value": "220"
-        },
-        {
-          "label": "Total Fat",
-          "value": "9g"
-        },
-        {
-          "label": "Saturated Fat",
-          "value": "6g"
-        },
-        {
-          "label": "Cholesterol",
-          "value": "25mg"
-        },
-        {
-          "label": "Sodium",
-          "value": "280mg"
-        },
-        {
-          "label": "Total Carbohydrate",
-          "value": "32g"
-        },
-        {
-          "label": "Dietary Fiber",
-          "value": "2g"
-        },
-        {
-          "label": "Total Sugars",
-          "value": "8g"
-        },
-        {
-          "label": "Protein",
-          "value": "4g"
-        }
-      ],
-      "creator": "Your Name",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
-      "collection_id": 2,
-      "category": "Breakfast",
-      "ratings": 5,
-      "createdAt": "2024-07-16",
-      "id": "25",
-      "prepTime": {
-        "min": "20 minutes",
-        "max": "25 minutes"
-      },
-      "serving": "Makes about 8 biscuits"
-    },
-    {
-      "name": "Spinach and Cheese Pasta",
-      "img": "https://example.com/your-image-url.jpg",
-      "description": "A delicious pasta dish with creamy spinach and cheese sauce, perfect for a quick and comforting meal.",
-      "ingredient": [
-        "12 oz pasta (such as penne or fusilli)",
-        "2 tablespoons olive oil",
-        "3 cloves garlic, minced",
-        "4 cups fresh spinach, chopped",
-        "1 cup heavy cream",
-        "1 cup grated Parmesan cheese",
-        "Salt and pepper, to taste",
-        "Fresh basil leaves, for garnish (optional)"
-      ],
-      "instruction": [
-        {
-          "step": 1,
-          "description": "Cook pasta according to package instructions until al dente. Drain and set aside."
-        },
-        {
-          "step": 2,
-          "description": "In a large skillet, heat olive oil over medium heat. Add minced garlic and sauté for 1-2 minutes until fragrant."
-        },
-        {
-          "step": 3,
-          "description": "Add chopped spinach to the skillet and cook until wilted, about 2-3 minutes."
-        },
-        {
-          "step": 4,
-          "description": "Pour in heavy cream and bring to a simmer. Let simmer for 2-3 minutes."
-        },
-        {
-          "step": 5,
-          "description": "Stir in grated Parmesan cheese until melted and smooth."
-        },
-        {
-          "step": 6,
-          "description": "Season with salt and pepper to taste."
-        },
-        {
-          "step": 7,
-          "description": "Add cooked pasta to the skillet and toss to coat evenly with the spinach and cheese sauce."
-        },
-        {
-          "step": 8,
-          "description": "Remove from heat. Garnish with fresh basil leaves if desired."
-        },
-        {
-          "step": 9,
-          "description": "Serve warm and enjoy your creamy Spinach and Cheese Pasta!"
-        }
-      ],
-      "nutrition": [
-        {
-          "label": "Calories",
-          "value": "550"
-        },
-        {
-          "label": "Total Fat",
-          "value": "32g"
-        },
-        {
-          "label": "Saturated Fat",
-          "value": "17g"
-        },
-        {
-          "label": "Cholesterol",
-          "value": "85mg"
-        },
-        {
-          "label": "Sodium",
-          "value": "450mg"
-        },
-        {
-          "label": "Total Carbohydrate",
-          "value": "48g"
-        },
-        {
-          "label": "Dietary Fiber",
-          "value": "3g"
-        },
-        {
-          "label": "Total Sugars",
-          "value": "3g"
-        },
-        {
-          "label": "Protein",
-          "value": "18g"
-        }
-      ],
-      "creator": "Your Name",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
-      "collection_id": 1,
-      "category": "Main Course",
-      "ratings": 5,
-      "createdAt": "2024-07-16",
-      "id": "26",
-      "prepTime": {
-        "min": "20 minutes",
-        "max": "25 minutes"
-      },
-      "serving": "Serves 4"
-    },
-    {
-      "name": "Fancy Glazed Donuts",
-      "img": "https://example.com/your-image-url.jpg",
-      "description": "Delicious and indulgent glazed donuts, perfect for a sweet treat or dessert.",
-      "ingredient": [
-        "2 1/4 cups all-purpose flour",
-        "1/2 cup granulated sugar",
-        "1 tablespoon active dry yeast",
-        "1/2 teaspoon salt",
-        "1/2 cup milk, warmed to about 110°F",
-        "1/4 cup unsalted butter, melted",
-        "2 large eggs",
-        "1 teaspoon vanilla extract",
-        "Oil for frying (such as vegetable or canola oil)"
-      ],
-      "instruction": [
-        {
-          "step": 1,
-          "description": "In a large bowl, combine flour, sugar, yeast, and salt."
-        },
-        {
-          "step": 2,
-          "description": "In a separate bowl, whisk together warmed milk, melted butter, eggs, and vanilla extract."
-        },
-        {
-          "step": 3,
-          "description": "Pour the wet ingredients into the dry ingredients. Mix until a soft dough forms."
-        },
-        {
-          "step": 4,
-          "description": "Transfer the dough to a lightly floured surface and knead for about 5-7 minutes, or until smooth and elastic."
-        },
-        {
-          "step": 5,
-          "description": "Place the dough in a greased bowl, cover with a clean kitchen towel, and let it rise in a warm place for about 1 hour, or until doubled in size."
-        },
-        {
-          "step": 6,
-          "description": "Punch down the dough to release air bubbles. Roll out the dough to about 1/2 inch thickness."
-        },
-        {
-          "step": 7,
-          "description": "Using a donut cutter or two different-sized round cookie cutters, cut out donuts and donut holes."
-        },
-        {
-          "step": 8,
-          "description": "Place the cut-out donuts and holes on a lightly floured baking sheet. Cover with a kitchen towel and let rise for another 30 minutes."
-        },
-        {
-          "step": 9,
-          "description": "Heat oil in a deep fryer or large pot to 350°F (175°C)."
-        },
-        {
-          "step": 10,
-          "description": "Carefully add a few donuts at a time to the hot oil. Fry for about 1-2 minutes per side, or until golden brown."
-        },
-        {
-          "step": 11,
-          "description": "Remove donuts from the oil and place on a wire rack to drain and cool slightly."
-        },
-        {
-          "step": 12,
-          "description": "For the glaze, mix together powdered sugar and enough milk to reach desired consistency. Dip each donut into the glaze and place back on the wire rack to set."
-        },
-        {
-          "step": 13,
-          "description": "Optional: Decorate with sprinkles, chopped nuts, or drizzle with melted chocolate."
-        },
-        {
-          "step": 14,
-          "description": "Serve warm and enjoy your Fancy Glazed Donuts!"
-        }
-      ],
-      "nutrition": [
-        {
-          "label": "Calories",
-          "value": "300"
-        },
-        {
-          "label": "Total Fat",
-          "value": "15g"
-        },
-        {
-          "label": "Saturated Fat",
-          "value": "6g"
-        },
-        {
-          "label": "Cholesterol",
-          "value": "45mg"
-        },
-        {
-          "label": "Sodium",
-          "value": "150mg"
-        },
-        {
-          "label": "Total Carbohydrate",
-          "value": "38g"
-        },
-        {
-          "label": "Dietary Fiber",
-          "value": "1g"
-        },
-        {
-          "label": "Total Sugars",
-          "value": "20g"
-        },
-        {
-          "label": "Protein",
-          "value": "4g"
-        }
-      ],
-      "creator": "Your Name",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
-      "collection_id": 1,
-      "category": "Dessert",
-      "ratings": 5,
-      "createdAt": "2024-07-16",
-      "id": "27",
-      "prepTime": {
-        "min": "30 minutes",
-        "max": "1 hour 30 minutes"
-      },
-      "serving": "Makes about 12 donuts"
-    },
-    {
-      "name": "Mighty Cheesy Breakfast Burger",
-      "img": "https://example.com/your-image-url.jpg",
-      "description": "A hearty breakfast burger loaded with cheese, bacon, eggs, and all your favorite breakfast flavors.",
-      "ingredient": [
-        "4 hamburger buns",
-        "1 lb ground beef",
-        "Salt and pepper, to taste",
-        "4 slices cheddar cheese",
-        "4 slices cooked bacon",
-        "4 large eggs",
-        "1 tablespoon butter",
-        "Optional toppings: lettuce, tomato, avocado slices"
-      ],
-      "instruction": [
-        {
-          "step": 1,
-          "description": "Preheat your grill or skillet over medium-high heat."
-        },
-        {
-          "step": 2,
-          "description": "Divide the ground beef into 4 equal portions and form into patties. Season with salt and pepper."
-        },
-        {
-          "step": 3,
-          "description": "Grill or cook the patties on the skillet for about 4-5 minutes per side, or until desired doneness. Place a slice of cheddar cheese on each patty during the last minute of cooking."
-        },
-        {
-          "step": 4,
-          "description": "While the patties are cooking, fry the eggs in a separate skillet over medium heat. Cook until the whites are set and the yolks are still runny. Season with salt and pepper."
-        },
-        {
-          "step": 5,
-          "description": "Toast the hamburger buns until golden brown."
-        },
-        {
-          "step": 6,
-          "description": "Assemble the burgers: Place a cooked beef patty with melted cheese on the bottom half of each bun. Top with a slice of bacon, a fried egg, and any optional toppings."
-        },
-        {
-          "step": 7,
-          "description": "Close the burgers with the top half of the buns. Serve immediately and enjoy your Mighty Cheesy Breakfast Burger!"
-        }
-      ],
-      "nutrition": [
-        {
-          "label": "Calories",
-          "value": "650"
-        },
-        {
-          "label": "Total Fat",
-          "value": "40g"
-        },
-        {
-          "label": "Saturated Fat",
-          "value": "18g"
-        },
-        {
-          "label": "Cholesterol",
-          "value": "280mg"
-        },
-        {
-          "label": "Sodium",
-          "value": "900mg"
-        },
-        {
-          "label": "Total Carbohydrate",
-          "value": "30g"
-        },
-        {
-          "label": "Dietary Fiber",
-          "value": "2g"
-        },
-        {
-          "label": "Total Sugars",
-          "value": "4g"
-        },
-        {
-          "label": "Protein",
-          "value": "40g"
-        }
-      ],
-      "creator": "Your Name",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
-      "collection_id": 1,
-      "category": "Breakfast",
-      "ratings": 5,
-      "createdAt": "2024-07-16",
-      "id": "28",
-      "prepTime": {
-        "min": "15 minutes",
-        "max": "20 minutes"
-      },
-      "serving": "Makes 4 burgers"
-    }
+    }   
   ]
 }
