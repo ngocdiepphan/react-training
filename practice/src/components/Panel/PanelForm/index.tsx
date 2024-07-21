@@ -59,7 +59,7 @@ const PanelForm = <T,>({
         </div>
       </div>
 
-      <div className="flex flex-row gap-40 justify-end m-30">
+      <div className="flex flex-row gap-40 justify-end m-30 sticky top-102 right-10">
         <Button type="button" variant="confirm" onClick={handleDelete}>
           Delete
         </Button>
@@ -68,13 +68,13 @@ const PanelForm = <T,>({
         </Button>
       </div>
 
-      <form className="flex flex-col items-start overflow-auto t-0 mt-80 mr-30 ml-40">
+      <form className="flex flex-col sticky top-208 right-30 items-start overflow-auto t-0 mt-80 mr-30 ml-87">
         {columns.map((column) => (
           <div
             key={String(column.key)}
             className="text-center items-baseline grid grid-cols-[100px_1fr] mb-20 gap-10 justify-start"
           >
-            <label className="mr-20 font-medium">{column.header}</label>
+            <label className="mr-20 flex font-medium">{column.header}</label>
             {column.key === "category" || column.key === "ratings" ? (
               <select
                 className="max-w-212 border p-8 font-medium text-quaternary rounded outline-none hover:border-hoverPrimary"

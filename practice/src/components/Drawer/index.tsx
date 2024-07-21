@@ -38,7 +38,7 @@ const Drawer: React.FC<DrawerProps> = ({
     <div
       className={`flex-col gap-20 w-212 bg-drawerSecondary ${onShowDrawer ? "block md:block h-lvh md:h-lvh" : "hidden md:hidden"} lg:block h-full`}
     >
-      <div className="py-20 px-10">
+      <div className="py-20 px-10 sticky top-87">
         <Button type="button" variant="add" onClick={onShowFormAdd}>
           New recipes
         </Button>
