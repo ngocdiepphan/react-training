@@ -16,8 +16,8 @@ export const categories = [
   },
   {
     id:"4",
-    img: "Desserts",
-    category: "https://github.com/user-attachments/assets/9a2c7487-f3a3-4ad3-9c0e-611cbb29a4d3"
+    img: "https://github.com/user-attachments/assets/9a2c7487-f3a3-4ad3-9c0e-611cbb29a4d3",
+    category: "Desserts"
   },
   {
     id:"5",
@@ -26,7 +26,7 @@ export const categories = [
   },
   {
     id:"6",
-    img: "(https://github.com/user-attachments/assets/ebec33e9-376e-45c9-a5be-0b4671b7a016",
+    img: "https://github.com/user-attachments/assets/ebec33e9-376e-45c9-a5be-0b4671b7a016",
     category: "Breakfast"
   }
 ]
