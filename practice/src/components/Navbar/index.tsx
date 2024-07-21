@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logoImage from "../../../public/assets/images/logo/Logo.png";
 import ItemMenu from "../Menu/ItemMenu";
 
 const Navbar: React.FC = () => {
+  const [menuVisible, setMenuVisible] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuVisible(!menuVisible);
+  };
+
   return (
     <>
       <nav className="flex justify-between cursor-pointer">
@@ -12,7 +18,7 @@ const Navbar: React.FC = () => {
             <img src={logoImage} className="w-110 md:w-160" alt="Logo" />
           </a>
         </h1>
-        <ul className="hidden font-sans text-sm flex-col items-center gap-48 lg:flex lg:flex-row">
+        <ul className="hidden lg:flex font-sans text-sm flex-col items-center gap-48 lg:flex-row">
           <li className="flex flex-row items-center gap-8">
             <a href="index.html" className="hover:text-blue-500 mb-0">
               Home Page
@@ -46,10 +52,10 @@ const Navbar: React.FC = () => {
         <div className="flex items-center gap-24">
           <span className="bg-search w-32 h-30 bg-no-repeat"></span>
           <span className="bg-avata w-32 h-32"></span>
-          <span className="bg-menu w-24 h-24"></span>
-          <ItemMenu />
+          <span className="bg-menu w-24 h-24 lg:hidden" onClick={toggleMenu}></span>
         </div>
       </nav>
+      {menuVisible && <ItemMenu />}
     </>
   );
 };

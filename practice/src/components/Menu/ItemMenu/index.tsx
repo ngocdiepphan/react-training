@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const ItemMenu: React.FC = () => {
   return (
     <>
-      <ul className="font-sans text-xs md:text-sm flex-col items-center lg:flex-row absolute right-12 top-80 md:right-102 md:top-102 p-32 bg-blue-200 rounded-tl-3xl rounded-bl-3xl lg:hidden">
+      <ul className="font-sans text-xs md:text-sm flex-col items-center absolute right-12 top-80 md:right-102 md:top-102 p-32 bg-blue-200 rounded-tl-3xl rounded-bl-3xl lg:hidden">
         <li className="flex flex-row items-center gap-8 py-12">
           <a href="#" className="hover:text-blue-500 mb-0">
             Home page
