@@ -60,23 +60,12 @@ const HomePage: React.FC = () => {
         {/*  -- END HEADER SECTION --*/}
 
         {/* -- START DELICIOUS FOOD --*/}
-        <section className="mx-12 md:mx-102 lg:mx-30">
-          <h3 className="text-2xl mt-37 mb-35 font-serif md:text-4xl md:mt-60">
-            Super Delicious
-          </h3>
-          <ul className="" id="delicious-recipes">
-            <Delicious />
-          </ul>
-        </section>
-
-        <section className="delicious mx-12 md:mx-102 lg:mx-30">
-          <h3 className="text-2xl mt-37 mb-35 font-serif md:text-4xl md:mt-60">
-            Sweet Tooth
-          </h3>
-          <ul className="" id="sweet-recipes">
-            <Delicious />
-          </ul>
-        </section>
+        <Delicious
+          title="Super Delicious"
+          id="delicious-recipes"
+          collection={4}
+        />
+        <Delicious title="Sweet Tooth" id="sweet-recipes" collection={3} />
         {/* -- END DELICIOUS FOOD-- */}
 
         {/* --START CATEGORIES-- */}
