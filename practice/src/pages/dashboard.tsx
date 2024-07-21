@@ -153,6 +153,7 @@ const Dashboard: React.FC = () => {
                     columns={userColumns}
                     data={users}
                     onRowClick={handleUserRowClick}
+                    className=""
                   />
                 )}
                 {selectedTable === "recipe" && (
@@ -160,6 +161,7 @@ const Dashboard: React.FC = () => {
                     columns={recipeColumns}
                     data={recipes}
                     onRowClick={handleRecipeRowClick}
+                    className=""
                   />
                 )}
               </div>
