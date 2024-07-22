@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import CreateDate from "components/CreatDate";
+import CreationDate from "components/CreationDate";
 import Header from "components/Layouts/Header";
 import Creator from "components/Creator";
 import Rating from "components/RatingStar";
@@ -74,7 +74,7 @@ const RecipeDetail: React.FC = () => {
               <div className="flex flex-col mt-24 pb-37 border-b border-b-borderPrimary hover:border-b-primary md:flex-row md:pb-37">
                 <ul className="flex flex-row gap-24 items-center">
                   <Creator recipe={recipeData} />
-                  <CreateDate recipe={recipeData} />
+                  <CreationDate recipe={recipeData} />
                   <li className="flex flex-row gap-5">
                     <span className="bg-reply w-14 h-14 bg-no-repeat"></span>
                     <p className="text-xs-small">25</p>

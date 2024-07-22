@@ -6,7 +6,7 @@
       "id": 1,
       "username": "admin",
       "role": "admin",
-      "img": "https://i.imgur.com/zJmTqKWb.jpg"
+      "img": "https://github.com/user-attachments/assets/b4bfd33c-7614-4bbd-b1c5-5b7e27ff0246"
     },
     {
       "email": "user2@example.com",
@@ -14,7 +14,7 @@
       "id": 2,
       "username": "user1",
       "role": "user",
-      "img": "https://i.imgur.com/B8ta5Aab.jpg"
+      "img": "https://github.com/user-attachments/assets/2f54d6fe-498b-44ab-9f75-95c6e630225a"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "username": "user2",
       "password": "password1",
       "role": "user",
-      "img": "https://i.imgur.com/fGLwR01.png"
+      "img": "https://github.com/user-attachments/assets/873d54fd-7ef3-45be-841c-ac43b57deabd"
     },
     {
       "id": "4",
@@ -30,7 +30,7 @@
       "username": "user4",
       "password": "password1",
       "role": "user",
-      "img": "https://i.imgur.com/4A8GZ9kb.jpg"
+      "img": "https://github.com/user-attachments/assets/450cc557-ccbe-46cb-8ff0-a29b316552d8"
     }
   ],
   "recipes": [
@@ -548,7 +548,7 @@
           "value": "6g"
         }
       ],
-      "creator": "creator 2",
+      "creator": "Luke Thomas",
       "collection_id": 3,
       "imgCreator": "https://i.imgur.com/zJmTqKWb.jpg",
       "category": "Smoothies",

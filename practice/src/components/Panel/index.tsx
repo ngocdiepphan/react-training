@@ -50,7 +50,7 @@ const Panel = ({
       onClosePanel?.();
     }
   }
-  
+
   useEffect(() => {}, [selectedRecipe]);
 
   const handleDeleteUser = async (deletedUser: UserProps) => {

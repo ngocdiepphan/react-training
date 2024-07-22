@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 import Modal from './index';
-import '../Inputs/TextField';
+import '../TextField';
 import '../Options/Category';
 import '../Options/Rating';
 import '../Buttons';

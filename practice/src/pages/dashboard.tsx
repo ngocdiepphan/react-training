@@ -22,6 +22,8 @@ const Dashboard: React.FC = () => {
 
   const handleClosePanel = () => {
     setShowPanel(false);
+    setSelectedUser(null);
+    setSelectedRecipe(null);
   };
   const handleShowDrawer = () => {
     setShowDrawer(!showDrawer);
@@ -32,18 +34,19 @@ const Dashboard: React.FC = () => {
   };
 
   const handleUserRowClick = (rowData: UserProps) => {
+    handleClosePanel();
     setSelectedUser(rowData);
-    setSelectedRecipe(null);
     setShowPanel(true);
   };
 
   const handleRecipeRowClick = (recipeData: Recipe) => {
+    handleClosePanel();
     setSelectedRecipe(recipeData);
-    setSelectedUser(null);
     setShowPanel(true);
   };
 
   const handleDrawerItemClick = (itemType: string) => {
+    handleClosePanel();
     setSelectedTable(itemType);
   };
 
@@ -76,7 +79,9 @@ const Dashboard: React.FC = () => {
   };
 
   const handleDeleteRecipe = (data: Recipe) => {
-    setRecipes((prevRecipes) => prevRecipes.filter((recipe) => recipe.id !== data.id));
+    setRecipes((prevRecipes) =>
+      prevRecipes.filter((recipe) => recipe.id !== data.id),
+    );
   };
 
   const handleAddRecipe = (newRecipe: Recipe) => {
@@ -113,7 +118,7 @@ const Dashboard: React.FC = () => {
   return (
     <>
       {/* -- START HEADER -- */}
-      <header>
+      <header className="sticky top-0">
         <div className="navbar-user__wrapper flex flex-row text-quaternary font-semibold w-full h-48 bg-primary p-20">
           <div className="navbar-user__item flex flex-row gap-20 items-center cursor-pointer">
             <span
@@ -133,18 +138,19 @@ const Dashboard: React.FC = () => {
             onShowDrawer={showDrawer}
             onShowFormAdd={handleShowFormAdd}
             onDrawerItemClick={handleDrawerItemClick}
+            selectedTable={selectedTable}
           />
-          {showFormAdd && <Modal
-          onAddRecipe={handleAddRecipe}
-         />}
-
+          {showFormAdd && <Modal onAddRecipe={handleAddRecipe} />}
         </div>
 
-        <div className="content flex flex-row font-sans bg-dashboardPrimary w-full">
-          <div className="content__wrapper content-hinder lg:pl-10 w-full">
-            <Toolbar title={selectedTable === "user" ? "User" : "Recipe"} />
+        <div className="content flex flex-row font-sans bg-dashboardPrimary w-full overflow-x-auto">
+          <div className="content__wrapper content-hinder lg:pl-10 w-full overflow-x-auto">
+            <Toolbar
+              title={selectedTable === "user" ? "User" : "Recipe"}
+              showTitle={!!selectedTable}
+            />
             <div
-              className="show w-full overflow-auto bg-primary border border-borderPrimary "
+              className="max-w-full overflow-x-auto overflow-y-auto max-h-650 bg-primary border border-borderPrimary"
               id="table-wrapper"
             >
               <div className="flex gap-4">

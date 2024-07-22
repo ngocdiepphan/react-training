@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import InputField from "../Inputs/TextField";
+import InputField from "../TextField";
 import OptionCategory from "../Options/Category";
 import OptionRating from "../Options/Rating";
 import Button from "../Buttons";
@@ -90,7 +90,7 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
     { label: "Name", type: "text", id: "name", name: "name" },
     { label: "Creator", type: "text", id: "creator", name: "creator" },
     { label: "Description", type: "text", id: "description", name: "description" },
-    { label: "Create Date", type: "date", id: "createdAt", name: "createdAt" },
+    { label: "Creation Date", type: "date", id: "createdAt", name: "createdAt" },
   ];
 
   return (

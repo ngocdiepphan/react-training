@@ -7,7 +7,7 @@ export interface Props {
   };
 }
 
-const CreateDate = ({ recipe }: Props) => {
+const CreationDate = ({ recipe }: Props) => {
   const formattedDate =
     typeof recipe.createdAt === 'string'
       ? recipe.createdAt
@@ -23,4 +23,4 @@ const CreateDate = ({ recipe }: Props) => {
   );
 };
 
-export default CreateDate;
+export default CreationDate;

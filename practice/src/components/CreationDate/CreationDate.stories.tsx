@@ -1,13 +1,13 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import CreateDate, { Props } from './index';
+import CreationDate, { Props } from './index';
 
 export default {
-  title: 'Components/CreateDate',
-  component: CreateDate,
+  title: 'Components/CreationDate',
+  component: CreationDate,
 } as Meta;
 
-const Template: StoryFn<Props> = (args) => <CreateDate {...args} />;
+const Template: StoryFn<Props> = (args) => <CreationDate {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
