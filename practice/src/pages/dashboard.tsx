@@ -138,12 +138,13 @@ const Dashboard: React.FC = () => {
           {showFormAdd && <Modal
           onAddRecipe={handleAddRecipe}
          />}
-
         </div>
 
         <div className="content flex flex-row font-sans bg-dashboardPrimary w-full">
           <div className="content__wrapper content-hinder lg:pl-10 w-full">
-            <Toolbar title={selectedTable === "user" ? "User" : "Recipe"} />
+            <Toolbar title={selectedTable === "user" ? "User" : "Recipe"}
+            showTitle={!!selectedTable}
+            />
             <div
               className="show w-full overflow-auto bg-primary border border-borderPrimary "
               id="table-wrapper"
