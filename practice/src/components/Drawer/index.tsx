@@ -6,13 +6,15 @@ interface DrawerProps {
   onShowDrawer: boolean;
   onShowFormAdd: () => void;
   onDrawerItemClick: (item: string) => void;
+  selectedTable: string;
 }
 
-const Drawer: React.FC<DrawerProps> = ({
+const Drawer = ({
   onShowDrawer,
   onShowFormAdd,
   onDrawerItemClick,
-}) => {
+  selectedTable,
+}: DrawerProps) => {
   const navList = [
     {
       title: "User",
@@ -39,9 +41,11 @@ const Drawer: React.FC<DrawerProps> = ({
       className={`flex-col gap-20 w-212 bg-drawerSecondary ${onShowDrawer ? "block md:block h-lvh md:h-lvh" : "hidden md:hidden"} lg:block h-full`}
     >
       <div className="py-20 px-10 sticky top-87">
-        <Button type="button" variant="add" onClick={onShowFormAdd}>
-          New recipes
-        </Button>
+        {selectedTable !== "user" && (
+          <Button type="button" variant="add" onClick={onShowFormAdd}>
+            New recipes
+          </Button>
+        )}
         <ul className="navigation">
           {navList.map((item, index) => (
             <DrawerItem

@@ -133,6 +133,7 @@ const Dashboard: React.FC = () => {
             onShowDrawer={showDrawer}
             onShowFormAdd={handleShowFormAdd}
             onDrawerItemClick={handleDrawerItemClick}
+            selectedTable={selectedTable}
           />
           {showFormAdd && <Modal
           onAddRecipe={handleAddRecipe}
