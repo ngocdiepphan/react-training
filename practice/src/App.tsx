@@ -8,7 +8,7 @@ import {
 import SignInForm from './pages/Auth/SignIn';
 import SignUpForm from './pages/Auth/SignUp';
 import HomePage from './pages/homepage';
-import RecipeDetail from './pages/recipe-detail'
+import RecipeDetail from './pages/RecipeDetail'
 import Dashboard from './pages/dashboard';
 
 function App() {

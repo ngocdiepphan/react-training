@@ -1,25 +1,46 @@
-import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
-import Table from './index';
-import { TableColumn, userColumns, recipeColumns} from 'type/table';
-import { user } from 'mocks/user';
-import { recipe } from 'mocks/recipe';
+import React from "react";
+import { Meta, StoryFn } from "@storybook/react";
+import { fn } from "@storybook/test";
+import Table from "./index";
+import {
+  TableColumn,
+  userColumns,
+  recipeColumns,
+  RecipeRow
+} from "type/table";
+import { UserProps } from "type/user";
+import { user } from "mocks/user";
+import { recipe } from "mocks/recipe";
 
-export default {
-  title: 'Components/Table',
+const meta: Meta<typeof Table> = {
+  title: "Components/Table",
   component: Table,
-} as Meta;
+};
 
-const Template: StoryFn<{ columns: TableColumn<any>[]; data: any[] }> = (args) => <Table {...args} />;
+export default meta;
 
-export const UserTable = Template.bind({});
+const UserTemplate: StoryFn<{
+  columns: TableColumn<UserProps>[];
+  data: UserProps[];
+  onRowClick: (rowData: UserProps) => void;
+}> = (args) => <Table {...args} />;
+
+export const UserTable = UserTemplate.bind({});
 UserTable.args = {
   columns: userColumns,
   data: user,
+  onRowClick: fn(),
 };
 
-export const RecipeTable = Template.bind({});
+const RecipeTemplate: StoryFn<{
+  columns: TableColumn<RecipeRow>[];
+  data: RecipeRow[];
+  onRowClick: (rowData: RecipeRow) => void;
+}> = (args) => <Table {...args} />;
+
+export const RecipeTable = RecipeTemplate.bind({});
 RecipeTable.args = {
   columns: recipeColumns,
   data: recipe,
+  onRowClick: fn(),
 };
