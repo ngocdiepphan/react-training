@@ -62,7 +62,7 @@ const Dashboard: React.FC = () => {
       return prevUser;
     });
   };
-
+ 
   const handleOnSaveRecipeFromPanel = (data: Recipe) => {
     setRecipes((prevRecipes) => {
       const index = prevRecipes.findIndex((item) => item.id === data.id);

@@ -90,7 +90,7 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
     { label: "Name", type: "text", id: "name", name: "name" },
     { label: "Creator", type: "text", id: "creator", name: "creator" },
     { label: "Description", type: "text", id: "description", name: "description" },
-    { label: "Create Date", type: "date", id: "createdAt", name: "createdAt" },
+    { label: "Creation Date", type: "date", id: "createdAt", name: "createdAt" },
   ];
 
   return (
