@@ -22,6 +22,9 @@ const Dashboard: React.FC = () => {
 
   const handleClosePanel = () => {
     setShowPanel(false);
+    setSelectedUser(null);
+    setSelectedRecipe(null);
+
   };
   const handleShowDrawer = () => {
     setShowDrawer(!showDrawer);
@@ -32,18 +35,19 @@ const Dashboard: React.FC = () => {
   };
 
   const handleUserRowClick = (rowData: UserProps) => {
+    handleClosePanel();
     setSelectedUser(rowData);
-    setSelectedRecipe(null);
     setShowPanel(true);
   };
 
   const handleRecipeRowClick = (recipeData: Recipe) => {
+    handleClosePanel();
     setSelectedRecipe(recipeData);
-    setSelectedUser(null);
     setShowPanel(true);
   };
 
   const handleDrawerItemClick = (itemType: string) => {
+    handleClosePanel();
     setSelectedTable(itemType);
   };
 
