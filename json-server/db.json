@@ -14,7 +14,7 @@
       "id": 2,
       "username": "user1",
       "role": "user",
-      "img": "https://github.com/user-attachments/assets/2f54d6fe-498b-44ab-9f75-95c6e630225a"
+      "img": "https://github.com/user-attachments/assets/bbdb4e2c-e163-4c94-b129-a8999920d7a8"
     },
     {
       "id": 3,
@@ -31,6 +31,14 @@
       "password": "password1",
       "role": "user",
       "img": "https://github.com/user-attachments/assets/450cc557-ccbe-46cb-8ff0-a29b316552d8"
+    },
+    {
+      "id": "5",
+      "email": "test4@gmail.com11",
+      "username": "user4",
+      "password": "password1",
+      "role": "user",
+      "img": "https://github.com/user-attachments/assets/2f54d6fe-498b-44ab-9f75-95c6e630225a"
     }
   ],
   "recipes": [

@@ -1,14 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logoImage from "../../../public/assets/images/logo/Logo.png";
 import ItemMenu from "../Menu/ItemMenu";
+import { UserProps } from "type/user";
 
 const Navbar: React.FC = () => {
   const [menuVisible, setMenuVisible] = useState(false);
+  const [user, setUser] = useState<UserProps | null>(null);
 
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
   };
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem("user");
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    }
+  }, []);
 
   return (
     <>
@@ -51,8 +60,17 @@ const Navbar: React.FC = () => {
 
         <div className="flex items-center gap-24">
           <span className="bg-search w-32 h-30 bg-no-repeat"></span>
-          <span className="bg-avata w-32 h-32"></span>
-          <span className="bg-menu w-24 h-24 lg:hidden" onClick={toggleMenu}></span>
+          {user && (
+            <img
+              className="w-32 h-32 rounded-full"
+              src={user.img}
+              alt={`Avatar of ${user.username}`}
+            />
+          )}
+          <span
+            className="bg-menu w-24 h-24 lg:hidden"
+            onClick={toggleMenu}
+          ></span>
         </div>
       </nav>
       {menuVisible && <ItemMenu />}
