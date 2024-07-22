@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import InputField from "../Inputs/TextField";
+import InputField from "../TextField";
 import OptionCategory from "../Options/Category";
 import OptionRating from "../Options/Rating";
 import Button from "../Buttons";

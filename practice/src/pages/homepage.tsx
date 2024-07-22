@@ -7,7 +7,7 @@ import FooterContact from "../components/Layouts/Footer/Contact";
 import imgBanner from "../../public/assets/images/banner/banner.png";
 import Delicious from "../components/Delicious";
 import Category from "../components/Category";
-import Form from "../components/Inputs/Form";
+import Form from "../components/Form";
 import Collection from "../components/Collection";
 import LastRecipe from "../components/LastRecipe";
 import FooterDesc from "../components/Layouts/Footer/Description";

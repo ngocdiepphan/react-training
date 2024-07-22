@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import InputField from "../../components/Inputs/TextField";
+import InputField from "../../components/TextField";
 import Button from "../../components/Buttons";
 import { validateEmail, validateMinLength, validatePasswordMatch } from "helpers";
 import AuthenticationService from "services/auth";
