@@ -24,7 +24,6 @@ const Dashboard: React.FC = () => {
     setShowPanel(false);
     setSelectedUser(null);
     setSelectedRecipe(null);
-
   };
   const handleShowDrawer = () => {
     setShowDrawer(!showDrawer);
@@ -62,7 +61,7 @@ const Dashboard: React.FC = () => {
       return prevUser;
     });
   };
- 
+
   const handleOnSaveRecipeFromPanel = (data: Recipe) => {
     setRecipes((prevRecipes) => {
       const index = prevRecipes.findIndex((item) => item.id === data.id);
@@ -80,7 +79,9 @@ const Dashboard: React.FC = () => {
   };
 
   const handleDeleteRecipe = (data: Recipe) => {
-    setRecipes((prevRecipes) => prevRecipes.filter((recipe) => recipe.id !== data.id));
+    setRecipes((prevRecipes) =>
+      prevRecipes.filter((recipe) => recipe.id !== data.id),
+    );
   };
 
   const handleAddRecipe = (newRecipe: Recipe) => {
@@ -139,18 +140,17 @@ const Dashboard: React.FC = () => {
             onDrawerItemClick={handleDrawerItemClick}
             selectedTable={selectedTable}
           />
-          {showFormAdd && <Modal
-          onAddRecipe={handleAddRecipe}
-         />}
+          {showFormAdd && <Modal onAddRecipe={handleAddRecipe} />}
         </div>
 
-        <div className="content flex flex-row font-sans bg-dashboardPrimary w-full">
-          <div className="content__wrapper content-hinder lg:pl-10 w-full">
-            <Toolbar title={selectedTable === "user" ? "User" : "Recipe"}
-            showTitle={!!selectedTable}
+        <div className="content flex flex-row font-sans bg-dashboardPrimary w-full overflow-x-auto">
+          <div className="content__wrapper content-hinder lg:pl-10 w-full overflow-x-auto">
+            <Toolbar
+              title={selectedTable === "user" ? "User" : "Recipe"}
+              showTitle={!!selectedTable}
             />
             <div
-              className="show w-full overflow-auto bg-primary border border-borderPrimary "
+              className="max-w-full overflow-x-auto overflow-y-auto max-h-650 bg-primary border border-borderPrimary"
               id="table-wrapper"
             >
               <div className="flex gap-4">
@@ -159,7 +159,6 @@ const Dashboard: React.FC = () => {
                     columns={userColumns}
                     data={users}
                     onRowClick={handleUserRowClick}
-                    className=""
                   />
                 )}
                 {selectedTable === "recipe" && (
@@ -167,7 +166,6 @@ const Dashboard: React.FC = () => {
                     columns={recipeColumns}
                     data={recipes}
                     onRowClick={handleRecipeRowClick}
-                    className=""
                   />
                 )}
               </div>

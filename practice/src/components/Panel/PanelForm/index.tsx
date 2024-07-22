@@ -44,7 +44,7 @@ const PanelForm = <T,>({
   return (
     <>
       <div className="sticky top-0 flex items-center z-1 bg-primary border-b border-gray-400">
-        <div className="flex items-center justify-between w-full">
+        <div className="flex items-center justify-between w-full h-56">
           <div className="flex items-center pl-20">
             <span
               className="bg-back w-20 h-20 cursor-pointer"

@@ -5,12 +5,12 @@ interface Props<T> {
   columns: TableColumn<T>[];
   data: T[];
   onRowClick: (rowData: T) => void;
-  className: string;
 }
 
-const Table = <T,>({ columns, data, onRowClick, className }: Props<T>) => {
+const Table = <T,>({ columns, data, onRowClick}: Props<T>) => {
   return (
-    <table className="w-full text-xl font-semibold text-quaternary font-sans overflow-auto">
+    <div className="w-full overflow-y-auto max-h-650">
+      <table className="w-full text-xl font-semibold text-quaternary font-sans overflow-auto">
       <thead className="w-full items-start">
         <tr className="">
           {columns.map((column) => (
@@ -43,6 +43,7 @@ const Table = <T,>({ columns, data, onRowClick, className }: Props<T>) => {
         ))}
       </tbody>
     </table>
+    </div>
   );
 };
 
