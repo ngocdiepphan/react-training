@@ -1,12 +1,14 @@
-import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
-import OptionCategory from './index';
+import React from "react";
+import { Meta, StoryFn } from "@storybook/react";
+
+// Component
+import { CategoryOption } from "components";
 
 export default {
-  title: 'Components/OptionCategory',
-  component: OptionCategory,
+  title: "Components/OptionCategory",
+  component: CategoryOption,
 } as Meta;
 
-const Template: StoryFn = () => <OptionCategory />;
+const Template: StoryFn = () => <CategoryOption />;
 
 export const Default = Template.bind({});

@@ -1,5 +1,9 @@
 import React from "react";
-import Button from "../Buttons";
+
+// Component
+import { Button } from "components";
+
+// Mock
 import { collections } from "mocks/collection";
 
 const Collection: React.FC = () => {

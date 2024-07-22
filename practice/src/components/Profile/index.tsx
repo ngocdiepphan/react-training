@@ -1,8 +1,10 @@
 import React from "react";
-import InfoUser from "../InfoUser";
-import Reply from "../Reply/index";
-import Favorite from "../Favorite";
-import { Profile } from "../../type/profile";
+
+// Components
+import { InfoUser, Reply, Favorite } from "components";
+
+// Type
+import { Profile } from "type/profile";
 
 export interface ProfilesProps {
   profiles: Profile[];

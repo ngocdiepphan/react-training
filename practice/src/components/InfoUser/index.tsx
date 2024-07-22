@@ -1,4 +1,6 @@
 import React from "react";
+
+// Type
 import { Profile } from "type/profile";
 
 const InfoUser: React.FC<Profile> = ({ name, status, img }) => {

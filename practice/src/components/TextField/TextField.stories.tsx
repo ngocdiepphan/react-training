@@ -1,6 +1,11 @@
 import React from "react";
 import { Meta, StoryFn } from "@storybook/react";
-import InputField, { InputFieldProps } from "./index";
+
+// Component
+import { InputField } from "components";
+
+// Type
+import { InputFieldProps } from "components/TextField";
 
 export default {
   title: "Components/Inputs/InputField",

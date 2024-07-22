@@ -1,4 +1,6 @@
 import React from "react";
+
+// Type
 import { TableColumn } from "type/table";
 
 interface Props<T> {

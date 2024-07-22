@@ -1,7 +1,9 @@
 import React from "react";
 import { TableColumn } from "type/table";
-import TableHeader from "./TableHeader";
-import TableRow from "./TableRow.tsx";
+
+// Components
+import TableHeader from "components/Table/TableHeader";
+import TableRow from "components/Table/TableRow";
 
 export interface Props<T> {
   columns: TableColumn<T>[];
@@ -9,12 +11,12 @@ export interface Props<T> {
   onRowClick: (rowData: T) => void;
 }
 
-const Table = <T,>({ columns, data, onRowClick}: Props<T>) => {
+const Table = <T,>({ columns, data, onRowClick }: Props<T>) => {
   return (
     <div className="w-full overflow-y-auto max-h-650">
       <table className="w-full text-xl font-semibold text-quaternary font-sans overflow-auto">
-      <TableHeader columns={columns}/>
-      <tbody className="text-base font-normal" id="user-body">
+        <TableHeader columns={columns} />
+        <tbody className="text-base font-normal" id="user-body">
           {data.map((item, index) => (
             <TableRow
               key={index.toString()}
@@ -24,7 +26,7 @@ const Table = <T,>({ columns, data, onRowClick}: Props<T>) => {
             />
           ))}
         </tbody>
-    </table>
+      </table>
     </div>
   );
 };

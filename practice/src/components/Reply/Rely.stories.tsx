@@ -1,12 +1,17 @@
 import React from "react";
 import { Meta, StoryFn } from "@storybook/react";
-import Reply, { ReplyProps } from "./index";
+
+// Component
+import { Reply } from "components";
+
+// Type
+import { ReplyProps } from "components/Reply";
 
 export default {
   title: "Components/Reply",
   component: Reply,
   argTypes: {
-    replyCount: { control: { type: 'number' } },
+    replyCount: { control: { type: "number" } },
   },
 } as Meta;
 

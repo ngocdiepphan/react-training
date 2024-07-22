@@ -1,3 +1,4 @@
+// Types
 import { Recipe } from "type/recipe";
 import { UserProps } from "type/user";
 
@@ -36,7 +37,12 @@ class APIHelper {
     };
   }
 
-  async request(url: string, method: string, data: object | null = null, contentType: string = "application/json"): Promise<ApiResponse<any>> {
+  async request(
+    url: string,
+    method: string,
+    data: object | null = null,
+    contentType: string = "application/json",
+  ): Promise<ApiResponse<any>> {
     try {
       let content: RequestInit = {
         method,

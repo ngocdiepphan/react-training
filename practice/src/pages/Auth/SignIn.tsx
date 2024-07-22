@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import InputField from "../../components/TextField";
-import Button from "../../components/Buttons";
+
+// Components
+import { InputField, Button } from "components";
+
+// Helper
 import { validateEmail, validateMinLength } from "helpers";
+
+// Service
 import AuthenticationService from "services/auth";
 
 const SignInForm: React.FC = () => {

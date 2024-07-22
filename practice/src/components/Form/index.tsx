@@ -1,5 +1,7 @@
 import React from "react";
-import Button from "../Buttons";
+
+// Component
+import { Button } from "components";
 
 const Form: React.FC = () => {
   return (

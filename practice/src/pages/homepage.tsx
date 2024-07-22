@@ -1,17 +1,27 @@
 import React, { useState, useEffect } from "react";
-import Header from "../components/Layouts/Header";
-import Button from "../components/Buttons/index";
-import FooterSocial from "../components/Layouts/Footer/Social";
-import Banner from "../components/Banner";
-import FooterContact from "../components/Layouts/Footer/Contact";
-import imgBanner from "../../public/assets/images/banner/banner.png";
-import Delicious from "../components/Delicious";
-import Category from "../components/Category";
-import Form from "../components/Form";
-import Collection from "../components/Collection";
-import LastRecipe from "../components/LastRecipe";
-import FooterDesc from "../components/Layouts/Footer/Description";
+
+// Components
+import {
+  Header,
+  Button,
+  FooterSocial,
+  FooterContact,
+  FooterDesc,
+  Banner,
+  Delicious,
+  Category,
+  Form,
+  Collection,
+  LastRecipe,
+} from "components";
+
+// Image
+import imgBanner from "public/assets/images/banner/banner.png";
+
+// Service
 import RecipeService from "services/recipe";
+
+// Type
 import { Recipe } from "type/recipe";
 
 const HomePage: React.FC = () => {
@@ -31,15 +41,11 @@ const HomePage: React.FC = () => {
 
   return (
     <>
-      {/* -- START HEADER-- */}
       <header className="mx-12 md:mx-102 lg:mx-30">
         <Header />
       </header>
-      {/* -- END HEADER -- */}
 
-      {/* --START MAIN-- */}
       <main>
-        {/* -- START HEADER SECTION -- */}
         <section className="mx-12 md:mx-102 lg:mx-30 flex flex-col lg:flex-row">
           <img className="lg:max-w-550" src={imgBanner} alt="Picture banner" />
           <div className="flex flex-col gap-20 bg-bannerPrimary pt-30 pr-35 pl-24 h-318 lg:h-420 md:pt-50 md:pl-48 md:pb-35 md:h-331 lg:pt-96 lg:pl-30 lg:pr-20">
@@ -57,18 +63,14 @@ const HomePage: React.FC = () => {
             <Banner />
           </div>
         </section>
-        {/*  -- END HEADER SECTION --*/}
 
-        {/* -- START DELICIOUS FOOD --*/}
         <Delicious
           title="Super Delicious"
           id="delicious-recipes"
           collection={4}
         />
         <Delicious title="Sweet Tooth" id="sweet-recipes" collection={3} />
-        {/* -- END DELICIOUS FOOD-- */}
 
-        {/* --START CATEGORIES-- */}
         <section className="mx-12 md:mx-102 lg:mx-30">
           <h3 className="text-2xl mt-37 mb-35 font-serif md:text-4xl md:mt-60">
             Popular Categories
@@ -77,9 +79,7 @@ const HomePage: React.FC = () => {
             <Category />
           </ul>
         </section>
-        {/* -- END CATEGORIES-- */}
 
-        {/* -- START SUBSCRIPTION FORM -- */}
         <section className="flex flex-col text-center gap-20 bg-subscriptPrimary mt-64 px-16 md:px-102 lg:px-278 py-66 md:py-96">
           <h3 className="font-serif text-4xl md:text-large leading-none">
             Deliciousness to your inbox
@@ -92,9 +92,7 @@ const HomePage: React.FC = () => {
             By joining our newsletter you agree to our Terms and Conditions
           </p>
         </section>
-        {/* -- END SUBSCRIPTION FORM -- */}
 
-        {/* -- START COLLECTIONS --*/}
         <section className="mx-12 md:mx-102 lg:mx-30">
           <h3 className="text-2xl md:text-medium font-serif mt-60 mb-35">
             Hand-Picked Collections
@@ -103,9 +101,7 @@ const HomePage: React.FC = () => {
             <Collection />
           </ul>
         </section>
-        {/*-- END COLLECTIONS --*/}
 
-        {/*-- START RECIPES -- */}
         <section className="mx-12 md:mx-102 lg:mx-30">
           <h4 className="text-2xl mt-37 mb-35 font-serif md:text-4xl md:mt-60">
             Latest Recipes
@@ -117,12 +113,9 @@ const HomePage: React.FC = () => {
             Load More
           </Button>
         </section>
-        {/*-- END RECIPES -- */}
       </main>
-      {/* -- END MAIN --*/}
 
       <footer className="bg-tertiary px-12 flex flex-col md:px-50 lg:px-42 lg:my-auto lg:mx-0">
-        {/* -- START FOOTER */}
         <div className="flex flex-col md:flex-row justify-between md:border-b md:hover:border-b-primary">
           <FooterDesc />
           <div className="flex flex-col md:pr-12 lg:pr-80 md:flex-row md:justify-between md:items-start md:gap-50 md:mt-72 ">
@@ -135,8 +128,6 @@ const HomePage: React.FC = () => {
             © 2020 Tastebite - All rights reserved
           </p>
         </div>
-
-        {/* -- END FOOTER */}
       </footer>
     </>
   );

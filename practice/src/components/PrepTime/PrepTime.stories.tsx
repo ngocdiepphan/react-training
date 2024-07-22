@@ -1,9 +1,14 @@
-import React from 'react';
-import { StoryFn, Meta } from '@storybook/react';
-import PrepTime, { Props } from './index';
+import React from "react";
+import { StoryFn, Meta } from "@storybook/react";
+
+// Component
+import { PrepTime } from "components";
+
+// Type
+import { Props } from "components/PrepTime";
 
 export default {
-  title: 'Components/PrepTime',
+  title: "Components/PrepTime",
   component: PrepTime,
 } as Meta;
 
@@ -13,9 +18,9 @@ export const Default = Template.bind({});
 Default.args = {
   recipe: {
     prepTime: {
-      min: '10 minutes',
-      max: '30 minutes'
+      min: "10 minutes",
+      max: "30 minutes",
     },
-    serving: '4 servings'
-  }
+    serving: "4 servings",
+  },
 };

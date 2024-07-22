@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
+
+// Component
+import { Button } from "components";
+
+// Type
 import { TableColumn } from "type/table";
-import Button from "../../Buttons";
 
 export interface PanelFormProps<T> {
   columns: TableColumn<T>[];

@@ -1,6 +1,7 @@
 import React from "react";
-import Button from "../Buttons";
-import DrawerItem from "./DrawerItem";
+
+// Components
+import { Button, DrawerItem } from "components";
 
 interface DrawerProps {
   onShowDrawer: boolean;

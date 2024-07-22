@@ -1,11 +1,12 @@
-import React from 'react';
-import { StoryFn, Meta } from '@storybook/react';
-import Banner from './index';
+import React from "react";
+import { StoryFn, Meta } from "@storybook/react";
+
+import { Banner } from "components";
 
 export default {
-  title: 'Components/Banner',
+  title: "Components/Banner",
   component: Banner,
-  id: 'banner'
+  id: "banner",
 } as Meta;
 
 const Template: StoryFn = (args) => <Banner {...args} />;

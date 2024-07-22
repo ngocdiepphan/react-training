@@ -1,10 +1,20 @@
-import React, { useState, useEffect } from "react";
-import InputField from "../TextField";
-import OptionCategory from "../Options/Category";
-import OptionRating from "../Options/Rating";
-import Button from "../Buttons";
+import React, { useState } from "react";
+
+// Components
+import {
+  InputField,
+  CategoryOption,
+  Rating,
+  Button
+} from "components";
+
+// Type
 import { Recipe } from "type/recipe";
+
+// Service
 import RecipeService from "services/recipe";
+
+// Helper
 import { formatDate } from "helpers";
 
 interface ModalProps {
@@ -89,8 +99,18 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
     { label: "Image", type: "text", id: "img", name: "img" },
     { label: "Name", type: "text", id: "name", name: "name" },
     { label: "Creator", type: "text", id: "creator", name: "creator" },
-    { label: "Description", type: "text", id: "description", name: "description" },
-    { label: "Creation Date", type: "date", id: "createdAt", name: "createdAt" },
+    {
+      label: "Description",
+      type: "text",
+      id: "description",
+      name: "description",
+    },
+    {
+      label: "Creation Date",
+      type: "date",
+      id: "createdAt",
+      name: "createdAt",
+    },
   ];
 
   return (
@@ -132,9 +152,7 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
                     name={field.name}
                     variant="secondary"
                     value={
-                      formData[
-                        field.name as keyof Recipe
-                      ]?.toString() || ""
+                      formData[field.name as keyof Recipe]?.toString() || ""
                     }
                     onChange={handleInputChange}
                     errorMessage=""
@@ -142,8 +160,8 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
                 )}
               </div>
             ))}
-            <OptionCategory onChange={handleCategoryChange} />
-            <OptionRating onChange={handleRatingChange} />
+            <CategoryOption onChange={handleCategoryChange} />
+            <Rating onChange={handleRatingChange} />
             <div className="flex justify-center">
               <Button
                 type="button"

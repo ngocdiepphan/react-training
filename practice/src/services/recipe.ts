@@ -1,5 +1,10 @@
+// Helper
 import APIHelper, { ApiResponse } from "./helper";
-import { API } from "../constants/url";
+
+// Constant
+import { API } from "constants/url";
+
+// Types
 import { Recipe } from "type/recipe";
 import { RecipeRow } from "type/table";
 

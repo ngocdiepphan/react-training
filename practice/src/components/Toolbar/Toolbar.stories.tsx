@@ -1,9 +1,11 @@
-import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
-import Toolbar from './index';
+import React from "react";
+import { Meta, StoryFn } from "@storybook/react";
+
+// Component
+import { Toolbar } from "components";
 
 export default {
-  title: 'Components/Toolbar',
+  title: "Components/Toolbar",
   component: Toolbar,
 } as Meta;
 

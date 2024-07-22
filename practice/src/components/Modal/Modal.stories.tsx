@@ -1,21 +1,18 @@
-import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
-import Modal from './index';
-import '../TextField';
-import '../Options/Category';
-import '../Options/Rating';
-import '../Buttons';
+import React from "react";
+import { Meta, StoryFn } from "@storybook/react";
+
+// Component
+import { Modal } from "components";
 
 export default {
-  title: 'Components/Modal',
+  title: "Components/Modal",
   component: Modal,
   parameters: {
-    layout: 'centered',
+    layout: "centered",
   },
 } as Meta;
 
 const Template: StoryFn = (args) => <Modal {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {
-};
+Default.args = {};

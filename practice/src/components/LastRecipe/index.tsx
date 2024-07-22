@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
+// Type
 import { Recipe } from "type/recipe";
 
 interface LastRecipeProps {
   recipes: Recipe[];
 }
-const LastRecipe = ({recipes}: LastRecipeProps ) => {
+const LastRecipe = ({ recipes }: LastRecipeProps) => {
   const lastRecipes = recipes.slice(-24);
 
   return (

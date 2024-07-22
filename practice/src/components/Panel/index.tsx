@@ -1,8 +1,14 @@
 import React, { useEffect } from "react";
-import PanelForm from "./PanelForm";
+
+// Component
+import { PanelForm } from "components";
+
+// Types
 import { UserProps } from "type/user";
 import { Recipe } from "type/recipe";
 import { userColumns, recipeColumns } from "type/table";
+
+// Services
 import UserService from "services/user";
 import RecipeService from "services/recipe";
 
@@ -23,7 +29,7 @@ const Panel = ({
   onSaveUser,
   onSaveRecipe,
   onDeleteUser,
-  onDeleteRecipe
+  onDeleteRecipe,
 }: PanelProps) => {
   const userService = new UserService();
   const recipeService = new RecipeService();
@@ -41,15 +47,15 @@ const Panel = ({
   useEffect(() => {}, [selectedUser]);
 
   const handleUpdateRecipe = async (editRecipe: Recipe) => {
-    const response = await recipeService.updateRecipe (editRecipe);
+    const response = await recipeService.updateRecipe(editRecipe);
     if (response.error) {
       return;
     } else {
-      alert ("Recipe updated successfully!");
-      onSaveRecipe(editRecipe)
+      alert("Recipe updated successfully!");
+      onSaveRecipe(editRecipe);
       onClosePanel?.();
     }
-  }
+  };
 
   useEffect(() => {}, [selectedRecipe]);
 

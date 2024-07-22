@@ -1,6 +1,8 @@
 import React from "react";
 import { StoryFn, Meta } from "@storybook/react";
-import Serving from "./index";
+
+// Component
+import { Serving } from "components";
 
 export default {
   title: "Components/Serving",

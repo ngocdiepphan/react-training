@@ -1,6 +1,11 @@
 import React from "react";
 import { Meta, StoryFn } from "@storybook/react";
-import Favorite, { FavoriteProps } from "./index";
+
+// Components
+import { Favorite } from "components";
+
+// Type
+import { FavoriteProps } from "components/Favorite";
 
 export default {
   title: "Components/Favorite",

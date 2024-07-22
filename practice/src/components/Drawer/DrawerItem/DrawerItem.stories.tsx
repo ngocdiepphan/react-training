@@ -1,9 +1,14 @@
-import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
-import DrawerItem, { DrawerItemProps } from './index'; 
+import React from "react";
+import { Meta, StoryFn } from "@storybook/react";
+
+// Component
+import { DrawerItem } from "components";
+
+// Type
+import { DrawerItemProps } from "components/Drawer/DrawerItem";
 
 export default {
-  title: 'Components/DrawerItem',
+  title: "Components/DrawerItem",
   component: DrawerItem,
 } as Meta;
 
@@ -11,7 +16,7 @@ const Template: StoryFn<DrawerItemProps> = (args) => <DrawerItem {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  title: 'Example Item',
-  type: 'default',
-  icon: 'default-icon',
+  title: "Example Item",
+  type: "default",
+  icon: "default-icon",
 };
