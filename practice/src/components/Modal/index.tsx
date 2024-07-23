@@ -42,6 +42,7 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
     serving: "",
     img: "",
     imgCreator: "",
+    comment: 0,
   });
 
   const handleInputChange = (

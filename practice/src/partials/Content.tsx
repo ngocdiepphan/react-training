@@ -1,7 +1,7 @@
 import React from "react";
 
 // Components
-import { Creator, CreationDate, RatingStar } from "components";
+import { Creator, CreationDate, CommentsCount, RatingStar } from "components";
 
 // Type
 import { Recipe } from "type/recipe";
@@ -18,13 +18,8 @@ const Content = ({ recipeData }: ContentProps) => {
         <ul className="flex flex-row gap-24 items-center">
           <Creator recipe={recipeData} />
           <CreationDate recipe={recipeData} />
-          <li className="flex flex-row gap-5">
-            <span className="bg-reply w-14 h-14 bg-no-repeat"></span>
-            <p className="text-xs-small">25</p>
-          </li>
-          <li>
-            <RatingStar ratings={recipeData.ratings} />
-          </li>
+          <CommentsCount count={recipeData.comment} />
+          <RatingStar ratings={recipeData.ratings} />
         </ul>
       </div>
       <p className="font-sans mt-24 mb-35 text-xs md:text-2xl lg:text-xs">

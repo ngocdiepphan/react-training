@@ -143,7 +143,8 @@
         "min": "20 minutes",
         "max": "25 minutes"
       },
-      "serving": "Serves 4"
+      "serving": "Serves 4",
+      "comments": 20
     },
     {
       "name": "Fancy Glazed Donuts",
@@ -263,7 +264,8 @@
         "min": "20 min",
         "max": "30 min"
       },
-      "serving": "12 donuts"
+      "serving": "12 donuts",
+      "comments": 28
     },
     {
       "name": "Mighty Cheesy Breakfast Burger",
@@ -358,7 +360,8 @@
         "min": "15 minutes",
         "max": "20 minutes"
       },
-      "serving": "Makes 4 burgers"
+      "serving": "Makes 4 burgers",
+      "comments": 19
     },
     {
       "name": "Berry Madness Biscuits",
@@ -473,7 +476,8 @@
         "min": "20 minutes",
         "max": "25 minutes"
       },
-      "serving": "Makes about 8 biscuits"
+      "serving": "Makes about 8 biscuits",
+      "comments": 11
     },
     {
       "name": "Caramel Strawberry Milkshake",
@@ -567,7 +571,8 @@
         "min": "5 min",
         "max": "10 max"
       },
-      "serving": "3 people"
+      "serving": "3 people",
+      "comments": 28
     },
     {
       "name": "Cashew Vegan Rice",
@@ -672,7 +677,8 @@
         "min": "15 minutes",
         "max": "20 minutes"
       },
-      "serving": "4 servings"
+      "serving": "4 servings",
+      "comments": 30
     },
     {
       "name": "Smoked Salmon Salad Sandwich",
@@ -769,7 +775,8 @@
         "min": "15 minutes",
         "max": "20 minutes"
       },
-      "serving": "4 sandwiches"
+      "serving": "4 sandwiches",
+      "comments": 21
     },
     {
       "name": "Salmon in Creamy Sun Dried Tomato Sauce",
@@ -871,7 +878,8 @@
         "min": "20 minutes",
         "max": "25 minutes"
       },
-      "serving": "4 servings"
+      "serving": "4 servings",
+      "comments": 30
     },
     {
       "name": "Healthy Jam Waffle Breakfast",
@@ -964,7 +972,8 @@
         "min": "10 minutes",
         "max": "15 minutes"
       },
-      "serving": "4 servings"
+      "serving": "4 servings",
+      "comments": 33
     },
     {
       "name": "Chocolate and Banana Jar Cake",
@@ -1077,7 +1086,8 @@
         "min": "20 minutes",
         "max": "25 minutes"
       },
-      "serving": "4 jar cakes"
+      "serving": "4 jar cakes",
+      "comments": 18
     },
     {
       "name": "Caramel Blueberry Scones",
@@ -1196,7 +1206,8 @@
         "min": "15 minutes",
         "max": "20 minutes"
       },
-      "serving": "8 scones"
+      "serving": "8 scones",
+      "comments": 24
     },
     {
       "name": "Blueberry Carrot Cake",
@@ -1315,7 +1326,8 @@
         "min": "30 minutes",
         "max": "35 minutes"
       },
-      "serving": "12 slices"
+      "serving": "12 slices",
+      "comments": 31
     },
     {
       "name": "Vegan Cauliflower Salad",
@@ -1418,7 +1430,8 @@
         "min": "10 minutes",
         "max": "35 minutes"
       },
-      "serving": "4 servings"
+      "serving": "4 servings",
+      "comments": 37
     },
     {
       "name": "Roasted Red Pepper Soup",
@@ -1540,7 +1553,8 @@
         "min": "15 minutes",
         "max": "40 minutes"
       },
-      "serving": "6 servings"
+      "serving": "6 servings",
+      "comments": 12
     },
     {
       "name": "Eggs and Avocado Toast",
@@ -1636,7 +1650,8 @@
         "min": "10 minutes",
         "max": "15 minutes"
       },
-      "serving": "2 servings"
+      "serving": "2 servings",
+      "comments": 20
     },
     {
       "name": "Pork Shoulder Cashew Noodles",
@@ -1744,7 +1759,8 @@
         "min": "20 minutes",
         "max": "30 minutes"
       },
-      "serving": "4 servings"
+      "serving": "4 servings",
+      "comments": 25
     },
     {
       "name": "Toasted Farfalle in Pesto Sauce",
@@ -1839,7 +1855,8 @@
         "min": "15 minutes",
         "max": "20 minutes"
       },
-      "serving": "4 servings"
+      "serving": "4 servings",
+      "comments": 35
     },
     {
       "name": "Cheesy Bacon Burger Sliders",
@@ -1953,7 +1970,8 @@
         "min": "20 minutes",
         "max": "25 minutes"
       },
-      "serving": "12 sliders"
+      "serving": "12 sliders",
+      "comments": 10
     },
     {
       "name": "Fig and Raisins Oatmeal",
@@ -2049,7 +2067,8 @@
         "min": "10 minutes",
         "max": "15 minutes"
       },
-      "serving": "2 servings"
+      "serving": "2 servings",
+      "comments": 24
     },
     {
       "name": "Silky Smooth Panna Cotta",
@@ -2151,7 +2170,8 @@
         "min": "20 minutes",
         "max": "25 minutes"
       },
-      "serving": "4 servings"
+      "serving": "4 servings",
+      "comments": 26
     },
     {
       "name": "Triple Decker Cranberry Cake",
@@ -2281,7 +2301,8 @@
         "min": "30 minutes",
         "max": "40 minutes"
       },
-      "serving": "12 servings"
+      "serving": "12 servings",
+      "comments": 21
     },
     {
       "name": "Very Berry Healthy Summer Smoothie",
@@ -2363,7 +2384,8 @@
         "min": "5 minutes",
         "max": "10 minutes"
       },
-      "serving": "2 servings"
+      "serving": "2 servings",
+      "comments": 29
     },
     {
       "name": "Crispy Orange Chips",
@@ -2452,7 +2474,8 @@
         "min": "10 minutes",
         "max": "15 minutes"
       },
-      "serving": "2 servings"
+      "serving": "2 servings",
+      "comments": 43
     },
     {
       "name": "Turmeric Lavender Tea",
@@ -2544,7 +2567,8 @@
         "min": "10 minutes",
         "max": "15 minutes"
       },
-      "serving": "2 servings"
+      "serving": "2 servings",
+      "comments": 23
     },
     {
       "name": "Blue Velvet Brownies",
@@ -2656,7 +2680,8 @@
         "min": "15 minutes",
         "max": "20 minutes"
       },
-      "serving": "9 brownies"
+      "serving": "9 brownies",
+      "comments": 25
     },
     {
       "name": "Birthday Cupcakes",
@@ -2774,7 +2799,8 @@
         "min": "20 minutes",
         "max": "25 minutes"
       },
-      "serving": "12 cupcakes"
+      "serving": "12 cupcakes",
+      "comments": 36
     },
     {
       "name": "Gourmet Fillet in Roasted Almond Sauce",
@@ -2878,7 +2904,8 @@
         "min": "15 minutes",
         "max": "20 minutes"
       },
-      "serving": "4 servings"
+      "serving": "4 servings",
+      "comments": 45
     },
     {
       "name": "Four Ingredient Oatmeal Pancakes",
@@ -2973,7 +3000,8 @@
         "min": "10 minutes",
         "max": "15 minutes"
       },
-      "serving": "Makes about 6 pancakes"
+      "serving": "Makes about 6 pancakes",
+      "comments": 38
     }   
   ]
 }
