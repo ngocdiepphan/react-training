@@ -8,7 +8,7 @@ import { ItemMenu } from "components";
 import { UserProps } from "type/user";
 
 // Image
-import logoImage from "public/assets/images/logo/Logo.png";
+import logoImage from "../../../public/assets/images/logo/Logo.png";
 
 const Navbar: React.FC = () => {
   const [menuVisible, setMenuVisible] = useState(false);

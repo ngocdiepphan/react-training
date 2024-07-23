@@ -16,7 +16,7 @@ import {
 } from "components";
 
 // Image
-import imgBanner from "public/assets/images/banner/banner.png";
+import imgBanner from "../../public/assets/images/banner/banner.png";
 
 // Service
 import RecipeService from "services/recipe";
