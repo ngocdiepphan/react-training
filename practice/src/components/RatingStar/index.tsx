@@ -15,7 +15,11 @@ const RatingStar: React.FC<Star> = ({ ratings }) => {
     return stars;
   };
 
-  return <div className="flex flex-row gap-5">{renderRating(ratings)}</div>;
+  return(
+    <li>
+       <div className="flex flex-row gap-5">{renderRating(ratings)}</div>
+    </li>
+  );
 };
 
 export default RatingStar;

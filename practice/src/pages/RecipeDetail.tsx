@@ -17,14 +17,8 @@ import RecipeService from "services/recipe";
 // Type
 import { Recipe } from "type/recipe";
 
-// Sections
-import {
-  Statistics,
-  Content,
-  Recipes,
-  Interact,
-  Comments,
-} from "partials";
+// Partials
+import { Statistics, Content, Recipes, Interact, Comment } from "partials";
 
 const RecipeDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -64,7 +58,7 @@ const RecipeDetail: React.FC = () => {
         <Recipes recipeData={recipeData} />
         <Feedback />
         <Interact />
-        <Comments />
+        <Comment />
       </main>
 
       <footer className="bg-tertiary px-12 flex flex-col md:px-50 lg:px-42 lg:my-auto lg:mx-0">

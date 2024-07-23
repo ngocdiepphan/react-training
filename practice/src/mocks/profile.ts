@@ -3,7 +3,7 @@ export const profileData = [
     id: 1,
     name: "Jelanee Uwaezuoke",
     status: "45 min ago",
-    comment:
+    comments:
       "Synth polaroid bitters chillwave pickled. Vegan disrupt tousled, Portland keffiyeh aesthetic food truck sriracha cornhole single-origin coffee church-key roof party.",
     reply: 2,
     favorite: 50,
@@ -13,7 +13,7 @@ export const profileData = [
     id: 2,
     name: "Qiu Xun",
     status: "1 hour ago",
-    comment: "Synth polaroid chill wave pickled 🔥",
+    comments: "Synth polaroid chill wave pickled 🔥",
     reply: 1,
     favorite: 12,
     img:"https://i.imgur.com/B8ta5Aab.jpg"
@@ -22,7 +22,7 @@ export const profileData = [
     id: 3,
     name: "Noell Blue",
     status: "2 hours ago",
-    comment:
+    comments:
       "Synth polaroid bitters chillwave pickled. Vegan disrupt tousled, Portland keffiyeh aesthetic food truck sriracha cornhole single-origin coffee church-key roof party.",
     reply: 5,
     favorite: 30,
@@ -32,7 +32,7 @@ export const profileData = [
     id: 4,
     name: "Diane Lansdowne",
     status: "3 hours ago",
-    comment:
+    comments:
       "A culinary masterpiece! The presentation and taste exceeded my expectations.",
     reply: 0,
     favorite: 8,
@@ -42,7 +42,7 @@ export const profileData = [
     id: 5,
     name: "Malin Quist",
     status: "4 hours ago",
-    comment:
+    comments:
       "Incredible flavors that blend perfectly together. Definitely a must-try!",
     reply: 3,
     favorite: 22,
@@ -52,7 +52,7 @@ export const profileData = [
     id: 6,
     name: "Nayara Delafuente",
     status: "5 hours ago",
-    comment: "One of the best dishes I've ever tasted. Absolutely delicious!",
+    comments: "One of the best dishes I've ever tasted. Absolutely delicious!",
     reply: 2,
     favorite: 18,
     img: "https://www.hotel-online.com/wp-content/uploads/2021/03/SandyMinskoff.jpg"
@@ -61,7 +61,7 @@ export const profileData = [
     id: 7,
     name: "Henk Fortuin",
     status: "6 hours ago",
-    comment: "Exquisite flavors that make this dish a standout!",
+    comments: "Exquisite flavors that make this dish a standout!",
     reply: 4,
     favorite: 35,
     img: "https://i.imgur.com/4A8GZ9kb.jpg"

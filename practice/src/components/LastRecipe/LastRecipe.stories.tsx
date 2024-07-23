@@ -65,6 +65,7 @@ Default.args = {
         max: "25 minutes",
       },
       serving: "Serves 4",
+      comment: 30
     },
   ],
 };

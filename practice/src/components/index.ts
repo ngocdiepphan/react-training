@@ -3,6 +3,7 @@ export { default as Category } from "components/Category";
 export { default as Collection } from "components/Collection";
 export { default as CreationDate } from "components/CreationDate";
 export { default as Creator } from "components/Creator";
+export { default as CommentsCount } from "components/Comment";
 export { default as Delicious } from "components/Delicious";
 export { default as Drawer } from "components/Drawer";
 export { default as DrawerItem } from "components/Drawer/DrawerItem";
