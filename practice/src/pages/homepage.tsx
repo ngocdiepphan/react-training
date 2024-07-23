@@ -9,7 +9,7 @@ import {
 } from "components";
 
 // Section
-import {Banner, DeliSection, CollectSection, CateSection, FormSection, LastSection } from "sections";
+import {Banner, DeliSection, CollectSection, CateSection, FormSection, LastSection } from "sections/homes";
 
 // Image
 import imgBanner from "../../public/assets/images/banner/banner.png";
