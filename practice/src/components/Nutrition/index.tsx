@@ -7,17 +7,15 @@ import { NutritionItem } from "components";
 import { NutritionFact } from "type/recipe";
 
 export interface Props {
-  recipe: {
-    nutrition: NutritionFact[];
-  };
+  data: NutritionFact[];
 }
 
-const NutritionFacts: React.FC<Props> = ({ recipe }) => {
+const NutritionFacts: React.FC<Props> = ({ data }) => {
   return (
     <article className="nutrition bg-tertiary p-24 mt-50">
       <h5 className="font-serif text-xl md:text-3xl">Nutrition Facts</h5>
       <ul>
-        {recipe.nutrition.map((item, index) => (
+        {data.map((item, index) => (
           <NutritionItem key={index} label={item.label} value={item.value} />
         ))}
       </ul>
