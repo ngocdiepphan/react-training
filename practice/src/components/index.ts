@@ -15,10 +15,10 @@ export { default as IngredientItem } from "components/Ingredient/IngredientItem"
 export { default as Instruction } from "components/Instruction";
 export { default as InstructionItem } from "components/Instruction/InstructionItem";
 export { default as LastRecipe } from "components/LastRecipe";
-export { default as Header } from "components/Layouts/Header";
-export { default as FooterSocial } from "components/Layouts/Footer/Social";
-export { default as FooterContact } from "components/Layouts/Footer/Contact";
-export { default as FooterDesc } from "components/Layouts/Footer/Description";
+export { default as Header } from "layouts/Header";
+export { default as FooterSocial } from "layouts/Footer/Social";
+export { default as FooterContact } from "layouts/Footer/Contact";
+export { default as FooterDesc } from "layouts/Footer/Description";
 export { default as Menu } from "components/Menu";
 export { default as ItemMenu } from "components/Menu/ItemMenu";
 export { default as Modal } from "components/Modal";

@@ -41,7 +41,7 @@ const Delicious = ({ title, id, collection }: RecipeList) => {
   };
 
   return (
-    <section className="mx-12 md:mx-102 lg:mx-30">
+    <>
       <h3 className="text-2xl mt-37 mb-35 font-serif md:text-4xl md:mt-60">
         {title}
       </h3>
@@ -65,7 +65,7 @@ const Delicious = ({ title, id, collection }: RecipeList) => {
           </li>
         ))}
       </ul>
-    </section>
+    </>
   );
 };
 

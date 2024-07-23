@@ -2,8 +2,8 @@ import React from "react";
 
 const FooterContact: React.FC = () => {
   return (
-    <>
-      <article className="flex items-center justify-center border-b border-b-borderPrimary hover:border-b-primary md:border-b-0 md:flex-col md:items-start hover:border-solid">
+    <section className="flex flex-col md:pr-12 lg:pr-80 md:flex-row md:justify-between md:items-start md:gap-50 md:mt-72 ">
+      <div className="flex items-center justify-center border-b border-b-borderPrimary hover:border-b-primary md:border-b-0 md:flex-col md:items-start hover:border-solid">
         <h4 className="mt-12 text-primary font-sans text-sm mb-16 md:text-base">
           Tastebite
         </h4>
@@ -23,8 +23,8 @@ const FooterContact: React.FC = () => {
             Feedback
           </li>
         </ul>
-      </article>
-      <article className="flex items-center justify-center border-b border-b-borderPrimary hover:border-b-primary md:border-b-0 md:flex-col md:items-start hover:border-solid">
+      </div>
+      <div className="flex items-center justify-center border-b border-b-borderPrimary hover:border-b-primary md:border-b-0 md:flex-col md:items-start hover:border-solid">
         <h4 className="mt-12 text-primary font-sans text-sm mb-16 md:text-base">
           Legal
         </h4>
@@ -43,9 +43,9 @@ const FooterContact: React.FC = () => {
             Copyright
           </li>
         </ul>
-      </article>
+      </div>
 
-      <article className="flex items-center justify-center border-b border-b-borderPrimary hover:border-b-primary md:border-b-0 md:flex-col md:items-start hover:border-solid">
+      <div className="flex items-center justify-center border-b border-b-borderPrimary hover:border-b-primary md:border-b-0 md:flex-col md:items-start hover:border-solid">
         <h4 className="mt-12 text-primary font-sans text-sm mb-16 md:text-base">
           Follow
         </h4>
@@ -64,8 +64,8 @@ const FooterContact: React.FC = () => {
             Youtube
           </li>
         </ul>
-      </article>
-    </>
+      </div>
+    </section>
   );
 };
 export default FooterContact;

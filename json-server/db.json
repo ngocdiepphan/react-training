@@ -133,7 +133,7 @@
         }
       ],
       "creator": "Jack Ryan",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/598be3f4-4613-46d8-9899-34da439e192b",
       "collection_id": 4,
       "category": "Main Course",
       "ratings": 5,
@@ -253,7 +253,7 @@
         }
       ],
       "creator": "Brian Michael",
-      "imgCreator": "https://i.imgur.com/zJmTqKWb.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/1e420552-39af-4d30-89db-e8c74eea2efd",
       "collection_id": 4,
       "category": "Desserts",
       "ratings": 5,
@@ -348,7 +348,7 @@
         }
       ],
       "creator": "Nina Marie",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/f4845a04-f052-4108-a74d-52d28a8c0789",
       "collection_id": 4,
       "category": "Breakfast",
       "ratings": 5,
@@ -463,7 +463,7 @@
         }
       ],
       "creator": "Sara Lynn",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/4aa5fdf2-9b76-4785-82d5-68698ed78148",
       "collection_id": 3,
       "category": "Breakfast",
       "ratings": 5,
@@ -558,7 +558,7 @@
       ],
       "creator": "Luke Thomas",
       "collection_id": 3,
-      "imgCreator": "https://i.imgur.com/zJmTqKWb.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/e08932c3-b897-4cf2-ae6c-76658a3b02d6",
       "category": "Smoothies",
       "ratings": 5,
       "createdAt": "2024-02-10",
@@ -661,8 +661,8 @@
           "value": "10g"
         }
       ],
-      "creator": "Your Name",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "creator": "James Cooper",
+      "imgCreator": "https://github.com/user-attachments/assets/3e2bc82d-7451-4d21-8985-63837e19bc03",
       "collection_id": 5,
       "category": "Smoothies",
       "ratings": 4,
@@ -759,7 +759,7 @@
         }
       ],
       "creator": "Anna Grace",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/4f6cdb58-ba82-4e2c-bc6c-05c9fef60d0c",
       "collection_id": 5,
       "category": "Breakfast",
       "ratings": 3,
@@ -861,7 +861,7 @@
         }
       ],
       "creator": "Mia Belle",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/deb8f438-a0c5-4ff3-a254-3d6fc2498acd",
       "collection_id": 7,
       "category": "Breakfast",
       "ratings": 4,
@@ -954,7 +954,7 @@
         }
       ],
       "creator": "Brian Michael",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/39d91a03-1eb3-42b9-b982-3fc00c0622c1",
       "collection_id": 5,
       "category": "Breakfast",
       "ratings": 4,
@@ -1067,7 +1067,7 @@
         }
       ],
       "creator": "Nina Marie",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/c647e9bc-6c0f-488a-8efb-d3b77c603e2a",
       "collection_id": 3,
       "category": "Desserts",
       "ratings": 5,
@@ -1186,7 +1186,7 @@
         }
       ],
       "creator": "Luke Thomas",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/f24457c2-8fc4-4ebd-9908-e6a237b3b7f2",
       "collection_id": 10,
       "category": "Dessert",
       "ratings": 4,
@@ -1304,8 +1304,8 @@
           "value": "5g"
         }
       ],
-      "creator": "Your Name",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "creator": "Olivia King",
+      "imgCreator": "https://github.com/user-attachments/assets/e0b46fd8-2cda-4b50-84e1-481e4a6f1fd4",
       "collection_id": 11,
       "category": "Desserts",
       "ratings": 4,
@@ -1408,7 +1408,7 @@
         }
       ],
       "creator": "Ella Mae",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/39d91a03-1eb3-42b9-b982-3fc00c0622c1",
       "collection_id": 12,
       "category": "Vegan",
       "ratings": 4,
@@ -1530,7 +1530,7 @@
         }
       ],
       "creator": "Chris Evans",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/3e2bc82d-7451-4d21-8985-63837e19bc03",
       "collection_id": 13,
       "category": "Breakfast",
       "ratings": 4,
@@ -1626,7 +1626,7 @@
         }
       ],
       "creator": "Ivy Grace",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/852e0d0b-1df9-4bf7-afaa-994787ca55ea",
       "collection_id": 14,
       "category": "Breakfast",
       "ratings": 5,
@@ -1734,7 +1734,7 @@
         }
       ],
       "creator": "Eva Jane",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/598be3f4-4613-46d8-9899-34da439e192b",
       "collection_id": 5,
       "category": "Pasta",
       "ratings": 5,
@@ -1829,7 +1829,7 @@
         }
       ],
       "creator": "Zoe Ann",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/e0b46fd8-2cda-4b50-84e1-481e4a6f1fd4",
       "collection_id": 4,
       "category": "Vegan",
       "ratings": 5,
@@ -1943,7 +1943,7 @@
         }
       ],
       "creator": "Sara Lynn",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/c647e9bc-6c0f-488a-8efb-d3b77c603e2a",
       "collection_id": 2,
       "category": "Breakfast",
       "ratings": 4,
@@ -2039,7 +2039,7 @@
         }
       ],
       "creator": "Ella Mae",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/deb8f438-a0c5-4ff3-a254-3d6fc2498acd",
       "collection_id": 4,
       "category": "Vegan",
       "ratings": 5,
@@ -2141,7 +2141,7 @@
         }
       ],
       "creator": "John Paul",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/e08932c3-b897-4cf2-ae6c-76658a3b02d6",
       "collection_id": 19,
       "category": "Dessert",
       "ratings": 4.9,
@@ -2271,7 +2271,7 @@
         }
       ],
       "creator": "Scarlet Rose",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/f4845a04-f052-4108-a74d-52d28a8c0789",
       "collection_id": 3,
       "category": "Dessert",
       "ratings": 4,
@@ -2353,7 +2353,7 @@
         }
       ],
       "creator": "Hazel Sky",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/e08932c3-b897-4cf2-ae6c-76658a3b02d6",
       "collection_id": 21,
       "category": "Smoothie",
       "ratings": 5,
@@ -2442,7 +2442,7 @@
         }
       ],
       "creator": "Violet Storm",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/598be3f4-4613-46d8-9899-34da439e192b",
       "collection_id": 6,
       "category": "Vegan",
       "ratings": 5,
@@ -2534,7 +2534,7 @@
         }
       ],
       "creator": "Spring Rain",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/1e420552-39af-4d30-89db-e8c74eea2efd",
       "collection_id": 3,
       "category": "Vegan",
       "ratings": 5,
@@ -2646,7 +2646,7 @@
         }
       ],
       "creator": "Jade Forest",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/852e0d0b-1df9-4bf7-afaa-994787ca55ea",
       "collection_id": 5,
       "category": "Dessert",
       "ratings": 4,
@@ -2764,7 +2764,7 @@
         }
       ],
       "creator": "Sara Lynn",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/3e2bc82d-7451-4d21-8985-63837e19bc03",
       "collection_id": 3,
       "category": "Dessert",
       "ratings": 4,
@@ -2868,7 +2868,7 @@
         }
       ],
       "creator": "Lily Anne",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/f24457c2-8fc4-4ebd-9908-e6a237b3b7f2",
       "collection_id": 26,
       "category": "Breakfast",
       "ratings": 5,
@@ -2963,7 +2963,7 @@
         }
       ],
       "creator": "Mia Belle",
-      "imgCreator": "https://example.com/your-profile-image.jpg",
+      "imgCreator": "https://github.com/user-attachments/assets/39d91a03-1eb3-42b9-b982-3fc00c0622c1",
       "collection_id": 27,
       "category": "Dessert",
       "ratings": 4,
