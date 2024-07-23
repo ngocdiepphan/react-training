@@ -3,7 +3,7 @@ import React from "react";
 // Components
 import { Button, DrawerItem } from "components";
 
-interface DrawerProps {
+export interface DrawerProps {
   onShowDrawer: boolean;
   onShowFormAdd: () => void;
   onDrawerItemClick: (item: string) => void;

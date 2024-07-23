@@ -2,19 +2,24 @@ import React from "react";
 import { StoryFn, Meta } from "@storybook/react";
 
 // Component
-import { Rating } from "components";
-
-// Type
-import { Star } from "components/RatingStar";
+import {  RatingStar } from "components";
 
 export default {
-  title: "Components/Rating",
-  component: Rating,
+  title: 'Components/RatingStar',
+  component: RatingStar,
+  argTypes: {
+    ratings: { control: 'number' },
+  },
 } as Meta;
 
-const Template: StoryFn<Star> = (args) => <Rating {...args} />;
+const Template: StoryFn<{ ratings: number }> = (args) => <RatingStar {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
+  ratings: 3,
+};
+
+export const HighRating = Template.bind({});
+HighRating.args = {
   ratings: 5,
 };
