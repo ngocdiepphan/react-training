@@ -5,11 +5,25 @@ import { Meta, StoryFn } from "@storybook/react";
 import { Toolbar } from "components";
 
 export default {
-  title: "Components/Toolbar",
+  title: 'Components/Toolbar',
   component: Toolbar,
+  argTypes: {
+    title: { control: 'text' },
+    showTitle: { control: 'boolean' },
+  },
 } as Meta;
 
-const Template: StoryFn = (args) => <Toolbar {...args} />;
+const Template: StoryFn<{ title: string; showTitle: boolean }> = (args) => <Toolbar {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+  title: 'User',
+  showTitle: true,
+};
+
+export const WithoutTitle = Template.bind({});
+WithoutTitle.args = {
+  title: 'Recipe',
+  showTitle: false,
+};
+

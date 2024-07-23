@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta, StoryFn } from "@storybook/react";
 
-// Component
+//Component
 import { DrawerItem } from "components";
 
 // Type
@@ -16,7 +16,19 @@ const Template: StoryFn<DrawerItemProps> = (args) => <DrawerItem {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  title: "Example Item",
-  type: "default",
-  icon: "default-icon",
+  title: "User",
+  type: "user",
+  icon: "user-item",
+  className: "",
+  onClick: () => console.log("DrawerItem clicked"),
 };
+
+export const Recipe = Template.bind({});
+Recipe.args = {
+  title: "Recipes",
+  type: "recipe",
+  icon: "recipe-item",
+  className: "bg-recipe-item bg-red",
+  onClick: () => console.log("DrawerItem clicked"),
+};
+

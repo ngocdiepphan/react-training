@@ -4,7 +4,7 @@ export interface Star {
   ratings: number;
 }
 
-const Rating: React.FC<Star> = ({ ratings }) => {
+const RatingStar: React.FC<Star> = ({ ratings }) => {
   const renderRating = (ratings: number) => {
     const stars = [];
     for (let i = 0; i < ratings; i++) {
@@ -18,4 +18,4 @@ const Rating: React.FC<Star> = ({ ratings }) => {
   return <div className="flex flex-row gap-5">{renderRating(ratings)}</div>;
 };
 
-export default Rating;
+export default RatingStar;

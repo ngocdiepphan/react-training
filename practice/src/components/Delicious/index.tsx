@@ -10,7 +10,7 @@ import { Recipe } from "type/recipe";
 // Service
 import RecipeService from "services/recipe";
 
-interface RecipeList {
+export interface RecipeList {
   title: string;
   id: string;
   collection: number;

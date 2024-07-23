@@ -1,7 +1,10 @@
 import React from "react";
 import { Meta, StoryFn } from "@storybook/react";
 
+// Component
 import { Creator } from "components";
+
+//Type
 import { Props } from "components/Creator";
 
 export default {
