@@ -7,7 +7,6 @@ import {
   FooterSocial,
   FooterContact,
   FooterDesc,
-  Banner,
   Delicious,
   Category,
   Form,
@@ -60,7 +59,9 @@ const HomePage: React.FC = () => {
               Look no further for a creamy and ultra smooth classic cheesecake
               recipe! no one can deny its simple decadence.
             </p>
-            <Banner />
+            <div className="w-40 h-40 bg-primary hover:bg-orange-400 ml-auto bg-center flex justify-center items-center">
+              <span className="bg-arrow-right w-13 h-13"></span>
+            </div>
           </div>
         </section>
 

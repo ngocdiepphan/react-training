@@ -1,4 +1,3 @@
-export { default as Banner } from "components/Banner";
 export { default as Button } from "components/Buttons";
 export { default as Category } from "components/Category";
 export { default as Collection } from "components/Collection";
