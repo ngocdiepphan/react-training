@@ -1,21 +1,31 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import CreationDate from "components/CreationDate";
-import Header from "components/Layouts/Header";
-import Creator from "components/Creator";
-import Rating from "components/RatingStar";
-import PrepTime from "components/PrepTime";
-import Ingredient from "components/Ingredient";
-import NutritionFacts from "components/Nutrition";
-import Instruction from "components/Instruction";
-import Feedback from "components/Feedback";
-import Profiles from "../components/Profile/index";
-import { profileData } from "../mocks/profile";
-import Button from "components/Buttons";
-import FooterContact from "components/Layouts/Footer/Contact";
-import FooterDesc from "components/Layouts/Footer/Description";
-import FooterSocial from "components/Layouts/Footer/Social";
+
+// Components
+import {
+  CreationDate,
+  Header,
+  Creator,
+  RatingStar,
+  PrepTime,
+  Ingredient,
+  Instruction,
+  NutritionFacts,
+  Feedback,
+  Profiles,
+  Button,
+  FooterSocial,
+  FooterContact,
+  FooterDesc,
+} from "components";
+
+// Mock
+import { profileData } from "mocks/profile";
+
+// Service
 import RecipeService from "services/recipe";
+
+// Type
 import { Recipe } from "type/recipe";
 
 const RecipeDetail: React.FC = () => {
@@ -45,15 +55,11 @@ const RecipeDetail: React.FC = () => {
 
   return (
     <>
-      {/* -- START HEADER-- */}
       <header className="mx-12 md:mx-102 lg:mx-30">
         <Header />
       </header>
-      {/* -- END HEADER -- */}
 
-      {/* --START MAIN-- */}
       <main>
-        {/* -- START RECIPE DETAIL --*/}
         <section className="mx-12 md:mx-102 lg:mx-30">
           <div id="recipe-details">
             <div className="flex flex-row items-center justify-between gap-10 font-sans text-xs-small md:text-sm">
@@ -80,7 +86,7 @@ const RecipeDetail: React.FC = () => {
                     <p className="text-xs-small">25</p>
                   </li>
                   <li>
-                    <Rating ratings={recipeData.ratings} />
+                    <RatingStar ratings={recipeData.ratings} />
                   </li>
                 </ul>
               </div>
@@ -106,9 +112,7 @@ const RecipeDetail: React.FC = () => {
               <Instruction recipe={recipeData} />
             </div>
           </div>
-          {/* -- END RECIPE DETAIL -- */}
 
-          {/* -- START CONTENT COMMENT -- */}
           <section>
             <div className="mb-37 md:mb-40 border-b hover:border-b-8 hover:border-tertiary">
               <Feedback />
@@ -147,12 +151,9 @@ const RecipeDetail: React.FC = () => {
               </div>
             </div>
           </section>
-          {/*-- END  CONTENT COMMENT --*/}
         </section>
       </main>
-      {/* -- END MAIN --*/}
 
-      {/* -- START FOOTER */}
       <footer className="bg-tertiary px-12 flex flex-col md:px-50 lg:px-42 lg:my-auto lg:mx-0">
         <div className="flex flex-col md:flex-row justify-between md:border-b md:hover:border-b-primary">
           <FooterDesc />
@@ -167,7 +168,6 @@ const RecipeDetail: React.FC = () => {
           </p>
         </div>
       </footer>
-      {/* -- END FOOTER */}
     </>
   );
 };

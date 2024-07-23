@@ -1,6 +1,8 @@
 import React from "react";
-import Feedback from "./index";
 import { Meta, StoryFn } from "@storybook/react/*";
+
+// Component
+import { Feedback } from "components";
 
 export default {
   title: "Components/Feedback",

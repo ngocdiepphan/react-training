@@ -1,6 +1,11 @@
 import React from "react";
 import { StoryFn, Meta } from "@storybook/react";
-import Rating, { Star } from "./index";
+
+// Component
+import { Rating } from "components";
+
+// Type
+import { Star } from "components/RatingStar";
 
 export default {
   title: "Components/Rating",

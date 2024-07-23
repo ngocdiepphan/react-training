@@ -1,9 +1,11 @@
-import React from 'react';
-import { StoryFn, Meta } from '@storybook/react';
-import Delicious from './index'; 
+import React from "react";
+import { StoryFn, Meta } from "@storybook/react";
+
+// Component
+import { Delicious } from "components";
 
 export default {
-  title: 'Components/Delicious',
+  title: "Components/Delicious",
   component: Delicious,
 } as Meta;
 

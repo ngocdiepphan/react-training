@@ -1,5 +1,9 @@
 import React from "react";
-import TableCell from "./TableCell";
+
+// Component
+import TableCell from "components/Table/TableRow/TableCell";
+
+// Type
 import { TableColumn } from "type/table";
 
 interface Props<T> {

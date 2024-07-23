@@ -1,10 +1,14 @@
-import React from 'react';
-import { StoryFn, Meta } from '@storybook/react';
-import NutritionFacts, { Props } from './index';
-import { recipe } from '../../mocks/recipe';
+import React from "react";
+import { StoryFn, Meta } from "@storybook/react";
+
+// Component
+import { NutritionFacts } from "components";
+
+// Type
+import { Props } from "components/Nutrition";
 
 export default {
-  title: 'Components/NutritionFacts',
+  title: "Components/NutritionFacts",
   component: NutritionFacts,
 } as Meta;
 
@@ -14,10 +18,10 @@ export const Default = Template.bind({});
 Default.args = {
   recipe: {
     nutrition: [
-      { "label": "Calories", "value": "700" },
-      { "label": "Total Fat", "value": "45g" },
-      { "label": "Saturated Fat", "value": "18g" },
-      { "label": "Cholesterol", "value": "300mg" },
-  ]
-  }
+      { label: "Calories", value: "700" },
+      { label: "Total Fat", value: "45g" },
+      { label: "Saturated Fat", value: "18g" },
+      { label: "Cholesterol", value: "300mg" },
+    ],
+  },
 };

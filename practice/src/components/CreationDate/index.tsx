@@ -1,5 +1,7 @@
-import { formatDate } from "helpers";
 import React from "react";
+
+// Helper
+import { formatDate } from "helpers";
 
 export interface Props {
   recipe: {
@@ -9,7 +11,7 @@ export interface Props {
 
 const CreationDate = ({ recipe }: Props) => {
   const formattedDate =
-    typeof recipe.createdAt === 'string'
+    typeof recipe.createdAt === "string"
       ? recipe.createdAt
       : formatDate(recipe.createdAt);
 

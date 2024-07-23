@@ -1,6 +1,11 @@
 import React from "react";
 import { StoryFn, Meta } from "@storybook/react";
-import NutritionItem, { NutritionItemProps } from "./index";
+
+// Component
+import { NutritionItem } from "components";
+
+// Type
+import { NutritionItemProps } from "components/Nutrition/NutritionItem";
 
 export default {
   title: "Components/NutritionItem",

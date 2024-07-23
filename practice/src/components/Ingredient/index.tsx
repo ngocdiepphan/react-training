@@ -1,5 +1,7 @@
-import React from 'react';
-import IngredientItem from './IngredientItem';
+import React from "react";
+
+// Component
+import { IngredientItem } from "components";
 
 export interface Props {
   recipe: {

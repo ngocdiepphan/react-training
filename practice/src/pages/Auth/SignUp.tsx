@@ -1,8 +1,17 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import InputField from "../../components/TextField";
-import Button from "../../components/Buttons";
-import { validateEmail, validateMinLength, validatePasswordMatch } from "helpers";
+
+// Components
+import { InputField, Button } from "components";
+
+// Helper
+import {
+  validateEmail,
+  validateMinLength,
+  validatePasswordMatch,
+} from "helpers";
+
+// Service
 import AuthenticationService from "services/auth";
 
 const SignUpForm: React.FC = () => {
@@ -23,7 +32,7 @@ const SignUpForm: React.FC = () => {
     email: "",
     username: "",
     password: "",
-    confirmPassword: ""
+    confirmPassword: "",
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -56,7 +65,8 @@ const SignUpForm: React.FC = () => {
       case "confirmPassword":
         setErrors({
           ...errors,
-          confirmPassword: validatePasswordMatch(formData.password, value) || "",
+          confirmPassword:
+            validatePasswordMatch(formData.password, value) || "",
         });
         break;
       default:
@@ -67,25 +77,36 @@ const SignUpForm: React.FC = () => {
   const handleSignUp = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const isValid = formData.email && formData.username && formData.password && formData.confirmPassword;
+    const isValid =
+      formData.email &&
+      formData.username &&
+      formData.password &&
+      formData.confirmPassword;
 
     if (!isValid) {
       setErrors({
         email: !formData.email ? "Email is required" : "",
         username: !formData.username ? "Username is required" : "",
         password: !formData.password ? "Password is required" : "",
-        confirmPassword: !formData.confirmPassword ? "Confirm Password is required" : "",
+        confirmPassword: !formData.confirmPassword
+          ? "Confirm Password is required"
+          : "",
       });
       return;
     }
 
-    if (!errors.email && !errors.username && !errors.password && !errors.confirmPassword) {
+    if (
+      !errors.email &&
+      !errors.username &&
+      !errors.password &&
+      !errors.confirmPassword
+    ) {
       const response = await AuthService.signUpUser(formData);
       if (response.error) {
         alert(`Sign up failed: ${response.error.message}`);
       } else {
         alert("Sign up successful!");
-        navigate('/sign-in');
+        navigate("/sign-in");
       }
     }
   };

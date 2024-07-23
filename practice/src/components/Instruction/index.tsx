@@ -1,9 +1,11 @@
 import React from "react";
-import InstructionItem from "./InstructionItem";
+
+// Component
+import { InstructionItem } from "components";
 
 export interface Props {
   recipe: {
-    instruction: { step: number; description: string; }[];
+    instruction: { step: number; description: string }[];
   };
 }
 

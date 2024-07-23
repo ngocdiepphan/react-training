@@ -1,9 +1,11 @@
-import React from 'react';
-import { StoryFn, Meta } from '@storybook/react';
-import Form from './index';
+import React from "react";
+import { StoryFn, Meta } from "@storybook/react";
+
+// Component
+import { Form } from "components";
 
 export default {
-  title: 'Components/Form',
+  title: "Components/Form",
   component: Form,
 } as Meta;
 

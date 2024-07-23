@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from "react";
-import Rating from "../RatingStar";
 import { Link } from "react-router-dom";
+
+// Component
+import { RatingStar } from "components";
+
+// Type
 import { Recipe } from "type/recipe";
+
+// Service
 import RecipeService from "services/recipe";
 
 interface RecipeList {
@@ -52,7 +58,7 @@ const Delicious = ({ title, id, collection }: RecipeList) => {
                   src={item.img}
                   alt={`Picture of ${item.name}`}
                 />
-                <Rating ratings={item.ratings} />
+                <RatingStar ratings={item.ratings} />
                 <p className="font-sans text-lg md:text-xl">{item.name}</p>
               </article>
             </Link>

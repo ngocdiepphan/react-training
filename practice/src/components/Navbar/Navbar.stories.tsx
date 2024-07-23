@@ -1,13 +1,15 @@
-import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Navbar from './index';
+import React from "react";
+import { Meta, StoryFn } from "@storybook/react";
+import { BrowserRouter as Router } from "react-router-dom";
+
+// Component
+import { Navbar } from "components";
 
 export default {
-  title: 'Components/Navbar',
+  title: "Components/Navbar",
   component: Navbar,
   parameters: {
-    layout: 'fullscreen',
+    layout: "fullscreen",
   },
 } as Meta;
 

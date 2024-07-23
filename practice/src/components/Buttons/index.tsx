@@ -2,7 +2,16 @@ import React from "react";
 
 export interface ButtonProps {
   type: "submit" | "button" | "reset";
-  variant: "primary" | "secondary" | "action" | "join" | "loadComment" | "post" | "submit" | "add" | "confirm";
+  variant:
+    | "primary"
+    | "secondary"
+    | "action"
+    | "join"
+    | "loadComment"
+    | "post"
+    | "submit"
+    | "add"
+    | "confirm";
   children: string | JSX.Element;
   onClick?: () => void;
   icon?: string;
@@ -14,7 +23,7 @@ const Button: React.FC<ButtonProps> = ({
   variant,
   onClick,
   children,
-  icon
+  icon,
 }) => {
   const baseStyles =
     "flex flex-row justify-center gap-8 font-sans items-center rounded-md cursor-pointer";

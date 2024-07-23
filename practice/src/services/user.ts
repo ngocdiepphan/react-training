@@ -1,6 +1,11 @@
+// Helper
 import APIHelper, { ApiResponse } from "./helper";
-import { UserProps } from "../type/user";
-import { API } from "../constants/url";
+
+// Type
+import { UserProps } from "type/user";
+
+// Constants
+import { API } from "constants/url";
 
 class UserService {
   private apiHelper: APIHelper;

@@ -1,7 +1,11 @@
 import React from "react";
 import { Meta, StoryFn } from "@storybook/react";
 import { fn } from "@storybook/test";
-import Table from "./index";
+
+// Component
+import { Table } from "components";
+
+// Types
 import {
   TableColumn,
   userColumns,
@@ -9,6 +13,8 @@ import {
   RecipeRow
 } from "type/table";
 import { UserProps } from "type/user";
+
+// Mocks
 import { user } from "mocks/user";
 import { recipe } from "mocks/recipe";
 

@@ -1,7 +1,14 @@
 import React from "react";
 import { StoryFn, Meta } from "@storybook/react";
-import PanelForm, { PanelFormProps } from "./index";
+
+// Component
+import { PanelForm } from "components";
+
+// Types
+import { PanelFormProps } from "components/Panel/PanelForm";
 import { recipeColumns, userColumns } from "type/table";
+
+// Mocks
 import { user } from "mocks/user";
 import { recipe } from "mocks/recipe";
 

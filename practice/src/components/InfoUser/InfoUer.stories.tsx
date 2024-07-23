@@ -1,6 +1,10 @@
 import React from "react";
 import { StoryFn, Meta } from "@storybook/react";
-import InfoUser from "./index";
+
+// Component
+import { InfoUser } from "components";
+
+// Type
 import { Profile } from "type/profile";
 
 export default {

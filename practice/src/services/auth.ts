@@ -1,5 +1,10 @@
+// Helper
 import APIHelper, { ApiResponse } from "./helper";
+
+// Type
 import { UserProps } from "type/user";
+
+// COnstant
 import { API } from "constants/url";
 
 class AuthenticationService {

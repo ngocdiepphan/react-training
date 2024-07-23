@@ -1,12 +1,20 @@
 import React, { useState, useEffect } from "react";
-import Modal from "../components/Modal";
-import Panel from "../components/Panel";
-import Toolbar from "../components/Toolbar";
-import Table from "../components/Table";
-import { userColumns, recipeColumns } from "../type/table";
-import { UserProps } from "../type/user";
-import { Recipe } from "../type/recipe";
-import Drawer from "components/Drawer";
+
+// Components
+import {
+  Modal,
+  Panel,
+  Toolbar,
+  Table,
+  Drawer
+} from "components";
+
+// Types
+import { userColumns, recipeColumns } from "type/table";
+import { UserProps } from "type/user";
+import { Recipe } from "type/recipe";
+
+// Services
 import UserService from "services/user";
 import RecipeService from "services/recipe";
 
@@ -25,6 +33,7 @@ const Dashboard: React.FC = () => {
     setSelectedUser(null);
     setSelectedRecipe(null);
   };
+
   const handleShowDrawer = () => {
     setShowDrawer(!showDrawer);
   };
@@ -117,7 +126,6 @@ const Dashboard: React.FC = () => {
 
   return (
     <>
-      {/* -- START HEADER -- */}
       <header className="sticky top-0">
         <div className="navbar-user__wrapper flex flex-row text-quaternary font-semibold w-full h-48 bg-primary p-20">
           <div className="navbar-user__item flex flex-row gap-20 items-center cursor-pointer">
@@ -129,9 +137,7 @@ const Dashboard: React.FC = () => {
           </div>
         </div>
       </header>
-      {/* -- END HEADER -- */}
 
-      {/* -- START MAIN -- */}
       <main className=" main-body flex lg:pl-0 lg:p-10 flex-row font-sans text-sm bg-dashboardPrimary">
         <div className="drawer">
           <Drawer
@@ -184,7 +190,6 @@ const Dashboard: React.FC = () => {
           )}
         </div>
       </main>
-      {/* -- END MAIN -- */}
     </>
   );
 };

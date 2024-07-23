@@ -1,7 +1,7 @@
 import React from "react";
-import PrepTimeItem from "./PrepTimeItem";
-import Serving from "../Serving";
-import { Recipe } from "type/recipe";
+
+// Components
+import { PrepTimeItem, Serving } from "components";
 
 export interface Props {
   recipe: {

@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logoImage from "../../../public/assets/images/logo/Logo.png";
-import ItemMenu from "../Menu/ItemMenu";
+
+// Component
+import { ItemMenu } from "components";
+
+// Type
 import { UserProps } from "type/user";
+
+// Image
+import logoImage from "../../../public/assets/images/logo/Logo.png";
 
 const Navbar: React.FC = () => {
   const [menuVisible, setMenuVisible] = useState(false);

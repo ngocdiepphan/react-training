@@ -1,4 +1,6 @@
 import React from "react";
+
+// Image
 import logo from "../../../../public/assets/images/logo/Logo.png";
 
 const FooterDesc: React.FC = () => {

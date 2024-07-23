@@ -1,12 +1,14 @@
 import React from "react";
 import { Meta, StoryFn } from "@storybook/react";
-import OptionRating from "./index";
+
+// Component
+import { Rating } from "components";
 
 export default {
   title: "Components/OptionRating",
-  component: OptionRating,
+  component: Rating,
 } as Meta;
 
-const Template: StoryFn = () => <OptionRating />;
+const Template: StoryFn = () => <Rating />;
 
 export const Default = Template.bind({});

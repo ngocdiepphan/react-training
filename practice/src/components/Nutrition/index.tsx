@@ -1,6 +1,10 @@
-import React from 'react';
-import NutritionItem from '../Nutrition/NutritionItem';
-import { NutritionFact } from 'type/recipe';
+import React from "react";
+
+// Component
+import { NutritionItem } from "components";
+
+// Type
+import { NutritionFact } from "type/recipe";
 
 export interface Props {
   recipe: {
@@ -22,4 +26,3 @@ const NutritionFacts: React.FC<Props> = ({ recipe }) => {
 };
 
 export default NutritionFacts;
-

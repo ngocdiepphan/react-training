@@ -1,4 +1,6 @@
 import React from "react";
+
+// Mock
 import { categories } from "mocks/category";
 
 const Category: React.FC = () => {

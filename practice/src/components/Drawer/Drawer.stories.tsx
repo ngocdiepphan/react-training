@@ -1,9 +1,11 @@
-import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
-import Drawer from '.';
+import React from "react";
+import { Meta, StoryFn } from "@storybook/react";
+
+// Component
+import { Drawer } from "components";
 
 export default {
-  title: 'Components/Drawer',
+  title: "Components/Drawer",
   component: Drawer,
 } as Meta;
 
