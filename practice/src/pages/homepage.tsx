@@ -1,18 +1,17 @@
 import React, { useState, useEffect } from "react";
 
 // Components
-import {
-  Header,
-  FooterSocial,
-  FooterContact,
-  FooterDesc,
-} from "components";
+import { Header, FooterSocial, FooterContact, FooterDesc } from "components";
 
 // Section
-import {Banner, DeliSection, CollectSection, CateSection, FormSection, LastSection } from "sections/homes";
-
-// Image
-import imgBanner from "../../public/assets/images/banner/banner.png";
+import {
+  Banner,
+  DeliSection,
+  CollectSection,
+  CateSection,
+  FormSection,
+  LastSection,
+} from "sections/homes";
 
 // Service
 import RecipeService from "services/recipe";
@@ -42,16 +41,12 @@ const HomePage: React.FC = () => {
 
   return (
     <>
-      <header className="mx-12 md:mx-102 lg:mx-30">
+      <header>
         <Header />
       </header>
 
       <main>
-        <Banner
-          imgBanner={imgBanner}
-          title="Mighty Super Cheesecake"
-          description="Look no further for a creamy and ultra smooth classic cheesecake recipe! No one can deny its simple decadence."
-        />
+        <Banner />
         <DeliSection items={items} />
         <CateSection />
         <FormSection />
