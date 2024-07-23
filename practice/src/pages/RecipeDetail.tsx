@@ -24,7 +24,7 @@ import {
   Recipes,
   Interact,
   Comments,
-} from "sections/details";
+} from "partials";
 
 const RecipeDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();

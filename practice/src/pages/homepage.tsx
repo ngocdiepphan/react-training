@@ -11,7 +11,7 @@ import {
   CateSection,
   FormSection,
   LastSection,
-} from "sections/homes";
+} from "partials";
 
 // Service
 import RecipeService from "services/recipe";
