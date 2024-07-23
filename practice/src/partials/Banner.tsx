@@ -1,11 +1,11 @@
 import React from "react";
 
 // Image
-import imgBanner from "../../public/assets/images/banner/banner.png";
+import imgBanner from "/assets/images/banner/banner.png";
 
 const Banner: React.FC = () => {
   return (
-    <section className="mx-12 md:mx-102 lg:mx-30 flex flex-col lg:flex-row">
+    <section className="mx-12 justify-center md:mx-102 lg:mx-30 flex flex-col lg:flex-row">
       <img
         className="lg:max-w-550"
         src={imgBanner}

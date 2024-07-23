@@ -38,7 +38,7 @@ const InputField: React.FC<InputFieldProps> = ({
   const inputStyles = `${inputBaseStyle} ${inputVariantStyles[variant]}`;
 
   return (
-    <>
+    <div className="">
       <label htmlFor={id} className={labelStyles}>
         {label}
       </label>
@@ -50,8 +50,8 @@ const InputField: React.FC<InputFieldProps> = ({
         value={value}
         onChange={onChange}
       />
-      {errorMessage && <p className="mb-20 text-red-500 ">{errorMessage}</p>}
-    </>
+      {errorMessage && <p className="mb-10 text-red-500 ">{errorMessage}</p>}
+    </div>
   );
 };
 

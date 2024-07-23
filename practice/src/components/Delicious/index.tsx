@@ -46,7 +46,7 @@ const Delicious = ({ title, id, collection }: RecipeList) => {
         {title}
       </h3>
       <ul
-        className="flex flex-wrap gap-24 md:flex-row md:grid md:grid-cols-3 md:gap-20"
+        className="flex flex-col gap-24 md:flex-row md:grid md:grid-cols-3 md:gap-20"
         id={id}
       >
         {filterRecipes(collection).map((item, index) => (
