@@ -70,16 +70,9 @@ const RecipeDetail: React.FC = () => {
       <footer className="bg-tertiary px-12 flex flex-col md:px-50 lg:px-42 lg:my-auto lg:mx-0">
         <div className="flex flex-col md:flex-row justify-between md:border-b md:hover:border-b-primary">
           <FooterDesc />
-          <div className="flex flex-col md:pr-12 lg:pr-80 md:flex-row md:justify-between md:items-start md:gap-50 md:mt-72 ">
-            <FooterContact />
-          </div>
+          <FooterContact />
         </div>
-        <div className="flex flex-col md:flex-row-reverse md:justify-between md:mt-27">
-          <FooterSocial />
-          <p className="font-sans flex text-xs text-secondary mb-24 md:mr-auto md:items-end">
-            © 2020 Tastebite - All rights reserved
-          </p>
-        </div>
+        <FooterSocial />
       </footer>
     </>
   );

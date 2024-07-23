@@ -1,7 +1,7 @@
 import React from "react";
 
 // Image
-import imgBanner from "../../public/assets/images/banner/banner.png";
+import imgBanner from "../../../public/assets/images/banner/banner.png";
 
 const Banner: React.FC = () => {
   return (
