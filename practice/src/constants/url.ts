@@ -1,5 +1,5 @@
 export const API = {
-  BASE_URL: 'ENDPOINT',
+  BASE_URL: process.env.ENDPOINT,
   API_USERS: "/Users",
   API_RECIPES: "/Recipes",
 }
