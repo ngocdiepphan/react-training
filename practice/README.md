@@ -29,12 +29,45 @@
 - Apply Storybook into practice.
 - Using React Hook
 
+## Requirements
+- Admin:
+  - Sign In
+  - Edit and delete user
+  - Create, edit and delete recipe
+  - Render data to the dashboard and app
+  - View list of recipes and user
+
+- App:
+  - Sign In and Sign Up
+  - View a list of recipes (home page)
+  - See detailed recipes
+
+## Authentication
+- Login
+  - Admin: join dashboard
+    - Email: "user1@example.com"
+    - Password: "password1"
+  - User: join homepage
+    - Email: "user2@example.com"
+    - Password: "password1"
+    - Create a new account
+
 ## Dependencies
 - React: ^18.2.0
 - React DOM: ^18.2.0
 - Node: v18.12.1
 - Vite: 5.3.1
-- tailwindcss: ^3.4.4
+- Tailwindcss: ^3.4.4
+
+## Issues
+- Not upload image file in Panel
+- The add form does not yet have all the attributes in the recipe
+- Tailwind CSS has many limitations
+
+## Devices
+- Mobile: 480px
+- Tablet: 768px
+- Desktop: 1024px
 
 ## Install repository
 Open Windows PowerShell or cmd or [Windows-Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?rtc=1&activetab=pivot%3Aoverviewtab&hl=en-gb&gl=GB)
