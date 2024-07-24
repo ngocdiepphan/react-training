@@ -8,18 +8,12 @@ const RatingStar: React.FC<Star> = ({ ratings }) => {
   const renderRating = (ratings: number) => {
     const stars = [];
     for (let i = 0; i < ratings; i++) {
-      stars.push(
-        <span className="bg-star w-14 h-14"></span>
-      );
+      stars.push(<span className="bg-star w-14 h-14"></span>);
     }
     return stars;
   };
 
-  return(
-    <li>
-       <div className="flex flex-row gap-5">{renderRating(ratings)}</div>
-    </li>
-  );
+  return <div className="flex flex-row gap-5">{renderRating(ratings)}</div>;
 };
 
 export default RatingStar;

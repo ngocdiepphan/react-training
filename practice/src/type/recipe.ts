@@ -17,7 +17,7 @@ export interface Recipe {
   serving: string;
   img: string;
   imgCreator: string;
-  comment: number;
+  comments: number;
 }
 
 export interface NutritionFact {
