@@ -21,7 +21,7 @@ const InputField: React.FC<InputFieldProps> = ({
   onChange,
   errorMessage,
 }) => {
-  const labelBaseStyle = "font-serif text-xl";
+  const labelBaseStyle = "font-serif text-2xl";
   const inputBaseStyle = "border p-14 w-full";
 
   const labelVariantStyles = {
@@ -38,7 +38,7 @@ const InputField: React.FC<InputFieldProps> = ({
   const inputStyles = `${inputBaseStyle} ${inputVariantStyles[variant]}`;
 
   return (
-    <div className="">
+    <div className="h-124">
       <label htmlFor={id} className={labelStyles}>
         {label}
       </label>
@@ -50,7 +50,7 @@ const InputField: React.FC<InputFieldProps> = ({
         value={value}
         onChange={onChange}
       />
-      {errorMessage && <p className="mb-10 text-red-500 ">{errorMessage}</p>}
+      {errorMessage && <p className="text-red-500 ">{errorMessage}</p>}
     </div>
   );
 };

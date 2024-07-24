@@ -26,3 +26,33 @@ export const CATEGORY = [
   { title: "Sweet Tooth", id: "sweet-recipes", collection: 3 },
 ];
 
+export const FORM_FIELDS = [
+  {
+    label: "Email",
+    type: "text",
+    id: "email",
+    name: "email",
+    variant: "primary",
+  },
+  {
+    label: "Username",
+    type: "text",
+    id: "username",
+    name: "username",
+    variant: "primary",
+  },
+  {
+    label: "Password",
+    type: "password",
+    id: "password",
+    name: "password",
+    variant: "primary",
+  },
+  {
+    label: "Confirm Password",
+    type: "password",
+    id: "confirmPassword",
+    name: "confirmPassword",
+    variant: "primary",
+  },
+];
