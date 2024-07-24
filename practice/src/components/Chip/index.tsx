@@ -1,11 +1,11 @@
 import React, { ReactNode } from "react";
 
-interface ChipProps {
+export interface ChipProps {
   label: string;
   icon?: ReactNode;
 }
 
-const Chip: React.FC<ChipProps> = ({ icon, label }) => {
+const Chip = ({ icon, label }: ChipProps) => {
   return (
     <div className="flex flex-row gap-8 items-center">
       {icon && <div className="flex flex-row items-center gap-8">{icon}</div>}
