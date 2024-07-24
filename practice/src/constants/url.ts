@@ -1,5 +1,5 @@
 export const API = {
-  BASE_URL: 'https://react-1ejz.onrender.com/',
+  BASE_URL: process.env.ENDPOINT,
   API_USERS: "/Users",
   API_RECIPES: "/Recipes",
 }
