@@ -26,7 +26,7 @@ export const CATEGORY = [
   { title: "Sweet Tooth", id: "sweet-recipes", collection: 3 },
 ];
 
-export const FORM_FIELDS = [
+export const FORM_SIGN_UP = [
   {
     label: "Email",
     type: "text",

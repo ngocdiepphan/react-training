@@ -15,7 +15,7 @@ import {
 import AuthenticationService from "services/auth";
 
 // Type
-import { FORM_FIELDS } from "constants/index";
+import { FORM_SIGN_UP } from "constants/index";
 
 const SignUpForm: React.FC = () => {
   const navigate = useNavigate();
@@ -121,7 +121,7 @@ const SignUpForm: React.FC = () => {
         id="form-sign-up"
         onSubmit={handleSignUp}
       >
-        {FORM_FIELDS.map((field) => (
+        {FORM_SIGN_UP.map((field) => (
           <InputField
             key={field.id}
             label={field.label}
