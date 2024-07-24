@@ -22,10 +22,10 @@ const Profiles: React.FC<ProfilesProps> = ({ profiles }) => {
             img={profile.img}
             reply={profile.reply}
             favorite={profile.favorite}
-            comment={profile.comment}
+            comments={profile.comments}
           />
           <p className="pl-64 text-sm md:text-base font-sans">
-            {profile.comment}
+            {profile.comments}
           </p>
           <div className="pl-64 flex flex-row gap-27">
             <Reply replyCount={profile.reply} />

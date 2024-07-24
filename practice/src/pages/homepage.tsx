@@ -16,8 +16,9 @@ import {
 // Service
 import RecipeService from "services/recipe";
 
-// Type
+// Types
 import { Recipe } from "type/recipe";
+import { CATEGORY } from "constants/index";
 
 const HomePage: React.FC = () => {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
@@ -34,11 +35,6 @@ const HomePage: React.FC = () => {
     fetchRecipe();
   }, []);
 
-  const items = [
-    { title: "Super Delicious", id: "delicious-recipes", collection: 4 },
-    { title: "Sweet Tooth", id: "sweet-recipes", collection: 3 },
-  ];
-
   return (
     <>
       <header>
@@ -47,7 +43,7 @@ const HomePage: React.FC = () => {
 
       <main>
         <Banner />
-        <DeliSection items={items} />
+        <DeliSection items={CATEGORY} />
         <CateSection />
         <FormSection />
         <CollectSection />

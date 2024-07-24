@@ -3,6 +3,9 @@ import React from "react";
 // Components
 import { Button, DrawerItem } from "components";
 
+// Type
+import { NAV_BAR_LIST } from "constants/index";
+
 export interface DrawerProps {
   onShowDrawer: boolean;
   onShowFormAdd: () => void;
@@ -16,20 +19,6 @@ const Drawer = ({
   onDrawerItemClick,
   selectedTable,
 }: DrawerProps) => {
-  const navList = [
-    {
-      title: "User",
-      type: "user",
-      icon: "user-item",
-      className: "bg-user-item",
-    },
-    {
-      title: "Recipes",
-      type: "recipe",
-      icon: "recipe-item",
-      className: "bg-recipe-item",
-    },
-  ];
 
   const handleItemClick = (itemType: string) => {
     return () => {
@@ -48,7 +37,7 @@ const Drawer = ({
           </Button>
         )}
         <ul className="navigation">
-          {navList.map((item, index) => (
+          {NAV_BAR_LIST.map((item, index) => (
             <DrawerItem
               key={index}
               title={item.title}

@@ -8,8 +8,9 @@ import {
   Button
 } from "components";
 
-// Type
+// Types
 import { Recipe } from "type/recipe";
+import { FORM_MODAL } from "constants/index";
 
 // Service
 import RecipeService from "services/recipe";
@@ -96,24 +97,6 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
     setShowForm(false);
   };
 
-  const formFields = [
-    { label: "Image", type: "text", id: "img", name: "img" },
-    { label: "Name", type: "text", id: "name", name: "name" },
-    { label: "Creator", type: "text", id: "creator", name: "creator" },
-    {
-      label: "Description",
-      type: "text",
-      id: "description",
-      name: "description",
-    },
-    {
-      label: "Creation Date",
-      type: "date",
-      id: "createdAt",
-      name: "createdAt",
-    },
-  ];
-
   return (
     <>
       {showForm && (
@@ -129,7 +112,7 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
             ></span>
           </div>
           <div className="flex flex-col p-30 pt-0 justify-between md:justify-around">
-            {formFields.map((field, index) => (
+            {FORM_MODAL.map((field, index) => (
               <div
                 className="flex flex-row items-center md:justify-around mb-20"
                 key={index}

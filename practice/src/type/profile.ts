@@ -5,5 +5,5 @@ export interface Profile {
   img: string;
   reply: number;
   favorite: number;
-  comment: string;
+  comments: string;
 }
