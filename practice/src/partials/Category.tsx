@@ -9,9 +9,7 @@ const CateSection: React.FC = () => {
       <h3 className="text-2xl mt-37 mb-35 font-serif md:text-4xl md:mt-60">
         Popular Categories
       </h3>
-      <ul className="">
         <Category />
-      </ul>
     </section>
   );
 };
