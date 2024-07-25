@@ -15,6 +15,11 @@ class RecipeService {
     this.apiHelper = new APIHelper();
   }
 
+  /**
+   * Fetch all recipes from the API.
+   *
+   * @returns A promise that resolves to an API response containing a list of recipes or an error message.
+   */
   fetchRecipes = async (): Promise<ApiResponse<Recipe[]>> => {
     try {
       const res = await fetch(`${API.BASE_URL}${API.API_RECIPES}`);
@@ -27,6 +32,12 @@ class RecipeService {
     }
   };
 
+  /**
+   * Get a specific recipe by its ID.
+   *
+   * @param recipeId - The ID of the recipe to fetch.
+   * @returns A promise that resolves to an API response containing the recipe data or an error message.
+   */
   getById = async (recipeId: string): Promise<ApiResponse<Recipe>> => {
     try {
       const res = await fetch(`${API.BASE_URL}${API.API_RECIPES}/${recipeId}`);
@@ -39,6 +50,12 @@ class RecipeService {
     }
   };
 
+  /**
+   * Update an existing recipe.
+   *
+   * @param updatedRecipe - The updated recipe data.
+   * @returns A promise that resolves to an API response containing the updated recipe data or an error message.
+   */
   updateRecipe = async (
     updatedRecipe: Recipe,
   ): Promise<ApiResponse<Recipe>> => {
@@ -62,6 +79,12 @@ class RecipeService {
     }
   };
 
+  /**
+   * Delete a recipe by its ID.
+   *
+   * @param recipeId - The ID of the recipe to delete.
+   * @returns A promise that resolves to an API response containing the deleted recipe data or an error message.
+   */
   deleteRecipe = async (recipeId: string): Promise<ApiResponse<Recipe>> => {
     try {
       const res = await fetch(`${API.BASE_URL}${API.API_RECIPES}/${recipeId}`, {
@@ -79,6 +102,12 @@ class RecipeService {
     }
   };
 
+  /**
+   * Add a new recipe.
+   *
+   * @param newRecipe - The new recipe data.
+   * @returns A promise that resolves to an API response containing the added recipe data or an error message.
+   */
   addRecipe = async (
     newRecipe: Recipe | RecipeRow,
   ): Promise<ApiResponse<Recipe | RecipeRow>> => {
