@@ -71,60 +71,44 @@ const PanelForm = <T,>({
           Save
         </Button>
       </div>
-
       <form className="flex flex-col sticky top-208 right-30 items-start overflow-auto t-0 mt-80 mr-30 ml-87">
-        {columns.map((column) => (
-          <div
-            key={String(column.key)}
-            className="text-center items-baseline grid grid-cols-[100px_1fr] mb-20 gap-10 justify-start"
-          >
-            <label className="mr-20 flex font-medium">{column.header}</label>
-            {column.key === "category" || column.key === "ratings" ? (
-              <select
-                className="max-w-212 border p-8 font-medium text-quaternary rounded outline-none hover:border-hoverPrimary"
-                name={column.key.toString()}
-                value={editedData[column.key] as string}
-                onChange={handleInputChange}
+        {columns.map(
+          (column) =>
+            column.key !== "ratings" && (
+              <div
+                key={String(column.key)}
+                className="text-center items-baseline grid grid-cols-[100px_1fr] mb-20 gap-10 justify-start"
               >
-                {(() => {
-                  switch (column.key) {
-                    case "category":
-                      return (
-                        <>
-                          <option value="">Please select</option>
-                          <option value="Pasta">Pasta</option>
-                          <option value="Pizza">Pizza</option>
-                          <option value="Vegan">Vegan</option>
-                          <option value="Desserts">Desserts</option>
-                          <option value="Smoothies">Smoothies</option>
-                          <option value="Breakfast">Breakfast</option>
-                        </>
-                      );
-                    case "ratings":
-                      return (
-                        <>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                        </>
-                      );
-                    default:
-                  }
-                })()}
-              </select>
-            ) : (
-              <input
-                type="text"
-                name={column.key.toString()}
-                className="max-w-212 border p-8 font-medium text-quaternary rounded outline-none hover:border-hoverPrimary"
-                value={editedData[column.key] as string}
-                onChange={handleInputChange}
-              />
-            )}
-          </div>
-        ))}
+                <label className="mr-20 flex font-medium">
+                  {column.header}
+                </label>
+                {column.key === "category" ? (
+                  <select
+                    className="max-w-212 border p-8 font-medium text-quaternary rounded outline-none hover:border-hoverPrimary"
+                    name={column.key.toString()}
+                    value={editedData[column.key] as string}
+                    onChange={handleInputChange}
+                  >
+                    <option value="">Please select</option>
+                    <option value="Pasta">Pasta</option>
+                    <option value="Pizza">Pizza</option>
+                    <option value="Vegan">Vegan</option>
+                    <option value="Desserts">Desserts</option>
+                    <option value="Smoothies">Smoothies</option>
+                    <option value="Breakfast">Breakfast</option>
+                  </select>
+                ) : (
+                  <input
+                    type="text"
+                    name={column.key.toString()}
+                    className="max-w-212 border p-8 font-medium text-quaternary rounded outline-none hover:border-hoverPrimary"
+                    value={editedData[column.key] as string}
+                    onChange={handleInputChange}
+                  />
+                )}
+              </div>
+            ),
+        )}
       </form>
     </>
   );

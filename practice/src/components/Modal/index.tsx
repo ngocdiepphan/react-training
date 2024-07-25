@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import {
   InputField,
   OptionCategory,
-  Rating,
   Button
 } from "components";
 
@@ -153,7 +152,6 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
 
 
             <OptionCategory onChange={handleCategoryChange} />
-            <Rating onChange={handleRatingChange} />
             <div className="flex justify-center">
               <Button
                 type="button"
