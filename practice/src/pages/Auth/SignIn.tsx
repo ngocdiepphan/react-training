@@ -84,7 +84,7 @@ const SignInForm: React.FC = () => {
         className="bg-primary p-8 rounded-lg shadow-md mt-8 mb-64 w-420 h-420 mx-4 px-30 pt-20"
         onSubmit={handleSignIn}
       >
-        <div className="mb-4">
+        <div className="mb-4 h-110">
           <InputField
             label="Email"
             type="text"
@@ -96,7 +96,7 @@ const SignInForm: React.FC = () => {
             errorMessage={errors.email || error}
           />
         </div>
-        <div className="mb-4">
+        <div className="mb-4 h-110">
           <InputField
             label="Password"
             type="password"

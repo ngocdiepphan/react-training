@@ -122,7 +122,8 @@ const SignUpForm: React.FC = () => {
         onSubmit={handleSignUp}
       >
         {FORM_SIGN_UP.map((field) => (
-          <InputField
+          <div className="h-124">
+            <InputField
             key={field.id}
             label={field.label}
             type={field.type}
@@ -133,6 +134,7 @@ const SignUpForm: React.FC = () => {
             onChange={handleChange}
             errorMessage={errors[field.name as keyof typeof errors]}
           />
+          </div>
         ))}
         <Button type="submit" variant="submit">
           Sign Up

@@ -138,7 +138,7 @@ const Dashboard: React.FC = () => {
         </div>
       </header>
 
-      <main className=" main-body flex lg:pl-0 lg:p-10 flex-row font-sans text-sm bg-dashboardPrimary">
+      <main className="main-body h-lvh flex lg:pl-0 lg:p-10 flex-row font-sans text-sm bg-dashboardPrimary">
         <div className="drawer">
           <Drawer
             onShowDrawer={showDrawer}
@@ -156,7 +156,7 @@ const Dashboard: React.FC = () => {
               showTitle={!!selectedTable}
             />
             <div
-              className="max-w-full overflow-x-auto overflow-y-auto max-h-650 bg-primary border border-borderPrimary"
+              className="bg-primary border border-borderPrimary"
               id="table-wrapper"
             >
               <div className="flex gap-4">

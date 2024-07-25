@@ -43,7 +43,7 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
     serving: "",
     img: "",
     imgCreator: "",
-    comment: 0,
+    comments: 0,
   });
 
   const handleInputChange = (
@@ -111,14 +111,17 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
               onClick={handleCloseForm}
             ></span>
           </div>
-          <div className="flex flex-col p-30 pt-0 justify-between md:justify-around">
+
+
+            <div className="p-30">
             {FORM_MODAL.map((field, index) => (
               <div
-                className="flex flex-row items-center md:justify-around mb-20"
+                className=""
                 key={index}
               >
                 {field.type === "date" ? (
-                  <InputField
+                  <div className="flex flex-row items-center mb-20 md:justify-around">
+                    <InputField
                     id={field.id}
                     label={field.label}
                     type={field.type}
@@ -128,7 +131,9 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
                     variant="secondary"
                     errorMessage=""
                   />
+                    </div>
                 ) : (
+                  <div className="flex flex-row items-center mb-20 md:justify-around">
                   <InputField
                     label={field.label}
                     type={field.type}
@@ -141,9 +146,12 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
                     onChange={handleInputChange}
                     errorMessage=""
                   />
+                  </div>
                 )}
               </div>
             ))}
+
+
             <OptionCategory onChange={handleCategoryChange} />
             <Rating onChange={handleRatingChange} />
             <div className="flex justify-center">
