@@ -1,8 +1,8 @@
 import React from "react";
 
 // Image
-import imgBanner from "/assets/images/banner/banner.png";
-import imgBannerTablet from "/assets/images/banner/banner-tablet.png";
+import imgBanner from "/images/banner/banner.png";
+import imgBannerTablet from "/images/banner/banner-tablet.png";
 
 const Banner: React.FC = () => {
   return (
