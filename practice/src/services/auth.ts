@@ -14,6 +14,12 @@ class AuthenticationService {
     this.apiHelper = new APIHelper();
   }
 
+  /**
+   * Sign up a new user
+   *
+   * @param formData - The user data to be submitted for registration
+   * @returns A promise that resolves to the API response containing the user data or an error message
+   */
   async signUpUser(formData: UserProps): Promise<ApiResponse<UserProps>> {
     try {
       const formDataWithRole = {
@@ -40,6 +46,13 @@ class AuthenticationService {
     }
   }
 
+  /**
+   * Sign in a user
+   *
+   * @param email - The email address of the user
+   * @param password - The password of the user
+   * @returns A promise that resolves to the API response containing the authenticated user data or an error message
+   */
   async signInUser(
     email: string,
     password: string,

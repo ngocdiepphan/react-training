@@ -8,6 +8,13 @@ export interface ApiResponse<T> {
 }
 
 class APIHelper {
+
+   /**
+   * Handle the response from a fetch request
+   *
+   * @param res - The response object from the fetch request
+   * @returns A promise that resolves to an API response containing the data or an error message
+   */
   async handleResponse<T>(res: Response): Promise<ApiResponse<T>> {
     try {
       if (res.ok) {
