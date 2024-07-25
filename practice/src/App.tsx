@@ -34,6 +34,7 @@ function App() {
           <Route path="/homepage" index element={<HomePage />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/recipe/:id" element={<RecipeDetail />} />
+          <Route path="*"  element={<HomePage />} />
         </Routes>
       )}
     </Router>
