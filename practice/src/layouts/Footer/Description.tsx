@@ -1,7 +1,7 @@
 import React from "react";
 
 // Image
-import logo from "/assets/images/logo/Logo.png";
+import logo from "/images/logo/Logo.png";
 
 const FooterDesc: React.FC = () => {
   return (
