@@ -9,12 +9,12 @@ import {
 // Pages
 import SignInForm from "pages/Auth/SignIn";
 import SignUpForm from "pages/Auth/SignUp";
-import HomePage from "pages/homepage";
+import HomePage from "pages/Homepage";
 import RecipeDetail from "pages/RecipeDetail";
-import Dashboard from "pages/dashboard";
+import Dashboard from "pages/Dashboard";
 
 const useAuth = () => {
-  const token = localStorage.getItem("authToken");
+  const token = localStorage.getItem("user");
   return { isAuthenticated: !!token };
 };
 
@@ -34,7 +34,6 @@ function App() {
           <Route path="/homepage" index element={<HomePage />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/recipe/:id" element={<RecipeDetail />} />
-          <Route path="*"  element={<HomePage />} />
         </Routes>
       )}
     </Router>
