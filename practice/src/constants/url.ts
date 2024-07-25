@@ -1,5 +1,5 @@
 export const API = {
-  BASE_URL: process.env.ENDPOINT,
+  BASE_URL: import.meta.env.VITE_ENDPOINT,
   API_USERS: "/Users",
   API_RECIPES: "/Recipes",
 }
