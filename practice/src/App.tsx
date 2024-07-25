@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -13,29 +13,38 @@ import HomePage from "pages/Homepage";
 import RecipeDetail from "pages/RecipeDetail";
 import Dashboard from "pages/Dashboard";
 
-const useAuth = () => {
-  const token = localStorage.getItem("user");
-  return { isAuthenticated: !!token };
+interface ProtectRoute {
+  element: JSX.Element;
+}
+
+const ProtectRoute = ({ element }: ProtectRoute) => {
+  const isAuth = !!localStorage.getItem("user");
+
+  if (!isAuth) return <Navigate to="/" />;
+
+  return element;
 };
 
 function App() {
-  const { isAuthenticated } = useAuth();
-
   return (
     <Router>
-      {!isAuthenticated ? (
-        <Routes>
-          <Route path="/" index element={<Navigate to="/sign-in" />} />
-          <Route path="/sign-in" element={<SignInForm />} />
-          <Route path="/sign-up" element={<SignUpForm />} />
-        </Routes>
-      ) : (
-        <Routes>
-          <Route path="/homepage" index element={<HomePage />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/recipe/:id" element={<RecipeDetail />} />
-        </Routes>
-      )}
+      <Routes>
+        <Route path="/" index element={<Navigate to="/sign-in" />} />
+        <Route path="/sign-in" element={<SignInForm />} />
+        <Route path="/sign-up" element={<SignUpForm />} />
+        <Route
+          path="/homepage"
+          element={<ProtectRoute element={<HomePage />} />}
+        />
+        <Route
+          path="/dashboard"
+          element={<ProtectRoute element={<Dashboard />} />}
+        />
+        <Route
+          path="/recipe/:id"
+          element={<ProtectRoute element={<RecipeDetail />} />}
+        />
+      </Routes>
     </Router>
   );
 }

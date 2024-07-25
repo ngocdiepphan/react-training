@@ -138,7 +138,7 @@ const Dashboard: React.FC = () => {
         </div>
       </header>
 
-      <main className=" main-body flex lg:pl-0 lg:p-10 flex-row font-sans text-sm bg-dashboardPrimary">
+      <main className="main-body flex lg:pl-0 lg:p-10 flex-row font-sans text-sm bg-dashboardPrimary">
         <div className="drawer">
           <Drawer
             onShowDrawer={showDrawer}
