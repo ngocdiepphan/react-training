@@ -111,6 +111,7 @@ module.exports = {
         'serving': 'url("/images/recipe-details/icon-edit.svg")',
         'print': 'url("/images/recipe-details/print.svg")',
         'star': 'url("/images/delicious/star.svg")',
+        'star-unrated': 'url("/images/delicious/star-unrated.svg")',
         'dropdown': 'url("/images/header/arrow-down.svg")',
         'facebook': 'url("/images/footer/facebook.svg")',
         'instagram': 'url("/images/footer/instagram.svg")',

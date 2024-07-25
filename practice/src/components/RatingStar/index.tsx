@@ -1,14 +1,22 @@
 import React from "react";
 
-export interface Star {
+export interface StarProp {
   ratings: number;
 }
 
-const RatingStar: React.FC<Star> = ({ ratings }) => {
+const RatingStar = ({ ratings }: StarProp) => {
   const renderRating = (ratings: number) => {
     const stars = [];
-    for (let i = 0; i < ratings; i++) {
-      stars.push(<span className="bg-star w-14 h-14"></span>);
+
+    for (let i = 1; i <= 5; i++) {
+      stars.push(
+        <span
+          key={i}
+          className={`w-14 h-14 ${
+            i <= ratings ? "bg-star" : "bg-star-unrated"
+          }`}
+        ></span>,
+      );
     }
     return stars;
   };
