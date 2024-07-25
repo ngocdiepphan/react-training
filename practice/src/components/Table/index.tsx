@@ -13,7 +13,7 @@ export interface Props<T> {
 
 const Table = <T,>({ columns, data, onRowClick }: Props<T>) => {
   return (
-    <div className="w-full overflow-y-auto max-h-650">
+    <div className="w-full overflow-y-auto">
       <table className="w-full text-xl font-semibold text-quaternary font-sans">
         <TableHeader columns={columns} />
         <tbody className="text-base font-normal" id="user-body">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 export interface ButtonProps {
   type: "submit" | "button" | "reset";
@@ -14,8 +14,7 @@ export interface ButtonProps {
     | "confirm";
   children: string | JSX.Element;
   onClick?: () => void;
-  icon?: string;
-  iconHover?: string;
+  icon?: ReactNode;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -26,7 +25,7 @@ const Button: React.FC<ButtonProps> = ({
   icon,
 }) => {
   const baseStyles =
-    "flex flex-row justify-center gap-8 font-sans items-center rounded-md cursor-pointer";
+    "flex flex-row justify-center font-sans items-center rounded-md cursor-pointer";
   const pill = "rounded-md";
   const variantStyles = {
     primary:
@@ -40,7 +39,7 @@ const Button: React.FC<ButtonProps> = ({
     post: "absolute right-37 bottom-76 w-208 h-37 border hover:bg-secondary ",
     submit:
       "mt-10 text-xl font-semibold font-serif bg-teal-500 text-white py-3 px-4 w-full rounded-md hover:bg-teal-600 h-40",
-    add: "text-base font-semibold hover:font-bold  bg-drawerPrimary w-160 h-30 hover:text-white hover:bg-hoverPrimary mx-20",
+    add: "text-base rounded-none font-medium border-none hover:font-bold bg-drawerPrimary w-160 h-30 text-white hover:bg-hoverPrimary mx-20 hover:bg-btnSecondary",
     confirm:
       "border-none outline-none py-20 text-hoverPrimary bg-buttonPrimary font-bold w-102 h-20 md:h-24  hover:text-white hover:bg-hoverPrimary",
   };
