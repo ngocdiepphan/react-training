@@ -29,33 +29,33 @@ const Navbar: React.FC = () => {
     <>
       <nav className="flex justify-between cursor-pointer">
         <h1>
-          <a href="#">
+          <Link to="#">
             <img src={logoImage} className="w-110 md:w-160" alt="Logo" />
-          </a>
+          </Link>
         </h1>
-        <ul className="hidden lg:flex font-sans text-sm flex-col items-center gap-48 lg:flex-row">
-          <li className="flex flex-row items-center gap-8">
-            <a href="index.html" className="hover:text-blue-500 mb-0">
+        <ul className="hidden lg:flex font-sans text-sm flex-col items-center gap-48 lg:flex-row ">
+          <li className="flex flex-row items-center gap-8 ">
+            <Link to="#" className="hover:text-blue-500 mb-0">
               Home Page
-            </a>
+            </Link>
             <span className="bg-dropdown w-9 h-5"></span>
           </li>
           <li className="flex flex-row items-center gap-8">
-            <a href="category.html" className="">
+            <Link to="#" className="hover:text-blue-500 mb-0">
               Recipe Page
-            </a>
+            </Link>
             <span className="bg-dropdown w-9 h-5"></span>
           </li>
           <li className="flex flex-row items-center gap-8">
-            <a href="#" className="hover:text-blue-500 mb-0 ">
+            <Link to="#" className="hover:text-blue-500 mb-0">
               Pages
-            </a>
+            </Link>
             <span className="bg-dropdown w-9 h-5"></span>
           </li>
           <li className="flex flex-row items-center gap-8">
-            <a href="#" className="hover:text-blue-500 mb-0 ">
+            <Link to="#" className="hover:text-blue-500 mb-0">
               Elements
-            </a>
+            </Link>
           </li>
           <li className="">
             <Link to="/sign-in" className="hover:text-blue-500 mb-0">
