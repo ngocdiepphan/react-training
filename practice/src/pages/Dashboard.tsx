@@ -24,7 +24,7 @@ const Dashboard: React.FC = () => {
   const [showPanel, setShowPanel] = useState(false);
   const [showDrawer, setShowDrawer] = useState(false);
   const [showFormAdd, setShowFormAdd] = useState(false);
-  const [selectedTable, setSelectedTable] = useState<string>("");
+  const [selectedTable, setSelectedTable] = useState<string>("user");
   const [users, setUsers] = useState<UserProps[]>([]);
   const [recipes, setRecipes] = useState<Recipe[]>([]);
 
@@ -125,9 +125,9 @@ const Dashboard: React.FC = () => {
   }, []);
 
   return (
-    <>
+    <div>
       <header className="sticky top-0">
-        <div className="navbar-user__wrapper flex flex-row text-quaternary font-semibold w-full h-48 bg-primary p-20">
+        <div className="navbar-user__wrapper flex flex-row text-quaternary font-semibold w-full h-48 bg-primary p-20 sticky top-0">
           <div className="navbar-user__item flex flex-row gap-20 items-center cursor-pointer">
             <span
               className="bg-menu w-24 h-24 lg:hidden"
@@ -138,7 +138,7 @@ const Dashboard: React.FC = () => {
         </div>
       </header>
 
-      <main className="main-body h-lvh flex lg:pl-0 lg:p-10 flex-row font-sans text-sm bg-dashboardPrimary">
+      <main className="main-body h-lvh flex flex-row font-sans text-sm bg-dashboardPrimary">
         <div className="drawer">
           <Drawer
             onShowDrawer={showDrawer}
@@ -149,14 +149,14 @@ const Dashboard: React.FC = () => {
           {showFormAdd && <Modal onAddRecipe={handleAddRecipe} />}
         </div>
 
-        <div className="content flex flex-row font-sans bg-dashboardPrimary w-full overflow-x-auto">
-          <div className="content__wrapper content-hinder lg:pl-10 w-full overflow-x-auto">
+        <div className="content flex flex-row font-sans overflow-hidden bg-dashboardPrimary w-full overflow-x-auto">
+          <div className="content__wrapper content-hinder p-10 w-full overflow-x-auto overflow-y-hidden">
             <Toolbar
               title={selectedTable === "user" ? "User" : "Recipe"}
               showTitle={!!selectedTable}
             />
             <div
-              className="bg-primary border border-borderPrimary"
+              className="bg-primary border border-borderPrimary overflow-y-auto h-lvh"
               id="table-wrapper"
             >
               <div className="flex gap-4">
@@ -190,7 +190,7 @@ const Dashboard: React.FC = () => {
           )}
         </div>
       </main>
-    </>
+    </div>
   );
 };
 

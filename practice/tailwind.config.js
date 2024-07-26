@@ -83,10 +83,12 @@ module.exports = {
         drawerSecondary: '#4a4e58',
         hoverPrimary: '#1ca1c1',
         buttonPrimary: '#f4f5f9',
+        btnSecondary: '#18a0c1',
         modalPrimary: '#d7ebf5',
         dashboardPrimary: '#ebedf0',
         bannerPrimary: '#e4f1ff',
-        subscriptPrimary: '#ffd8ca'
+        subscriptPrimary: '#ffd8ca',
+
       },
       fontSize: {
         'xs-small': '10px',
@@ -109,6 +111,7 @@ module.exports = {
         'serving': 'url("/images/recipe-details/icon-edit.svg")',
         'print': 'url("/images/recipe-details/print.svg")',
         'star': 'url("/images/delicious/star.svg")',
+        'star-unrated': 'url("/images/delicious/star-unrated.svg")',
         'dropdown': 'url("/images/header/arrow-down.svg")',
         'facebook': 'url("/images/footer/facebook.svg")',
         'instagram': 'url("/images/footer/instagram.svg")',
