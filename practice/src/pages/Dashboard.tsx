@@ -125,7 +125,7 @@ const Dashboard: React.FC = () => {
   }, []);
 
   return (
-    <>
+    <div>
       <header className="sticky top-0">
         <div className="navbar-user__wrapper flex flex-row text-quaternary font-semibold w-full h-48 bg-primary p-20 sticky top-0">
           <div className="navbar-user__item flex flex-row gap-20 items-center cursor-pointer">
@@ -149,7 +149,7 @@ const Dashboard: React.FC = () => {
           {showFormAdd && <Modal onAddRecipe={handleAddRecipe} />}
         </div>
 
-        <div className="content flex flex-row font-sans bg-dashboardPrimary w-full overflow-x-auto">
+        <div className="content flex flex-row font-sans overflow-hidden bg-dashboardPrimary w-full overflow-x-auto">
           <div className="content__wrapper content-hinder p-10 w-full overflow-x-auto">
             <Toolbar
               title={selectedTable === "user" ? "User" : "Recipe"}
@@ -190,7 +190,7 @@ const Dashboard: React.FC = () => {
           )}
         </div>
       </main>
-    </>
+    </div>
   );
 };
 
