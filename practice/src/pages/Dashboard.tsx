@@ -150,13 +150,13 @@ const Dashboard: React.FC = () => {
         </div>
 
         <div className="content flex flex-row font-sans overflow-hidden bg-dashboardPrimary w-full overflow-x-auto">
-          <div className="content__wrapper content-hinder p-10 w-full overflow-x-auto">
+          <div className="content__wrapper content-hinder p-10 w-full overflow-x-auto overflow-y-hidden">
             <Toolbar
               title={selectedTable === "user" ? "User" : "Recipe"}
               showTitle={!!selectedTable}
             />
             <div
-              className="bg-primary border border-borderPrimary"
+              className="bg-primary border border-borderPrimary overflow-y-auto h-lvh"
               id="table-wrapper"
             >
               <div className="flex gap-4">

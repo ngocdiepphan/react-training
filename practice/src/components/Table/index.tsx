@@ -11,7 +11,8 @@ export interface Props<T> {
   onRowClick: (rowData: T) => void;
 }
 
-const Table = <T,>({ columns, data, onRowClick }: Props<T>) => {
+const Table =  <T extends { id: string }>({ columns, data, onRowClick }: Props<T>) => {
+
   return (
     <div className="w-full overflow-y-auto">
       <table className="w-full text-xl font-semibold text-quaternary font-sans">
@@ -19,7 +20,7 @@ const Table = <T,>({ columns, data, onRowClick }: Props<T>) => {
         <tbody className="text-base font-normal" id="user-body">
           {data.map((item, index) => (
             <TableRow
-              key={index.toString()}
+              key={item.id}
               item={item}
               columns={columns}
               onRowClick={onRowClick}

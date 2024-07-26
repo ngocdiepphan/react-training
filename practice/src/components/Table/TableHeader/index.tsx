@@ -9,7 +9,7 @@ interface Props<T> {
 
 const TableHeader = <T,>({ columns }: Props<T>) => {
   return (
-    <thead className="w-full items-start border-b-2 border-b-borderPrimary hover:border-b-hoverPrimary relative overflow-hidden">
+    <thead className="w-full items-start border-b-2 border-b-borderPrimary hover:border-b-hoverPrimary overflow-hidden sticky top-0 z-auto">
       <tr>
         {columns.map((column) => (
           <th key={column.key as string} className="text-left p-20">
