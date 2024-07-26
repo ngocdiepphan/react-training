@@ -18,7 +18,7 @@ const Table =  <T extends { id: string }>({ columns, data, onRowClick }: Props<T
       <table className="w-full text-xl font-semibold text-quaternary font-sans">
         <TableHeader columns={columns} />
         <tbody className="text-base font-normal" id="user-body">
-          {data.map((item, index) => (
+          {data.map((item) => (
             <TableRow
               key={item.id}
               item={item}
