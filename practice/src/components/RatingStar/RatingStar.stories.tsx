@@ -18,8 +18,3 @@ export const Default = Template.bind({});
 Default.args = {
   ratings: 3,
 };
-
-export const HighRating = Template.bind({});
-HighRating.args = {
-  ratings: 5,
-};

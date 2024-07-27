@@ -26,9 +26,3 @@ UserPanel.args = {
   columns: userColumns,
   data: user,
 };
-
-export const RecipePanel = Template.bind({});
-RecipePanel.args = {
-  columns: recipeColumns,
-  data: recipe,
-};

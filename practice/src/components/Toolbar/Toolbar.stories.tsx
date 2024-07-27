@@ -21,9 +21,3 @@ Default.args = {
   showTitle: true,
 };
 
-export const WithoutTitle = Template.bind({});
-WithoutTitle.args = {
-  title: 'Recipe',
-  showTitle: false,
-};
-
