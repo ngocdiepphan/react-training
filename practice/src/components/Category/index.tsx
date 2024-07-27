@@ -1,24 +1,25 @@
 import React from "react";
 
-// Mock
-import { categories } from "mocks/category";
+export interface CateProps {
+  id: string;
+  category: string;
+  img: string;
+}
 
-const Category: React.FC = () => {
+const Category: React.FC<CateProps> = ({ id, category, img }) => {
   return (
-    <div className="grid justify-center grid-cols-3 lg:flex lg:flex-row gap-24">
-      {categories.map((item) => (
-        <article key={item.id} className="flex flex-col gap-24 items-center">
-          <img
-            className="w-full rounded-full"
-            src={item.img}
-            alt={`Picture of ${item.category}`}
-          />
-          <p className="flex justify-center mt-8 font-sans text-xs md:text-xl">
-            {item.category}
-          </p>
-        </article>
-      ))}
-    </div>
+    <article key={id} className="flex flex-col gap-24 items-center">
+      <div className="w-full max-w-xs">
+        <img
+          className="w-full rounded-full"
+          src={img}
+          alt={`Picture of ${category}`}
+        />
+      </div>
+      <p className="flex justify-center mt-2 font-sans text-xs md:text-xl">
+        {category}
+      </p>
+    </article>
   );
 };
 

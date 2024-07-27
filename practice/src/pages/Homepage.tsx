@@ -36,7 +36,7 @@ const HomePage: React.FC = () => {
   }, []);
 
   return (
-    <>
+    <div className="home">
       <header>
         <Header />
       </header>
@@ -57,7 +57,7 @@ const HomePage: React.FC = () => {
         </div>
         <FooterSocial />
       </footer>
-    </>
+    </div>
   );
 };
 

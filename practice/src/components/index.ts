@@ -1,7 +1,7 @@
 export { default as Button } from "components/Buttons";
 export { default as Category } from "components/Category";
 export { default as Collection } from "components/Collection";
-export { default as Creator } from "components/Creator";
+export { default as Creator } from "components/Chip/Creator";
 export { default as Chip } from "components/Chip";
 export { default as Delicious } from "components/Delicious";
 export { default as Drawer } from "components/Drawer";
