@@ -41,7 +41,7 @@ Default.args = {
     {
       id: "3",
       name: "Tiramisu",
-      img: "https://github.com/user-attachments/assets/c8cd8def-589a-4881-a190-787f7222c402",
+      img: "https://github.com/user-attachments/assets/cddd6f06-5a51-43b7-8b99-f393328ad6ed",
       ratings: 5,
     },
   ],

@@ -44,10 +44,10 @@ const RecipeDetail: React.FC = () => {
   if (!recipeData) {
     return <p>Recipe not found!</p>;
   }
-
+  
   return (
     <>
-      <header className="mx-12 md:mx-102 lg:mx-30">
+      <header>
         <Header />
       </header>
 

@@ -4,15 +4,17 @@ import { StoryFn, Meta } from "@storybook/react";
 // Component
 import { Category } from "components";
 
-// Mock
-import { recipe } from "mocks/recipe";
-
+import { CateProps } from "components/Category";
 export default {
   title: "Components/Category",
   component: Category,
 } as Meta;
 
-const Template: StoryFn = (args) => <Category {...args} />;
+const Template: StoryFn<CateProps> = (args) => <Category {...args} />;
 
 export const Default = Template.bind({});
-Default.args = { recipe };
+Default.args = {
+  id: "2",
+  category: "Pasta",
+  img: "https://github.com/user-attachments/assets/053aa27d-7592-4e13-aa31-cdf3cd33c3de",
+};
