@@ -12,6 +12,7 @@ import {
   recipeColumns,
   RecipeRow
 } from "type/table";
+
 import { UserProps } from "type/user";
 
 // Mocks

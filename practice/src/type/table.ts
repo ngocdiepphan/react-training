@@ -13,6 +13,7 @@ export interface UserRow {
   email: string;
   username: string;
   img: string;
+  id: string;
 }
 
 export interface RecipeRow {
@@ -23,6 +24,7 @@ export interface RecipeRow {
   createdAt: Date | string;
   ratings: number;
   description: string;
+  id: string;
 }
 
 export const recipeColumns: TableColumn<RecipeRow>[] = [

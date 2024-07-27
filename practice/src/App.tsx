@@ -14,6 +14,8 @@ import HomePage from "pages/Homepage";
 import RecipeDetail from "pages/RecipeDetail";
 import Dashboard from "pages/Dashboard";
 
+import 'App.css'
+
 interface ProtectRoute {
   element: JSX.Element;
 }
