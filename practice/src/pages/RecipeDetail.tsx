@@ -5,7 +5,6 @@ import { useParams } from "react-router-dom";
 import {
   Header,
   PrepTime,
-  Feedback,
   FooterSocial,
   FooterContact,
   FooterDesc,
@@ -44,7 +43,7 @@ const RecipeDetail: React.FC = () => {
   if (!recipeData) {
     return <p>Recipe not found!</p>;
   }
-  
+
   return (
     <>
       <header>
@@ -56,7 +55,6 @@ const RecipeDetail: React.FC = () => {
         <Content recipeData={recipeData} />
         <PrepTime recipe={recipeData} />
         <Recipes recipeData={recipeData} />
-        <Feedback />
         <Interact />
         <Comment />
       </main>

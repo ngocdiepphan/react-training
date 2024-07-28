@@ -8,7 +8,7 @@ import { InputField } from "components";
 import { InputFieldProps } from "components/TextField";
 
 export default {
-  title: "Components/Inputs/InputField",
+  title: "Components/InputField",
   component: InputField,
 } as Meta;
 
