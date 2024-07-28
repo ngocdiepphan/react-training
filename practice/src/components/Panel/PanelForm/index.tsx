@@ -28,7 +28,9 @@ const PanelForm = <T,>({
   }, [data]);
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >,
   ) => {
     const { name, value } = e.target;
     setEditedData((prevData) => ({
@@ -97,6 +99,13 @@ const PanelForm = <T,>({
                     <option value="Smoothies">Smoothies</option>
                     <option value="Breakfast">Breakfast</option>
                   </select>
+                ) : column.key === "description" ? (
+                  <textarea
+                    name={column.key.toString()}
+                    className="w-212 h-87 border p-8 font-medium text-quaternary rounded outline-none hover:border-hoverPrimary"
+                    value={editedData[column.key] as string}
+                    onChange={handleInputChange}
+                  />
                 ) : (
                   <input
                     type="text"

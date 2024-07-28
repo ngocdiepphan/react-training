@@ -42,7 +42,9 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
   });
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >,
   ) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -64,14 +66,6 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
     setFormData((prevData) => ({
       ...prevData,
       category: category,
-    }));
-  };
-
-  const handleRatingChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const rating = parseInt(e.target.value);
-    setFormData((prevData) => ({
-      ...prevData,
-      ratings: rating,
     }));
   };
 
@@ -109,7 +103,7 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
 
           <div className="p-30">
             {FORM_MODAL.map((field, index) => (
-              <div className="" key={index}>
+              <div key={index}>
                 {field.type === "date" ? (
                   <div className="flex flex-row items-center mb-20 md:justify-around">
                     <InputField
@@ -121,6 +115,22 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
                       onChange={handleDateChange}
                       variant="secondary"
                       errorMessage=""
+                    />
+                  </div>
+                ) : field.name === "description" ? (
+                  <div className="flex flex-row items-center mb-20 md:justify-around">
+                    <label
+                      htmlFor={field.id}
+                      className="text-xs md:text-xl w-80"
+                    >
+                      {field.label}
+                    </label>
+                    <textarea
+                      id={field.id}
+                      name={field.name}
+                      value={formData[field.name]}
+                      onChange={handleInputChange}
+                      className="w-216 h-50 p-8 font-medium text-quaternary outline-none hover:border-hoverPrimary"
                     />
                   </div>
                 ) : (

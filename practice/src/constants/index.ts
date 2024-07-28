@@ -2,8 +2,8 @@ export const FORM_MODAL = [
   { label: "Image", type: "text", id: "img", name: "img" },
   { label: "Name", type: "text", id: "name", name: "name" },
   { label: "Creator", type: "text", id: "creator", name: "creator" },
-  { label: "Description", type: "text", id: "description", name: "description"},
   { label: "Creation Date", type: "date", id: "createdAt", name: "createdAt"},
+  { label: "Description", type: "text", id: "description", name: "description"},
 ];
 
 export const NAV_BAR_LIST = [
