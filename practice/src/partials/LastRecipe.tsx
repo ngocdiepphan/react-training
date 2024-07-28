@@ -1,17 +1,16 @@
-import React from 'react';
+import React from "react";
 
 // Components
-import {LastRecipe, Button} from 'components';
+import { LastRecipe, Button } from "components";
 
 // Type
-import { Recipe } from 'type/recipe';
-
+import { Recipe } from "type/recipe";
 
 interface LastSectionProps {
   recipes: Recipe[];
 }
 
-const LastSection: React.FC<LastSectionProps> = ({ recipes }) => {
+const LastSection = ({ recipes }: LastSectionProps) => {
   return (
     <section className="mx-12 md:mx-102 lg:mx-30">
       <h4 className="text-2xl mt-37 mb-35 font-serif md:text-4xl md:mt-60">

@@ -14,7 +14,7 @@ export interface DeliciousProps {
   recipes: Recipe[];
 }
 
-const Delicious: React.FC<DeliciousProps> = ({ title, id, collection, recipes }) => {
+const Delicious = ({ title, id, collection, recipes }: DeliciousProps) => {
   const filterRecipes = (collectionId: number) => {
     return recipes
       .filter(

@@ -3,7 +3,7 @@ import { Meta, StoryFn } from "@storybook/react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 // Component
-import {ItemMenu} from "components";
+import { ItemMenu } from "components";
 
 export default {
   title: "Components/ItemMenu",

@@ -4,7 +4,7 @@ export interface ReplyProps {
   replyCount: number;
 }
 
-const Reply: React.FC<ReplyProps> = ({ replyCount }) => {
+const Reply = ({ replyCount }: ReplyProps) => {
   return (
     <div className="flex flex-row gap-5">
       <span className="bg-reply w-14 h-24 bg-no-repeat"></span>

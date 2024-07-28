@@ -3,7 +3,7 @@ import React from "react";
 // Components
 import { PrepTimeItem, Serving } from "components";
 
-export interface Props {
+export interface PrepTimeProps {
   recipe: {
     prepTime: {
       min: string;
@@ -13,7 +13,7 @@ export interface Props {
   };
 }
 
-const PrepTime: React.FC<Props> = ({ recipe }) => {
+const PrepTime = ({ recipe }: PrepTimeProps) => {
   const { prepTime, serving } = recipe;
 
   return (

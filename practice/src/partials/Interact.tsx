@@ -1,9 +1,14 @@
 import React from 'react';
 
 // Components
-import { InfoUser, Reply, Favorite, Button } from 'components';
+import {
+  InfoUser,
+  Reply,
+  Favorite,
+  Button
+} from 'components';
 
-// Data
+// Mock
 import { profileData } from 'mocks/profile';
 
 const Interact: React.FC = () => {

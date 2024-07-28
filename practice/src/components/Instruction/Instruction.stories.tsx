@@ -4,15 +4,15 @@ import { StoryFn, Meta } from "@storybook/react";
 // Component
 import { Instruction } from "components";
 
-// Type
-import { Props } from "components/Instruction";
+// TypeA
+import { InstructionProps } from "components/Instruction";
 
 export default {
   title: "Components/Instruction",
   component: Instruction,
 } as Meta;
 
-const Template: StoryFn<Props> = (args) => <Instruction {...args} />;
+const Template: StoryFn<InstructionProps> = (args) => <Instruction {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

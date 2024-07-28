@@ -1,5 +1,9 @@
 import React from "react";
-import Category from "components/Category";
+
+// Component
+import { Category } from "components";
+
+// Mock
 import { categories } from "mocks/category";
 
 const CateSection: React.FC = () => {

@@ -11,7 +11,7 @@ interface DeliSectionProps {
   recipes: Recipe[];
 }
 
-const DeliSection: React.FC<DeliSectionProps> = ({ items, recipes }) => {
+const DeliSection = ({ items, recipes }: DeliSectionProps) => {
   return (
     <section className="mx-12 md:mx-102 lg:mx-30">
       {items.map((item) => (

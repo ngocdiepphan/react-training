@@ -6,7 +6,7 @@ export interface CateProps {
   img: string;
 }
 
-const Category: React.FC<CateProps> = ({ id, category, img }) => {
+const Category = ({ id, category, img }: CateProps) => {
   return (
     <article key={id} className="flex flex-col gap-24 items-center">
       <div className="w-full max-w-xs">

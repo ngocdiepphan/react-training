@@ -4,18 +4,31 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 // Component
 import { Delicious } from "components";
-import {DeliciousProps} from "components/Delicious";
+
+// Type
+import { DeliciousProps } from "components/Delicious";
 
 const Recipes = [
   {
     name: "Triple Decker Cranberry Cake",
     img: "https://github.com/user-attachments/assets/69f7b7b9-8c3d-4e80-ba7c-0a6607826e23",
-    description: "A delicious pasta dish with creamy spinach and cheese sauce, perfect for a quick and comforting meal.",
+    description:
+      "A delicious pasta dish with creamy spinach and cheese sauce, perfect for a quick and comforting meal.",
     ingredient: ["2 tablespoons olive oil", "3 cloves garlic, minced"],
-    instruction: [{ step: 1, description: "Cook pasta according to package instructions until al dente. Drain and set aside." }],
-    nutrition: [{ label: "Calories", value: "550" }, { label: "Total Fat", value: "32g" }],
+    instruction: [
+      {
+        step: 1,
+        description:
+          "Cook pasta according to package instructions until al dente. Drain and set aside.",
+      },
+    ],
+    nutrition: [
+      { label: "Calories", value: "550" },
+      { label: "Total Fat", value: "32g" },
+    ],
     creator: "Jack Ryan",
-    imgCreator: "https://github.com/user-attachments/assets/bbdb4e2c-e163-4c94-b129-a8999920d7a8",
+    imgCreator:
+      "https://github.com/user-attachments/assets/bbdb4e2c-e163-4c94-b129-a8999920d7a8",
     collection_id: 4,
     category: "Main Course",
     ratings: 5,
@@ -25,7 +38,6 @@ const Recipes = [
     serving: "Serves 4",
     comments: 30,
   },
-  // Add more mock recipes as needed
 ];
 
 export default {

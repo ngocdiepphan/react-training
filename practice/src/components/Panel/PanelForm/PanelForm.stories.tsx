@@ -6,11 +6,10 @@ import { PanelForm } from "components";
 
 // Types
 import { PanelFormProps } from "components/Panel/PanelForm";
-import { recipeColumns, userColumns } from "type/table";
+import { userColumns } from "type/table";
 
-// Mocks
+// Mock
 import { user } from "mocks/user";
-import { recipe } from "mocks/recipe";
 
 export default {
   title: "Components/PanelForm",

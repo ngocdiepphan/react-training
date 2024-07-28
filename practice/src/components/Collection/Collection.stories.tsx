@@ -6,6 +6,7 @@ import { Collection } from "components";
 
 // Type
 import { CollectionProps } from "components/Collection";
+
 export default {
   title: "Components/Collection",
   component: Collection,

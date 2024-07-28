@@ -17,7 +17,13 @@ import RecipeService from "services/recipe";
 import { Recipe } from "type/recipe";
 
 // Partials
-import { Statistics, Content, Recipes, Interact, Comment } from "partials";
+import {
+  Statistics,
+  Content,
+  Recipes,
+  Interact,
+  Comment
+} from "partials";
 
 const RecipeDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();

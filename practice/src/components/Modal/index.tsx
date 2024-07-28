@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 
 // Components
-import {
-  InputField,
-  OptionCategory,
-  Button
-} from "components";
+import { InputField, OptionCategory, Button } from "components";
 
 // Types
 import { Recipe } from "type/recipe";
@@ -111,45 +107,40 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
             ></span>
           </div>
 
-
-            <div className="p-30">
+          <div className="p-30">
             {FORM_MODAL.map((field, index) => (
-              <div
-                className=""
-                key={index}
-              >
+              <div className="" key={index}>
                 {field.type === "date" ? (
                   <div className="flex flex-row items-center mb-20 md:justify-around">
                     <InputField
-                    id={field.id}
-                    label={field.label}
-                    type={field.type}
-                    name={field.name}
-                    value={formData.createdAt as string}
-                    onChange={handleDateChange}
-                    variant="secondary"
-                    errorMessage=""
-                  />
-                    </div>
+                      id={field.id}
+                      label={field.label}
+                      type={field.type}
+                      name={field.name}
+                      value={formData.createdAt as string}
+                      onChange={handleDateChange}
+                      variant="secondary"
+                      errorMessage=""
+                    />
+                  </div>
                 ) : (
                   <div className="flex flex-row items-center mb-20 md:justify-around">
-                  <InputField
-                    label={field.label}
-                    type={field.type}
-                    id={field.id}
-                    name={field.name}
-                    variant="secondary"
-                    value={
-                      formData[field.name as keyof Recipe]?.toString() || ""
-                    }
-                    onChange={handleInputChange}
-                    errorMessage=""
-                  />
+                    <InputField
+                      label={field.label}
+                      type={field.type}
+                      id={field.id}
+                      name={field.name}
+                      variant="secondary"
+                      value={
+                        formData[field.name as keyof Recipe]?.toString() || ""
+                      }
+                      onChange={handleInputChange}
+                      errorMessage=""
+                    />
                   </div>
                 )}
               </div>
             ))}
-
 
             <OptionCategory onChange={handleCategoryChange} />
             <div className="flex justify-center">

@@ -1,6 +1,9 @@
 import React from "react";
 
-const Serving: React.FC<{ serving: string }> = ({ serving }) => {
+interface ServingProp {
+  serving: string;
+}
+const Serving = ({ serving }: ServingProp) => {
   return (
     <li className="flex flex-col px-20 border-r border-gray-400 hover:border-r-5 hover:border-primary">
       <p className="uppercase text-xs text-secondary">SERVINGS</p>

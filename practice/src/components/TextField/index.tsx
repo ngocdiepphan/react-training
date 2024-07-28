@@ -11,7 +11,7 @@ export interface InputFieldProps {
   errorMessage: string;
 }
 
-const InputField: React.FC<InputFieldProps> = ({
+const InputField = ({
   label,
   type,
   id,
@@ -20,7 +20,7 @@ const InputField: React.FC<InputFieldProps> = ({
   value,
   onChange,
   errorMessage,
-}) => {
+}: InputFieldProps) => {
   const labelBaseStyle = "font-serif text-2xl";
   const inputBaseStyle = "border p-14 w-full";
 
@@ -31,7 +31,8 @@ const InputField: React.FC<InputFieldProps> = ({
 
   const inputVariantStyles = {
     primary: "border-gray-300 rounded-md px-10 py-8 w-full mb-10",
-    secondary: "text-xs md:text-base border-buttonPrimary w-180 p-8 outline-none h-30 md:h-35 cursor-pointer md:w-220 hover:border-hoverPrimary"
+    secondary:
+      "text-xs md:text-base border-buttonPrimary w-180 p-8 outline-none h-30 md:h-35 cursor-pointer md:w-220 hover:border-hoverPrimary",
   };
 
   const labelStyles = `${labelBaseStyle} ${labelVariantStyles[variant]}`;

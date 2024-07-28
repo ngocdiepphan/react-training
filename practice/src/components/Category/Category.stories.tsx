@@ -4,7 +4,9 @@ import { StoryFn, Meta } from "@storybook/react";
 // Component
 import { Category } from "components";
 
+// Type
 import { CateProps } from "components/Category";
+
 export default {
   title: "Components/Category",
   component: Category,

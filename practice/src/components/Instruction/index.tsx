@@ -3,13 +3,13 @@ import React from "react";
 // Component
 import { InstructionItem } from "components";
 
-export interface Props {
+export interface InstructionProps {
   recipe: {
     instruction: { step: number; description: string }[];
   };
 }
 
-const Instruction: React.FC<Props> = ({ recipe }) => {
+const Instruction = ({ recipe }: InstructionProps) => {
   return (
     <article className="">
       <h5 className="font-serif text-xl my-27 md:text-3xl">Instructions</h5>

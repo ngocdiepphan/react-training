@@ -6,12 +6,7 @@ import { fn } from "@storybook/test";
 import { Table } from "components";
 
 // Types
-import {
-  TableColumn,
-  userColumns,
-  recipeColumns,
-  RecipeRow
-} from "type/table";
+import { TableColumn, userColumns, recipeColumns, RecipeRow } from "type/table";
 
 import { UserProps } from "type/user";
 

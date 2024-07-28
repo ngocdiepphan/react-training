@@ -5,14 +5,14 @@ import { StoryFn, Meta } from "@storybook/react";
 import { PrepTime } from "components";
 
 // Type
-import { Props } from "components/PrepTime";
+import { PrepTimeProps } from "components/PrepTime";
 
 export default {
   title: "Components/PrepTime",
   component: PrepTime,
 } as Meta;
 
-const Template: StoryFn<Props> = (args) => <PrepTime {...args} />;
+const Template: StoryFn<PrepTimeProps> = (args) => <PrepTime {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

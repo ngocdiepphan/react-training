@@ -5,6 +5,7 @@ import { Collection } from "components";
 
 // Mock
 import { collections } from "mocks/collection";
+
 const CollectSection: React.FC = () => {
   return (
     <section className="mx-12 md:mx-102 lg:mx-30">

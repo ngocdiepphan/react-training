@@ -3,11 +3,11 @@ import React from "react";
 // Component
 import { IngredientItem } from "components";
 
-export interface Props {
+export interface IngredientProps {
   data: string[];
 }
 
-const Ingredient: React.FC<Props> = ({ data }) => {
+const Ingredient = ({ data }: IngredientProps) => {
   return (
     <article className="ingredient">
       <h5 className="font-serif text-xl my-27 md:text-3xl">Ingredients</h5>
