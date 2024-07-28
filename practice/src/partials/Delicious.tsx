@@ -3,19 +3,24 @@ import React from "react";
 // Component
 import { Delicious } from "components";
 
+// Type
+import { Recipe } from "type/recipe";
+
 interface DeliSectionProps {
   items: { title: string; id: string; collection: number }[];
+  recipes: Recipe[];
 }
 
-const DeliSection: React.FC<DeliSectionProps> = ({ items }) => {
+const DeliSection: React.FC<DeliSectionProps> = ({ items, recipes }) => {
   return (
     <section className="mx-12 md:mx-102 lg:mx-30">
-      {items.map((item, index) => (
+      {items.map((item) => (
         <Delicious
-          key={index}
+          key={item.id}
           title={item.title}
           id={item.id}
           collection={item.collection}
+          recipes={recipes}
         />
       ))}
     </section>

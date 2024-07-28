@@ -43,7 +43,7 @@ const HomePage: React.FC = () => {
 
       <main>
         <Banner />
-        <DeliSection items={CATEGORY} />
+        <DeliSection items={CATEGORY} recipes={recipes} />
         <CateSection />
         <FormSection />
         <CollectSection />
