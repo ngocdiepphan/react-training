@@ -3,8 +3,6 @@ import React from "react";
 // Component
 import { Button } from "components";
 
-// Mock
-import { collections } from "mocks/collection";
 export interface CollectionProps {
   id: string;
   name: string;

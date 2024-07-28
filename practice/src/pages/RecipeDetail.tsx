@@ -5,7 +5,6 @@ import { useParams } from "react-router-dom";
 import {
   Header,
   PrepTime,
-  Feedback,
   FooterSocial,
   FooterContact,
   FooterDesc,
@@ -18,7 +17,13 @@ import RecipeService from "services/recipe";
 import { Recipe } from "type/recipe";
 
 // Partials
-import { Statistics, Content, Recipes, Interact, Comment } from "partials";
+import {
+  Statistics,
+  Content,
+  Recipes,
+  Interact,
+  Comment
+} from "partials";
 
 const RecipeDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -44,7 +49,7 @@ const RecipeDetail: React.FC = () => {
   if (!recipeData) {
     return <p>Recipe not found!</p>;
   }
-  
+
   return (
     <>
       <header>
@@ -56,7 +61,6 @@ const RecipeDetail: React.FC = () => {
         <Content recipeData={recipeData} />
         <PrepTime recipe={recipeData} />
         <Recipes recipeData={recipeData} />
-        <Feedback />
         <Interact />
         <Comment />
       </main>

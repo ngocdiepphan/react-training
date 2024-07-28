@@ -1,6 +1,6 @@
 import React from "react";
 
-// Image
+// Images
 import imgBanner from "/images/banner/banner.png";
 import imgBannerTablet from "/images/banner/banner-tablet.png";
 
@@ -8,7 +8,11 @@ const Banner: React.FC = () => {
   return (
     <section className="mx-12 justify-center md:mx-102 lg:mx-30 flex flex-col lg:flex-row">
       <picture className="flex">
-        <source media="(min-width: 1024px)" className="md:flex-shrink md:basis-0" srcSet={imgBannerTablet} />
+        <source
+          media="(min-width: 1024px)"
+          className="md:flex-shrink md:basis-0"
+          srcSet={imgBannerTablet}
+        />
         <img
           className="flex-grow flex-shrink basis-0"
           src={imgBanner}

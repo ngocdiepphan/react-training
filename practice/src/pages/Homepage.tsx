@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from "react";
 
 // Components
-import { Header, FooterSocial, FooterContact, FooterDesc } from "components";
+import {
+  Header,
+  FooterSocial,
+  FooterContact,
+  FooterDesc
+} from "components";
 
 // Partials
 import {
@@ -23,6 +28,7 @@ import { CATEGORY } from "constants/index";
 const HomePage: React.FC = () => {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const recipeService = new RecipeService();
+
   useEffect(() => {
     const fetchRecipe = async () => {
       const recipeResponse = await recipeService.fetchRecipes();
@@ -43,7 +49,7 @@ const HomePage: React.FC = () => {
 
       <main>
         <Banner />
-        <DeliSection items={CATEGORY} />
+        <DeliSection items={CATEGORY} recipes={recipes} />
         <CateSection />
         <FormSection />
         <CollectSection />

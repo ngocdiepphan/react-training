@@ -17,13 +17,7 @@ export interface ButtonProps {
   icon?: ReactNode;
 }
 
-const Button: React.FC<ButtonProps> = ({
-  type,
-  variant,
-  onClick,
-  children,
-  icon,
-}) => {
+const Button = ({ type, variant, onClick, children, icon }: ButtonProps) => {
   const baseStyles =
     "flex flex-row justify-center font-sans items-center rounded-md cursor-pointer";
   const pill = "rounded-md";

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 // Component
@@ -7,30 +7,14 @@ import { RatingStar } from "components";
 // Type
 import { Recipe } from "type/recipe";
 
-// Service
-import RecipeService from "services/recipe";
-
-export interface RecipeList {
+export interface DeliciousProps {
   title: string;
   id: string;
   collection: number;
+  recipes: Recipe[];
 }
 
-const Delicious = ({ title, id, collection }: RecipeList) => {
-  const [recipes, setRecipes] = useState<Recipe[]>([]);
-  const recipeService = new RecipeService();
-
-  useEffect(() => {
-    const fetchRecipes = async () => {
-      const recipeResponse = await recipeService.fetchRecipes();
-      if (!recipeResponse.error) {
-        setRecipes((recipeResponse.data as Recipe[]) || []);
-      }
-    };
-
-    fetchRecipes();
-  }, []);
-
+const Delicious = ({ title, id, collection, recipes }: DeliciousProps) => {
   const filterRecipes = (collectionId: number) => {
     return recipes
       .filter(
@@ -49,17 +33,17 @@ const Delicious = ({ title, id, collection }: RecipeList) => {
         className="flex flex-col gap-24 md:flex-row md:grid md:grid-cols-3 md:gap-20"
         id={id}
       >
-        {filterRecipes(collection).map((item, index) => (
-          <li key={index} className="">
-            <Link to={`/recipe/${item.id}`}>
+        {filterRecipes(collection).map((recipe) => (
+          <li key={recipe.id} className="">
+            <Link to={`/recipe/${recipe.id}`}>
               <article className="flex flex-col gap-13">
                 <img
                   className="card__image w-full"
-                  src={item.img}
-                  alt={`Picture of ${item.name}`}
+                  src={recipe.img}
+                  alt={`Picture of ${recipe.name}`}
                 />
-                <RatingStar ratings={item.ratings} />
-                <p className="font-sans text-lg md:text-xl">{item.name}</p>
+                <RatingStar ratings={recipe.ratings} />
+                <p className="font-sans text-lg md:text-xl">{recipe.name}</p>
               </article>
             </Link>
           </li>

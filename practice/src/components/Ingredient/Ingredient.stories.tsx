@@ -5,14 +5,14 @@ import { Meta, StoryFn } from "@storybook/react";
 import { Ingredient } from "components";
 
 // Type
-import { Props } from "components/Ingredient";
+import { IngredientProps } from "components/Ingredient";
 
 export default {
   title: "Components/Ingredient",
   component: Ingredient,
 } as Meta;
 
-const Template: StoryFn<Props> = (args) => <Ingredient {...args} />;
+const Template: StoryFn<IngredientProps> = (args) => <Ingredient {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

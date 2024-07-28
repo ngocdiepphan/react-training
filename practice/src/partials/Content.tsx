@@ -1,11 +1,10 @@
 import React from "react";
 
 // Components
-import { RatingStar } from "components";
+import { RatingStar, Chip } from "components";
 
 // Type
 import { Recipe } from "type/recipe";
-import Chip from "components/Chip";
 
 interface ContentProps {
   recipeData: Recipe;
@@ -27,12 +26,12 @@ const Content = ({ recipeData }: ContentProps) => {
     {
       key: "date",
       label: recipeData.createdAt,
-      icon: <span className="bg-create-date w-16 h-16 bg-no-repeat"/>,
+      icon: <span className="bg-create-date w-16 h-16 bg-no-repeat" />,
     },
     {
       key: "comment",
       label: recipeData.comments,
-      icon: <span className="bg-reply w-14 h-14 bg-no-repeat"/>,
+      icon: <span className="bg-reply w-14 h-14 bg-no-repeat" />,
     },
   ];
 

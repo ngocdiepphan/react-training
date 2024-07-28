@@ -3,7 +3,7 @@ import React from "react";
 // Type
 import { Profile } from "type/profile";
 
-const InfoUser: React.FC<Profile> = ({ name, status, img }) => {
+const InfoUser = ({ name, status, img }: Profile) => {
   return (
     <article className="mt-35">
       <div className="flex flex-row gap-20 pt-35 border-t border-t-gray-300 hover:border-t-primary">

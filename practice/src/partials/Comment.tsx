@@ -1,4 +1,6 @@
 import React from "react";
+
+// Component
 import { Button } from "components";
 
 const Comment: React.FC = () => {
