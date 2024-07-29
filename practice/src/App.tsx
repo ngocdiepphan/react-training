@@ -37,11 +37,11 @@ function App() {
         <Route path="/sign-in" element={<SignInForm />} />
         <Route path="/sign-up" element={<SignUpForm />} />
         <Route
-          path="/homepage"
+          path="/homepage/*"
           element={<ProtectRoute element={<HomePage />} />}
         />
         <Route
-          path="/dashboard"
+          path="/dashboard/*"
           element={<ProtectRoute element={<Dashboard />} />}
         />
         <Route
