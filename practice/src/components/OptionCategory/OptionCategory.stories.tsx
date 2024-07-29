@@ -5,7 +5,7 @@ import { Meta, StoryFn } from "@storybook/react";
 import { OptionCategory } from "components";
 
 // Type
-import { OptionCategoryProps } from "components/Options/Category";
+import { OptionCategoryProps } from "components/OptionCategory";
 
 export default {
   title: "Components/OptionCategory",
