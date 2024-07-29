@@ -13,7 +13,7 @@ import RecipeService from "services/recipe";
 // Helper
 import { formatDate } from "helpers";
 
-interface ModalProps {
+export interface ModalProps {
   onAddRecipe: (newRecipe: Recipe) => void;
 }
 
@@ -69,6 +69,7 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
     }));
   };
 
+  // Handler for saving the new recipe
   const handleSaveFormAdd = async () => {
     const recipeService = new RecipeService();
     const response = await recipeService.addRecipe(formData);
@@ -82,6 +83,7 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
     }
   };
 
+  // Handler for closing the form
   const handleCloseForm = () => {
     setShowForm(false);
   };

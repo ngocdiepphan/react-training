@@ -8,6 +8,7 @@ const RatingStar = ({ ratings }: StarProp) => {
   const renderRating = (ratings: number) => {
     const stars = [];
 
+    // Loop to create 5 stars
     for (let i = 1; i <= 5; i++) {
       stars.push(
         <span

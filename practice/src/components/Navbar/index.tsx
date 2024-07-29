@@ -14,10 +14,12 @@ const Navbar: React.FC = () => {
   const [menuVisible, setMenuVisible] = useState(false);
   const [user, setUser] = useState<UserProps | null>(null);
 
+  // Toggles the visibility of the menu
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
   };
 
+  // Retrieve the stored user data from localStorage
   useEffect(() => {
     const storedUser = localStorage.getItem("user");
     if (storedUser) {

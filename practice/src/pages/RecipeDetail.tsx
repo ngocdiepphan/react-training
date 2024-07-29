@@ -17,19 +17,15 @@ import RecipeService from "services/recipe";
 import { Recipe } from "type/recipe";
 
 // Partials
-import {
-  Statistics,
-  Content,
-  Recipes,
-  Interact,
-  Comment
-} from "partials";
+import { Statistics, Content, Recipes, Interact, Comment } from "partials";
 
 const RecipeDetail: React.FC = () => {
+  // Get recipe ID from URL
   const { id } = useParams<{ id: string }>();
   const [recipeData, setRecipeData] = useState<Recipe | null>(null);
   const recipeService = new RecipeService();
 
+  // UseEffect hook to fetch recipe data when component is rendered or ID changes
   useEffect(() => {
     const fetchRecipe = async () => {
       if (id) {
@@ -47,7 +43,7 @@ const RecipeDetail: React.FC = () => {
   }, [id]);
 
   if (!recipeData) {
-  return null;
+    return null;
   }
 
   return (

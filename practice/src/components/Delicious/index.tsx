@@ -14,6 +14,7 @@ export interface DeliciousProps {
   recipes: Recipe[];
 }
 
+// Function to filter recipes based on the collection ID and a rating of 5
 const Delicious = ({ title, id, collection, recipes }: DeliciousProps) => {
   const filterRecipes = (collectionId: number) => {
     return recipes
@@ -21,7 +22,7 @@ const Delicious = ({ title, id, collection, recipes }: DeliciousProps) => {
         (recipe) =>
           recipe.collection_id === collectionId && recipe.ratings === 5,
       )
-      .slice(0, 3);
+      .slice(0, 3); // Limit the number of recipes to the first 3
   };
 
   return (

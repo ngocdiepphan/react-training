@@ -19,6 +19,8 @@ const Drawer = ({
   onDrawerItemClick,
   selectedTable,
 }: DrawerProps) => {
+  
+  // Function to handle clicks on drawer items
   const handleItemClick = (itemType: string) => {
     return () => {
       onDrawerItemClick(itemType);

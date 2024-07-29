@@ -29,6 +29,7 @@ const HomePage: React.FC = () => {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const recipeService = new RecipeService();
 
+  // Fetch recipes on component mount
   useEffect(() => {
     const fetchRecipe = async () => {
       const recipeResponse = await recipeService.fetchRecipes();

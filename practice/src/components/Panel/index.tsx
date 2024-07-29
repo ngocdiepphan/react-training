@@ -34,6 +34,7 @@ const Panel = ({
   const userService = new UserService();
   const recipeService = new RecipeService();
 
+  // Handle updating a user
   const handleUpdateUser = async (editedUser: UserProps) => {
     const response = await userService.updateUser(editedUser);
     if (response.error) {
@@ -46,6 +47,7 @@ const Panel = ({
   };
   useEffect(() => {}, [selectedUser]);
 
+  // Handle updating a recipe
   const handleUpdateRecipe = async (editRecipe: Recipe) => {
     const response = await recipeService.updateRecipe(editRecipe);
     if (response.error) {
@@ -59,6 +61,7 @@ const Panel = ({
 
   useEffect(() => {}, [selectedRecipe]);
 
+  // Handle deleting a user
   const handleDeleteUser = async (deletedUser: UserProps) => {
     const response = await userService.deleteUser(deletedUser.id);
     if (response.error) {
@@ -69,6 +72,7 @@ const Panel = ({
     onClosePanel?.();
   };
 
+  // Handle deleting a recipe
   const handleDeleteRecipe = async (deletedRecipe: Recipe) => {
     const response = await recipeService.deleteRecipe(deletedRecipe.id);
     if (response.error) {

@@ -18,9 +18,13 @@ export interface ButtonProps {
 }
 
 const Button = ({ type, variant, onClick, children, icon }: ButtonProps) => {
+
+  // Base styles applied to all button variants
   const baseStyles =
     "flex flex-row justify-center font-sans items-center rounded-md cursor-pointer";
   const pill = "rounded-md";
+
+   // Specific styles for each button variant
   const variantStyles = {
     primary:
       "flex justify-center w-124 h-32 mt-30 mx-auto mb-96 hover:bg-blue-200 border border-gray-700",
@@ -38,6 +42,7 @@ const Button = ({ type, variant, onClick, children, icon }: ButtonProps) => {
       "border-none outline-none py-20 text-hoverPrimary bg-buttonPrimary font-bold w-102 h-20 md:h-24  hover:text-white hover:bg-hoverPrimary",
   };
 
+  // Combine base styles, variant-specific styles, and common rounded style
   const styles = `${baseStyles} ${variantStyles[variant]} ${pill}`;
   const iconClass = icon ? `bg-${icon}` : `bg-${variant}`;
 

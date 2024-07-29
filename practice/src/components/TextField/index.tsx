@@ -21,20 +21,24 @@ const InputField = ({
   onChange,
   errorMessage,
 }: InputFieldProps) => {
+  // Base styles for label and input
   const labelBaseStyle = "font-serif text-2xl";
   const inputBaseStyle = "border p-14 w-full";
 
+  // Variant styles for the label based on the provided variant prop
   const labelVariantStyles = {
     primary: "block mb-10 text-start",
     secondary: "text-xs md:text-xl w-80",
   };
 
+  // Variant styles for the input based on the provided variant prop
   const inputVariantStyles = {
     primary: "border-gray-300 rounded-md px-10 py-8 w-full mb-10",
     secondary:
       "text-xs md:text-base border-buttonPrimary w-180 p-8 outline-none h-30 md:h-35 cursor-pointer md:w-220 hover:border-hoverPrimary",
   };
 
+  // Combine base and variant styles for label and input
   const labelStyles = `${labelBaseStyle} ${labelVariantStyles[variant]}`;
   const inputStyles = `${inputBaseStyle} ${inputVariantStyles[variant]}`;
 
