@@ -9,7 +9,7 @@ export interface IngredientProps {
 
 const Ingredient = ({ data }: IngredientProps) => {
   return (
-    <article className="ingredient">
+    <article>
       <h5 className="font-serif text-xl my-27 md:text-3xl">Ingredients</h5>
       <ul>
         {data.map((item, index) => (

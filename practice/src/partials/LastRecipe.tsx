@@ -16,7 +16,7 @@ const LastSection = ({ recipes }: LastSectionProps) => {
       <h4 className="text-2xl mt-37 mb-35 font-serif md:text-4xl md:mt-60">
         Latest Recipes
       </h4>
-      <ul id="latest-recipes">
+      <ul>
         <LastRecipe recipes={recipes} />
       </ul>
       <Button type="button" variant="primary">

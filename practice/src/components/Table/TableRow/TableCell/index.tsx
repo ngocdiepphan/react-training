@@ -20,7 +20,7 @@ const TableCell = <T,>({ column, item }: Props<T>) => {
           />
         </div>
       ) : (
-        <p className="table__title">{item as string}</p>
+        <p className="">{item as string}</p>
       )}
     </td>
   );

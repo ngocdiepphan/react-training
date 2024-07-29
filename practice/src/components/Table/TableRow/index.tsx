@@ -15,7 +15,7 @@ interface Props<T> {
 const TableRow = <T,>({ item, columns, onRowClick }: Props<T>) => {
   return (
     <tr
-      className="table__row h-50 border hover:bg-blue-50 cursor-pointer hover:border-hoverPrimary"
+      className="h-50 border hover:bg-blue-50 cursor-pointer hover:border-hoverPrimary"
       onClick={() => onRowClick(item)}
     >
       {columns.map((column) => (

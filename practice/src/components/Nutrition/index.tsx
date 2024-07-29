@@ -12,7 +12,7 @@ export interface Props {
 
 const NutritionFacts = ({ data }: Props) => {
   return (
-    <article className="nutrition bg-tertiary p-24 mt-50">
+    <article className="bg-tertiary p-24 mt-50">
       <h5 className="font-serif text-xl md:text-3xl">Nutrition Facts</h5>
       <ul>
         {data.map((item, index) => (

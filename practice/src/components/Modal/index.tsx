@@ -91,10 +91,7 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
   return (
     <>
       {showForm && (
-        <form
-          className="show-form text-xs w-300 md:w-450 h-auto md:text-sm font-serif w-370 absolute bg-modalPrimary top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-          id="form-add-recipes"
-        >
+        <form className="show-form text-xs w-300 md:w-450 h-auto md:text-sm font-serif w-370 absolute bg-modalPrimary top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="flex items-center justify-between px-10 py-20 transition-all">
             <p className="text-xl font-semibold text-gray-800">Add recipes</p>
             <span
