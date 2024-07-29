@@ -21,6 +21,7 @@ interface ProtectRoute {
 }
 
 const ProtectRoute = ({ element }: ProtectRoute) => {
+  // Check if the user is authenticated
   const isAuth = !!localStorage.getItem("user");
 
   if (!isAuth) return <Navigate to="/" />;

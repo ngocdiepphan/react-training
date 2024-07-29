@@ -4,6 +4,9 @@ import { Meta, StoryFn } from "@storybook/react";
 // Component
 import { OptionCategory } from "components";
 
+// Type
+import { OptionCategoryProps } from "components/OptionCategory";
+
 export default {
   title: "Components/OptionCategory",
   component: OptionCategory,
@@ -12,9 +15,9 @@ export default {
   },
 } as Meta;
 
-const Template: StoryFn<{
-  onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
-}> = (args) => <OptionCategory {...args} />;
+const Template: StoryFn<OptionCategoryProps> = (args) => (
+  <OptionCategory {...args} />
+);
 
 export const Default = Template.bind({});
 Default.args = {

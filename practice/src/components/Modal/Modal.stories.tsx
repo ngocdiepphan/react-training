@@ -4,8 +4,9 @@ import { Meta, StoryFn } from "@storybook/react";
 // Component
 import { Modal } from "components";
 
-// Type
+// Types
 import { Recipe } from "type/recipe";
+import { ModalProps } from "components/Modal";
 
 export default {
   title: "Components/Modal",
@@ -15,9 +16,7 @@ export default {
   },
 } as Meta;
 
-const Template: StoryFn<{ onAddRecipe: (newRecipe: Recipe) => void }> = (
-  args,
-) => <Modal {...args} />;
+const Template: StoryFn<ModalProps> = (args) => <Modal {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

@@ -21,6 +21,7 @@ const SignUpForm: React.FC = () => {
   const navigate = useNavigate();
   const AuthService = new AuthenticationService();
 
+  // State to hold form data and validation errors
   const [formData, setFormData] = useState({
     email: "",
     username: "",
@@ -38,14 +39,17 @@ const SignUpForm: React.FC = () => {
     confirmPassword: "",
   });
 
+  // Handle input change and validation
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
+    // Update form data
     setFormData({
       ...formData,
       [name]: value,
     });
 
+    // Validate fields based on input name
     switch (name) {
       case "email":
         setErrors({
@@ -77,6 +81,7 @@ const SignUpForm: React.FC = () => {
     }
   };
 
+  // Handle form submission
   const handleSignUp = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -124,16 +129,16 @@ const SignUpForm: React.FC = () => {
         {FORM_SIGN_UP.map((field) => (
           <div className="h-124">
             <InputField
-            key={field.id}
-            label={field.label}
-            type={field.type}
-            id={field.id}
-            name={field.name}
-            variant="primary"
-            value={formData[field.name as keyof typeof formData]}
-            onChange={handleChange}
-            errorMessage={errors[field.name as keyof typeof errors]}
-          />
+              key={field.id}
+              label={field.label}
+              type={field.type}
+              id={field.id}
+              name={field.name}
+              variant="primary"
+              value={formData[field.name as keyof typeof formData]}
+              onChange={handleChange}
+              errorMessage={errors[field.name as keyof typeof errors]}
+            />
           </div>
         ))}
         <Button type="submit" variant="submit">

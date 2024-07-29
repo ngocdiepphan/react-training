@@ -37,6 +37,12 @@ class APIHelper {
     }
   }
 
+  /**
+   * Handle errors and return API responses
+   *
+   * @param err - Error object
+   * @returns An API response containing the error message
+   */
   async handleError<T>(err: Error): Promise<ApiResponse<T>> {
     return {
       data: null,
@@ -44,6 +50,15 @@ class APIHelper {
     };
   }
 
+  /**
+   * Make an API request
+   *
+   * @param url - The API URL
+   * @param method - HTTP method (GET, POST, PUT, DELETE)
+   * @param data - Data to send (if any)
+   * @param contentType - Content type (default is application/json)
+   * @returns A promise that resolves to an API response
+   */
   async request(
     url: string,
     method: string,

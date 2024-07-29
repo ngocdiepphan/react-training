@@ -1,6 +1,6 @@
 import React from "react";
 
-interface ServingProp {
+export interface ServingProp {
   serving: string;
 }
 const Serving = ({ serving }: ServingProp) => {

@@ -28,6 +28,7 @@ const Dashboard: React.FC = () => {
   const [users, setUsers] = useState<UserProps[]>([]);
   const [recipes, setRecipes] = useState<Recipe[]>([]);
 
+  // Handlers for UI interactions
   const handleClosePanel = () => {
     setShowPanel(false);
     setSelectedUser(null);
@@ -100,6 +101,7 @@ const Dashboard: React.FC = () => {
   const userService = new UserService();
   const recipeService = new RecipeService();
 
+  // Fetch user data on component mount
   useEffect(() => {
     const fetchUser = async () => {
       const userResponse = await userService.fetchUsers();

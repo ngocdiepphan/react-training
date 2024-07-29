@@ -22,7 +22,7 @@ export { default as Modal } from "components/Modal";
 export { default as Navbar } from "components/Navbar";
 export { default as NutritionFacts } from "components/Nutrition";
 export { default as NutritionItem } from "components/Nutrition/NutritionItem";
-export { default as OptionCategory } from "components/Options/Category";
+export { default as OptionCategory } from "components/OptionCategory";
 export { default as Panel } from "components/Panel";
 export { default as PanelForm } from "components/Panel/PanelForm";
 export { default as PrepTime } from "components/PrepTime";

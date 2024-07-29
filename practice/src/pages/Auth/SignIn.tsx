@@ -14,6 +14,7 @@ const SignInForm: React.FC = () => {
   const navigate = useNavigate();
   const AuthService = new AuthenticationService();
 
+  // State to hold form data and validation errors
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -24,6 +25,7 @@ const SignInForm: React.FC = () => {
   });
   const [error, setError] = useState("");
 
+  // Handle input change
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData({
@@ -31,6 +33,7 @@ const SignInForm: React.FC = () => {
       [name]: value,
     });
 
+    // Validate input based on the field name
     switch (name) {
       case "email":
         setErrors({
@@ -49,6 +52,7 @@ const SignInForm: React.FC = () => {
     }
   };
 
+  // Handle form submission
   const handleSignIn = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -74,7 +78,9 @@ const SignInForm: React.FC = () => {
       return;
     }
 
+    // Store user information in localStorage
     localStorage.setItem("user", JSON.stringify(data));
+    // Navigate based on the user's role
     navigate(data.role === "admin" ? "/dashboard" : "/homepage");
   };
 

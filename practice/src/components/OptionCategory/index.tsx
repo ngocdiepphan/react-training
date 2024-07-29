@@ -1,6 +1,6 @@
 import React from "react";
 
-interface OptionCategoryProps {
+export interface OptionCategoryProps {
   onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
 }
 const OptionCategory = ({ onChange }: OptionCategoryProps) => {
