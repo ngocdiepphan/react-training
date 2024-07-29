@@ -25,7 +25,7 @@ class AuthenticationService {
       const formDataWithRole = {
         ...formData,
         role: "user",
-        img: "",
+        img: formData.img || "",
       };
 
       const response = await this.apiHelper.request(

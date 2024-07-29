@@ -17,6 +17,9 @@ import AuthenticationService from "services/auth";
 // Type
 import { FORM_SIGN_UP } from "constants/index";
 
+// Image
+import defaultAvatar from "/images/header/new-user.png"
+
 const SignUpForm: React.FC = () => {
   const navigate = useNavigate();
   const AuthService = new AuthenticationService();
@@ -109,7 +112,12 @@ const SignUpForm: React.FC = () => {
       !errors.password &&
       !errors.confirmPassword
     ) {
-      const response = await AuthService.signUpUser(formData);
+       // Set default avatar image
+       const formWithAvatar = {
+        ...formData,
+        img: formData.img || defaultAvatar,
+      };
+       const response = await AuthService.signUpUser(formWithAvatar);
       if (response.error) {
         alert(`Sign up failed: ${response.error.message}`);
       } else {
