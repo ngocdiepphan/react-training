@@ -6,7 +6,7 @@ import logo from "/images/logo/Logo.png";
 const FooterDesc: React.FC = () => {
   return (
     <section className="flex flex-col">
-      <a href="javascript:void(0)">
+      <a href="#">
         <img
           className="w-110 md:w-160 mt-40 md:mt-72"
           src={logo}
