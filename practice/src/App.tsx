@@ -1,5 +1,4 @@
 import React, { ReactNode } from "react";
-
 import {
   BrowserRouter as Router,
   Route,
@@ -14,17 +13,23 @@ import HomePage from "pages/Homepage";
 import RecipeDetail from "pages/RecipeDetail";
 import Dashboard from "pages/Dashboard";
 
-import 'App.css'
+import 'App.css';
 
-interface ProtectRoute {
+interface ProtectRouteProps {
   element: JSX.Element;
+  role: "admin" | "user";
 }
 
-const ProtectRoute = ({ element }: ProtectRoute) => {
-  // Check if the user is authenticated
-  const isAuth = !!localStorage.getItem("user");
+const ProtectRoute = ({ element, role }: ProtectRouteProps) => {
+  const user = JSON.parse(localStorage.getItem("user") || "{}");
 
-  if (!isAuth) return <Navigate to="/" />;
+  if (!user || !user.role) {
+    return <Navigate to="/" />;
+  }
+
+  if (user.role !== role) {
+    return <Navigate to={user.role === "admin" ? "/dashboard" : "/homepage"} />;
+  }
 
   return element;
 };
@@ -38,15 +43,15 @@ function App() {
         <Route path="/sign-up" element={<SignUpForm />} />
         <Route
           path="/homepage/*"
-          element={<ProtectRoute element={<HomePage />} />}
+          element={<ProtectRoute element={<HomePage />} role="user" />}
         />
         <Route
           path="/dashboard/*"
-          element={<ProtectRoute element={<Dashboard />} />}
+          element={<ProtectRoute element={<Dashboard />} role="admin" />}
         />
         <Route
           path="/recipe/:id/*"
-          element={<ProtectRoute element={<RecipeDetail />} />}
+          element={<ProtectRoute element={<RecipeDetail />} role="user" />}
         />
       </Routes>
     </Router>
