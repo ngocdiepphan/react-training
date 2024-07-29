@@ -44,7 +44,7 @@ function App() {
           element={<ProtectRoute element={<Dashboard />} />}
         />
         <Route
-          path="/recipe/:id"
+          path="/recipe/:id/*"
           element={<ProtectRoute element={<RecipeDetail />} />}
         />
       </Routes>

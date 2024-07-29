@@ -29,31 +29,31 @@ const Navbar: React.FC = () => {
     <>
       <nav className="flex justify-between cursor-pointer">
         <h1>
-          <Link to="#">
+          <Link to="/">
             <img src={logoImage} className="w-110 md:w-160" alt="Logo" />
           </Link>
         </h1>
         <ul className="hidden lg:flex font-sans text-sm flex-col items-center gap-48 lg:flex-row ">
           <li className="flex flex-row items-center gap-8 ">
-            <Link to="#" className="hover:text-blue-500 mb-0">
+            <Link to="/homepage" className="hover:text-blue-500 mb-0">
               Home Page
             </Link>
             <span className="bg-dropdown w-9 h-5"></span>
           </li>
           <li className="flex flex-row items-center gap-8">
-            <Link to="#" className="hover:text-blue-500 mb-0">
+            <Link to="/recipe" className="hover:text-blue-500 mb-0">
               Recipe Page
             </Link>
             <span className="bg-dropdown w-9 h-5"></span>
           </li>
           <li className="flex flex-row items-center gap-8">
-            <Link to="#" className="hover:text-blue-500 mb-0">
+            <Link to="/pages" className="hover:text-blue-500 mb-0">
               Pages
             </Link>
             <span className="bg-dropdown w-9 h-5"></span>
           </li>
           <li className="flex flex-row items-center gap-8">
-            <Link to="#" className="hover:text-blue-500 mb-0">
+            <Link to="/elements" className="hover:text-blue-500 mb-0">
               Elements
             </Link>
           </li>
