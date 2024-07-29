@@ -40,7 +40,7 @@ const Content = ({ recipeData }: ContentProps) => {
       <h4 className="font-serif text-2xl md:text-6xl">{recipeData.name}</h4>
       <div className="flex flex-row mt-24 pb-37 border-b border-b-borderPrimary hover:border-b-primary md:flex-row md:pb-37 gap-24 items-center">
         {CHIP_DATA.map((item) => (
-          <Chip icon={item.icon} label={String(item.label)} />
+          <Chip  key={item.key} icon={item.icon} label={String(item.label)} />
         ))}
         <RatingStar ratings={recipeData.ratings} />
       </div>
