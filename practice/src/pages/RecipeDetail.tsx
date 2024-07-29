@@ -47,11 +47,11 @@ const RecipeDetail: React.FC = () => {
   }, [id]);
 
   if (!recipeData) {
-    return <p>Recipe not found!</p>;
+  return null;
   }
 
   return (
-    <>
+    <div className="home">
       <header>
         <Header />
       </header>
@@ -72,7 +72,7 @@ const RecipeDetail: React.FC = () => {
         </div>
         <FooterSocial />
       </footer>
-    </>
+    </div>
   );
 };
 
