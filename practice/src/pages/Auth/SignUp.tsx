@@ -134,10 +134,9 @@ const SignUpForm: React.FC = () => {
         id="form-sign-up"
         onSubmit={handleSignUp}
       >
-        {FORM_SIGN_UP.map((field, index) => (
-          <div className="h-124" key={`${field.id}-${index}`}>
+        {FORM_SIGN_UP.map((field) => (
+          <div className="h-124" key={field.id}>
             <InputField
-              key={field.id}
               label={field.label}
               type={field.type}
               id={field.id}

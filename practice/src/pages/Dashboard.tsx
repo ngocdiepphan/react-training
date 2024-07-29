@@ -128,7 +128,7 @@ const Dashboard: React.FC = () => {
 
   return (
     <div>
-      <header className="sticky top-0">
+      <header className="">
         <div className="navbar-user__wrapper flex flex-row text-quaternary font-semibold w-full h-48 bg-primary p-20 sticky top-0">
           <div className="navbar-user__item flex flex-row gap-20 items-center cursor-pointer">
             <span
