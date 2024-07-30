@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
             </Link>
           </li>
           <li className="">
-            <Link to="/sign-in" className="hover:text-blue-500 mb-0">
+            <Link to="#" className="hover:text-blue-500 mb-0">
               Login
             </Link>
           </li>

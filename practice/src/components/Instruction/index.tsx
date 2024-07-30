@@ -11,7 +11,7 @@ export interface InstructionProps {
 
 const Instruction = ({ recipe }: InstructionProps) => {
   return (
-    <article className="">
+    <article>
       <h5 className="font-serif text-xl my-27 md:text-3xl">Instructions</h5>
       <ul className="flex flex-col gap-30 mt-30">
         {recipe.instruction.map((step, index) => (

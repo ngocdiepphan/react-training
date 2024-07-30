@@ -48,7 +48,7 @@ const Content = ({ recipeData }: ContentProps) => {
         {recipeData.description}
       </p>
       <img
-        className="recipes-detail__img-banner w-full"
+        className=" w-full"
         src={recipeData.img}
         alt="Picture banner recipe pages"
       />

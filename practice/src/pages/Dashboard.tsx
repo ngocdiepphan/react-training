@@ -1,13 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 // Components
-import {
-  Modal,
-  Panel,
-  Toolbar,
-  Table,
-  Drawer
-} from "components";
+import { Modal, Panel, Toolbar, Table, Drawer } from "components";
 
 // Types
 import { userColumns, recipeColumns } from "type/table";
@@ -128,20 +122,20 @@ const Dashboard: React.FC = () => {
 
   return (
     <div>
-      <header className="">
-        <div className="navbar-user__wrapper flex flex-row text-quaternary font-semibold w-full h-48 bg-primary p-20 sticky top-0">
-          <div className="navbar-user__item flex flex-row gap-20 items-center cursor-pointer">
+      <header>
+        <div className="flex flex-row text-quaternary font-semibold w-full h-48 bg-primary p-20 sticky top-0">
+          <div className="flex flex-row gap-20 items-center cursor-pointer">
             <span
               className="bg-menu w-24 h-24 lg:hidden"
               onClick={handleShowDrawer}
             ></span>
-            <h1 className="navbar-user__title text-2xl font-sans">Dashboard</h1>
+            <h1 className="text-2xl font-sans">Dashboard</h1>
           </div>
         </div>
       </header>
 
-      <main className="main-body h-lvh flex flex-row font-sans text-sm bg-dashboardPrimary">
-        <div className="drawer">
+      <main className="h-lvh flex flex-row font-sans text-sm bg-dashboardPrimary">
+        <div>
           <Drawer
             onShowDrawer={showDrawer}
             onShowFormAdd={handleShowFormAdd}
@@ -151,16 +145,13 @@ const Dashboard: React.FC = () => {
           {showFormAdd && <Modal onAddRecipe={handleAddRecipe} />}
         </div>
 
-        <div className="content flex flex-row font-sans overflow-hidden bg-dashboardPrimary w-full overflow-x-auto">
-          <div className="content__wrapper content-hinder p-10 w-full overflow-x-auto overflow-y-hidden">
+        <div className="flex flex-row font-sans overflow-hidden bg-dashboardPrimary w-full overflow-x-auto">
+          <div className="p-10 w-full overflow-x-auto overflow-y-hidden">
             <Toolbar
               title={selectedTable === "user" ? "User" : "Recipe"}
               showTitle={!!selectedTable}
             />
-            <div
-              className="bg-primary border border-borderPrimary overflow-y-auto h-lvh"
-              id="table-wrapper"
-            >
+            <div className="bg-primary border border-borderPrimary overflow-y-auto h-lvh">
               <div className="flex gap-4">
                 {selectedTable === "user" && (
                   <Table

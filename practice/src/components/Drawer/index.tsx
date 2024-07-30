@@ -19,7 +19,7 @@ const Drawer = ({
   onDrawerItemClick,
   selectedTable,
 }: DrawerProps) => {
-  
+
   // Function to handle clicks on drawer items
   const handleItemClick = (itemType: string) => {
     return () => {
@@ -32,7 +32,7 @@ const Drawer = ({
       className={`flex-col gap-20 w-212 bg-drawerSecondary ${onShowDrawer ? "block md:block h-full" : "hidden md:hidden"} lg:block h-full`}
     >
       <div className="py-20 px-10 grid-cols-3">
-        <ul className="navigation">
+        <ul>
           <li className="h-56">
             {selectedTable !== "user" && (
               <Button

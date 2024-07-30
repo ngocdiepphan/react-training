@@ -7,10 +7,10 @@ export interface PrepTimeItemProps {
 const PrepTimeItem = ({ prepTime }: PrepTimeItemProps) => {
   return (
     <li className="flex flex-col first:pl-0 px-20 border-r border-gray-400 hover:border-r-5 hover:border-primary">
-      <p className="recipe-pages__label uppercase text-xs text-secondary">
+      <p className="uppercase text-xs text-secondary">
         prep time
       </p>
-      <p className="recipe-pages__value uppercase text-sm">{prepTime}</p>
+      <p className="uppercase text-sm">{prepTime}</p>
     </li>
   );
 };

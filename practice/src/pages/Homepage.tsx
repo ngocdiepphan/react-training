@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 // Components
-import {
-  Header,
-  FooterSocial,
-  FooterContact,
-  FooterDesc
-} from "components";
+import { Header, FooterSocial, FooterContact, FooterDesc } from "components";
 
 // Partials
 import {
