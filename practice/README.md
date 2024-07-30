@@ -24,6 +24,7 @@
 
 ## Target
 - Understand and apply knowledge of HTML/CSS to React components.
+- Apply Typescript in React
 - Apply Tailwind CSS
 - Understand and apply knowledge of React Basic
 - Apply Storybook into practice.
@@ -62,7 +63,6 @@
 ## Issues
 - Not upload image file in Panel
 - The add form does not yet have all the attributes in the recipe
-- Tailwind CSS has many limitations
 
 ## Devices
 - Mobile: 480px
