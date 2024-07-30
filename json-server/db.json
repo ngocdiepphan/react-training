@@ -1,26 +1,26 @@
 {
   "users": [
     {
-      "email": "user1@example.com",
-      "password": "0b14d501a594442a01c6859541bcb3e8164d183d32937b851835442f69d5c94e",
+      "email": "admin@gmail.com",
+      "password": "U2FsdGVkX18lkO6r6NSpNkRZ4eC0zeVmaWflOFcOBfs=",
       "id": "1",
       "username": "admin",
       "role": "admin",
       "img": "https://github.com/user-attachments/assets/b4bfd33c-7614-4bbd-b1c5-5b7e27ff0246"
     },
     {
-      "email": "user2@example.com",
-      "password": "0b14d501a594442a01c6859541bcb3e8164d183d32937b851835442f69d5c94e",
+      "email": "sara@gmail.com",
+      "password": "U2FsdGVkX18lkO6r6NSpNkRZ4eC0zeVmaWflOFcOBfs=",
       "id": "2",
-      "username": "user1",
+      "username": "Sara Lynn",
       "role": "user",
       "img": "https://github.com/user-attachments/assets/bbdb4e2c-e163-4c94-b129-a8999920d7a8"
     },
     {
       "id": "3",
-      "email": "user3@example.com",
-      "username": "user2",
-      "password": "0b14d501a594442a01c6859541bcb3e8164d183d32937b851835442f69d5c94e",
+      "email": "john@gmail.com",
+      "username": "John Doe",
+      "password": "U2FsdGVkX18lkO6r6NSpNkRZ4eC0zeVmaWflOFcOBfs=",
       "role": "user",
       "img": "https://github.com/user-attachments/assets/873d54fd-7ef3-45be-841c-ac43b57deabd"
     },
@@ -28,15 +28,15 @@
       "id": "4",
       "email": "test4@gmail.com11",
       "username": "user4",
-      "password": "0b14d501a594442a01c6859541bcb3e8164d183d32937b851835442f69d5c94e",
+      "password": "U2FsdGVkX18lkO6r6NSpNkRZ4eC0zeVmaWflOFcOBfs=",
       "role": "user",
       "img": "https://github.com/user-attachments/assets/450cc557-ccbe-46cb-8ff0-a29b316552d8"
     },
     {
       "id": "5",
-      "email": "test4@gmail.com11",
-      "username": "user4",
-      "password": "0b14d501a594442a01c6859541bcb3e8164d183d32937b851835442f69d5c94e",
+      "email": "lily@gmail.com",
+      "username": "Lily Rose",
+      "password": "U2FsdGVkX18lkO6r6NSpNkRZ4eC0zeVmaWflOFcOBfs=",
       "role": "user",
       "img": "https://github.com/user-attachments/assets/2f54d6fe-498b-44ab-9f75-95c6e630225a"
     }

@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -13,7 +13,7 @@ import HomePage from "pages/Homepage";
 import RecipeDetail from "pages/RecipeDetail";
 import Dashboard from "pages/Dashboard";
 
-import 'App.css';
+import "App.css";
 
 interface ProtectRouteProps {
   element: JSX.Element;
@@ -24,10 +24,20 @@ const ProtectRoute = ({ element, role }: ProtectRouteProps) => {
   const user = JSON.parse(localStorage.getItem("user") || "{}");
 
   if (!user || !user.role) {
-    return <Navigate to="/" />;
+    return <Navigate to="/sign-in" />;
   }
 
   if (user.role !== role) {
+    return <Navigate to={user.role === "admin" ? "/dashboard" : "/homepage"} />;
+  }
+
+  return element;
+};
+
+const AuthRoute = ({ element }: { element: JSX.Element }) => {
+  const user = JSON.parse(localStorage.getItem("user") || "{}");
+
+  if (user && user.role) {
     return <Navigate to={user.role === "admin" ? "/dashboard" : "/homepage"} />;
   }
 
@@ -39,8 +49,14 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" index element={<Navigate to="/sign-in" />} />
-        <Route path="/sign-in" element={<SignInForm />} />
-        <Route path="/sign-up" element={<SignUpForm />} />
+        <Route
+          path="/sign-in"
+          element={<AuthRoute element={<SignInForm />} />}
+        />
+        <Route
+          path="/sign-up"
+          element={<AuthRoute element={<SignUpForm />} />}
+        />
         <Route
           path="/homepage/*"
           element={<ProtectRoute element={<HomePage />} role="user" />}
