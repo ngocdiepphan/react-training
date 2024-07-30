@@ -1,3 +1,5 @@
+import CryptoJS from 'crypto-js';
+
 // Helper
 import APIHelper, { ApiResponse } from "./helper";
 
@@ -22,9 +24,12 @@ class AuthenticationService {
    */
   async signUpUser(formData: UserProps): Promise<ApiResponse<UserProps>> {
     try {
+      const hashedPassword = CryptoJS.SHA256(formData.password).toString();
+
       const formDataWithRole = {
         ...formData,
         role: "user",
+        password: hashedPassword,
         img: formData.img || "",
       };
 
@@ -59,7 +64,7 @@ class AuthenticationService {
   ): Promise<ApiResponse<UserProps>> {
     try {
       const response = await this.apiHelper.request(
-        `${API.BASE_URL}${API.API_USERS}?email=${email}&password=${password}`,
+        `${API.BASE_URL}${API.API_USERS}`,
         "GET",
       );
 
@@ -70,10 +75,13 @@ class AuthenticationService {
       }
 
       const users = response.data as UserProps[];
+      console.log("Users retrieved:", users);
+      const hashedPassword = CryptoJS.SHA256(password).toString(); // Mã hóa mật khẩu
 
       const user = users.find(
-        (user: UserProps) => user.email === email && user.password === password,
+        (user: UserProps) => user.email === email && user.password === hashedPassword,
       );
+
 
       if (user && user.role) {
         return { data: user, error: null };

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import CryptoJS from "crypto-js";
 
 // Components
 import { InputField, Button } from "components";
@@ -112,9 +113,12 @@ const SignUpForm: React.FC = () => {
       !errors.password &&
       !errors.confirmPassword
     ) {
+      const hashedPassword = CryptoJS.SHA256(formData.password).toString();
+
       // Set default avatar image
       const formWithAvatar = {
         ...formData,
+        password: hashedPassword,
         img: formData.img || defaultAvatar,
       };
       const response = await AuthService.signUpUser(formWithAvatar);

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import CryptoJS from "crypto-js";
 
 // Components
 import { InputField, Button } from "components";
@@ -57,24 +58,38 @@ const SignInForm: React.FC = () => {
     e.preventDefault();
 
     const isValid = formData.email && formData.password;
+    console.log("ps",formData.password );
+    console.log("em", formData.email);
+
+
 
     if (!isValid) {
       setErrors({
         email: !formData.email ? "Email is required" : "",
         password: !formData.password ? "Password is required" : "",
+
       });
       return;
     }
 
+    const hashedPassword = CryptoJS.SHA256(formData.password).toString();
+    console.log("Hashed Password:", hashedPassword);
+
+
+    console.log("Hashed Password:", hashedPassword);
+    console.log("Email:", formData.email);
+    console.log("pass",formData.password);
+
+
     const response = await AuthService.signInUser(
       formData.email,
-      formData.password,
+      hashedPassword,
     );
-
+    console.log("Response from sign in:", response);
     const data = response.data;
 
     if (!data || !("role" in data)) {
-      setError("Role information not found in response.");
+      setError("Email or password is invalid");
       return;
     }
 
