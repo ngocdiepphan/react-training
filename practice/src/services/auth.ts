@@ -1,4 +1,4 @@
-import CryptoJS from 'crypto-js';
+import CryptoJS from "crypto-js";
 
 // Helper
 import APIHelper, { ApiResponse } from "./helper";
@@ -11,6 +11,7 @@ import { API } from "constants/url";
 
 class AuthenticationService {
   private apiHelper: APIHelper;
+  private key: string = import.meta.env.VITE_SECRET_KEY;
 
   constructor() {
     this.apiHelper = new APIHelper();
@@ -24,7 +25,10 @@ class AuthenticationService {
    */
   async signUpUser(formData: UserProps): Promise<ApiResponse<UserProps>> {
     try {
-      const hashedPassword = CryptoJS.SHA256(formData.password).toString();
+      const hashedPassword = CryptoJS.AES.encrypt(
+        formData.password,
+        this.key,
+      ).toString();
 
       const formDataWithRole = {
         ...formData,
@@ -75,13 +79,13 @@ class AuthenticationService {
       }
 
       const users = response.data as UserProps[];
-      console.log("Users retrieved:", users);
-      const hashedPassword = CryptoJS.SHA256(password).toString(); // Mã hóa mật khẩu
-
       const user = users.find(
-        (user: UserProps) => user.email === email && user.password === hashedPassword,
+        (user: UserProps) =>
+          user.email === email &&
+          CryptoJS.AES.decrypt(user.password, this.key).toString(
+            CryptoJS.enc.Utf8,
+          ) === password,
       );
-
 
       if (user && user.role) {
         return { data: user, error: null };
