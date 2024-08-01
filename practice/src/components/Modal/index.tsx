@@ -5,7 +5,7 @@ import { InputField, OptionCategory, Button } from "components";
 
 // Types
 import { Recipe } from "type/recipe";
-import { FORM_MODAL } from "constants/index";
+import { FORM_MODAL } from "constants/form";
 
 // Service
 import RecipeService from "services/recipe";

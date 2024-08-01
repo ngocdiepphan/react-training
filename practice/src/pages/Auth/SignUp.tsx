@@ -15,7 +15,7 @@ import {
 import AuthenticationService from "services/auth";
 
 // Type
-import { FORM_SIGN_UP } from "constants/index";
+import { FORM_SIGN_UP } from "constants/form";
 
 // Image
 import defaultAvatar from "/images/header/new-user.png";
