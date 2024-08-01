@@ -6,11 +6,11 @@ import { Header, FooterSocial, FooterContact, FooterDesc } from "components";
 // Partials
 import {
   Banner,
-  DeliSection,
+  DeliciousSection,
   CollectSection,
-  CateSection,
+  CategorySection,
   FormSection,
-  LastSection,
+  LastRecipeSection,
 } from "partials";
 
 // Service
@@ -45,11 +45,11 @@ const HomePage: React.FC = () => {
 
       <main>
         <Banner />
-        <DeliSection items={CATEGORY} recipes={recipes} />
-        <CateSection />
+        <DeliciousSection items={CATEGORY} recipes={recipes} />
+        <CategorySection />
         <FormSection />
         <CollectSection />
-        <LastSection recipes={recipes} />
+        <LastRecipeSection recipes={recipes} />
       </main>
 
       <footer className="bg-tertiary px-12 flex flex-col md:px-50 lg:px-42 lg:my-auto lg:mx-0">
