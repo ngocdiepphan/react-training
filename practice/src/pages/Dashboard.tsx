@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from "react";
 
 // Components
-import { Modal, Panel, Toolbar, Table, Drawer } from "components";
+import {
+  Modal,
+  Panel,
+  Toolbar,
+  Table,
+  Drawer
+} from "components";
 
 // Types
 import { userColumns, recipeColumns } from "type/table";

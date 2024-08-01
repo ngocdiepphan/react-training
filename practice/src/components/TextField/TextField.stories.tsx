@@ -18,7 +18,6 @@ export const InputBorder = Template.bind({});
 InputBorder.args = {
   label: "Name",
   type: "text",
-  id: "name",
   name: "name",
   variant: "primary",
 };
@@ -27,7 +26,6 @@ export const InputForm = Template.bind({});
 InputForm.args = {
   label: "Category",
   type: "text",
-  id: "category",
   name: "category",
   variant: "secondary",
 };

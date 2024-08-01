@@ -9,13 +9,12 @@ import { Recipe } from "type/recipe";
 
 export interface DeliciousProps {
   title: string;
-  id: string;
   collection: number;
   recipes: Recipe[];
 }
 
 // Function to filter recipes based on the collection ID and a rating of 5
-const Delicious = ({ title, id, collection, recipes }: DeliciousProps) => {
+const Delicious = ({ title, collection, recipes }: DeliciousProps) => {
   const filterRecipes = (collectionId: number) => {
     return recipes
       .filter(
@@ -32,7 +31,6 @@ const Delicious = ({ title, id, collection, recipes }: DeliciousProps) => {
       </h3>
       <ul
         className="flex flex-col gap-24 md:flex-row md:grid md:grid-cols-3 md:gap-20"
-        id={id}
       >
         {filterRecipes(collection).map((recipe) => (
           <li key={recipe.id} className="">

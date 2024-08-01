@@ -3,7 +3,6 @@ import React from "react";
 export interface InputFieldProps {
   label: string;
   type: string;
-  id: string;
   name: string;
   variant: "primary" | "secondary";
   value: string;
@@ -14,7 +13,6 @@ export interface InputFieldProps {
 const InputField = ({
   label,
   type,
-  id,
   name,
   variant,
   value,
@@ -44,11 +42,10 @@ const InputField = ({
 
   return (
     <>
-      <label htmlFor={id} className={labelStyles}>
+      <label className={labelStyles}>
         {label}
       </label>
       <input
-        id={id}
         name={name}
         type={type}
         className={inputStyles}

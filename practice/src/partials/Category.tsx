@@ -16,7 +16,6 @@ const CateSection: React.FC = () => {
         {categories.map((item) => (
           <Category
             key={item.id}
-            id={item.id}
             category={item.category}
             img={item.img}
           />

@@ -84,10 +84,7 @@ const Panel = ({
   };
 
   return (
-    <aside
-      className="panel hinder-panel lg:ml-0 lg:my-10 lg:mr-10 content-dashboard bg-primary border border-gray-300 fixed h-full w-full top-0 left-0 m-0 md:right-auto lg:static"
-      id="panel-details"
-    >
+    <aside className="panel hinder-panel lg:ml-0 lg:my-10 lg:mr-10 content-dashboard bg-primary border border-gray-300 fixed h-full w-full top-0 left-0 m-0 md:right-auto lg:static">
       {selectedUser && (
         <PanelForm
           columns={userColumns}

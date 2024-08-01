@@ -17,7 +17,13 @@ import RecipeService from "services/recipe";
 import { Recipe } from "type/recipe";
 
 // Partials
-import { Statistics, Content, Recipes, Interact, Comment } from "partials";
+import {
+  Statistics,
+  Content,
+  Recipes,
+  Interact,
+  Comment
+} from "partials";
 
 const RecipeDetail: React.FC = () => {
   // Get recipe ID from URL
@@ -40,7 +46,7 @@ const RecipeDetail: React.FC = () => {
     };
 
     fetchRecipe();
-  }, [id]);
+  }, []);
 
   if (!recipeData) {
     return null;

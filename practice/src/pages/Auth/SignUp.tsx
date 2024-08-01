@@ -138,7 +138,6 @@ const SignUpForm: React.FC = () => {
             <InputField
               label={field.label}
               type={field.type}
-              id={field.id}
               name={field.name}
               variant="primary"
               value={formData[field.name as keyof typeof formData]}
