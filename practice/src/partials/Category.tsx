@@ -6,7 +6,7 @@ import { Category } from "components";
 // Mock
 import { categories } from "mocks/category";
 
-const CateSection: React.FC = () => {
+const CategorySection: React.FC = () => {
   return (
     <section className="mx-12 md:mx-102 lg:mx-30">
       <h3 className="text-2xl mt-37 mb-35 font-serif md:text-4xl md:mt-60">
@@ -25,4 +25,4 @@ const CateSection: React.FC = () => {
   );
 };
 
-export default CateSection;
+export default CategorySection;

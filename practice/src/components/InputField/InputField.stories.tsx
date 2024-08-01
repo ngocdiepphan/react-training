@@ -5,7 +5,7 @@ import { Meta, StoryFn } from "@storybook/react";
 import { InputField } from "components";
 
 // Type
-import { InputFieldProps } from "components/TextField";
+import { InputFieldProps } from "components/InputField";
 
 export default {
   title: "Components/InputField",

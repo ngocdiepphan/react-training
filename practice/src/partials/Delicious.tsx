@@ -11,7 +11,7 @@ interface DeliSectionProps {
   recipes: Recipe[];
 }
 
-const DeliSection = ({ items, recipes }: DeliSectionProps) => {
+const DeliciousSection = ({ items, recipes }: DeliSectionProps) => {
   return (
     <section className="mx-12 md:mx-102 lg:mx-30">
       {items.map((item) => (
@@ -26,4 +26,4 @@ const DeliSection = ({ items, recipes }: DeliSectionProps) => {
   );
 };
 
-export default DeliSection;
+export default DeliciousSection;

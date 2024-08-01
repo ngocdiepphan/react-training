@@ -31,5 +31,5 @@ export { default as RatingStar } from "components/RatingStar";
 export { default as Reply } from "components/Reply";
 export { default as Serving } from "components/Serving";
 export { default as Table } from "components/Table";
-export { default as InputField } from "components/TextField";
+export { default as InputField } from "components/InputField";
 export { default as Toolbar } from "components/Toolbar";
