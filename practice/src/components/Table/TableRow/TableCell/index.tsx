@@ -16,11 +16,11 @@ const TableCell = <T,>({ column, item }: Props<T>) => {
           <img
             src={item as string}
             className="w-full h-full object-cover rounded-full"
-            alt=""
+            alt={`Picture of ${item}`}
           />
         </div>
       ) : (
-        <p className="">{item as string}</p>
+        <p>{item as string}</p>
       )}
     </td>
   );

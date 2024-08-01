@@ -16,7 +16,6 @@ const CollectSection: React.FC = () => {
         {collections.map((item) => (
           <li key={item.id}>
             <Collection
-              id={item.id}
               name={item.name}
               img={item.img}
               recipes={item.recipes}

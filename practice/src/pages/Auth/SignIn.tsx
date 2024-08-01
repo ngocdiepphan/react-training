@@ -93,7 +93,6 @@ const SignInForm: React.FC = () => {
           <InputField
             label="Email"
             type="text"
-            id="email"
             name="email"
             variant="primary"
             value={formData.email}
@@ -105,7 +104,6 @@ const SignInForm: React.FC = () => {
           <InputField
             label="Password"
             type="password"
-            id="password"
             name="password"
             variant="primary"
             value={formData.password}

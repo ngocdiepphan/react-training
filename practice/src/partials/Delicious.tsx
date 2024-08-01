@@ -18,7 +18,6 @@ const DeliSection = ({ items, recipes }: DeliSectionProps) => {
         <Delicious
           key={item.id}
           title={item.title}
-          id={item.id}
           collection={item.collection}
           recipes={recipes}
         />

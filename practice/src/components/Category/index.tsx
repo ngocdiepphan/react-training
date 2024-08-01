@@ -1,14 +1,13 @@
 import React from "react";
 
 export interface CateProps {
-  id: string;
   category: string;
   img: string;
 }
 
-const Category = ({ id, category, img }: CateProps) => {
+const Category = ({ category, img }: CateProps) => {
   return (
-    <article key={id} className="flex flex-col gap-24 items-center">
+    <article className="flex flex-col gap-24 items-center">
       <div className="w-full max-w-xs">
         <img
           className="w-full rounded-full"

@@ -106,7 +106,6 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
                 {field.type === "date" ? (
                   <div className="flex flex-row items-center mb-20 md:justify-around">
                     <InputField
-                      id={field.id}
                       label={field.label}
                       type={field.type}
                       name={field.name}
@@ -125,7 +124,6 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
                       {field.label}
                     </label>
                     <textarea
-                      id={field.id}
                       name={field.name}
                       value={formData[field.name]}
                       onChange={handleInputChange}
@@ -137,7 +135,6 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
                     <InputField
                       label={field.label}
                       type={field.type}
-                      id={field.id}
                       name={field.name}
                       variant="secondary"
                       value={

@@ -20,7 +20,7 @@ const Table = <T extends { id: string }>({
     <div className="w-full overflow-y-auto">
       <table className="w-full text-xl font-semibold text-quaternary font-sans">
         <TableHeader columns={columns} />
-        <tbody className="text-base font-normal" id="user-body">
+        <tbody className="text-base font-normal">
           {data.map((item) => (
             <TableRow
               key={item.id}
