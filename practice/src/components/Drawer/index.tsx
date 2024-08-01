@@ -20,13 +20,6 @@ const Drawer = ({
   selectedTable,
 }: DrawerProps) => {
 
-  // Function to handle clicks on drawer items
-  const handleItemClick = (itemType: string) => {
-    return () => {
-      onDrawerItemClick(itemType);
-    };
-  };
-
   return (
     <div
       className={`flex-col gap-20 w-212 bg-drawerSecondary ${onShowDrawer ? "block md:block h-full" : "hidden md:hidden"} lg:block h-full`}
@@ -57,7 +50,7 @@ const Drawer = ({
                     ? "h-50 text-blue-500 bg-gray-800 scale-110 border-l-4 border-l-hoverPrimary"
                     : ""
                 }
-                onClick={handleItemClick(item.type)}
+                onClick={onDrawerItemClick}
               />
             ))}
           </li>
