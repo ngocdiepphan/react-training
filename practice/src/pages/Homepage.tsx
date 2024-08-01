@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from "react";
 
 // Components
-import { Header, FooterSocial, FooterContact, FooterDesc } from "components";
+import {
+  Header,
+  FooterSocial,
+  FooterContact,
+  FooterDesc
+} from "components";
 
 // Partials
 import {
@@ -39,9 +44,7 @@ const HomePage: React.FC = () => {
 
   return (
     <div className="home">
-      <header>
-        <Header />
-      </header>
+      <Header />
 
       <main>
         <Banner />
