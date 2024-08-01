@@ -5,7 +5,7 @@ export interface DrawerItemProps {
   type: string;
   icon?: string;
   className?: string;
-  onClick: () => void;
+  onClick: (type: string) => void;
 }
 
 const DrawerItem = ({
@@ -17,11 +17,15 @@ const DrawerItem = ({
 }: DrawerItemProps) => {
   const iconClass = icon ? `bg-${icon}` : `bg-${type}`;
 
+  const handleClick = () => {
+    onClick(type)
+  }
+
   return (
     <>
       <div
         className={`flex flex-row gap-10 pl-8 h-30 items-center my-30 ${className}`}
-        onClick={onClick}
+        onClick={handleClick}
       >
         <span
           className={`w-20 h-20 bg-no-repeat bg-center ${iconClass}`}
