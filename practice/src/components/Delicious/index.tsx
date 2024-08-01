@@ -9,30 +9,17 @@ import { Recipe } from "type/recipe";
 
 export interface DeliciousProps {
   title: string;
-  collection: number;
   recipes: Recipe[];
 }
 
-// Function to filter recipes based on the collection ID and a rating of 5
-const Delicious = ({ title, collection, recipes }: DeliciousProps) => {
-  const filterRecipes = (collectionId: number) => {
-    return recipes
-      .filter(
-        (recipe) =>
-          recipe.collection_id === collectionId && recipe.ratings === 5,
-      )
-      .slice(0, 3); // Limit the number of recipes to the first 3
-  };
-
+const Delicious = ({ title, recipes }: DeliciousProps) => {
   return (
     <>
       <h3 className="text-2xl mt-37 mb-35 font-serif md:text-4xl md:mt-60">
         {title}
       </h3>
-      <ul
-        className="flex flex-col gap-24 md:flex-row md:grid md:grid-cols-3 md:gap-20"
-      >
-        {filterRecipes(collection).map((recipe) => (
+      <ul className="flex flex-col gap-24 md:flex-row md:grid md:grid-cols-3 md:gap-20">
+        {recipes.map((recipe) => (
           <li key={recipe.id} className="">
             <Link to={`/recipe/${recipe.id}`}>
               <article className="flex flex-col gap-13">

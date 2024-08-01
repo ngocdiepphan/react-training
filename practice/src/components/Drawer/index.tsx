@@ -4,7 +4,7 @@ import React from "react";
 import { Button, DrawerItem } from "components";
 
 // Type
-import { NAV_BAR_LIST } from "constants/index";
+import { NAV_BAR_LIST } from "constants/navbar";
 
 export interface DrawerProps {
   onShowDrawer: boolean;
