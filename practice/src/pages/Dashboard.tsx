@@ -8,6 +8,7 @@ import {
   Table,
   Drawer
 } from "components";
+import HeaderDashboard from "layouts/Header/Dashboard"
 
 // Types
 import { userColumns, recipeColumns } from "type/table";
@@ -128,17 +129,7 @@ const Dashboard: React.FC = () => {
 
   return (
     <div>
-      <header>
-        <div className="flex flex-row text-quaternary font-semibold w-full h-48 bg-primary p-20 sticky top-0">
-          <div className="flex flex-row gap-20 items-center cursor-pointer">
-            <span
-              className="bg-menu w-24 h-24 lg:hidden"
-              onClick={handleShowDrawer}
-            ></span>
-            <h1 className="text-2xl font-sans">Dashboard</h1>
-          </div>
-        </div>
-      </header>
+      <HeaderDashboard handleShowDrawer={handleShowDrawer} />
 
       <main className="h-lvh flex flex-row font-sans text-sm bg-dashboardPrimary">
         <div>

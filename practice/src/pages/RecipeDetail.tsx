@@ -54,9 +54,7 @@ const RecipeDetail: React.FC = () => {
 
   return (
     <div className="home">
-      <header>
-        <Header />
-      </header>
+      <Header />
 
       <main>
         <Statistics />

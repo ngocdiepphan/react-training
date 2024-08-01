@@ -13,7 +13,7 @@ export { default as IngredientItem } from "components/Ingredient/IngredientItem"
 export { default as Instruction } from "components/Instruction";
 export { default as InstructionItem } from "components/Instruction/InstructionItem";
 export { default as LastRecipe } from "components/LastRecipe";
-export { default as Header } from "layouts/Header";
+export { default as Header } from "layouts/Header/Homepage";
 export { default as FooterSocial } from "layouts/Footer/Social";
 export { default as FooterContact } from "layouts/Footer/Contact";
 export { default as FooterDesc } from "layouts/Footer/Description";
