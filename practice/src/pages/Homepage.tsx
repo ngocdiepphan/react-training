@@ -23,7 +23,7 @@ import RecipeService from "services/recipe";
 
 // Types
 import { Recipe } from "type/recipe";
-import { CATEGORY } from "constants/index";
+import { CATEGORY } from "constants/recipe";
 
 const HomePage: React.FC = () => {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
