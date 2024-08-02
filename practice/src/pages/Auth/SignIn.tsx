@@ -9,6 +9,7 @@ import { validateEmail, validateMinLength } from "helpers";
 
 // Service
 import AuthenticationService from "services/auth";
+import { FORM_SIGN_IN } from "constants/form";
 
 const SignInForm: React.FC = () => {
   const navigate = useNavigate();
@@ -89,28 +90,20 @@ const SignInForm: React.FC = () => {
         className="bg-primary p-8 rounded-lg shadow-md mt-8 mb-64 w-420 h-420 mx-4 px-30 pt-20"
         onSubmit={handleSignIn}
       >
+         {FORM_SIGN_IN.map((field) => (
         <div className="mb-4 h-110">
           <InputField
-            label="Email"
-            type="text"
-            name="email"
+            label={field.label}
+            type={field.type}
+            name={field.name}
             variant="primary"
-            value={formData.email}
+            value={formData[field.name as keyof typeof formData]}
             onChange={handleChange}
-            errorMessage={errors.email || error}
+            placeholder={field.placeholder}
+            errorMessage={errors[field.name as keyof typeof errors]}
           />
         </div>
-        <div className="mb-4 h-110">
-          <InputField
-            label="Password"
-            type="password"
-            name="password"
-            variant="primary"
-            value={formData.password}
-            onChange={handleChange}
-            errorMessage={errors.password}
-          />
-        </div>
+      ))}
         <Button type="submit" variant="submit">
           Sign In
         </Button>

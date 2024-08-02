@@ -142,6 +142,7 @@ const SignUpForm: React.FC = () => {
               variant="primary"
               value={formData[field.name as keyof typeof formData]}
               onChange={handleChange}
+              placeholder={field.placeholder}
               errorMessage={errors[field.name as keyof typeof errors]}
             />
           </div>

@@ -13,6 +13,7 @@ export const FORM_SIGN_UP = [
     id: "email",
     name: "email",
     variant: "primary",
+    placeholder: "Enter your email",
   },
   {
     label: "Username",
@@ -20,6 +21,7 @@ export const FORM_SIGN_UP = [
     id: "username",
     name: "username",
     variant: "primary",
+    placeholder: "Enter your username",
   },
   {
     label: "Password",
@@ -27,6 +29,7 @@ export const FORM_SIGN_UP = [
     id: "password",
     name: "password",
     variant: "primary",
+    placeholder: "Enter your password",
   },
   {
     label: "Confirm Password",
@@ -34,5 +37,25 @@ export const FORM_SIGN_UP = [
     id: "confirmPassword",
     name: "confirmPassword",
     variant: "primary",
+    placeholder: "Confirm your password",
+  },
+];
+
+export const FORM_SIGN_IN = [
+  {
+    label: "Email",
+    type: "text",
+    id: "email",
+    name: "email",
+    variant: "primary",
+    placeholder: "Enter your email",
+  },
+  {
+    label: "Password",
+    type: "password",
+    id: "password",
+    name: "password",
+    variant: "primary",
+    placeholder: "Enter your password",
   },
 ];
