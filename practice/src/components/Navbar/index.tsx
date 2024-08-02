@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 // Component
 import { ItemMenu } from "components";
@@ -12,7 +12,9 @@ import logoImage from "/images/logo/Logo.png";
 
 const Navbar: React.FC = () => {
   const [menuVisible, setMenuVisible] = useState(false);
+  const [confirmLogout, setConfirmLogout] = useState(false);
   const [user, setUser] = useState<UserProps | null>(null);
+  const navigate = useNavigate();
 
   // Toggles the visibility of the menu
   const toggleMenu = () => {
@@ -26,6 +28,22 @@ const Navbar: React.FC = () => {
       setUser(JSON.parse(storedUser));
     }
   }, []);
+
+  // Handle user logout
+  const handleLogout = () => {
+    localStorage.removeItem("user");
+    setUser(null);
+    navigate("/sign-in");
+  };
+
+  // Handle confirm logout dialog
+  const handleConfirmLogout = () => {
+    setConfirmLogout(true);
+  };
+
+  const handleCancelLogout = () => {
+    setConfirmLogout(false);
+  };
 
   return (
     <>
@@ -79,9 +97,36 @@ const Navbar: React.FC = () => {
             className="bg-menu w-24 h-24 lg:hidden"
             onClick={toggleMenu}
           ></span>
+          {user && (
+            <span
+              className="bg-logout w-24 h-24"
+              onClick={handleConfirmLogout}
+            ></span>
+          )}
         </div>
       </nav>
       {menuVisible && <ItemMenu />}
+      {confirmLogout && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white px-8 pt-14 h-124 rounded shadow-md text-center">
+            <p>Are you sure you want to logout?</p>
+            <div className="mt-4 flex flex-row justify-around">
+              <button
+                onClick={handleLogout}
+                className="bg-hoverPrimary text-white px-12 py-8 rounded mr-2"
+              >
+                Yes
+              </button>
+              <button
+                onClick={handleCancelLogout}
+                className="bg-gray-300 text-black px-4 py-2 rounded"
+              >
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };
