@@ -126,6 +126,7 @@ module.exports = {
         'upload-secondary': 'url("/images/recipe-page/icon-upload.svg")',
         'save-primary': 'url("/images/recipe-page/icon-save-mb.svg")',
         'save-secondary': 'url("/images/recipe-page/icon-save.svg")',
+        'logout': 'url("/images/header/logout.svg")',
       }
     },
   },
