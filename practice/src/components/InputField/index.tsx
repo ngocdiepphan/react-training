@@ -8,6 +8,7 @@ export interface InputFieldProps {
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   errorMessage: string;
+  placeholder: string;
 }
 
 const InputField = ({
@@ -17,6 +18,7 @@ const InputField = ({
   variant,
   value,
   onChange,
+  placeholder,
   errorMessage,
 }: InputFieldProps) => {
   // Base styles for label and input
@@ -51,6 +53,7 @@ const InputField = ({
         className={inputStyles}
         value={value}
         onChange={onChange}
+        placeholder={placeholder}
       />
       {errorMessage && <p className="text-red-500 ">{errorMessage}</p>}
     </>

@@ -13,10 +13,10 @@ const OptionCategory = ({ onChange }: OptionCategoryProps) => {
       <label className="w-80 text-sx md:text-xl">Category</label>
       <select
         onChange={handleChange}
-        id="input_category"
+
         className="border w-full border-buttonPrimary outline-none p-8 h-30 md:h-35 cursor-pointer md:w-220 hover:border-hoverPrimary"
       >
-        <option value=""></option>
+        <option value="" className="text-secondary">Please select</option>
         <option value="Pasta">Pasta</option>
         <option value="Pizza">Pizza</option>
         <option value="Vegan">Vegan</option>

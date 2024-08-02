@@ -112,6 +112,7 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
                       value={formData.createdAt as string}
                       onChange={handleDateChange}
                       variant="secondary"
+                      placeholder={field.placeholder}
                       errorMessage=""
                     />
                   </div>
@@ -127,6 +128,7 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
                       name={field.name}
                       value={formData[field.name]}
                       onChange={handleInputChange}
+                      placeholder={field.placeholder}
                       className="w-216 h-50 p-8 font-medium text-quaternary outline-none hover:border-hoverPrimary"
                     />
                   </div>
@@ -141,6 +143,7 @@ const Modal = ({ onAddRecipe }: ModalProps) => {
                         formData[field.name as keyof Recipe]?.toString() || ""
                       }
                       onChange={handleInputChange}
+                      placeholder={field.placeholder}
                       errorMessage=""
                     />
                   </div>

@@ -1,9 +1,9 @@
 export const FORM_MODAL = [
-  { label: "Image", type: "text", id: "img", name: "img" },
-  { label: "Name", type: "text", id: "name", name: "name" },
-  { label: "Creator", type: "text", id: "creator", name: "creator" },
-  { label: "Creation Date", type: "date", id: "createdAt", name: "createdAt"},
-  { label: "Description", type: "text", id: "description", name: "description"},
+  { label: "Image", type: "text", id: "img", name: "img", placeholder: "Enter image URL" },
+  { label: "Name", type: "text", id: "name", name: "name", placeholder: "Enter recipe name" },
+  { label: "Creator", type: "text", id: "creator", name: "creator", placeholder: "Enter creator's name"},
+  { label: "Creation Date", type: "date", id: "createdAt", name: "createdAt", placeholder: "Select creation date"},
+  { label: "Description", type: "text", id: "description", name: "description", placeholder: "Enter description"},
 ];
 
 export const FORM_SIGN_UP = [
